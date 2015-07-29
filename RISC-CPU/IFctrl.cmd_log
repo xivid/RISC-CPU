@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/IFctrl.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/IFctrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 IFctrl.ngc IFctrl.ngd  
