@@ -113,7 +113,7 @@ BEGIN
 		
 		T0 <= '0';
 		wait for clk_period*2; -- T3 = '1'
-		PCnew <= X"0010";
+		PCnew <= X"0023";
 		PCupdate <= '1';
 		wait for clk_period;
 		RST <= '1';

@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\tbEXctrl_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbEXctrl_isim_beh.wdb 
+Running: C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\tbMEMctrl_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbMEMctrl_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps

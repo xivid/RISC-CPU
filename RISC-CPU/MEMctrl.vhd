@@ -34,7 +34,7 @@ entity MEMctrl is
 			  CLK : in STD_LOGIC;
            Addrin : in  STD_LOGIC_VECTOR (15 downto 0);
            Addr : out  STD_LOGIC_VECTOR (15 downto 0);
-           OP : in  STD_LOGIC_VECTOR (4 downto 0);
+           OP : in  STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
            DATA : in  STD_LOGIC_VECTOR (7 downto 0);
            T2 : in  STD_LOGIC;
            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);

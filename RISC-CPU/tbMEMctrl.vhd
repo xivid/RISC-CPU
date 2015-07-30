@@ -55,7 +55,7 @@ ARCHITECTURE behavior OF tbMEMctrl IS
         );
     END COMPONENT;
     
-
+	signal IR : std_logic_vector(15 downto 0) := (others => '0');
    --Inputs
    signal CLK : std_logic := '0';
    signal Addrin : std_logic_vector(15 downto 0) := (others => '0');
@@ -75,7 +75,7 @@ ARCHITECTURE behavior OF tbMEMctrl IS
    constant CLK_period : time := 10 ns;
  
 BEGIN
- 
+	OP <= IR(15 downto 11);
 	-- Instantiate the Unit Under Test (UUT)
    uut: MEMctrl PORT MAP (
           CLK => CLK,
@@ -106,10 +106,191 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
       wait for 100 ns;	
+		
+		IR <= X"B000"; -- SETC
+		wait for CLK_period/2;
+		Addrin <= X"7700";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"4700"; -- MVI R7, X"00"
+		wait for CLK_period/2;
+		Addrin <= X"7700";
+		wait for CLK_period;
+		T2 <= '1'; -- T2
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"7301"; -- LDA R3, X"01" ([0001] = X"B0" -> R3)
+		wait for CLK_period/2;
+		Addrin <= x"0001"; -- test x <=> X
+		wait for CLK_period;
+		T2 <= '1'; -- T2
+		wait for CLK_period/4;
+		DATA <= X"B0";
+		wait for CLK_period*3/4;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"5203"; -- MOV R2, R3
+		wait for CLK_period/2;
+		Addrin <= X"0003";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"A000"; -- CLRC
+		wait for CLK_period/2;
+		Addrin <= X"0000";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"3203"; -- ADD R2, R3 (B0 + B0)
+		wait for CLK_period/2;
+		Addrin <= X"0003";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
 
-      wait for CLK_period*10;
+		wait for CLK_period/2;
+		IR <= X"2207"; -- SUB R2, R7 (60 - 00 - 1)
+		wait for CLK_period/2;
+		Addrin <= X"0007";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
 
-      -- insert stimulus here 
+		wait for CLK_period/2;
+		IR <= X"4711"; -- MVI R7, X"11"
+		wait for CLK_period/2;
+		Addrin <= X"0011";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+
+		wait for CLK_period/2;
+		IR <= X"6201"; -- STA R2, X"01" (R2 = 5F -> [1101])
+		wait for CLK_period/2;
+		Addrin <= X"1101";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+
+		wait for CLK_period/2;
+		IR <= X"8401"; -- IN R4, "01" (R4 as ACC, IO[01] -> R4)
+		wait for CLK_period/2;
+		Addrin <= X"1101";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period/4;
+		DATA <= x"01"; -- assume input x"01"
+		wait for CLK_period*3/4;
+		T2 <= '0';
+		wait for CLK_period;
+
+		wait for CLK_period/2;
+		IR <= X"4700"; -- MVI R7, X"00"
+		wait for CLK_period/2;
+		Addrin <= X"1100";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+
+		wait for CLK_period/2;
+		IR <= X"4101"; -- MVI R1, X"01"
+		wait for CLK_period/2;
+		Addrin <= X"0001";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"2401"; -- SUB R4, R1 (while(R4--): output R4 to IO[10])
+		wait for CLK_period/2;
+		Addrin <= X"0001";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"9402"; -- OUT R4, "10" (R4 -> IO[10])
+		wait for CLK_period/2;
+		Addrin <= X"0002";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+
+		wait for CLK_period/2;
+		IR <= X"1402"; -- JZ R4, X"02" (jump over next statement)
+		wait for CLK_period/2;
+		Addrin <= X"0002";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+
+--		IR <= X"00F8"; -- JMP X"F8" (jump to: SUB R4, R1)
+
+		wait for CLK_period/2;
+		IR <= X"9103"; -- OUT R1, "11" (R1 -> IO[11])
+		wait for CLK_period/2;
+		Addrin <= X"0003";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+
+		wait for CLK_period/2;
+		IR <= X"00FE"; -- JMP X"FE" (J: JMP J)
+		wait for CLK_period/2;
+		Addrin <= X"FFFE";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
+		
+		wait for CLK_period/2;
+		IR <= X"00FE"; -- JMP X"FE" (J: JMP J)
+		wait for CLK_period/2;
+		Addrin <= X"FFFE";
+		wait for CLK_period;
+		T2 <= '1';
+		wait for CLK_period;
+		T2 <= '0';
+		wait for CLK_period;
 
       wait;
    end process;

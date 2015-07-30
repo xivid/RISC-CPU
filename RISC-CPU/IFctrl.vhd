@@ -48,6 +48,7 @@ end IFctrl;
 architecture Behavioral of IFctrl is
 	signal PC, IR : STD_LOGIC_VECTOR(15 downto 0) := X"0000";
 	signal nextPC : STD_LOGIC_VECTOR(15 downto 0) := X"0000";
+	
 begin
 -- -- Solution A
 --	-- 形成下地址
@@ -78,7 +79,7 @@ begin
 			if T0 = '1' then
 				if CLK'event and CLK = '0' then
 					IR <= IRdata; -- RDword = '0'时访存控制输出不更新
-					PC <= PC + 1;
+					PC <= PC + 2;
 				end if;
 			end if;
 			if rising_edge(PCupdate) then
