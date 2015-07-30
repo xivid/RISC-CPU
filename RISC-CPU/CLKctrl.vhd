@@ -3,12 +3,12 @@
 -- Engineer: 
 -- 
 -- Create Date:    19:26:09 07/29/2015 
--- Design Name: 
+-- Design Name: 时钟管理模块
 -- Module Name:    CLKctrl - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
--- Description: 
+-- Description: 4-节拍发生器
 --
 -- Dependencies: 
 --
