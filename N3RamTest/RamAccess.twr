@@ -1,0 +1,364 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml RamAccess.twx RamAccess.ncd -o RamAccess.twr RamAccess.pcf
+-ucf n3.ucf
+
+Design file:              RamAccess.ncd
+Physical constraint file: RamAccess.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock btnMEMR
+------------+------------+------------+------------+------------+-------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                               | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)              | Phase  |
+------------+------------+------------+------------+------------+-------------------------------+--------+
+DBUS<0>     |   -1.584(F)|      FAST  |    5.188(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<1>     |   -1.870(F)|      FAST  |    5.199(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<2>     |   -2.062(F)|      FAST  |    5.515(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<3>     |   -1.731(F)|      FAST  |    4.963(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<4>     |   -1.615(F)|      FAST  |    5.523(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<5>     |   -1.083(F)|      FAST  |    4.742(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<6>     |   -1.313(F)|      FAST  |    5.035(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<7>     |   -1.114(F)|      FAST  |    4.827(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<8>     |   -1.308(F)|      FAST  |    4.576(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<9>     |   -1.225(F)|      FAST  |    4.701(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<10>    |   -1.779(F)|      FAST  |    5.010(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<11>    |   -2.086(F)|      FAST  |    5.260(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<12>    |   -2.057(F)|      FAST  |    5.524(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<13>    |   -2.200(F)|      FAST  |    5.695(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<14>    |   -1.943(F)|      FAST  |    5.377(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<15>    |   -1.779(F)|      FAST  |    5.175(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+sw<0>       |   -2.392(F)|      FAST  |    6.197(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<1>       |   -2.612(F)|      FAST  |    6.195(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<2>       |   -2.704(F)|      FAST  |    6.062(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<3>       |   -2.311(F)|      FAST  |    6.043(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<4>       |   -3.190(F)|      FAST  |    6.354(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<5>       |   -2.804(F)|      FAST  |    5.884(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<6>       |   -3.001(F)|      FAST  |    6.133(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<7>       |   -2.310(F)|      FAST  |    5.168(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+------------+------------+------------+------------+------------+-------------------------------+--------+
+
+Setup/Hold to clock btnRDL
+------------+------------+------------+------------+------------+-------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                               | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)              | Phase  |
+------------+------------+------------+------------+------------+-------------------------------+--------+
+DBUS<0>     |   -1.900(F)|      FAST  |    5.692(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<1>     |   -2.186(F)|      FAST  |    5.703(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<2>     |   -2.378(F)|      FAST  |    6.019(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<3>     |   -2.047(F)|      FAST  |    5.467(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<4>     |   -1.931(F)|      FAST  |    6.027(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<5>     |   -1.399(F)|      FAST  |    5.246(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<6>     |   -1.629(F)|      FAST  |    5.539(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<7>     |   -1.430(F)|      FAST  |    5.331(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<8>     |   -1.624(F)|      FAST  |    5.080(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<9>     |   -1.541(F)|      FAST  |    5.205(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<10>    |   -2.095(F)|      FAST  |    5.514(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<11>    |   -2.402(F)|      FAST  |    5.764(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<12>    |   -2.373(F)|      FAST  |    6.028(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<13>    |   -2.516(F)|      FAST  |    6.199(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<14>    |   -2.259(F)|      FAST  |    5.881(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<15>    |   -2.095(F)|      FAST  |    5.679(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+sw<0>       |   -2.825(F)|      FAST  |    6.883(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<1>       |   -3.045(F)|      FAST  |    6.881(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<2>       |   -3.137(F)|      FAST  |    6.748(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<3>       |   -2.744(F)|      FAST  |    6.729(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<4>       |   -3.623(F)|      FAST  |    7.040(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<5>       |   -3.237(F)|      FAST  |    6.570(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<6>       |   -3.434(F)|      FAST  |    6.819(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<7>       |   -2.743(F)|      FAST  |    5.854(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+------------+------------+------------+------------+------------+-------------------------------+--------+
+
+Setup/Hold to clock btnRDWordU
+------------+------------+------------+------------+------------+-------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                               | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)              | Phase  |
+------------+------------+------------+------------+------------+-------------------------------+--------+
+DBUS<0>     |   -1.575(F)|      FAST  |    5.210(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<1>     |   -1.861(F)|      FAST  |    5.221(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<2>     |   -2.053(F)|      FAST  |    5.537(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<3>     |   -1.722(F)|      FAST  |    4.985(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<4>     |   -1.606(F)|      FAST  |    5.545(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<5>     |   -1.074(F)|      FAST  |    4.764(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<6>     |   -1.304(F)|      FAST  |    5.057(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<7>     |   -1.105(F)|      FAST  |    4.849(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<8>     |   -1.299(F)|      FAST  |    4.598(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<9>     |   -1.216(F)|      FAST  |    4.723(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<10>    |   -1.770(F)|      FAST  |    5.032(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<11>    |   -2.077(F)|      FAST  |    5.282(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<12>    |   -2.048(F)|      FAST  |    5.546(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<13>    |   -2.191(F)|      FAST  |    5.717(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<14>    |   -1.934(F)|      FAST  |    5.399(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+DBUS<15>    |   -1.770(F)|      FAST  |    5.197(F)|      SLOW  |btnMEMR_btnRDWordU_OR_12_o_BUFG|   0.000|
+sw<0>       |   -2.365(F)|      FAST  |    6.254(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<1>       |   -2.585(F)|      FAST  |    6.252(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<2>       |   -2.677(F)|      FAST  |    6.119(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<3>       |   -2.284(F)|      FAST  |    6.100(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<4>       |   -3.163(F)|      FAST  |    6.411(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<5>       |   -2.777(F)|      FAST  |    5.941(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<6>       |   -2.974(F)|      FAST  |    6.190(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+sw<7>       |   -2.283(F)|      FAST  |    5.225(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o      |   0.000|
+------------+------------+------------+------------+------------+-------------------------------+--------+
+
+Setup/Hold to clock btnWRD
+------------+------------+------------+------------+------------+-------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                         | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)        | Phase  |
+------------+------------+------------+------------+------------+-------------------------+--------+
+sw<0>       |   -1.764(F)|      FAST  |    5.190(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+sw<1>       |   -1.984(F)|      FAST  |    5.188(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+sw<2>       |   -2.076(F)|      FAST  |    5.055(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+sw<3>       |   -1.683(F)|      FAST  |    5.036(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+sw<4>       |   -2.562(F)|      FAST  |    5.347(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+sw<5>       |   -2.176(F)|      FAST  |    4.877(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+sw<6>       |   -2.373(F)|      FAST  |    5.126(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+sw<7>       |   -1.682(F)|      FAST  |    4.161(F)|      SLOW  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+------------+------------+------------+------------+------------+-------------------------+--------+
+
+Clock btnMEMR to Pad
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                         | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)        | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+led<0>      |        12.651(F)|      SLOW  |         7.764(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<1>      |        12.651(F)|      SLOW  |         7.764(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<2>      |        12.861(F)|      SLOW  |         7.857(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<3>      |        12.861(F)|      SLOW  |         7.857(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<4>      |        13.379(F)|      SLOW  |         8.194(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<5>      |        13.379(F)|      SLOW  |         8.194(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<6>      |        13.253(F)|      SLOW  |         8.114(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<7>      |        13.253(F)|      SLOW  |         8.114(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+
+Clock btnRDL to Pad
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                         | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)        | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+led<0>      |        13.337(F)|      SLOW  |         8.197(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<1>      |        13.337(F)|      SLOW  |         8.197(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<2>      |        13.547(F)|      SLOW  |         8.290(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<3>      |        13.547(F)|      SLOW  |         8.290(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<4>      |        14.065(F)|      SLOW  |         8.627(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<5>      |        14.065(F)|      SLOW  |         8.627(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<6>      |        13.939(F)|      SLOW  |         8.547(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<7>      |        13.939(F)|      SLOW  |         8.547(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+
+Clock btnRDWordU to Pad
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                         | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)        | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+led<0>      |        12.708(F)|      SLOW  |         7.737(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<1>      |        12.708(F)|      SLOW  |         7.737(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<2>      |        12.918(F)|      SLOW  |         7.830(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<3>      |        12.918(F)|      SLOW  |         7.830(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<4>      |        13.436(F)|      SLOW  |         8.167(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<5>      |        13.436(F)|      SLOW  |         8.167(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<6>      |        13.310(F)|      SLOW  |         8.087(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<7>      |        13.310(F)|      SLOW  |         8.087(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+
+Clock btnWRD to Pad
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                         | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)        | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+led<0>      |        11.644(F)|      SLOW  |         7.136(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<1>      |        11.644(F)|      SLOW  |         7.136(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<2>      |        11.854(F)|      SLOW  |         7.229(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<3>      |        11.854(F)|      SLOW  |         7.229(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<4>      |        12.372(F)|      SLOW  |         7.566(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<5>      |        12.372(F)|      SLOW  |         7.566(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<6>      |        12.246(F)|      SLOW  |         7.486(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+led<7>      |        12.246(F)|      SLOW  |         7.486(F)|      FAST  |btnMEMR_btnRDWordU_OR_4_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------------+--------+
+
+Clock to Setup on destination clock btnMEMR
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btnMEMR        |         |         |   -0.027|   -0.027|
+btnWRD         |         |         |   -0.662|   -0.662|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock btnRDL
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btnMEMR        |         |         |   -0.460|   -0.460|
+btnWRD         |         |         |   -1.095|   -1.095|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock btnRDWordU
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btnMEMR        |         |         |    0.000|    0.000|
+btnWRD         |         |         |   -0.635|   -0.635|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock btnWRD
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btnMEMR        |         |         |    0.789|    0.789|
+btnWRD         |         |         |   -0.034|   -0.034|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.679|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+btnMEMR        |ABUS<0>        |   11.795|
+btnMEMR        |ABUS<1>        |   11.243|
+btnMEMR        |ABUS<2>        |   11.717|
+btnMEMR        |DBUS<0>        |   13.176|
+btnMEMR        |DBUS<1>        |   12.653|
+btnMEMR        |DBUS<2>        |   12.653|
+btnMEMR        |DBUS<3>        |   12.860|
+btnMEMR        |DBUS<4>        |   12.994|
+btnMEMR        |DBUS<5>        |   13.322|
+btnMEMR        |DBUS<6>        |   13.322|
+btnMEMR        |DBUS<7>        |   12.910|
+btnMEMR        |DBUS<8>        |   13.508|
+btnMEMR        |DBUS<9>        |   13.508|
+btnMEMR        |DBUS<10>       |   12.355|
+btnMEMR        |DBUS<11>       |   12.616|
+btnMEMR        |DBUS<12>       |   12.616|
+btnMEMR        |DBUS<13>       |   11.648|
+btnMEMR        |DBUS<14>       |   12.056|
+btnMEMR        |DBUS<15>       |   12.056|
+btnMEMR        |nBHE           |    9.634|
+btnMEMR        |nBLE           |    9.686|
+btnMEMR        |nMREQ          |   10.234|
+btnMEMR        |nRD            |   10.784|
+btnMEMR        |nWR            |   11.360|
+btnRDL         |ABUS<0>        |   12.481|
+btnRDL         |ABUS<1>        |   11.747|
+btnRDL         |ABUS<2>        |   12.608|
+btnRDL         |DBUS<0>        |   14.067|
+btnRDL         |DBUS<1>        |   13.544|
+btnRDL         |DBUS<2>        |   13.544|
+btnRDL         |DBUS<3>        |   13.751|
+btnRDL         |DBUS<4>        |   13.885|
+btnRDL         |DBUS<5>        |   14.213|
+btnRDL         |DBUS<6>        |   14.213|
+btnRDL         |DBUS<7>        |   13.801|
+btnRDL         |DBUS<8>        |   14.399|
+btnRDL         |DBUS<9>        |   14.399|
+btnRDL         |DBUS<10>       |   13.246|
+btnRDL         |DBUS<11>       |   13.507|
+btnRDL         |DBUS<12>       |   13.507|
+btnRDL         |DBUS<13>       |   12.539|
+btnRDL         |DBUS<14>       |   12.947|
+btnRDL         |DBUS<15>       |   12.947|
+btnRDL         |nBHE           |   10.518|
+btnRDL         |nBLE           |   10.570|
+btnRDL         |nMREQ          |   11.008|
+btnRDL         |nRD            |   11.558|
+btnRDL         |nWR            |   12.251|
+btnRDWordU     |ABUS<0>        |   11.852|
+btnRDWordU     |ABUS<1>        |   11.265|
+btnRDWordU     |ABUS<2>        |   11.970|
+btnRDWordU     |nBHE           |    9.713|
+btnRDWordU     |nBLE           |    9.765|
+btnRDWordU     |nMREQ          |   10.243|
+btnRDWordU     |nRD            |   10.793|
+btnWRD         |ABUS<0>        |   10.788|
+btnWRD         |ABUS<1>        |   10.349|
+btnWRD         |ABUS<2>        |   10.759|
+btnWRD         |DBUS<0>        |   12.218|
+btnWRD         |DBUS<1>        |   11.695|
+btnWRD         |DBUS<2>        |   11.695|
+btnWRD         |DBUS<3>        |   11.902|
+btnWRD         |DBUS<4>        |   12.036|
+btnWRD         |DBUS<5>        |   12.364|
+btnWRD         |DBUS<6>        |   12.364|
+btnWRD         |DBUS<7>        |   11.952|
+btnWRD         |DBUS<8>        |   12.550|
+btnWRD         |DBUS<9>        |   12.550|
+btnWRD         |DBUS<10>       |   11.397|
+btnWRD         |DBUS<11>       |   11.658|
+btnWRD         |DBUS<12>       |   11.658|
+btnWRD         |DBUS<13>       |   10.690|
+btnWRD         |DBUS<14>       |   11.098|
+btnWRD         |DBUS<15>       |   11.098|
+btnWRD         |nBHE           |   10.078|
+btnWRD         |nBLE           |   10.130|
+btnWRD         |nMREQ          |   10.211|
+btnWRD         |nRD            |   10.761|
+btnWRD         |nWR            |   10.402|
+sw<0>          |DBUS<0>        |    7.726|
+sw<0>          |DBUS<4>        |    7.240|
+sw<0>          |DBUS<8>        |    7.880|
+sw<0>          |DBUS<12>       |    7.198|
+sw<1>          |DBUS<1>        |    7.015|
+sw<1>          |DBUS<5>        |    7.227|
+sw<1>          |DBUS<9>        |    7.107|
+sw<1>          |DBUS<13>       |    6.600|
+sw<2>          |DBUS<2>        |    7.700|
+sw<2>          |DBUS<6>        |    7.168|
+sw<2>          |DBUS<10>       |    7.624|
+sw<2>          |DBUS<14>       |    6.366|
+sw<3>          |DBUS<3>        |    6.942|
+sw<3>          |DBUS<7>        |    6.817|
+sw<3>          |DBUS<11>       |    7.652|
+sw<3>          |DBUS<15>       |    6.677|
+sw<4>          |nBHE           |   10.261|
+sw<4>          |nBLE           |   10.313|
+sw<5>          |ABUS<0>        |    9.745|
+sw<6>          |ABUS<1>        |    9.948|
+sw<7>          |ABUS<2>        |   10.853|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Jul 31 01:00:07 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 217 MB
+
+
+

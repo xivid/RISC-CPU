@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Administrator\CPU\RISC-CPU\N3RamTest\RamAccess.ncd
+OUTFILE=C:\Users\Administrator\CPU\RISC-CPU\N3RamTest\RamAccess.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Administrator\CPU\RISC-CPU\N3RamTest
+LICENSE=WebPack
+USER_INFO=__0_0_0
