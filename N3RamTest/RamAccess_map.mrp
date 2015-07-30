@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Jul 31 00:59:50 2015
+Mapped Date    : Fri Jul 31 01:27:15 2015
 
 Design Summary
 --------------
@@ -65,10 +65,12 @@ Specific Feature Utilization:
     Number used as BUFGs:                        2
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
-  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of ILOGIC2/ISERDES2s:                   3 out of     248    1%
+    Number used as ILOGIC2s:                     3
+    Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   8 out of     248    3%
-    Number used as OLOGIC2s:                     8
+  Number of OLOGIC2/OSERDES2s:                   5 out of     248    2%
+    Number used as OLOGIC2s:                     5
     Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
@@ -83,9 +85,9 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.31
+Average Fanout of Non-Clock Nets:                2.19
 
-Peak Memory Usage:  353 MB
+Peak Memory Usage:  352 MB
 Total REAL time to MAP completion:  4 secs 
 Total CPU time to MAP completion:   4 secs 
 
@@ -199,9 +201,9 @@ Section 6 - IOB Properties
 | btnWRD                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | led<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
-| led<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
-| led<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
-| led<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | led<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
 | led<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
 | led<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
@@ -220,9 +222,9 @@ Section 6 - IOB Properties
 | seg<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | seg<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | sw<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| sw<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| sw<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| sw<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      | ILATCH       |          |          |
+| sw<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      | ILATCH       |          |          |
+| sw<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      | ILATCH       |          |          |
 | sw<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | sw<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | sw<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |

@@ -368,7 +368,7 @@ Clock Information:
 Clock Signal                                             | Clock buffer(FF name)  | Load  |
 ---------------------------------------------------------+------------------------+-------+
 btnMEMR_btnRDWordU_OR_4_o(btnMEMR_btnRDWordU_OR_4_o1:O)  | NONE(*)(led_3)         | 8     |
-btnMEMR_btnRDWordU_OR_12_o(btnMEMR_btnRDWordU_OR_12_o1:O)| BUFG(*)(digit1_6)      | 28    |
+btnMEMR_btnRDWordU_OR_12_o(btnMEMR_btnRDWordU_OR_12_o1:O)| BUFG(*)(digit1_5)      | 28    |
 com1/js_15                                               | NONE(shift_0)          | 11    |
 clk                                                      | BUFGP                  | 16    |
 ---------------------------------------------------------+------------------------+-------+
@@ -481,10 +481,10 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'btnMEMR_btnRDWordU_OR_12_
 -------------------------------------------------------------------------
 Offset:              2.483ns (Levels of Logic = 2)
   Source:            DBUS<15> (PAD)
-  Destination:       digit1_6 (LATCH)
+  Destination:       digit1_5 (LATCH)
   Destination Clock: btnMEMR_btnRDWordU_OR_12_o falling
 
-  Data Path: DBUS<15> to digit1_6
+  Data Path: DBUS<15> to digit1_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -535,7 +535,7 @@ Offset:              3.648ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 100 / 24
+  Total number of paths / destination ports: 92 / 24
 -------------------------------------------------------------------------
 Delay:               6.211ns (Levels of Logic = 3)
   Source:            btnMEMR (PAD)
@@ -578,11 +578,11 @@ com1/js_15                |    2.772|         |         |         |
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.42 secs
+Total CPU time to Xst completion: 5.29 secs
  
 --> 
 
-Total memory usage is 259076 kilobytes
+Total memory usage is 260100 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   40 (   0 filtered)

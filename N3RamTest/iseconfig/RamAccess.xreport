@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-07-30T21:54:48</DateModified>
+  <DateModified>2015-07-31T01:26:36</DateModified>
   <ModuleName>RamAccess</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-07-31T01:13:04</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Administrator/CPU/RISC-CPU/N3RamTest/iseconfig/RamAccess.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Administrator/CPU/RISC-CPU/N3RamTest</ImplementationReportsDirectory>
   <DateInitialized>2015-07-30T21:54:48</DateInitialized>

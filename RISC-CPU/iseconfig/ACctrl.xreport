@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-07-30T21:46:11</DateModified>
+  <DateModified>2015-07-31T01:33:44</DateModified>
   <ModuleName>ACctrl</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/iseconfig/ACctrl.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU</ImplementationReportsDirectory>
-  <DateInitialized>2015-07-30T21:46:11</DateInitialized>
+  <DateInitialized>2015-07-31T01:18:31</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

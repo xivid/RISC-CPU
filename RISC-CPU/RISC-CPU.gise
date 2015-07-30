@@ -22,6 +22,18 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="RISC-CPU.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ACctrl.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ACctrl.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ACctrl.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ACctrl.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ACctrl.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ACctrl.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ACctrl.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ACctrl.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ACctrl_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ACctrl_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ACctrl_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ACctrl_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CLKctrl.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CLKctrl.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="CLKctrl.ngc"/>
@@ -115,12 +127,13 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tbACctrl_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tbACctrl_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tbACctrl_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tbEXctrl_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tbIFctrl_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tbMEMctrl_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tbWBctrl_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tbWBctrl_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tbWBctrl_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -134,83 +147,119 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438262426" xil_pn:in_ck="3684867093632287260" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1438262426">
+    <transform xil_pn:end_ts="1438288468" xil_pn:in_ck="-4006644579867164092" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1438288468">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="ACctrl.vhd"/>
       <outfile xil_pn:name="CLKctrl.vhd"/>
       <outfile xil_pn:name="EXctrl.vhd"/>
       <outfile xil_pn:name="IFctrl.vhd"/>
       <outfile xil_pn:name="MEMctrl.vhd"/>
       <outfile xil_pn:name="WBctrl.vhd"/>
+      <outfile xil_pn:name="tbACctrl.vhd"/>
       <outfile xil_pn:name="tbCLKctrl.vhd"/>
       <outfile xil_pn:name="tbEXctrl.vhd"/>
       <outfile xil_pn:name="tbIFctrl.vhd"/>
       <outfile xil_pn:name="tbMEMctrl.vhd"/>
       <outfile xil_pn:name="tbWBctrl.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1438262222" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8616850051880534010" xil_pn:start_ts="1438262222">
+    <transform xil_pn:end_ts="1438288480" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="58819412002217317" xil_pn:start_ts="1438288480">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438262222" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6128355587583948680" xil_pn:start_ts="1438262222">
+    <transform xil_pn:end_ts="1438288480" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4898329288348558365" xil_pn:start_ts="1438288480">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438262222" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-86448522513141314" xil_pn:start_ts="1438262222">
+    <transform xil_pn:end_ts="1438283922" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7332255181347170039" xil_pn:start_ts="1438283922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1438262426" xil_pn:in_ck="3684867093632287260" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1438262426">
+    <transform xil_pn:end_ts="1438288468" xil_pn:in_ck="-4006644579867164092" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1438288468">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="ACctrl.vhd"/>
       <outfile xil_pn:name="CLKctrl.vhd"/>
       <outfile xil_pn:name="EXctrl.vhd"/>
       <outfile xil_pn:name="IFctrl.vhd"/>
       <outfile xil_pn:name="MEMctrl.vhd"/>
       <outfile xil_pn:name="WBctrl.vhd"/>
+      <outfile xil_pn:name="tbACctrl.vhd"/>
       <outfile xil_pn:name="tbCLKctrl.vhd"/>
       <outfile xil_pn:name="tbEXctrl.vhd"/>
       <outfile xil_pn:name="tbIFctrl.vhd"/>
       <outfile xil_pn:name="tbMEMctrl.vhd"/>
       <outfile xil_pn:name="tbWBctrl.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1438262429" xil_pn:in_ck="3684867093632287260" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7873251884027981484" xil_pn:start_ts="1438262426">
+    <transform xil_pn:end_ts="1438288483" xil_pn:in_ck="-4006644579867164092" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2673702454941619498" xil_pn:start_ts="1438288480">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tbWBctrl_beh.prj"/>
-      <outfile xil_pn:name="tbWBctrl_isim_beh.exe"/>
+      <outfile xil_pn:name="tbACctrl_beh.prj"/>
+      <outfile xil_pn:name="tbACctrl_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1438262429" xil_pn:in_ck="-5079433382274749043" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8712474554888610913" xil_pn:start_ts="1438262429">
+    <transform xil_pn:end_ts="1438288483" xil_pn:in_ck="7986578258560778835" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1119382348920095913" xil_pn:start_ts="1438288483">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tbWBctrl_isim_beh.wdb"/>
+      <outfile xil_pn:name="tbACctrl_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1438186422" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1438186422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
+    <transform xil_pn:end_ts="1438280362" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8330148455500882362" xil_pn:start_ts="1438280362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438280362" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7332255181347170039" xil_pn:start_ts="1438280362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438280362" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1438280362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438280362" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2065344538916951740" xil_pn:start_ts="1438280362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438280362" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1438280362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438280362" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8577950707673148141" xil_pn:start_ts="1438280362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438288237" xil_pn:in_ck="-3143660454428581344" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6138666854373694622" xil_pn:start_ts="1438288229">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="ACctrl.lso"/>
+      <outfile xil_pn:name="ACctrl.ngc"/>
+      <outfile xil_pn:name="ACctrl.ngr"/>
+      <outfile xil_pn:name="ACctrl.prj"/>
+      <outfile xil_pn:name="ACctrl.stx"/>
+      <outfile xil_pn:name="ACctrl.syr"/>
+      <outfile xil_pn:name="ACctrl.xst"/>
+      <outfile xil_pn:name="ACctrl_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
     <transform xil_pn:end_ts="1438194566" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3640114151215764196" xil_pn:start_ts="1438194566">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
   </transforms>
 

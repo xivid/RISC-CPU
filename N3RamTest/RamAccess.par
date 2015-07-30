@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-RL-20150714JIFE::  Fri Jul 31 00:59:57 2015
+RL-20150714JIFE::  Fri Jul 31 01:27:22 2015
 
 par -w -intstyle ise -ol high -mt off RamAccess_map.ncd RamAccess.ncd
 RamAccess.pcf 
@@ -74,10 +74,12 @@ Specific Feature Utilization:
     Number used as BUFGs:                        2
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
-  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of ILOGIC2/ISERDES2s:                   3 out of     248    1%
+    Number used as ILOGIC2s:                     3
+    Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   8 out of     248    3%
-    Number used as OLOGIC2s:                     8
+  Number of OLOGIC2/OSERDES2s:                   5 out of     248    2%
+    Number used as OLOGIC2s:                     5
     Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
@@ -96,19 +98,19 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 3 secs 
-Finished initial Timing Analysis.  REAL time: 3 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 Starting Router
 
 
-Phase  1  : 370 unrouted;      REAL time: 3 secs 
+Phase  1  : 368 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 317 unrouted;      REAL time: 3 secs 
+Phase  2  : 315 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 94 unrouted;      REAL time: 3 secs 
+Phase  3  : 96 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 94 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 96 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: RamAccess.ncd with current fully routed design.
 
@@ -144,11 +146,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.679ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.468ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.727ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.523ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     2.161ns|     N/A|           0
-  1/js<15>                                  | HOLD        |     0.414ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     1.786ns|     N/A|           0
+  1/js<15>                                  | HOLD        |     0.284ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 

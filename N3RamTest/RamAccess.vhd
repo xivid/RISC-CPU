@@ -135,7 +135,7 @@ begin
 			nMREQ <= '0';
 			nWR <= '0';
 			nBHE <= not addr(0);
-			nBLE <= addr(0);
+			nBLE <= addr(0); -- DBUS高位写入高位或DBUS低位写入低位
 			nRD <= '1';
 			led <= data&data;
 		end if;

@@ -137,7 +137,7 @@ BEGIN
 		wait for CLK_period/2;
 		ALUOUT <= X"00";
 		wait for CLK_period/2;
-		--T2 <= '1';
+		-- T2 <= '1';
 		wait for CLK_period;
 		T3 <= '1';
 		wait for CLK_period;

@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jul 31 01:00:02 2015
+Fri Jul 31 01:27:26 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -225,7 +225,7 @@ Pinout by Pin Number:
 |M5        |           |IOBS     |IO_L31N_VREF_3               |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |M6        |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |M7        |           |         |VCCINT                       |         |           |              |          |         |           |         |1.2      |          |           |                |
-|M8        |sw<3>      |IOB      |IO_L40P_2                    |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|M8        |sw<3>      |IOB      |IO_L40P_2                    |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
 |M9        |           |         |VCCAUX                       |         |           |              |          |         |           |         |2.5      |          |           |                |
 |M10       |           |IOBM     |IO_L22P_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |M11       |led<4>     |IOB      |IO_L15P_2                    |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
@@ -298,7 +298,7 @@ Pinout by Pin Number:
 |T6        |           |IOBM     |IO_L45P_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |T7        |           |IOBS     |IO_L46N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |T8        |DBUS<15>   |IOB      |IO_L31N_GCLK30_D15_2         |BIDIR    |LVCMOS33   |2             |12        |SLOW     |           |NONE     |         |LOCATED   |NO         |NONE            |
-|T9        |sw<1>      |IOB      |IO_L32P_GCLK29_2             |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|T9        |sw<1>      |IOB      |IO_L32P_GCLK29_2             |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
 |T10       |sw<0>      |IOB      |IO_L29N_GCLK2_2              |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |T11       |led<7>     |IOB      |IO_L16N_VREF_2               |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |T12       |           |IOBM     |IO_L19P_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -322,7 +322,7 @@ Pinout by Pin Number:
 |U12       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |U13       |DBUS<11>   |IOB      |IO_L14P_D11_2                |BIDIR    |LVCMOS33   |2             |12        |SLOW     |           |NONE     |         |LOCATED   |NO         |NONE            |
 |U14       |           |         |VCCO_2                       |         |           |2             |          |         |           |         |3.30     |          |           |                |
-|U15       |led<2>     |IOB      |IO_L5P_2                     |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|U15       |led<2>     |IOB      |IO_L5P_2                     |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |U16       |led<0>     |IOB      |IO_L2P_CMPCLK_2              |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |U17       |seg<2>     |IOB      |IO_L52P_M1DQ14_1             |OUTPUT   |LVCMOS33   |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |U18       |seg<3>     |IOB      |IO_L52N_M1DQ15_1             |OUTPUT   |LVCMOS33   |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
@@ -334,14 +334,14 @@ Pinout by Pin Number:
 |V6        |           |IOBS     |IO_L45N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V7        |           |IOBS     |IO_L43N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V8        |sw<6>      |IOB      |IO_L41N_VREF_2               |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|V9        |sw<2>      |IOB      |IO_L32N_GCLK28_2             |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|V9        |sw<2>      |IOB      |IO_L32N_GCLK28_2             |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
 |V10       |clk        |IOB      |IO_L30N_GCLK0_USERCCLK_2     |INPUT    |LVCMOS33   |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |V11       |           |IOBS     |IO_L23N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V12       |           |IOBS     |IO_L19N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V13       |DBUS<12>   |IOB      |IO_L14N_D12_2                |BIDIR    |LVCMOS33   |2             |12        |SLOW     |           |NONE     |         |LOCATED   |NO         |NONE            |
 |V14       |DBUS<2>    |IOB      |IO_L12N_D2_MISO3_2           |BIDIR    |LVCMOS33   |2             |12        |SLOW     |           |NONE     |         |LOCATED   |NO         |NONE            |
-|V15       |led<3>     |IOB      |IO_L5N_2                     |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|V16       |led<1>     |IOB      |IO_L2N_CMPMOSI_2             |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|V15       |led<3>     |IOB      |IO_L5N_2                     |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|V16       |led<1>     |IOB      |IO_L2N_CMPMOSI_2             |OUTPUT   |LVCMOS33   |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |V17       |           |         |DONE_2                       |         |           |              |          |         |           |         |         |          |           |                |
 |V18       |           |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
