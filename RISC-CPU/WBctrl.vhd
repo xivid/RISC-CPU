@@ -32,12 +32,15 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity WBctrl is
-    Port ( RST : in  STD_LOGIC;
+    Port ( --RST : in  STD_LOGIC;
+			  CLK : in STD_LOGIC;
            Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
            PC : in  STD_LOGIC_VECTOR (15 downto 0);
            Addr : in  STD_LOGIC_VECTOR (15 downto 0);
            ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
            T3 : in  STD_LOGIC;
+			  OP : in STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
+			  AD1 : in STD_LOGIC_VECTOR (10 downto 8); -- IR(10 downto 8)
            Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
            Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
            Rupdate : out  STD_LOGIC;
@@ -48,7 +51,16 @@ end WBctrl;
 architecture Behavioral of WBctrl is
 
 begin
-
-
+	-- 提供回写内容
+	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
+				ALUOUT;
+	Raddr <= AD1;
+	PCnew <= PC + Addr;
+	
+	-- 回写控制信号
+	PCupdate <= '1' when (OP = "00000" or (OP = "00010" and ALUOUT = x"00")) and T3 = '1' and CLK = '0' else -- JMP / JZ(if A = 0)
+					'0';
+	Rupdate <= '1' when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") and T3 = '1' and CLK = '0' else -- IN, LDA, ADC, SBB, MVI, MOV
+				  '0';
 end Behavioral;
 

@@ -114,8 +114,9 @@ BEGIN
 		T0 <= '0';
 		wait for clk_period*2; -- T3 = '1'
 		PCnew <= X"0023";
+		wait for clk_period/2;
 		PCupdate <= '1';
-		wait for clk_period;
+		wait for clk_period/2;
 		RST <= '1';
       -- insert stimulus here 
 

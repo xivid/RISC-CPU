@@ -1,0 +1,391 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: WBctrl.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "WBctrl.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "WBctrl"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : WBctrl
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\WBctrl.vhd" into library work
+Parsing entity <WBctrl>.
+Parsing architecture <Behavioral> of entity <wbctrl>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <WBctrl> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <WBctrl>.
+    Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\WBctrl.vhd".
+    Found 16-bit adder for signal <PC[15]_Addr[15]_add_7_OUT> created at line 58.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 Latch(s).
+	inferred   1 Multiplexer(s).
+Unit <WBctrl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Latches                                              : 16
+ 1-bit latch                                           : 16
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <WBctrl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block WBctrl, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : WBctrl.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 63
+#      GND                         : 1
+#      LUT2                        : 17
+#      LUT3                        : 9
+#      LUT4                        : 1
+#      LUT5                        : 2
+#      LUT6                        : 2
+#      MUXCY                       : 15
+#      XORCY                       : 16
+# FlipFlops/Latches                : 16
+#      LD                          : 16
+# IO Buffers                       : 87
+#      IBUF                        : 58
+#      OBUF                        : 29
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   31  out of   9112     0%  
+    Number used as Logic:                31  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     31
+   Number with an unused Flip Flop:      31  out of     31   100%  
+   Number with an unused LUT:             0  out of     31     0%  
+   Number of fully used LUT-FF pairs:     0  out of     31     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          87
+ Number of bonded IOBs:                  87  out of    232    37%  
+    IOB Flip Flops/Latches:              16
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------+------------------------+-------+
+Clock Signal                                   | Clock buffer(FF name)  | Load  |
+-----------------------------------------------+------------------------+-------+
+OP[15]_OP[15]_OR_13_o(OP[15]_OP[15]_OR_13_o3:O)| NONE(*)(PCnew_14)      | 16    |
+-----------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.764ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: 7.935ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'OP[15]_OP[15]_OR_13_o'
+  Total number of paths / destination ports: 392 / 16
+-------------------------------------------------------------------------
+Offset:              2.764ns (Levels of Logic = 18)
+  Source:            PC<0> (PAD)
+  Destination:       PCnew_15 (LATCH)
+  Destination Clock: OP[15]_OP[15]_OR_13_o falling
+
+  Data Path: PC<0> to PCnew_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.684  PC_0_IBUF (PC_0_IBUF)
+     LUT2:I0->O            1   0.203   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_lut<0> (Madd_PC[15]_Addr[15]_add_7_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<0> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<1> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<2> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<3> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<4> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<5> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<6> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<7> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<8> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<9> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<10> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<11> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<12> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<13> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<13>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<14> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<14>)
+     XORCY:CI->O           1   0.180   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_xor<15> (PC[15]_Addr[15]_add_7_OUT<15>)
+     LD:D                      0.037          PCnew_15
+    ----------------------------------------
+    Total                      2.764ns (2.080ns logic, 0.684ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'OP[15]_OP[15]_OR_13_o'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            PCnew_15 (LATCH)
+  Destination:       PCnew<15> (PAD)
+  Source Clock:      OP[15]_OP[15]_OR_13_o falling
+
+  Data Path: PCnew_15 to PCnew<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  PCnew_15 (PCnew_15)
+     OBUF:I->O                 2.571          PCnew_15_OBUF (PCnew<15>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 81 / 13
+-------------------------------------------------------------------------
+Delay:               7.935ns (Levels of Logic = 5)
+  Source:            OP<14> (PAD)
+  Destination:       PCupdate (PAD)
+
+  Data Path: OP<14> to PCupdate
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.898  OP_14_IBUF (OP_14_IBUF)
+     LUT4:I0->O            1   0.203   0.924  OP[15]_OP[15]_OR_13_o1 (OP[15]_OP[15]_OR_13_o1)
+     LUT5:I0->O           17   0.203   1.132  OP[15]_OP[15]_OR_13_o3 (OP[15]_OP[15]_OR_13_o)
+     LUT3:I1->O            1   0.203   0.579  PCupdate1 (PCupdate_OBUF)
+     OBUF:I->O                 2.571          PCupdate_OBUF (PCupdate)
+    ----------------------------------------
+    Total                      7.935ns (4.402ns logic, 3.533ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.44 secs
+ 
+--> 
+
+Total memory usage is 257348 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
