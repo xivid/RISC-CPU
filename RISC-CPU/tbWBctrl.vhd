@@ -40,7 +40,7 @@ ARCHITECTURE behavior OF tbWBctrl IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT WBctrl
-    PORT(
+    PORT(RST : IN std_logic;
          CLK : IN  std_logic;
          Rtemp : IN  std_logic_vector(7 downto 0);
          PC : IN  std_logic_vector(15 downto 0);
@@ -59,6 +59,7 @@ ARCHITECTURE behavior OF tbWBctrl IS
     
 	signal IR : std_logic_vector(15 downto 0) := (others => '0');
    --Inputs
+   signal RST : std_logic := '1';
    signal CLK : std_logic := '0';
    signal Rtemp : std_logic_vector(7 downto 0) := (others => '0');
    signal PC : std_logic_vector(15 downto 0) := (others => '0');
@@ -84,6 +85,7 @@ BEGIN
 	AD1 <= IR(10 downto 8);
 	-- Instantiate the Unit Under Test (UUT)
    uut: WBctrl PORT MAP (
+			 RST => RST,
           CLK => CLK,
           Rtemp => Rtemp,
           PC => PC,

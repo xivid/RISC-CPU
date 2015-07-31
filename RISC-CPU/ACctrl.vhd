@@ -60,7 +60,7 @@ begin
 
 	-- 形成访存/访IO的地址
 	address <= Addr when (nMEM = '0' or nIO = '0') else
-				  PC when RDIR = '1';
+				  PC when rising_edge(RDIR);
 	
 	-- 发访存控制信号
 --	nMREQ <= (not RDIR) and nMEM;
@@ -90,7 +90,7 @@ begin
 			  DBUS when (RDIR = '1' or (RD = '1' and nMEM = '0'));
 	Rtemp <= data(7 downto 0) when ((nMEM = '0' and address(0) = '0') or (nIO = '0' and RD = '1')) else 
 				data(15 downto 8) when (nMEM = '0' and address(0) = '1');
-	IR <= data when RDIR = '1';
+	IR <= data;
 	
 -- Solution B	
 --	process (RDIR, WR, RD, nIO, nMEM, address, data)

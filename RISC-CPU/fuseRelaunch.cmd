@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbACctrl_isim_beh.exe" -prj "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbACctrl_beh.prj" "work.tbACctrl" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU_isim_beh.exe" -prj "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU_beh.prj" "work.tbCPU" 

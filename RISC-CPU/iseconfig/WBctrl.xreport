@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-07-31T14:20:48</DateModified>
+  <DateModified>2015-07-31T20:34:07</DateModified>
   <ModuleName>CPU</ModuleName>
-  <SummaryTimeStamp>2015-07-31T13:57:48</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-07-31T18:18:19</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/iseconfig/WBctrl.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU</ImplementationReportsDirectory>
   <DateInitialized>2015-07-31T13:04:54</DateInitialized>

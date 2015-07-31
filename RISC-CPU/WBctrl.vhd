@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity WBctrl is
-    Port ( --RST : in  STD_LOGIC;
+    Port ( RST : in  STD_LOGIC;
 			  CLK : in STD_LOGIC;
            Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
            PC : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -55,12 +55,13 @@ begin
 	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
 				ALUOUT;
 	Raddr <= AD1;
-	PCnew <= PC + Addr when rising_edge(T3);
+	PCnew <= x"0000" when RST = '1' else
+				PC + Addr when rising_edge(T3);
 	
 	-- »ØÐ´¿ØÖÆÐÅºÅ
 	--JMP <= '1' when OP = "00000" else '0';
 	--JZ  <= '1' when OP = "00010" and ALUOUT = x"00" else '0';
-	PCupdate <= (T3 and CLK) when ((OP = "00000" or (OP = "00010" and ALUOUT = X"00"))) else '0'; -- and falling_edge(clk));
-	Rupdate <= (T3 and CLK) when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") else '0'; -- and falling_edge(CLK); -- IN, LDA, ADC, SBB, MVI, MOV
+	PCupdate <= (T3 and (not CLK)) when ((OP = "00000" or (OP = "00010" and ALUOUT = X"00"))) else '0'; -- and falling_edge(clk));
+	Rupdate <= (T3 and (not CLK)) when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") else '0'; -- and falling_edge(CLK); -- IN, LDA, ADC, SBB, MVI, MOV
 end Behavioral;
 

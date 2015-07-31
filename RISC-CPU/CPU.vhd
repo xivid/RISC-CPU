@@ -48,7 +48,6 @@ entity CPU is
            nPWR : out  STD_LOGIC;
 			  btnU : in STD_LOGIC;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
-			  led : out  STD_LOGIC_VECTOR (7 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0));
 end CPU;
 
@@ -106,6 +105,7 @@ architecture Behavioral of CPU is
 	--///////////////////////////////////////////////
 	COMPONENT WBctrl
 	PORT(
+		RST : IN std_logic;
 		CLK : IN  std_logic;
 		Rtemp : IN  std_logic_vector(7 downto 0);
 		PC : IN  std_logic_vector(15 downto 0);
@@ -243,6 +243,7 @@ begin
           WR => WR
         );
    comWB: WBctrl PORT MAP (
+			 RST => RST,
           CLK => CLK,
           Rtemp => Rtemp,
           PC => PC,
@@ -300,11 +301,10 @@ begin
 		end if;
 	end process;
 	
-	digit1 <= (not T(0))&conv_seg(IR(15 downto 12));
-	digit2 <= (not T(1))&conv_seg(IR(11 downto 8));
-	digit3 <= (not T(2))&conv_seg(IR(7 downto 4));
-	digit4 <= (not T(3))&conv_seg(IR(3 downto 0));
+	digit1 <= (not T(0))&conv_seg(IR(15 downto 12)) when btnU = '0' else (not T(0))&conv_seg(PC(15 downto 12));
+	digit2 <= (not T(1))&conv_seg(IR(11 downto 8)) when btnU = '0' else (not T(1))&conv_seg(PC(11 downto 8));
+	digit3 <= (not T(2))&conv_seg(IR(7 downto 4)) when btnU = '0' else (not T(2))&conv_seg(PC(7 downto 4));
+	digit4 <= (not T(3))&conv_seg(IR(3 downto 0)) when btnU = '0' else (not T(3))&conv_seg(PC(3 downto 0));
 	
-	led <= PC(7 downto 0) when btnU = '1' else PC(15 downto 8);
 end Behavioral;
 

@@ -1,1 +1,8 @@
 work	"ACctrl.vhd"
+work	"CLKctrl.vhd"
+work	"CPU.vhd"
+work	"EXctrl.vhd"
+work	"IFctrl.vhd"
+work	"MEMctrl.vhd"
+work	"WBctrl.vhd"
+work	"fp.vhd"
