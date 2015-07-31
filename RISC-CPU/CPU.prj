@@ -1,8 +1,0 @@
-vhdl work "WBctrl.vhd"
-vhdl work "MEMctrl.vhd"
-vhdl work "IFctrl.vhd"
-vhdl work "fp.vhd"
-vhdl work "EXctrl.vhd"
-vhdl work "CLKctrl.vhd"
-vhdl work "ACctrl.vhd"
-vhdl work "CPU.vhd"
