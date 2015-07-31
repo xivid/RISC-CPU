@@ -62,19 +62,24 @@ begin
 	address <= PC when RDIR = '1' else Addr;
 	
 	-- 发访存控制信号
-	nMREQ <= (not RDIR) and nMEM;
-	nBLE <= (not RDIR) and address(0);
-	nBHE <= RDIR nor address(0); -- neither read word nor read upper byte -> 1
-	nRD <= (RDIR nor RD) or nMEM;
-	nWR <= (not WR) or nMEM; -- RDIR or?
+--	nMREQ <= (not RDIR) and nMEM;
+--	nBLE <= (not RDIR) and address(0);
+--	nBHE <= RDIR nor address(0); -- neither read word nor read upper byte -> 1
+--	nRD <= (RDIR nor RD) or nMEM;
+--	nWR <= (not WR) or nMEM; -- RDIR or?
+	nMREQ <= '0' when (nMEM = '0' or RDIR = '1') else '1';
+	nBLE <= '0' when ((nMEM = '0' and (RD = '1' or WR = '1') and address(0) = '0') or RDIR = '1') else '1';
+	nBHE <= '0' when ((nMEM = '0' and (RD = '1' or WR = '1') and address(0) = '1') or RDIR = '1') else '1';
+	nRD <= '0' when ((nMEM = '0' and RD = '1') or RDIR = '1') else '1';
+	nWR <= '0' when (nMEM = '0' and WR = '1') else '1';
 	ABUS(22 downto 15) <= (others => '0');
 	ABUS(14 downto 0) <= address(15 downto 1);
 	DBUS <= data when (WR = '1' and nMEM = '0') else (others => 'Z');
 	
 	-- 发访IO控制信号
 	nPREQ <= nIO;
-	nPRD <= (not RD) or nIO;
-	nPWR <= (not WR) or nIO;
+	nPRD <= (not RD) or nIO; -- RD = '1' and nIO = '0'
+	nPWR <= (not WR) or nIO; -- WR = '1' and nIO = '0'
 	IOAD <= address(1 downto 0);
 	IODB <= data(7 downto 0) when (WR = '1' and nIO = '0') else (others => 'Z');
 	

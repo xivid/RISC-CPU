@@ -320,8 +320,8 @@ BEGIN
 		-- T2 <= '1';
 		wait for CLK_period;
 		T3 <= '1';
-		wait for CLK_period/2;
 		PC <= X"0020";
+		wait for CLK_period/2;
 		wait for CLK_period/2;
 		T3 <= '0';
 
@@ -350,8 +350,8 @@ BEGIN
 		-- T2 <= '1';
 		wait for CLK_period;
 		T3 <= '1';
-		wait for CLK_period/2;
 		PC <= X"0022";
+		wait for CLK_period/2;
 		wait for CLK_period/2;
 		T3 <= '0';
 		
@@ -364,8 +364,8 @@ BEGIN
 		-- T2 <= '1';
 		wait for CLK_period;
 		T3 <= '1';
-		wait for CLK_period/2;
 		PC <= X"0022";
+		wait for CLK_period/2;
 		wait for CLK_period/2;
 		T3 <= '0';
 		

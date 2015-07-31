@@ -30,8 +30,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity CLKctrl is
-    Port ( clk : in  STD_LOGIC;
-           rst : in  STD_LOGIC;
+    Port ( CLK : in  STD_LOGIC;
+           RST : in  STD_LOGIC;
            T : out  STD_LOGIC_VECTOR (0 to 3));
 end CLKctrl;
  

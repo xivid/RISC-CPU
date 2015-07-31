@@ -41,39 +41,39 @@ ARCHITECTURE behavior OF tbCLKctrl IS
  
     COMPONENT CLKctrl
     PORT(
-         clk : IN  std_logic;
-         rst : IN  std_logic;
-         T : OUT  std_logic_vector(3 downto 0)
+         CLK : IN  std_logic;
+         RST : IN  std_logic;
+         T : OUT  std_logic_vector(0 to 3)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal clk : std_logic := '0';
-   signal rst : std_logic := '1';
+   signal CLK : std_logic := '0';
+   signal RST : std_logic := '1';
 
  	--Outputs
-   signal T : std_logic_vector(3 downto 0);
+   signal T : std_logic_vector(0 to 3);
 
    -- Clock period definitions
-   constant clk_period : time := 10 ns;
+   constant CLK_period : time := 10 ns;
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: CLKctrl PORT MAP (
-          clk => clk,
-          rst => rst,
+          CLK => CLK,
+          RST => RST,
           T => T
         );
 
    -- Clock process definitions
    clk_process :process
    begin
-		clk <= '0';
-		wait for clk_period/2;
-		clk <= '1';
-		wait for clk_period/2;
+		CLK <= '0';
+		wait for CLK_period/2;
+		CLK <= '1';
+		wait for CLK_period/2;
    end process;
  
 
@@ -82,9 +82,9 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
       wait for 100 ns;	
-		rst <= '0';
-		wait for clk_period*10;
-		rst <= '1';
+		RST <= '0';
+		wait for CLK_period*10;
+		RST <= '1';
 
       -- insert stimulus here 
 

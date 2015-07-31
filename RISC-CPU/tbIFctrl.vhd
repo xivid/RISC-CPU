@@ -48,7 +48,7 @@ ARCHITECTURE behavior OF tbIFctrl IS
          PCupdate : IN  std_logic;
          IRdata : IN  std_logic_vector(15 downto 0);
          PCout : OUT  std_logic_vector(15 downto 0);
-         RDword : OUT  std_logic;
+         RDIR : OUT  std_logic;
          IRout : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
@@ -64,7 +64,7 @@ ARCHITECTURE behavior OF tbIFctrl IS
 
  	--Outputs
    signal PCout : std_logic_vector(15 downto 0);
-   signal RDword : std_logic;
+   signal RDIR : std_logic;
    signal IRout : std_logic_vector(15 downto 0);
 
    -- Clock period definitions
@@ -81,7 +81,7 @@ BEGIN
           PCupdate => PCupdate,
           IRdata => IRdata,
           PCout => PCout,
-          RDword => RDword,
+          RDIR => RDIR,
           IRout => IRout
         );
 
@@ -118,7 +118,7 @@ BEGIN
 		PCupdate <= '1';
 		wait for clk_period/2;
 		RST <= '1';
-		PCnew <= X"0045";
+		PCnew <= X"0056";
 		wait for clk_period/2;
 		PCupdate <= '1';
 		wait for clk_period/2;

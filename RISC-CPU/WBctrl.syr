@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: WBctrl.prj
 
@@ -121,27 +121,12 @@ Elaborating entity <WBctrl> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <WBctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\WBctrl.vhd".
-    Found 16-bit adder for signal <PC[15]_Addr[15]_add_7_OUT> created at line 58.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PCnew<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit register for signal <PCnew>.
+    Found 16-bit adder for signal <PC[15]_Addr[15]_add_4_OUT> created at line 58.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  16 Latch(s).
-	inferred   1 Multiplexer(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
 Unit <WBctrl> synthesized.
 
 =========================================================================
@@ -150,9 +135,10 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  16-bit adder                                          : 1
-# Latches                                              : 16
- 1-bit latch                                           : 16
-# Multiplexers                                         : 1
+# Registers                                            : 1
+ 16-bit register                                       : 1
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
@@ -168,7 +154,10 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  16-bit adder                                          : 1
-# Multiplexers                                         : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
@@ -188,7 +177,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
 =========================================================================
 
 =========================================================================
@@ -210,17 +202,18 @@ Top Level Output File Name         : WBctrl.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 63
+# BELS                             : 62
 #      GND                         : 1
-#      LUT2                        : 17
+#      LUT2                        : 16
 #      LUT3                        : 9
-#      LUT4                        : 1
-#      LUT5                        : 2
+#      LUT5                        : 3
 #      LUT6                        : 2
 #      MUXCY                       : 15
 #      XORCY                       : 16
 # FlipFlops/Latches                : 16
-#      LD                          : 16
+#      FD                          : 16
+# Clock Buffers                    : 1
+#      BUFG                        : 1
 # IO Buffers                       : 87
 #      IBUF                        : 58
 #      OBUF                        : 29
@@ -232,14 +225,14 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   31  out of   9112     0%  
-    Number used as Logic:                31  out of   9112     0%  
+ Number of Slice LUTs:                   30  out of   9112     0%  
+    Number used as Logic:                30  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     31
-   Number with an unused Flip Flop:      31  out of     31   100%  
-   Number with an unused LUT:             0  out of     31     0%  
-   Number of fully used LUT-FF pairs:     0  out of     31     0%  
+ Number of LUT Flip Flop pairs used:     30
+   Number with an unused Flip Flop:      30  out of     30   100%  
+   Number with an unused LUT:             0  out of     30     0%  
+   Number of fully used LUT-FF pairs:     0  out of     30     0%  
    Number of unique control sets:         1
 
 IO Utilization: 
@@ -248,6 +241,7 @@ IO Utilization:
     IOB Flip Flops/Latches:              16
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -267,15 +261,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------+------------------------+-------+
-Clock Signal                                   | Clock buffer(FF name)  | Load  |
------------------------------------------------+------------------------+-------+
-OP[15]_OP[15]_OR_13_o(OP[15]_OP[15]_OR_13_o3:O)| NONE(*)(PCnew_14)      | 16    |
------------------------------------------------+------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+T3                                 | IBUF+BUFG              | 16    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -286,89 +276,88 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 2.764ns
-   Maximum output required time after clock: 3.648ns
-   Maximum combinational path delay: 7.935ns
+   Minimum input arrival time before clock: 2.829ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: 6.806ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'OP[15]_OP[15]_OR_13_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'T3'
   Total number of paths / destination ports: 392 / 16
 -------------------------------------------------------------------------
-Offset:              2.764ns (Levels of Logic = 18)
+Offset:              2.829ns (Levels of Logic = 18)
   Source:            PC<0> (PAD)
-  Destination:       PCnew_15 (LATCH)
-  Destination Clock: OP[15]_OP[15]_OR_13_o falling
+  Destination:       PC[15]_dff_5_15 (FF)
+  Destination Clock: T3 rising
 
-  Data Path: PC<0> to PCnew_15
+  Data Path: PC<0> to PC[15]_dff_5_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.222   0.684  PC_0_IBUF (PC_0_IBUF)
-     LUT2:I0->O            1   0.203   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_lut<0> (Madd_PC[15]_Addr[15]_add_7_OUT_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<0> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<1> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<2> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<3> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<4> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<5> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<6> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<7> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<8> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<9> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<10> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<11> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<12> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<13> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<13>)
-     MUXCY:CI->O           0   0.019   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_cy<14> (Madd_PC[15]_Addr[15]_add_7_OUT_cy<14>)
-     XORCY:CI->O           1   0.180   0.000  Madd_PC[15]_Addr[15]_add_7_OUT_xor<15> (PC[15]_Addr[15]_add_7_OUT<15>)
-     LD:D                      0.037          PCnew_15
+     LUT2:I0->O            1   0.203   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_lut<0> (Madd_PC[15]_Addr[15]_add_4_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<0> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<1> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<2> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<3> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<4> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<5> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<6> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<7> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<8> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<9> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<10> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<11> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<12> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<13> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<13>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_cy<14> (Madd_PC[15]_Addr[15]_add_4_OUT_cy<14>)
+     XORCY:CI->O           1   0.180   0.000  Madd_PC[15]_Addr[15]_add_4_OUT_xor<15> (PC[15]_Addr[15]_add_4_OUT<15>)
+     FD:D                      0.102          PC[15]_dff_5_15
     ----------------------------------------
-    Total                      2.764ns (2.080ns logic, 0.684ns route)
-                                       (75.3% logic, 24.7% route)
+    Total                      2.829ns (2.145ns logic, 0.684ns route)
+                                       (75.8% logic, 24.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'OP[15]_OP[15]_OR_13_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'T3'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              3.648ns (Levels of Logic = 1)
-  Source:            PCnew_15 (LATCH)
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            PC[15]_dff_5_15 (FF)
   Destination:       PCnew<15> (PAD)
-  Source Clock:      OP[15]_OP[15]_OR_13_o falling
+  Source Clock:      T3 rising
 
-  Data Path: PCnew_15 to PCnew<15>
+  Data Path: PC[15]_dff_5_15 to PCnew<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  PCnew_15 (PCnew_15)
+     FD:C->Q               1   0.447   0.579  PC[15]_dff_5_15 (PC[15]_dff_5_15)
      OBUF:I->O                 2.571          PCnew_15_OBUF (PCnew<15>)
     ----------------------------------------
-    Total                      3.648ns (3.069ns logic, 0.579ns route)
-                                       (84.1% logic, 15.9% route)
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 81 / 13
 -------------------------------------------------------------------------
-Delay:               7.935ns (Levels of Logic = 5)
-  Source:            OP<14> (PAD)
-  Destination:       PCupdate (PAD)
+Delay:               6.806ns (Levels of Logic = 4)
+  Source:            OP<11> (PAD)
+  Destination:       Rdata<7> (PAD)
 
-  Data Path: OP<14> to PCupdate
+  Data Path: OP<11> to Rdata<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.898  OP_14_IBUF (OP_14_IBUF)
-     LUT4:I0->O            1   0.203   0.924  OP[15]_OP[15]_OR_13_o1 (OP[15]_OP[15]_OR_13_o1)
-     LUT5:I0->O           17   0.203   1.132  OP[15]_OP[15]_OR_13_o3 (OP[15]_OP[15]_OR_13_o)
-     LUT3:I1->O            1   0.203   0.579  PCupdate1 (PCupdate_OBUF)
-     OBUF:I->O                 2.571          PCupdate_OBUF (PCupdate)
+     IBUF:I->O             3   1.222   0.995  OP_11_IBUF (OP_11_IBUF)
+     LUT5:I0->O            8   0.203   1.031  OP[15]_OP[15]_OR_5_o1 (OP[15]_OP[15]_OR_5_o)
+     LUT3:I0->O            1   0.205   0.579  Mmux_Rdata81 (Rdata_7_OBUF)
+     OBUF:I->O                 2.571          Rdata_7_OBUF (Rdata<7>)
     ----------------------------------------
-    Total                      7.935ns (4.402ns logic, 3.533ns route)
-                                       (55.5% logic, 44.5% route)
+    Total                      6.806ns (4.201ns logic, 2.605ns route)
+                                       (61.7% logic, 38.3% route)
 
 =========================================================================
 
@@ -378,14 +367,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.44 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.81 secs
  
 --> 
 
-Total memory usage is 257348 kilobytes
+Total memory usage is 257604 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

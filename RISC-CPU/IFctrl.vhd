@@ -41,7 +41,7 @@ entity IFctrl is
            PCupdate : in  STD_LOGIC;
            IRdata : in  STD_LOGIC_VECTOR (15 downto 0); -- 从访存控制模块发来的指令字
            PCout : out  STD_LOGIC_VECTOR (15 downto 0); -- 发送指令地址
-           RDword : out  STD_LOGIC; -- 高电平令访存控制模块读指令字
+           RDIR : out  STD_LOGIC; -- 高电平令访存控制模块读指令字
            IRout : out  STD_LOGIC_VECTOR (15 downto 0)); -- 指令送往其他模块
 end IFctrl;
 
@@ -50,45 +50,45 @@ architecture Behavioral of IFctrl is
 	signal nextPC : STD_LOGIC_VECTOR(15 downto 0) := X"0000";
 	
 begin
--- -- Solution A
---	-- 形成下地址
---	nextPC <= PC + "1" when T0 = '1' and CLK = '1';
---	
---	-- 前半拍读指令字
---	RDword <= '1' when (T0 = '1' and CLK = '1') else 
---				 '0';
---	IR <= IRdata when (T0 = '1' and CLK = '1');
---	
---	-- 复位、回写、后半拍加1
---	PC <= X"0000" when RST = '1' else
---			PCnew when rising_edge(PCupdate) else
---			nextPC when T0 = '1' and CLK = '0';
---	
---	-- 输出PC和IR
---	PCout <= PC;
---	IRout <= IR;
-
--- Solution B
-	RDword <= T0 and CLK; -- 控制读指令
+ -- Solution A
+	-- 形成下地址
+	nextPC <= PC + 2 when T0 = '1' and CLK = '1';
 	
-	process (T0, CLK, IRdata, PCupdate, PCnew, RST)
-	begin
-		if RST = '1' then
-			PC <= X"0000";
-		else
-			if T0 = '1' then
-				if CLK'event and CLK = '0' then
-					IR <= IRdata; -- RDword = '0'时访存控制输出不更新
-					PC <= PC + 2;
-				end if;
-			end if;
-			if rising_edge(PCupdate) then
-				PC <= PCnew;
-			end if;
-		end if;
-	end process;
+	-- 前半拍读指令字
+	RDIR <= '1' when (T0 = '1' and CLK = '1') else 
+				 '0';
+	IR <= IRdata when (T0 = '1' and CLK = '1');
 	
+	-- 复位、回写、后半拍加1
+	PC <= X"0000" when RST = '1' else
+			PCnew when PCupdate = '1' else
+			nextPC when T0 = '1' and CLK = '0';
+	
+	-- 输出PC和IR
 	PCout <= PC;
 	IRout <= IR;
+
+---- Solution B
+--	RDIR <= T0 and CLK; -- 控制读指令
+--	
+--	process (T0, CLK, IRdata, PCupdate, PCnew, RST)
+--	begin
+--		if RST = '1' then
+--			PC <= X"0000";
+--		else
+--			if T0 = '1' then
+--				if CLK'event and CLK = '0' then
+--					IR <= IRdata; -- RDIR = '0'时访存控制输出不更新
+--					PC <= PC + 2;
+--				end if;
+--			end if;
+--			if rising_edge(PCupdate) then
+--				PC <= PCnew;
+--			end if;
+--		end if;
+--	end process;
+--	
+--	PCout <= PC;
+--	IRout <= IR;
 end Behavioral;
 

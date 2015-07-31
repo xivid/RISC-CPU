@@ -49,18 +49,18 @@ entity WBctrl is
 end WBctrl;
 
 architecture Behavioral of WBctrl is
-
+	--signal JMP, JZ : std_logic;
 begin
 	-- 提供回写内容
 	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
 				ALUOUT;
 	Raddr <= AD1;
-	PCnew <= PC + Addr;
+	PCnew <= PC + Addr when rising_edge(T3);
 	
 	-- 回写控制信号
-	PCupdate <= '1' when (OP = "00000" or (OP = "00010" and ALUOUT = x"00")) and T3 = '1' and CLK = '0' else -- JMP / JZ(if A = 0)
-					'0';
-	Rupdate <= '1' when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") and T3 = '1' and CLK = '0' else -- IN, LDA, ADC, SBB, MVI, MOV
-				  '0';
+	--JMP <= '1' when OP = "00000" else '0';
+	--JZ  <= '1' when OP = "00010" and ALUOUT = x"00" else '0';
+	PCupdate <= (T3 and CLK) when ((OP = "00000" or (OP = "00010" and ALUOUT = X"00"))) else '0'; -- and falling_edge(clk));
+	Rupdate <= (T3 and CLK) when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") else '0'; -- and falling_edge(CLK); -- IN, LDA, ADC, SBB, MVI, MOV
 end Behavioral;
 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: IFctrl.prj
 
@@ -190,8 +190,8 @@ Top Level Output File Name         : IFctrl.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2
-#      LUT2                        : 2
+# BELS                             : 1
+#      LUT2                        : 1
 # FlipFlops/Latches                : 32
 #      FDC                         : 16
 #      FDE_1                       : 16
@@ -209,14 +209,14 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    2  out of   9112     0%  
-    Number used as Logic:                 2  out of   9112     0%  
+ Number of Slice LUTs:                    1  out of   9112     0%  
+    Number used as Logic:                 1  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      2
-   Number with an unused Flip Flop:       2  out of      2   100%  
-   Number with an unused LUT:             0  out of      2     0%  
-   Number of fully used LUT-FF pairs:     0  out of      2     0%  
+ Number of LUT Flip Flop pairs used:      1
+   Number with an unused Flip Flop:       1  out of      1   100%  
+   Number with an unused LUT:             0  out of      1     0%  
+   Number of fully used LUT-FF pairs:     0  out of      1     0%  
    Number of unique control sets:         2
 
 IO Utilization: 
@@ -261,9 +261,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 3.883ns
+   Minimum input arrival time before clock: 2.656ns
    Maximum output required time after clock: 3.597ns
-   Maximum combinational path delay: 5.296ns
+   Maximum combinational path delay: 5.707ns
 
 Timing Details:
 ---------------
@@ -273,55 +273,54 @@ All values displayed in nanoseconds (ns)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'PCupdate'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              2.679ns (Levels of Logic = 1)
+Offset:              2.656ns (Levels of Logic = 1)
   Source:            RST (PAD)
-  Destination:       PC_0 (FF)
+  Destination:       PCnew[15]_dff_5_0 (FF)
   Destination Clock: PCupdate rising
 
-  Data Path: RST to PC_0
+  Data Path: RST to PCnew[15]_dff_5_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.222   1.027  RST_IBUF (RST_IBUF)
-     FDC:CLR                   0.430          PC_0
+     IBUF:I->O            16   1.222   1.004  RST_IBUF (RST_IBUF)
+     FDC:CLR                   0.430          PCnew[15]_dff_5_0
     ----------------------------------------
-    Total                      2.679ns (1.652ns logic, 1.027ns route)
-                                       (61.7% logic, 38.3% route)
+    Total                      2.656ns (1.652ns logic, 1.004ns route)
+                                       (62.2% logic, 37.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 48 / 32
+  Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              3.883ns (Levels of Logic = 2)
-  Source:            RST (PAD)
-  Destination:       IR_0 (FF)
+Offset:              2.571ns (Levels of Logic = 1)
+  Source:            T0 (PAD)
+  Destination:       IR[15]_dff_3_0 (FF)
   Destination Clock: CLK falling
 
-  Data Path: RST to IR_0
+  Data Path: T0 to IR[15]_dff_3_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.222   1.132  RST_IBUF (RST_IBUF)
-     LUT2:I0->O           16   0.203   1.004  _n0020_inv1 (_n0020_inv)
-     FDE_1:CE                  0.322          IR_0
+     IBUF:I->O            17   1.222   1.027  T0_IBUF (T0_IBUF)
+     FDE_1:CE                  0.322          IR[15]_dff_3_0
     ----------------------------------------
-    Total                      3.883ns (1.747ns logic, 2.136ns route)
-                                       (45.0% logic, 55.0% route)
+    Total                      2.571ns (1.544ns logic, 1.027ns route)
+                                       (60.1% logic, 39.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'PCupdate'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
 Offset:              3.597ns (Levels of Logic = 1)
-  Source:            PC_15 (FF)
+  Source:            PCnew[15]_dff_5_15 (FF)
   Destination:       PCout<15> (PAD)
   Source Clock:      PCupdate rising
 
-  Data Path: PC_15 to PCout<15>
+  Data Path: PCnew[15]_dff_5_15 to PCout<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.447   0.579  PC_15 (PC_15)
+     FDC:C->Q              1   0.447   0.579  PCnew[15]_dff_5_15 (PCnew[15]_dff_5_15)
      OBUF:I->O                 2.571          PCout_15_OBUF (PCout<15>)
     ----------------------------------------
     Total                      3.597ns (3.018ns logic, 0.579ns route)
@@ -332,15 +331,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
 Offset:              3.597ns (Levels of Logic = 1)
-  Source:            IR_15 (FF)
+  Source:            IR[15]_dff_3_15 (FF)
   Destination:       IRout<15> (PAD)
   Source Clock:      CLK falling
 
-  Data Path: IR_15 to IRout<15>
+  Data Path: IR[15]_dff_3_15 to IRout<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            1   0.447   0.579  IR_15 (IR_15)
+     FDE_1:C->Q            1   0.447   0.579  IR[15]_dff_3_15 (IR[15]_dff_3_15)
      OBUF:I->O                 2.571          IRout_15_OBUF (IRout<15>)
     ----------------------------------------
     Total                      3.597ns (3.018ns logic, 0.579ns route)
@@ -350,20 +349,20 @@ Offset:              3.597ns (Levels of Logic = 1)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Delay:               5.296ns (Levels of Logic = 3)
+Delay:               5.707ns (Levels of Logic = 3)
   Source:            T0 (PAD)
-  Destination:       RDword (PAD)
+  Destination:       RDIR (PAD)
 
-  Data Path: T0 to RDword
+  Data Path: T0 to RDIR
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.721  T0_IBUF (T0_IBUF)
-     LUT2:I0->O            1   0.203   0.579  RDword1 (RDword_OBUF)
-     OBUF:I->O                 2.571          RDword_OBUF (RDword)
+     IBUF:I->O            17   1.222   1.132  T0_IBUF (T0_IBUF)
+     LUT2:I0->O            1   0.203   0.579  RDIR1 (RDIR_OBUF)
+     OBUF:I->O                 2.571          RDIR_OBUF (RDIR)
     ----------------------------------------
-    Total                      5.296ns (3.996ns logic, 1.300ns route)
-                                       (75.5% logic, 24.5% route)
+    Total                      5.707ns (3.996ns logic, 1.711ns route)
+                                       (70.0% logic, 30.0% route)
 
 =========================================================================
 
@@ -374,11 +373,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.44 secs
+Total CPU time to Xst completion: 4.80 secs
  
 --> 
 
-Total memory usage is 258052 kilobytes
+Total memory usage is 257540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

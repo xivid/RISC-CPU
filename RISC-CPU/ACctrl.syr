@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: ACctrl.prj
 
@@ -121,30 +121,30 @@ Elaborating entity <ACctrl> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <ACctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\ACctrl.vhd".
-    Found 1-bit tristate buffer for signal <DBUS<15>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<14>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<13>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<12>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<11>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<10>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<9>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<8>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<7>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<6>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<5>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<4>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<3>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<2>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<1>> created at line 72
-    Found 1-bit tristate buffer for signal <DBUS<0>> created at line 72
-    Found 1-bit tristate buffer for signal <IODB<7>> created at line 79
-    Found 1-bit tristate buffer for signal <IODB<6>> created at line 79
-    Found 1-bit tristate buffer for signal <IODB<5>> created at line 79
-    Found 1-bit tristate buffer for signal <IODB<4>> created at line 79
-    Found 1-bit tristate buffer for signal <IODB<3>> created at line 79
-    Found 1-bit tristate buffer for signal <IODB<2>> created at line 79
-    Found 1-bit tristate buffer for signal <IODB<1>> created at line 79
-    Found 1-bit tristate buffer for signal <IODB<0>> created at line 79
+    Found 1-bit tristate buffer for signal <DBUS<15>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<14>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<13>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<12>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<11>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<10>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<9>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<8>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<7>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<6>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<5>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<4>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<3>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<2>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<1>> created at line 77
+    Found 1-bit tristate buffer for signal <DBUS<0>> created at line 77
+    Found 1-bit tristate buffer for signal <IODB<7>> created at line 84
+    Found 1-bit tristate buffer for signal <IODB<6>> created at line 84
+    Found 1-bit tristate buffer for signal <IODB<5>> created at line 84
+    Found 1-bit tristate buffer for signal <IODB<4>> created at line 84
+    Found 1-bit tristate buffer for signal <IODB<3>> created at line 84
+    Found 1-bit tristate buffer for signal <IODB<2>> created at line 84
+    Found 1-bit tristate buffer for signal <IODB<1>> created at line 84
+    Found 1-bit tristate buffer for signal <IODB<0>> created at line 84
     Summary:
 	inferred   4 Multiplexer(s).
 	inferred  24 Tristate(s).
@@ -214,12 +214,11 @@ Top Level Output File Name         : ACctrl.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 50
+# BELS                             : 49
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 7
+#      LUT2                        : 5
 #      LUT3                        : 17
-#      LUT5                        : 16
+#      LUT5                        : 18
 #      LUT6                        : 8
 # IO Buffers                       : 126
 #      IBUF                        : 45
@@ -233,14 +232,14 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   49  out of   9112     0%  
-    Number used as Logic:                49  out of   9112     0%  
+ Number of Slice LUTs:                   48  out of   9112     0%  
+    Number used as Logic:                48  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     49
-   Number with an unused Flip Flop:      49  out of     49   100%  
-   Number with an unused LUT:             0  out of     49     0%  
-   Number of fully used LUT-FF pairs:     0  out of     49     0%  
+ Number of LUT Flip Flop pairs used:     48
+   Number with an unused Flip Flop:      48  out of     48   100%  
+   Number with an unused LUT:             0  out of     48     0%  
+   Number of fully used LUT-FF pairs:     0  out of     48     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -280,7 +279,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 8.019ns
+   Maximum combinational path delay: 8.050ns
 
 Timing Details:
 ---------------
@@ -288,24 +287,24 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 459 / 73
+  Total number of paths / destination ports: 489 / 73
 -------------------------------------------------------------------------
-Delay:               8.019ns (Levels of Logic = 5)
-  Source:            nIO (PAD)
+Delay:               8.050ns (Levels of Logic = 5)
+  Source:            RD (PAD)
   Destination:       Rtemp<7> (PAD)
 
-  Data Path: nIO to Rtemp<7>
+  Data Path: RD to Rtemp<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.788  nIO_IBUF (nPREQ_OBUF)
-     LUT2:I0->O           16   0.203   1.233  RD_nIO_AND_3_o1 (RD_nIO_AND_3_o)
+     IBUF:I->O             5   1.222   0.819  RD_IBUF (RD_IBUF)
+     LUT2:I0->O           16   0.203   1.233  RD_nIO_AND_9_o1 (RD_nIO_AND_9_o)
      LUT5:I2->O            3   0.205   1.015  Mmux_IR161 (IR_9_OBUF)
      LUT6:I0->O            1   0.203   0.579  Mmux_Rtemp21 (Rtemp_1_OBUF)
      OBUF:I->O                 2.571          Rtemp_1_OBUF (Rtemp<1>)
     ----------------------------------------
-    Total                      8.019ns (4.404ns logic, 3.615ns route)
-                                       (54.9% logic, 45.1% route)
+    Total                      8.050ns (4.404ns logic, 3.646ns route)
+                                       (54.7% logic, 45.3% route)
 
 =========================================================================
 
@@ -315,12 +314,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.83 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.60 secs
  
 --> 
 
-Total memory usage is 257028 kilobytes
+Total memory usage is 257156 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

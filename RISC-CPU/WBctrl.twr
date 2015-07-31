@@ -1,0 +1,194 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml WBctrl.twx WBctrl.ncd -o WBctrl.twr WBctrl.pcf
+
+Design file:              WBctrl.ncd
+Physical constraint file: WBctrl.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock T3
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Addr<0>     |    6.265(R)|      SLOW  |   -3.322(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<1>     |    5.691(R)|      SLOW  |   -2.971(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<2>     |    5.642(R)|      SLOW  |   -2.908(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<3>     |    5.099(R)|      SLOW  |   -2.694(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<4>     |    5.550(R)|      SLOW  |   -3.253(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<5>     |    4.997(R)|      SLOW  |   -2.888(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<6>     |    4.602(R)|      SLOW  |   -2.665(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<7>     |    4.434(R)|      SLOW  |   -2.552(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<8>     |    4.866(R)|      SLOW  |   -2.819(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<9>     |    4.108(R)|      SLOW  |   -2.306(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<10>    |    4.539(R)|      SLOW  |   -2.601(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<11>    |    4.455(R)|      SLOW  |   -2.490(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<12>    |    4.513(R)|      SLOW  |   -2.618(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<13>    |    4.240(R)|      SLOW  |   -2.487(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<14>    |    4.613(R)|      SLOW  |   -2.894(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+Addr<15>    |    4.464(R)|      SLOW  |   -2.877(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<0>       |    5.913(R)|      SLOW  |   -3.080(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<1>       |    6.312(R)|      SLOW  |   -3.095(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<2>       |    5.748(R)|      SLOW  |   -2.963(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<3>       |    5.512(R)|      SLOW  |   -2.925(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<4>       |    4.911(R)|      SLOW  |   -2.825(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<5>       |    5.054(R)|      SLOW  |   -2.843(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<6>       |    5.497(R)|      SLOW  |   -3.127(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<7>       |    5.466(R)|      SLOW  |   -3.078(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<8>       |    5.195(R)|      SLOW  |   -2.916(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<9>       |    5.074(R)|      SLOW  |   -2.804(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<10>      |    4.986(R)|      SLOW  |   -2.743(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<11>      |    4.612(R)|      SLOW  |   -2.589(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<12>      |    4.556(R)|      SLOW  |   -2.627(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<13>      |    4.706(R)|      SLOW  |   -2.675(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<14>      |    4.511(R)|      SLOW  |   -2.683(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PC<15>      |    4.597(R)|      SLOW  |   -2.823(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock T3 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+PCnew<0>    |         6.195(R)|      SLOW  |         2.819(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<1>    |         6.195(R)|      SLOW  |         2.819(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<2>    |         6.198(R)|      SLOW  |         2.822(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<3>    |         6.198(R)|      SLOW  |         2.822(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<4>    |         6.191(R)|      SLOW  |         2.815(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<5>    |         6.191(R)|      SLOW  |         2.815(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<6>    |         6.193(R)|      SLOW  |         2.817(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<7>    |         6.193(R)|      SLOW  |         2.817(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<8>    |         6.196(R)|      SLOW  |         2.820(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<9>    |         6.196(R)|      SLOW  |         2.820(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<10>   |         6.199(R)|      SLOW  |         2.823(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<11>   |         6.199(R)|      SLOW  |         2.823(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<12>   |         6.201(R)|      SLOW  |         2.825(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<13>   |         6.201(R)|      SLOW  |         2.825(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<14>   |         6.202(R)|      SLOW  |         2.826(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+PCnew<15>   |         6.202(R)|      SLOW  |         2.826(R)|      FAST  |T3_IBUF_BUFG      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+AD1<8>         |Raddr<0>       |    5.303|
+AD1<9>         |Raddr<1>       |    5.303|
+AD1<10>        |Raddr<2>       |    5.303|
+ALUOUT<0>      |PCupdate       |   10.187|
+ALUOUT<0>      |Rdata<0>       |   11.022|
+ALUOUT<1>      |PCupdate       |   10.888|
+ALUOUT<1>      |Rdata<1>       |   11.253|
+ALUOUT<2>      |PCupdate       |   11.612|
+ALUOUT<2>      |Rdata<2>       |   12.186|
+ALUOUT<3>      |PCupdate       |   11.206|
+ALUOUT<3>      |Rdata<3>       |   11.640|
+ALUOUT<4>      |PCupdate       |   10.931|
+ALUOUT<4>      |Rdata<4>       |   11.105|
+ALUOUT<5>      |PCupdate       |   11.295|
+ALUOUT<5>      |Rdata<5>       |   11.608|
+ALUOUT<6>      |PCupdate       |   11.460|
+ALUOUT<6>      |Rdata<6>       |   11.866|
+ALUOUT<7>      |PCupdate       |   11.213|
+ALUOUT<7>      |Rdata<7>       |   11.147|
+CLK            |PCupdate       |   10.432|
+CLK            |Rupdate        |   10.477|
+OP<11>         |PCupdate       |   12.302|
+OP<11>         |Rdata<0>       |   12.651|
+OP<11>         |Rdata<1>       |   12.714|
+OP<11>         |Rdata<2>       |   12.407|
+OP<11>         |Rdata<3>       |   12.387|
+OP<11>         |Rdata<4>       |   12.574|
+OP<11>         |Rdata<5>       |   12.568|
+OP<11>         |Rdata<6>       |   12.279|
+OP<11>         |Rdata<7>       |   12.243|
+OP<11>         |Rupdate        |   11.531|
+OP<12>         |PCupdate       |   11.157|
+OP<12>         |Rdata<0>       |   12.645|
+OP<12>         |Rdata<1>       |   12.708|
+OP<12>         |Rdata<2>       |   12.401|
+OP<12>         |Rdata<3>       |   12.381|
+OP<12>         |Rdata<4>       |   12.568|
+OP<12>         |Rdata<5>       |   12.562|
+OP<12>         |Rdata<6>       |   12.273|
+OP<12>         |Rdata<7>       |   12.237|
+OP<12>         |Rupdate        |   11.037|
+OP<13>         |PCupdate       |   12.377|
+OP<13>         |Rdata<0>       |   12.782|
+OP<13>         |Rdata<1>       |   12.845|
+OP<13>         |Rdata<2>       |   12.538|
+OP<13>         |Rdata<3>       |   12.518|
+OP<13>         |Rdata<4>       |   12.705|
+OP<13>         |Rdata<5>       |   12.699|
+OP<13>         |Rdata<6>       |   12.410|
+OP<13>         |Rdata<7>       |   12.374|
+OP<13>         |Rupdate        |   11.713|
+OP<14>         |PCupdate       |   11.700|
+OP<14>         |Rdata<0>       |   12.209|
+OP<14>         |Rdata<1>       |   12.272|
+OP<14>         |Rdata<2>       |   11.965|
+OP<14>         |Rdata<3>       |   11.945|
+OP<14>         |Rdata<4>       |   12.132|
+OP<14>         |Rdata<5>       |   12.126|
+OP<14>         |Rdata<6>       |   11.837|
+OP<14>         |Rdata<7>       |   11.801|
+OP<14>         |Rupdate        |   10.918|
+OP<15>         |PCupdate       |   12.204|
+OP<15>         |Rdata<0>       |   13.340|
+OP<15>         |Rdata<1>       |   13.403|
+OP<15>         |Rdata<2>       |   13.096|
+OP<15>         |Rdata<3>       |   13.076|
+OP<15>         |Rdata<4>       |   13.263|
+OP<15>         |Rdata<5>       |   13.257|
+OP<15>         |Rdata<6>       |   12.968|
+OP<15>         |Rdata<7>       |   12.932|
+OP<15>         |Rupdate        |   12.034|
+Rtemp<0>       |Rdata<0>       |   11.061|
+Rtemp<1>       |Rdata<1>       |   11.743|
+Rtemp<2>       |Rdata<2>       |   11.856|
+Rtemp<3>       |Rdata<3>       |   11.611|
+Rtemp<4>       |Rdata<4>       |   11.452|
+Rtemp<5>       |Rdata<5>       |   11.702|
+Rtemp<6>       |Rdata<6>       |   11.483|
+Rtemp<7>       |Rdata<7>       |   11.529|
+T3             |PCupdate       |   10.208|
+T3             |Rupdate        |    9.687|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Jul 31 13:04:36 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 217 MB
+
+
+
