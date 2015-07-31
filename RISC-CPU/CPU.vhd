@@ -89,7 +89,7 @@ architecture Behavioral of CPU is
 	--///////////////////////////////////////////////
 	COMPONENT MEMctrl
 	PORT(
-		CLK : IN  std_logic;
+		-- CLK : IN  std_logic;
 		Addrin : IN  std_logic_vector(15 downto 0);
 		Addr : OUT  std_logic_vector(15 downto 0);
 		OP : IN  std_logic_vector(4 downto 0);
@@ -230,7 +230,7 @@ begin
           ALUOUT => ALUOUT
         );
    comMEM: MEMctrl PORT MAP (
-          CLK => CLK,
+          -- CLK => CLK,
           Addrin => Addrin,
           Addr => Addr,
           OP => IR(15 downto 11),

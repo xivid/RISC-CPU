@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity MEMctrl is
     Port ( -- RST : in  STD_LOGIC;
-			  CLK : in STD_LOGIC;
+			  -- CLK : in STD_LOGIC;
            Addrin : in  STD_LOGIC_VECTOR (15 downto 0);
            Addr : out  STD_LOGIC_VECTOR (15 downto 0);
            OP : in  STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)

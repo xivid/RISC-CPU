@@ -55,8 +55,7 @@ begin
 	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
 				ALUOUT;
 	Raddr <= AD1;
-	PCnew <= x"0000" when RST = '1' else
-				PC + Addr when rising_edge(T3);
+	PCnew <= PC + Addr; -- when rising_edge(T3);
 	
 	-- »ØĞ´¿ØÖÆĞÅºÅ
 	--JMP <= '1' when OP = "00000" else '0';

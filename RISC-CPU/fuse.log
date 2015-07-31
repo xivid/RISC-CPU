@@ -31,5 +31,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 5 sub-compilation(s) to finish...
 Compiled 21 VHDL Units
 Built simulation executable C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU_isim_beh.exe
-Fuse Memory Usage: 33732 KB
-Fuse CPU Usage: 576 ms
+Fuse Memory Usage: 33752 KB
+Fuse CPU Usage: 561 ms
