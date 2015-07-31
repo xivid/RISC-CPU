@@ -1,0 +1,2 @@
+vhdl isim_temp "IFctrl.vhd"
+vhdl isim_temp "tbIFctrl.vhd"

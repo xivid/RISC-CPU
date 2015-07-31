@@ -32,97 +32,176 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Setup/Hold to clock CLK
-------------+------------+------------+------------+------------+------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
-------------+------------+------------+------------+------------+------------------------+--------+
-RST         |    3.297(R)|      SLOW  |   -1.330(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-            |   -0.084(F)|      FAST  |    1.670(F)|      SLOW  |comIF/PCupdate_T0_OR_1_o|   0.000|
-------------+------------+------------+------------+------------+------------------------+--------+
+------------+------------+------------+------------+------------+-------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                   | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)  | Phase  |
+------------+------------+------------+------------+------------+-------------------+--------+
+DBUS<0>     |   -1.486(F)|      FAST  |    4.066(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<1>     |   -1.540(F)|      FAST  |    4.187(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<2>     |   -1.730(F)|      FAST  |    4.793(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<3>     |   -2.235(F)|      FAST  |    5.802(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<4>     |   -2.137(F)|      FAST  |    5.457(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<5>     |   -1.649(F)|      FAST  |    5.228(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<6>     |   -1.850(F)|      FAST  |    5.529(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<7>     |   -2.351(F)|      FAST  |    5.832(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<8>     |   -1.979(F)|      FAST  |    5.162(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<9>     |   -1.671(F)|      FAST  |    5.144(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<10>    |   -2.336(F)|      FAST  |    5.056(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<11>    |   -2.255(F)|      FAST  |    4.799(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<12>    |   -1.500(F)|      FAST  |    3.832(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<13>    |   -1.815(F)|      FAST  |    4.129(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<14>    |   -1.756(F)|      FAST  |    4.211(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+DBUS<15>    |   -2.104(F)|      FAST  |    4.651(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<0>     |   -1.866(F)|      FAST  |    5.610(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<1>     |   -1.852(F)|      FAST  |    5.769(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<2>     |   -2.054(F)|      FAST  |    5.008(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<3>     |   -2.005(F)|      FAST  |    5.707(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<4>     |   -2.075(F)|      FAST  |    5.782(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<5>     |   -1.588(F)|      FAST  |    6.093(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<6>     |   -1.866(F)|      FAST  |    6.330(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+IODB<7>     |   -1.883(F)|      FAST  |    5.606(F)|      SLOW  |comAC/WR_RD_OR_69_o|   0.000|
+------------+------------+------------+------------+------------+-------------------+--------+
 
 Clock CLK to Pad
-------------+-----------------+------------+-----------------+------------+------------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
-------------+-----------------+------------+-----------------+------------+------------------------+--------+
-ABUS<0>     |        12.841(F)|      SLOW  |         7.844(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.104(R)|      SLOW  |         5.056(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<1>     |        12.322(F)|      SLOW  |         7.527(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.238(R)|      SLOW  |         5.150(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<2>     |        12.390(F)|      SLOW  |         7.605(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.203(R)|      SLOW  |         5.195(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<3>     |         9.313(R)|      SLOW  |         5.242(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-            |        12.498(F)|      SLOW  |         7.607(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-ABUS<4>     |        13.500(F)|      SLOW  |         8.297(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.852(R)|      SLOW  |         5.621(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<5>     |         9.870(R)|      SLOW  |         5.598(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-            |        12.811(F)|      SLOW  |         7.838(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-ABUS<6>     |        13.062(F)|      SLOW  |         8.000(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.942(R)|      SLOW  |         5.656(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<7>     |        13.450(F)|      SLOW  |         8.186(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.729(R)|      SLOW  |         5.472(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<8>     |        13.389(F)|      SLOW  |         8.151(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.925(R)|      SLOW  |         5.603(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<9>     |        13.682(F)|      SLOW  |         8.382(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |         9.910(R)|      SLOW  |         5.600(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<10>    |        14.135(F)|      SLOW  |         8.588(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |        10.789(R)|      SLOW  |         6.137(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<11>    |        14.066(F)|      SLOW  |         8.592(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |        10.431(R)|      SLOW  |         5.906(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<12>    |        14.885(F)|      SLOW  |         9.064(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |        10.975(R)|      SLOW  |         6.273(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-ABUS<13>    |        10.831(R)|      SLOW  |         6.212(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-            |        14.446(F)|      SLOW  |         8.844(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-ABUS<14>    |        14.280(F)|      SLOW  |         8.692(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |        10.747(R)|      SLOW  |         6.125(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<0>     |        10.730(F)|      SLOW  |         6.236(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<1>     |        10.606(F)|      SLOW  |         6.099(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<2>     |        10.559(F)|      SLOW  |         6.074(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<3>     |         9.452(F)|      SLOW  |         5.363(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<4>     |         9.561(F)|      SLOW  |         5.408(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<5>     |        10.029(F)|      SLOW  |         5.696(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<6>     |        10.000(F)|      SLOW  |         5.732(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<7>     |        10.262(F)|      SLOW  |         5.875(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<8>     |        10.295(F)|      SLOW  |         5.920(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<9>     |         9.989(F)|      SLOW  |         5.679(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<10>    |         9.920(F)|      SLOW  |         5.662(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<11>    |        10.154(F)|      SLOW  |         5.820(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<12>    |        10.405(F)|      SLOW  |         5.884(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<13>    |         9.842(F)|      SLOW  |         5.659(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<14>    |         9.212(F)|      SLOW  |         5.108(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-DBUS<15>    |         9.843(F)|      SLOW  |         5.582(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IOAD<0>     |        13.777(F)|      SLOW  |         8.307(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-            |        10.594(R)|      SLOW  |         5.955(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IOAD<1>     |         9.151(R)|      SLOW  |         5.014(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-            |        12.888(F)|      SLOW  |         7.802(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-IODB<0>     |         9.568(F)|      SLOW  |         5.273(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IODB<1>     |         9.868(F)|      SLOW  |         5.472(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IODB<2>     |         9.625(F)|      SLOW  |         5.309(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IODB<3>     |         9.228(F)|      SLOW  |         5.081(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IODB<4>     |         8.741(F)|      SLOW  |         4.770(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IODB<5>     |         8.725(F)|      SLOW  |         4.758(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IODB<6>     |         8.855(F)|      SLOW  |         4.858(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-IODB<7>     |        10.346(F)|      SLOW  |         5.795(F)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-led<0>      |        14.492(F)|      SLOW  |         8.528(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-led<1>      |        14.596(F)|      SLOW  |         8.520(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-led<2>      |        14.310(F)|      SLOW  |         8.374(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-led<3>      |        14.390(F)|      SLOW  |         8.354(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-led<4>      |        14.129(F)|      SLOW  |         8.425(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-led<5>      |        14.788(F)|      SLOW  |         8.695(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-led<6>      |        14.013(F)|      SLOW  |         8.345(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-led<7>      |        14.095(F)|      SLOW  |         8.255(F)|      FAST  |comIF/PCupdate_T0_OR_1_o|   0.000|
-nBHE        |         9.301(R)|      SLOW  |         5.246(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-nBLE        |         9.491(R)|      SLOW  |         5.312(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-nMREQ       |         9.329(R)|      SLOW  |         5.228(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-nRD         |         9.378(R)|      SLOW  |         5.316(R)|      FAST  |CLK_IBUF_BUFG           |   0.000|
-------------+-----------------+------------+-----------------+------------+------------------------+--------+
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                 | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+ABUS<0>     |        10.455(F)|      SLOW  |         6.404(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<1>     |        10.455(F)|      SLOW  |         6.404(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<2>     |        10.251(F)|      SLOW  |         6.284(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<3>     |        10.251(F)|      SLOW  |         6.284(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<4>     |        10.638(F)|      SLOW  |         6.551(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<5>     |        10.638(F)|      SLOW  |         6.551(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<6>     |        10.815(F)|      SLOW  |         6.664(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<7>     |        10.815(F)|      SLOW  |         6.664(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<8>     |        10.986(F)|      SLOW  |         6.771(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<9>     |        10.986(F)|      SLOW  |         6.771(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<10>    |        11.379(F)|      SLOW  |         6.951(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<11>    |        11.379(F)|      SLOW  |         6.951(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<12>    |        11.540(F)|      SLOW  |         7.048(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<13>    |        11.540(F)|      SLOW  |         7.048(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+ABUS<14>    |        11.537(F)|      SLOW  |         7.033(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+DBUS<0>     |        11.564(F)|      SLOW  |         6.562(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        13.216(F)|      SLOW  |         8.158(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<1>     |        11.042(F)|      SLOW  |         6.222(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.837(F)|      SLOW  |         7.870(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<2>     |        11.042(F)|      SLOW  |         6.222(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.837(F)|      SLOW  |         7.870(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<3>     |        10.091(F)|      SLOW  |         5.579(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.530(F)|      SLOW  |         7.782(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<4>     |        10.234(F)|      SLOW  |         5.649(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.530(F)|      SLOW  |         7.782(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<5>     |        10.702(F)|      SLOW  |         5.959(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.518(F)|      SLOW  |         7.657(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<6>     |        10.702(F)|      SLOW  |         5.959(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.518(F)|      SLOW  |         7.657(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<7>     |        10.185(F)|      SLOW  |         5.600(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.642(F)|      SLOW  |         7.812(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<8>     |        10.887(F)|      SLOW  |         6.065(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.602(F)|      SLOW  |         7.723(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<9>     |        10.887(F)|      SLOW  |         6.065(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.602(F)|      SLOW  |         7.723(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<10>    |        10.735(F)|      SLOW  |         6.017(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.754(F)|      SLOW  |         7.834(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<11>    |        10.996(F)|      SLOW  |         6.181(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.653(F)|      SLOW  |         7.797(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<12>    |        10.996(F)|      SLOW  |         6.181(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.653(F)|      SLOW  |         7.797(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<13>    |        10.028(F)|      SLOW  |         5.619(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.238(F)|      SLOW  |         7.581(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<14>    |         9.526(F)|      SLOW  |         5.193(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        11.876(F)|      SLOW  |         7.216(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+DBUS<15>    |         9.526(F)|      SLOW  |         5.193(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        11.876(F)|      SLOW  |         7.216(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IOAD<0>     |        11.654(F)|      SLOW  |         7.086(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+IOAD<1>     |        11.188(F)|      SLOW  |         6.816(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+IODB<0>     |        10.584(F)|      SLOW  |         5.491(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.110(F)|      SLOW  |         7.232(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IODB<1>     |        10.756(F)|      SLOW  |         5.599(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.118(F)|      SLOW  |         7.281(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IODB<2>     |        10.756(F)|      SLOW  |         5.599(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.118(F)|      SLOW  |         7.281(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IODB<3>     |        10.584(F)|      SLOW  |         5.491(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.110(F)|      SLOW  |         7.232(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IODB<4>     |        10.334(F)|      SLOW  |         5.346(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        11.936(F)|      SLOW  |         7.104(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IODB<5>     |        10.486(F)|      SLOW  |         5.452(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.320(F)|      SLOW  |         7.348(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IODB<6>     |        10.486(F)|      SLOW  |         5.452(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        12.320(F)|      SLOW  |         7.348(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+IODB<7>     |        10.412(F)|      SLOW  |         5.383(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        11.936(F)|      SLOW  |         7.104(F)|      FAST  |comAC/WR_RD_OR_69_o              |   0.000|
+led<0>      |        11.145(F)|      SLOW  |         5.958(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        18.429(F)|      SLOW  |        11.365(F)|      FAST  |comIF/PCupdate_PCnew[0]_AND_33_o |   0.000|
+            |        17.756(F)|      SLOW  |        11.013(F)|      FAST  |comIF/PCupdate_PCnew[8]_AND_17_o |   0.000|
+led<1>      |        11.402(F)|      SLOW  |         6.168(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        18.354(F)|      SLOW  |        11.208(F)|      FAST  |comIF/PCupdate_PCnew[1]_AND_31_o |   0.000|
+            |        20.024(F)|      SLOW  |        12.258(F)|      FAST  |comIF/PCupdate_PCnew[9]_AND_15_o |   0.000|
+led<2>      |        11.564(F)|      SLOW  |         5.884(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        18.733(F)|      SLOW  |        11.533(F)|      FAST  |comIF/PCupdate_PCnew[10]_AND_13_o|   0.000|
+            |        19.271(F)|      SLOW  |        11.787(F)|      FAST  |comIF/PCupdate_PCnew[2]_AND_29_o |   0.000|
+led<3>      |        11.397(F)|      SLOW  |         5.883(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        18.607(F)|      SLOW  |        11.466(F)|      FAST  |comIF/PCupdate_PCnew[11]_AND_11_o|   0.000|
+            |        18.808(F)|      SLOW  |        11.599(F)|      FAST  |comIF/PCupdate_PCnew[3]_AND_27_o |   0.000|
+led<4>      |        12.078(F)|      SLOW  |         6.236(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        18.514(F)|      SLOW  |        11.411(F)|      FAST  |comIF/PCupdate_PCnew[12]_AND_9_o |   0.000|
+            |        19.095(F)|      SLOW  |        11.657(F)|      FAST  |comIF/PCupdate_PCnew[4]_AND_25_o |   0.000|
+led<5>      |        11.866(F)|      SLOW  |         5.672(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        18.469(F)|      SLOW  |        11.381(F)|      FAST  |comIF/PCupdate_PCnew[13]_AND_7_o |   0.000|
+            |        19.250(F)|      SLOW  |        11.708(F)|      FAST  |comIF/PCupdate_PCnew[5]_AND_23_o |   0.000|
+led<6>      |        10.744(F)|      SLOW  |         5.793(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        17.950(F)|      SLOW  |        11.052(F)|      FAST  |comIF/PCupdate_PCnew[14]_AND_5_o |   0.000|
+            |        18.437(F)|      SLOW  |        11.216(F)|      FAST  |comIF/PCupdate_PCnew[6]_AND_21_o |   0.000|
+led<7>      |        11.297(F)|      SLOW  |         5.521(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        18.306(F)|      SLOW  |        11.297(F)|      FAST  |comIF/PCupdate_PCnew[15]_AND_3_o |   0.000|
+            |        18.877(F)|      SLOW  |        11.541(F)|      FAST  |comIF/PCupdate_PCnew[7]_AND_19_o |   0.000|
+nBHE        |        11.022(R)|      SLOW  |         6.324(R)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        13.381(F)|      SLOW  |         6.659(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        14.731(F)|      SLOW  |         9.107(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+nBLE        |        11.584(R)|      SLOW  |         6.677(R)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        13.737(F)|      SLOW  |         6.572(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        14.645(F)|      SLOW  |         9.001(F)|      FAST  |comAC/nMEM_RDIR_OR_44_o          |   0.000|
+nMREQ       |        10.706(R)|      SLOW  |         6.132(R)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        11.048(F)|      SLOW  |         5.792(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+nPRD        |        10.313(F)|      SLOW  |         5.347(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+nPREQ       |         9.513(F)|      SLOW  |         5.127(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+nPWR        |        11.068(F)|      SLOW  |         5.834(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+nRD         |         9.659(R)|      SLOW  |         5.474(R)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+            |        11.088(F)|      SLOW  |         6.129(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+nWR         |        12.646(F)|      SLOW  |         7.210(F)|      FAST  |CLK_IBUF_BUFG                    |   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+
+Clock RST to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                 | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+led<0>      |        14.514(F)|      SLOW  |         8.910(F)|      FAST  |comIF/PCupdate_PCnew[0]_AND_33_o |   0.000|
+            |        14.854(F)|      SLOW  |         9.132(F)|      FAST  |comIF/PCupdate_PCnew[8]_AND_17_o |   0.000|
+led<1>      |        16.056(F)|      SLOW  |         9.799(F)|      FAST  |comIF/PCupdate_PCnew[1]_AND_31_o |   0.000|
+            |        14.693(F)|      SLOW  |         8.918(F)|      FAST  |comIF/PCupdate_PCnew[9]_AND_15_o |   0.000|
+led<2>      |        14.161(F)|      SLOW  |         8.617(F)|      FAST  |comIF/PCupdate_PCnew[10]_AND_13_o|   0.000|
+            |        16.608(F)|      SLOW  |        10.164(F)|      FAST  |comIF/PCupdate_PCnew[2]_AND_29_o |   0.000|
+led<3>      |        14.091(F)|      SLOW  |         8.601(F)|      FAST  |comIF/PCupdate_PCnew[11]_AND_11_o|   0.000|
+            |        16.132(F)|      SLOW  |         9.970(F)|      FAST  |comIF/PCupdate_PCnew[3]_AND_27_o |   0.000|
+led<4>      |        13.603(F)|      SLOW  |         8.303(F)|      FAST  |comIF/PCupdate_PCnew[12]_AND_9_o |   0.000|
+            |        14.937(F)|      SLOW  |         9.134(F)|      FAST  |comIF/PCupdate_PCnew[4]_AND_25_o |   0.000|
+led<5>      |        13.412(F)|      SLOW  |         8.213(F)|      FAST  |comIF/PCupdate_PCnew[13]_AND_7_o |   0.000|
+            |        16.159(F)|      SLOW  |         9.839(F)|      FAST  |comIF/PCupdate_PCnew[5]_AND_23_o |   0.000|
+led<6>      |        13.594(F)|      SLOW  |         8.288(F)|      FAST  |comIF/PCupdate_PCnew[14]_AND_5_o |   0.000|
+            |        15.412(F)|      SLOW  |         9.393(F)|      FAST  |comIF/PCupdate_PCnew[6]_AND_21_o |   0.000|
+led<7>      |        14.150(F)|      SLOW  |         8.640(F)|      FAST  |comIF/PCupdate_PCnew[15]_AND_3_o |   0.000|
+            |        15.346(F)|      SLOW  |         9.384(F)|      FAST  |comIF/PCupdate_PCnew[7]_AND_19_o |   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
 
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    1.438|   -1.458|    2.349|    3.683|
+CLK            |    1.334|   -1.869|    8.966|   13.896|
+RST            |    5.786|    5.786|    7.313|   13.896|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock CLOCK
@@ -130,77 +209,45 @@ Clock to Setup on destination clock CLOCK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK          |    1.745|         |         |         |
+CLOCK          |    1.696|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RST
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    5.777|    5.777|
+RST            |         |         |    3.211|    4.965|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-CLK            |ABUS<0>        |   10.956|
-CLK            |ABUS<1>        |   11.332|
-CLK            |ABUS<2>        |   11.200|
-CLK            |ABUS<3>        |   10.487|
-CLK            |ABUS<4>        |   10.579|
-CLK            |ABUS<5>        |   10.685|
-CLK            |ABUS<6>        |   11.040|
-CLK            |ABUS<7>        |   11.229|
-CLK            |ABUS<8>        |   10.973|
-CLK            |ABUS<9>        |   10.631|
-CLK            |ABUS<10>       |   11.356|
-CLK            |ABUS<11>       |   11.488|
-CLK            |ABUS<12>       |   11.335|
-CLK            |ABUS<13>       |   11.183|
-CLK            |ABUS<14>       |   10.930|
-CLK            |IOAD<0>        |   11.976|
-CLK            |IOAD<1>        |   11.003|
-CLK            |nBHE           |   11.140|
-CLK            |nBLE           |   11.172|
-CLK            |nMREQ          |   10.890|
-CLK            |nRD            |   11.190|
-DBUS<0>        |IODB<0>        |    8.888|
-DBUS<1>        |IODB<1>        |    8.850|
-DBUS<2>        |IODB<2>        |    8.908|
-DBUS<3>        |IODB<3>        |    8.789|
-DBUS<4>        |IODB<4>        |    8.320|
-DBUS<5>        |IODB<5>        |    8.720|
-DBUS<6>        |IODB<6>        |    8.510|
-DBUS<7>        |IODB<7>        |    8.591|
-IODB<0>        |DBUS<0>        |    9.078|
-IODB<0>        |DBUS<8>        |    8.598|
-IODB<1>        |DBUS<1>        |    8.715|
-IODB<1>        |DBUS<9>        |    8.639|
-IODB<2>        |DBUS<2>        |    9.178|
-IODB<2>        |DBUS<10>       |    8.675|
-IODB<3>        |DBUS<3>        |    9.283|
-IODB<3>        |DBUS<11>       |    9.455|
-IODB<4>        |DBUS<4>        |    8.243|
-IODB<4>        |DBUS<12>       |    9.378|
-IODB<5>        |DBUS<5>        |    9.067|
-IODB<5>        |DBUS<13>       |    8.677|
-IODB<6>        |DBUS<6>        |    8.997|
-IODB<6>        |DBUS<14>       |    7.919|
-IODB<7>        |DBUS<7>        |    8.752|
-IODB<7>        |DBUS<15>       |    8.723|
-btnU           |led<0>         |   11.789|
-btnU           |led<1>         |   11.715|
-btnU           |led<2>         |   11.629|
-btnU           |led<3>         |   11.568|
-btnU           |led<4>         |   11.268|
-btnU           |led<5>         |   11.213|
-btnU           |led<6>         |   11.465|
-btnU           |led<7>         |   11.409|
+CLK            |nBHE           |    9.767|
+CLK            |nBLE           |   10.081|
+CLK            |nMREQ          |    9.862|
+CLK            |nRD            |   10.408|
+btnU           |led<0>         |   12.310|
+btnU           |led<1>         |   12.523|
+btnU           |led<2>         |   11.821|
+btnU           |led<3>         |   11.653|
+btnU           |led<4>         |   11.706|
+btnU           |led<5>         |   11.500|
+btnU           |led<6>         |   11.664|
+btnU           |led<7>         |   11.478|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri Jul 31 13:57:34 2015 
+Analysis completed Fri Jul 31 23:13:31 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 224 MB
+Peak Memory Usage: 239 MB
 
 
 

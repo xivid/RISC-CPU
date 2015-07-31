@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: CPU.prj
 
@@ -182,59 +182,28 @@ Unit <CLKctrl> synthesized.
 
 Synthesizing Unit <IFctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\IFctrl.vhd".
-    Found 16-bit adder for signal <PC[15]_GND_8_o_add_0_OUT> created at line 55.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <IR<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <PC<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <nextPC<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit register for signal <IR>.
+    Found 1-bit register for signal <PC<15>>.
+    Found 1-bit register for signal <PC<14>>.
+    Found 1-bit register for signal <PC<13>>.
+    Found 1-bit register for signal <PC<12>>.
+    Found 1-bit register for signal <PC<11>>.
+    Found 1-bit register for signal <PC<10>>.
+    Found 1-bit register for signal <PC<9>>.
+    Found 1-bit register for signal <PC<8>>.
+    Found 1-bit register for signal <PC<7>>.
+    Found 1-bit register for signal <PC<6>>.
+    Found 1-bit register for signal <PC<5>>.
+    Found 1-bit register for signal <PC<4>>.
+    Found 1-bit register for signal <PC<3>>.
+    Found 1-bit register for signal <PC<2>>.
+    Found 1-bit register for signal <PC<1>>.
+    Found 1-bit register for signal <PC<0>>.
+    Found 16-bit adder for signal <PC[15]_GND_8_o_add_0_OUT> created at line 64.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  48 Latch(s).
-	inferred  16 Multiplexer(s).
+	inferred  32 D-type flip-flop(s).
+	inferred  17 Multiplexer(s).
 Unit <IFctrl> synthesized.
 
 Synthesizing Unit <EXctrl>.
@@ -253,9 +222,9 @@ Synthesizing Unit <EXctrl>.
     Found 8-bit register for signal <Reg<0>>.
     Found 8-bit register for signal <A>.
     Found 9-bit adder for signal <n0087> created at line 112.
-    Found 9-bit adder for signal <A[7]_GND_57_o_add_7_OUT> created at line 112.
-    Found 9-bit subtractor for signal <GND_57_o_GND_57_o_sub_9_OUT<8:0>> created at line 115.
-    Found 9-bit subtractor for signal <GND_57_o_GND_57_o_sub_10_OUT<8:0>> created at line 115.
+    Found 9-bit adder for signal <A[7]_GND_9_o_add_7_OUT> created at line 112.
+    Found 9-bit subtractor for signal <GND_9_o_GND_9_o_sub_9_OUT<8:0>> created at line 115.
+    Found 9-bit subtractor for signal <GND_9_o_GND_9_o_sub_10_OUT<8:0>> created at line 115.
     Found 8-bit 8-to-1 multiplexer for signal <IR[10]_Reg[7][7]_wide_mux_0_OUT> created at line 56.
     Found 8-bit 8-to-1 multiplexer for signal <IR[2]_Reg[7][7]_wide_mux_1_OUT> created at line 57.
     Summary:
@@ -281,49 +250,104 @@ Unit <MEMctrl> synthesized.
 
 Synthesizing Unit <WBctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\WBctrl.vhd".
-    Found 16-bit register for signal <PCnew>.
-    Found 16-bit adder for signal <PC[15]_Addr[15]_add_4_OUT> created at line 58.
+    Found 16-bit adder for signal <PCnew> created at line 58.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  16 D-type flip-flop(s).
 	inferred   3 Multiplexer(s).
 Unit <WBctrl> synthesized.
 
 Synthesizing Unit <ACctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\ACctrl.vhd".
-    Found 1-bit tristate buffer for signal <DBUS<15>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<14>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<13>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<12>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<11>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<10>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<9>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<8>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<7>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<6>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<5>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<4>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<3>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<2>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<1>> created at line 77
-    Found 1-bit tristate buffer for signal <DBUS<0>> created at line 77
-    Found 1-bit tristate buffer for signal <IODB<7>> created at line 84
-    Found 1-bit tristate buffer for signal <IODB<6>> created at line 84
-    Found 1-bit tristate buffer for signal <IODB<5>> created at line 84
-    Found 1-bit tristate buffer for signal <IODB<4>> created at line 84
-    Found 1-bit tristate buffer for signal <IODB<3>> created at line 84
-    Found 1-bit tristate buffer for signal <IODB<2>> created at line 84
-    Found 1-bit tristate buffer for signal <IODB<1>> created at line 84
-    Found 1-bit tristate buffer for signal <IODB<0>> created at line 84
+WARNING:Xst:737 - Found 1-bit latch for signal <address<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DBUS<15>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<14>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<13>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<12>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<11>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<10>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<9>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<8>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<7>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<6>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<5>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<4>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<3>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<2>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<1>> created at line 78
+    Found 1-bit tristate buffer for signal <DBUS<0>> created at line 78
+    Found 1-bit tristate buffer for signal <IODB<7>> created at line 85
+    Found 1-bit tristate buffer for signal <IODB<6>> created at line 85
+    Found 1-bit tristate buffer for signal <IODB<5>> created at line 85
+    Found 1-bit tristate buffer for signal <IODB<4>> created at line 85
+    Found 1-bit tristate buffer for signal <IODB<3>> created at line 85
+    Found 1-bit tristate buffer for signal <IODB<2>> created at line 85
+    Found 1-bit tristate buffer for signal <IODB<1>> created at line 85
+    Found 1-bit tristate buffer for signal <IODB<0>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <data<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rtemp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   4 Multiplexer(s).
+	inferred  56 Latch(s).
+	inferred  56 Multiplexer(s).
 	inferred  24 Tristate(s).
 Unit <ACctrl> synthesized.
 
 Synthesizing Unit <fp>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\fp.vhd".
     Found 16-bit register for signal <js>.
-    Found 16-bit adder for signal <js[15]_GND_93_o_add_0_OUT> created at line 37.
+    Found 16-bit adder for signal <js[15]_GND_101_o_add_0_OUT> created at line 37.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  16 D-type flip-flop(s).
@@ -339,17 +363,17 @@ Macro Statistics
  16-bit adder                                          : 3
  9-bit adder                                           : 2
  9-bit subtractor                                      : 2
-# Registers                                            : 19
- 1-bit register                                        : 1
+# Registers                                            : 35
+ 1-bit register                                        : 17
  16-bit register                                       : 3
  4-bit register                                        : 3
  8-bit register                                        : 12
-# Latches                                              : 56
- 1-bit latch                                           : 56
-# Multiplexers                                         : 51
- 1-bit 2-to-1 multiplexer                              : 28
- 16-bit 2-to-1 multiplexer                             : 3
- 8-bit 2-to-1 multiplexer                              : 18
+# Latches                                              : 64
+ 1-bit latch                                           : 64
+# Multiplexers                                         : 104
+ 1-bit 2-to-1 multiplexer                              : 84
+ 16-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 17
  8-bit 8-to-1 multiplexer                              : 2
 # Tristates                                            : 24
  1-bit tristate buffer                                 : 24
@@ -364,7 +388,7 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <CPU>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit1<6:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3231 - The small RAM <Mram_digit1<6:0>> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -375,18 +399,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit1<6:0>> will be implemented on 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <digit1>        |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit2<6:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <IR<11:8>>      |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <digit2>        |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit3<6:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3231 - The small RAM <Mram_digit3<6:0>> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -397,7 +410,18 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit3<6:0>> will be implemented on 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <digit3>        |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_digit4<6:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3231 - The small RAM <Mram_digit2<6:0>> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <IR<11:8>>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <digit2>        |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_digit4<6:0>> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -426,13 +450,13 @@ Macro Statistics
  9-bit subtractor borrow in                            : 1
 # Counters                                             : 1
  16-bit up counter                                     : 1
-# Registers                                            : 141
- Flip-Flops                                            : 141
-# Multiplexers                                         : 65
- 1-bit 2-to-1 multiplexer                              : 28
+# Registers                                            : 157
+ Flip-Flops                                            : 157
+# Multiplexers                                         : 118
+ 1-bit 2-to-1 multiplexer                              : 84
  1-bit 8-to-1 multiplexer                              : 16
- 16-bit 2-to-1 multiplexer                             : 3
- 8-bit 2-to-1 multiplexer                              : 18
+ 16-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 17
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -445,6 +469,46 @@ INFO:Xst:2261 - The FF/Latch <shift_1> in Unit <CPU> is equivalent to the follow
 INFO:Xst:2261 - The FF/Latch <shift_2> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <an_1> 
 INFO:Xst:2261 - The FF/Latch <shift_3> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <an_2> 
 INFO:Xst:2261 - The FF/Latch <shift_0> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <an_3> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    PC_0 in unit <IFctrl>
+    PC_1 in unit <IFctrl>
+    PC_2 in unit <IFctrl>
+    PC_3 in unit <IFctrl>
+    PC_4 in unit <IFctrl>
+    PC_5 in unit <IFctrl>
+    PC_7 in unit <IFctrl>
+    PC_8 in unit <IFctrl>
+    PC_6 in unit <IFctrl>
+    PC_9 in unit <IFctrl>
+    PC_10 in unit <IFctrl>
+    PC_11 in unit <IFctrl>
+    PC_12 in unit <IFctrl>
+    PC_13 in unit <IFctrl>
+    PC_14 in unit <IFctrl>
+    PC_15 in unit <IFctrl>
+
 
 Optimizing unit <CPU> ...
 
@@ -458,10 +522,25 @@ Optimizing unit <WBctrl> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 3.
-FlipFlop comCLK/tmp[3]_dff_1_1 has been replicated 1 time(s)
-Latch comIF/IR_14 has been replicated 1 time(s)
-Latch comIF/IR_15 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 4.
+Latch comAC/address_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_15 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_14 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_13 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_12 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_11 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_10 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_9 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_8 has been replicated 1 time(s) to handle iob=true attribute.
+Latch comAC/data_7 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/data_6 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/data_5 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/data_4 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/data_3 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/data_2 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/data_1 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/data_0 has been replicated 2 time(s) to handle iob=true attribute.
+Latch comAC/address_0 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -469,8 +548,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 154
- Flip-Flops                                            : 154
+# Registers                                            : 185
+ Flip-Flops                                            : 185
 
 =========================================================================
 
@@ -493,29 +572,32 @@ Top Level Output File Name         : CPU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 470
+# BELS                             : 483
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 2
 #      LUT1                        : 29
-#      LUT2                        : 35
-#      LUT3                        : 68
-#      LUT4                        : 53
-#      LUT5                        : 50
-#      LUT6                        : 73
+#      LUT2                        : 27
+#      LUT3                        : 73
+#      LUT4                        : 40
+#      LUT5                        : 85
+#      LUT6                        : 84
 #      MUXCY                       : 60
-#      MUXF7                       : 32
+#      MUXF7                       : 16
 #      VCC                         : 1
 #      XORCY                       : 65
-# FlipFlops/Latches                : 212
-#      FD                          : 76
-#      FDC                         : 4
+# FlipFlops/Latches                : 291
+#      FD                          : 60
+#      FDC                         : 3
+#      FDC_1                       : 16
 #      FDE                         : 64
-#      FDE_1                       : 9
+#      FDE_1                       : 25
 #      FDP                         : 1
+#      FDP_1                       : 16
+#      LD                          : 82
 #      LDC                         : 16
-#      LDE                         : 42
-# Clock Buffers                    : 5
-#      BUFG                        : 4
+#      LDE                         : 8
+# Clock Buffers                    : 4
+#      BUFG                        : 3
 #      BUFGP                       : 1
 # IO Buffers                       : 80
 #      IBUF                        : 3
@@ -529,23 +611,24 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             212  out of  18224     1%  
- Number of Slice LUTs:                  311  out of   9112     3%  
-    Number used as Logic:               311  out of   9112     3%  
+ Number of Slice Registers:             250  out of  18224     1%  
+ Number of Slice LUTs:                  340  out of   9112     3%  
+    Number used as Logic:               340  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    349
-   Number with an unused Flip Flop:     137  out of    349    39%  
-   Number with an unused LUT:            38  out of    349    10%  
-   Number of fully used LUT-FF pairs:   174  out of    349    49%  
-   Number of unique control sets:        17
+ Number of LUT Flip Flop pairs used:    431
+   Number with an unused Flip Flop:     181  out of    431    41%  
+   Number with an unused LUT:            91  out of    431    21%  
+   Number of fully used LUT-FF pairs:   159  out of    431    36%  
+   Number of unique control sets:        68
 
 IO Utilization: 
  Number of IOs:                          81
  Number of bonded IOBs:                  81  out of    232    34%  
+    IOB Flip Flops/Latches:              41
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -565,20 +648,37 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------+----------------------------+-------+
-Clock Signal                                         | Clock buffer(FF name)      | Load  |
------------------------------------------------------+----------------------------+-------+
-comFP/js_15                                          | NONE(shift_0)              | 12    |
-CLK                                                  | IBUF+BUFG                  | 14    |
-CLOCK                                                | BUFGP                      | 16    |
-comCLK/tmp[3]_dff_1_0                                | BUFG                       | 34    |
-comIF/PCupdate_T0_OR_1_o(comIF/PCupdate_T0_OR_1_o1:O)| NONE(*)(comIF/PC_0)        | 16    |
-comCLK/tmp[3]_dff_1_1                                | BUFG                       | 32    |
-Rupdate(comWB/Mmux_Rupdate1:O)                       | BUFG(*)(comEX/Reg_0_7)     | 64    |
-comCLK/tmp[3]_dff_1_2                                | NONE(comMEM/Rtemp_7)       | 8     |
-comCLK/tmp[3]_dff_1_3                                | NONE(comWB/PC[15]_dff_5_15)| 16    |
------------------------------------------------------+----------------------------+-------+
-(*) These 2 clock signal(s) are generated by combinatorial logic,
+-----------------------------------------------------------------------+--------------------------+-------+
+Clock Signal                                                           | Clock buffer(FF name)    | Load  |
+-----------------------------------------------------------------------+--------------------------+-------+
+comFP/js_15                                                            | NONE(shift_0)            | 12    |
+CLK                                                                    | IBUF+BUFG                | 61    |
+CLOCK                                                                  | BUFGP                    | 16    |
+comAC/nMEM_nMEM_OR_101_o(comAC/nMEM_nMEM_OR_101_o1:O)                  | NONE(*)(comAC/Rtemp_0)   | 8     |
+RDIR(comIF/RDIR1:O)                                                    | NONE(*)(comAC/IR_0)      | 16    |
+comAC/WR_RD_OR_69_o(comAC/WR_RD_OR_69_o1:O)                            | NONE(*)(comAC/data_0)    | 40    |
+comAC/nMEM_RDIR_OR_44_o(comAC/nMEM_RDIR_OR_44_o1:O)                    | NONE(*)(comAC/address_15)| 18    |
+comCLK/tmp[3]_dff_1_1                                                  | BUFG                     | 32    |
+Rupdate(comWB/Mmux_Rupdate1:O)                                         | BUFG(*)(comEX/Reg_0_7)   | 64    |
+comCLK/tmp[3]_dff_1_2                                                  | NONE(comMEM/Rtemp_7)     | 8     |
+comIF/PCupdate_PCnew[0]_AND_33_o(comIF/PCupdate_PCnew[0]_AND_33_o1:O)  | NONE(*)(comIF/PC_0_LDC)  | 1     |
+comIF/PCupdate_PCnew[1]_AND_31_o(comIF/PCupdate_PCnew[1]_AND_31_o1:O)  | NONE(*)(comIF/PC_1_LDC)  | 1     |
+comIF/PCupdate_PCnew[2]_AND_29_o(comIF/PCupdate_PCnew[2]_AND_29_o1:O)  | NONE(*)(comIF/PC_2_LDC)  | 1     |
+comIF/PCupdate_PCnew[3]_AND_27_o(comIF/PCupdate_PCnew[3]_AND_27_o1:O)  | NONE(*)(comIF/PC_3_LDC)  | 1     |
+comIF/PCupdate_PCnew[4]_AND_25_o(comIF/PCupdate_PCnew[4]_AND_25_o1:O)  | NONE(*)(comIF/PC_4_LDC)  | 1     |
+comIF/PCupdate_PCnew[5]_AND_23_o(comIF/PCupdate_PCnew[5]_AND_23_o1:O)  | NONE(*)(comIF/PC_5_LDC)  | 1     |
+comIF/PCupdate_PCnew[7]_AND_19_o(comIF/PCupdate_PCnew[7]_AND_19_o1:O)  | NONE(*)(comIF/PC_7_LDC)  | 1     |
+comIF/PCupdate_PCnew[8]_AND_17_o(comIF/PCupdate_PCnew[8]_AND_17_o1:O)  | NONE(*)(comIF/PC_8_LDC)  | 1     |
+comIF/PCupdate_PCnew[6]_AND_21_o(comIF/PCupdate_PCnew[6]_AND_21_o1:O)  | NONE(*)(comIF/PC_6_LDC)  | 1     |
+comIF/PCupdate_PCnew[9]_AND_15_o(comIF/PCupdate_PCnew[9]_AND_15_o1:O)  | NONE(*)(comIF/PC_9_LDC)  | 1     |
+comIF/PCupdate_PCnew[10]_AND_13_o(comIF/PCupdate_PCnew[10]_AND_13_o1:O)| NONE(*)(comIF/PC_10_LDC) | 1     |
+comIF/PCupdate_PCnew[11]_AND_11_o(comIF/PCupdate_PCnew[11]_AND_11_o1:O)| NONE(*)(comIF/PC_11_LDC) | 1     |
+comIF/PCupdate_PCnew[12]_AND_9_o(comIF/PCupdate_PCnew[12]_AND_9_o1:O)  | NONE(*)(comIF/PC_12_LDC) | 1     |
+comIF/PCupdate_PCnew[13]_AND_7_o(comIF/PCupdate_PCnew[13]_AND_7_o1:O)  | NONE(*)(comIF/PC_13_LDC) | 1     |
+comIF/PCupdate_PCnew[14]_AND_5_o(comIF/PCupdate_PCnew[14]_AND_5_o1:O)  | NONE(*)(comIF/PC_14_LDC) | 1     |
+comIF/PCupdate_PCnew[15]_AND_3_o(comIF/PCupdate_PCnew[15]_AND_3_o1:O)  | NONE(*)(comIF/PC_15_LDC) | 1     |
+-----------------------------------------------------------------------+--------------------------+-------+
+(*) These 21 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -591,10 +691,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.931ns (Maximum Frequency: 254.393MHz)
-   Minimum input arrival time before clock: 4.838ns
-   Maximum output required time after clock: 7.147ns
-   Maximum combinational path delay: 6.523ns
+   Minimum period: 7.306ns (Maximum Frequency: 136.879MHz)
+   Minimum input arrival time before clock: 5.573ns
+   Maximum output required time after clock: 7.061ns
+   Maximum combinational path delay: 5.749ns
 
 Timing Details:
 ---------------
@@ -602,58 +702,51 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'comFP/js_15'
-  Clock period: 3.143ns (frequency: 318.218MHz)
-  Total number of paths / destination ports: 92 / 12
+  Clock period: 4.794ns (frequency: 208.598MHz)
+  Total number of paths / destination ports: 123 / 12
 -------------------------------------------------------------------------
-Delay:               3.143ns (Levels of Logic = 2)
-  Source:            shift_0 (FF)
-  Destination:       seg_6 (FF)
+Delay:               4.794ns (Levels of Logic = 4)
+  Source:            shift_1 (FF)
+  Destination:       seg_0 (FF)
   Source Clock:      comFP/js_15 rising
   Destination Clock: comFP/js_15 rising
 
-  Data Path: shift_0 to seg_6
+  Data Path: shift_1 to seg_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              21   0.447   1.361  shift_0 (shift_0)
-     LUT4:I0->O            1   0.203   0.827  Mmux_shift[3]_digit4[7]_wide_mux_0_OUT121 (Mmux_shift[3]_digit4[7]_wide_mux_0_OUT12)
-     LUT6:I2->O            1   0.203   0.000  Mmux_shift[3]_digit4[7]_wide_mux_0_OUT75 (shift[3]_digit4[7]_wide_mux_0_OUT<6>)
-     FD:D                      0.102          seg_6
+     FD:C->Q               8   0.447   1.050  shift_1 (shift_1)
+     LUT4:I0->O            7   0.203   1.118  Mmux_shift[3]_digit4[7]_wide_mux_0_OUT111 (Mmux_shift[3]_digit4[7]_wide_mux_0_OUT11)
+     LUT5:I0->O            1   0.203   0.580  Mmux_shift[3]_digit4[7]_wide_mux_0_OUT11 (Mmux_shift[3]_digit4[7]_wide_mux_0_OUT1)
+     LUT6:I5->O            1   0.205   0.684  Mmux_shift[3]_digit4[7]_wide_mux_0_OUT12 (Mmux_shift[3]_digit4[7]_wide_mux_0_OUT15)
+     LUT2:I0->O            1   0.203   0.000  Mmux_shift[3]_digit4[7]_wide_mux_0_OUT15 (shift[3]_digit4[7]_wide_mux_0_OUT<0>)
+     FD:D                      0.102          seg_0
     ----------------------------------------
-    Total                      3.143ns (0.955ns logic, 2.188ns route)
-                                       (30.4% logic, 69.6% route)
+    Total                      4.794ns (1.363ns logic, 3.431ns route)
+                                       (28.4% logic, 71.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.582ns (frequency: 279.213MHz)
-  Total number of paths / destination ports: 71 / 23
+  Clock period: 7.306ns (frequency: 136.879MHz)
+  Total number of paths / destination ports: 2444 / 118
 -------------------------------------------------------------------------
-Delay:               3.582ns (Levels of Logic = 11)
-  Source:            comEX/Cy (FF)
-  Destination:       comEX/Cy (FF)
-  Source Clock:      CLK falling
+Delay:               3.653ns (Levels of Logic = 2)
+  Source:            comCLK/tmp[3]_dff_1_3 (FF)
+  Destination:       comIF/PC_0_C_0 (FF)
+  Source Clock:      CLK rising
   Destination Clock: CLK falling
 
-  Data Path: comEX/Cy to comEX/Cy
+  Data Path: comCLK/tmp[3]_dff_1_3 to comIF/PC_0_C_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            7   0.447   0.773  comEX/Cy (comEX/Cy)
-     MUXCY:CI->O           1   0.019   0.000  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<0> (comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<1> (comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<2> (comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<3> (comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<4> (comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<5> (comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<6> (comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_cy<6>)
-     XORCY:CI->O           5   0.180   0.715  comEX/Madd_A[7]_GND_57_o_add_7_OUT_Madd_xor<7> (comEX/A[7]_GND_57_o_add_7_OUT<7>)
-     LUT6:I5->O            1   0.205   0.000  comEX/Mmux_IR[15]_Cy_Mux_10_o11_SW0_G (N140)
-     MUXF7:I1->O           1   0.140   0.684  comEX/Mmux_IR[15]_Cy_Mux_10_o11_SW0 (N65)
-     LUT6:I4->O            1   0.203   0.000  comEX/Cy_dpot (comEX/Cy_dpot)
-     FDE_1:D                   0.102          comEX/Cy
+     FDP:C->Q              6   0.447   0.745  comCLK/tmp[3]_dff_1_3 (comCLK/tmp[3]_dff_1_3)
+     LUT6:I5->O           16   0.205   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[0]_AND_34_o1 (comIF/PCupdate_PCnew[0]_AND_34_o)
+     FDC_1:CLR                 0.430          comIF/PC_0_C_0
     ----------------------------------------
-    Total                      3.582ns (1.410ns logic, 2.171ns route)
-                                       (39.4% logic, 60.6% route)
+    Total                      3.653ns (1.287ns logic, 2.366ns route)
+                                       (35.2% logic, 64.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK'
@@ -694,194 +787,848 @@ Delay:               1.952ns (Levels of Logic = 17)
                                        (70.3% logic, 29.7% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'comCLK/tmp[3]_dff_1_0'
-  Clock period: 3.931ns (frequency: 254.393MHz)
-  Total number of paths / destination ports: 180 / 18
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[0]_AND_33_o'
+  Clock period: 3.706ns (frequency: 269.851MHz)
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               3.931ns (Levels of Logic = 2)
-  Source:            comIF/IR_12 (LATCH)
-  Destination:       comIF/IR_0 (LATCH)
-  Source Clock:      comCLK/tmp[3]_dff_1_0 falling
-  Destination Clock: comCLK/tmp[3]_dff_1_0 falling
+Delay:               3.706ns (Levels of Logic = 3)
+  Source:            comIF/PC_0_LDC (LATCH)
+  Destination:       comIF/PC_0_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[0]_AND_33_o falling
+  Destination Clock: comIF/PCupdate_PCnew[0]_AND_33_o falling
 
-  Data Path: comIF/IR_12 to comIF/IR_0
+  Data Path: comIF/PC_0_LDC to comIF/PC_0_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q             36   0.498   1.596  comIF/IR_12 (comIF/IR_12)
-     LUT5:I1->O           18   0.203   1.394  comMEM/WR1 (WR)
-     LUT5:I0->O            4   0.203   0.000  comAC/Mmux_data17 (IRdata<0>)
-     LDE:D                     0.037          comIF/IR_0
+     LDC:G->Q              3   0.498   0.898  comIF/PC_0_LDC (comIF/PC_0_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<0> (comWB/Madd_PCnew_lut<0>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<0> (PCnew<0>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[0]_AND_34_o1 (comIF/PCupdate_PCnew[0]_AND_34_o)
+     LDC:CLR                   0.430          comIF/PC_0_LDC
     ----------------------------------------
-    Total                      3.931ns (0.941ns logic, 2.990ns route)
-                                       (23.9% logic, 76.1% route)
+    Total                      3.706ns (1.470ns logic, 2.236ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[1]_AND_31_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_1_LDC (LATCH)
+  Destination:       comIF/PC_1_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[1]_AND_31_o falling
+  Destination Clock: comIF/PCupdate_PCnew[1]_AND_31_o falling
+
+  Data Path: comIF/PC_1_LDC to comIF/PC_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_1_LDC (comIF/PC_1_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<1> (comWB/Madd_PCnew_lut<1>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<1> (PCnew<1>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[1]_AND_32_o1 (comIF/PCupdate_PCnew[1]_AND_32_o)
+     LDC:CLR                   0.430          comIF/PC_1_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[2]_AND_29_o'
+  Clock period: 3.738ns (frequency: 267.519MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.738ns (Levels of Logic = 3)
+  Source:            comIF/PC_2_LDC (LATCH)
+  Destination:       comIF/PC_2_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[2]_AND_29_o falling
+  Destination Clock: comIF/PCupdate_PCnew[2]_AND_29_o falling
+
+  Data Path: comIF/PC_2_LDC to comIF/PC_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.931  comIF/PC_2_LDC (comIF/PC_2_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<2> (comWB/Madd_PCnew_lut<2>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<2> (PCnew<2>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[2]_AND_30_o1 (comIF/PCupdate_PCnew[2]_AND_30_o)
+     LDC:CLR                   0.430          comIF/PC_2_LDC
+    ----------------------------------------
+    Total                      3.738ns (1.470ns logic, 2.268ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[3]_AND_27_o'
+  Clock period: 3.738ns (frequency: 267.519MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.738ns (Levels of Logic = 3)
+  Source:            comIF/PC_3_LDC (LATCH)
+  Destination:       comIF/PC_3_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[3]_AND_27_o falling
+  Destination Clock: comIF/PCupdate_PCnew[3]_AND_27_o falling
+
+  Data Path: comIF/PC_3_LDC to comIF/PC_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.931  comIF/PC_3_LDC (comIF/PC_3_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<3> (comWB/Madd_PCnew_lut<3>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<3> (PCnew<3>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[3]_AND_28_o1 (comIF/PCupdate_PCnew[3]_AND_28_o)
+     LDC:CLR                   0.430          comIF/PC_3_LDC
+    ----------------------------------------
+    Total                      3.738ns (1.470ns logic, 2.268ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[4]_AND_25_o'
+  Clock period: 3.738ns (frequency: 267.519MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.738ns (Levels of Logic = 3)
+  Source:            comIF/PC_4_LDC (LATCH)
+  Destination:       comIF/PC_4_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[4]_AND_25_o falling
+  Destination Clock: comIF/PCupdate_PCnew[4]_AND_25_o falling
+
+  Data Path: comIF/PC_4_LDC to comIF/PC_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.931  comIF/PC_4_LDC (comIF/PC_4_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<4> (comWB/Madd_PCnew_lut<4>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<4> (PCnew<4>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[4]_AND_26_o1 (comIF/PCupdate_PCnew[4]_AND_26_o)
+     LDC:CLR                   0.430          comIF/PC_4_LDC
+    ----------------------------------------
+    Total                      3.738ns (1.470ns logic, 2.268ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[5]_AND_23_o'
+  Clock period: 3.738ns (frequency: 267.519MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.738ns (Levels of Logic = 3)
+  Source:            comIF/PC_5_LDC (LATCH)
+  Destination:       comIF/PC_5_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[5]_AND_23_o falling
+  Destination Clock: comIF/PCupdate_PCnew[5]_AND_23_o falling
+
+  Data Path: comIF/PC_5_LDC to comIF/PC_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.931  comIF/PC_5_LDC (comIF/PC_5_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<5> (comWB/Madd_PCnew_lut<5>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<5> (PCnew<5>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[5]_AND_24_o1 (comIF/PCupdate_PCnew[5]_AND_24_o)
+     LDC:CLR                   0.430          comIF/PC_5_LDC
+    ----------------------------------------
+    Total                      3.738ns (1.470ns logic, 2.268ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[7]_AND_19_o'
+  Clock period: 3.738ns (frequency: 267.519MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.738ns (Levels of Logic = 3)
+  Source:            comIF/PC_7_LDC (LATCH)
+  Destination:       comIF/PC_7_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[7]_AND_19_o falling
+  Destination Clock: comIF/PCupdate_PCnew[7]_AND_19_o falling
+
+  Data Path: comIF/PC_7_LDC to comIF/PC_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.931  comIF/PC_7_LDC (comIF/PC_7_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<7> (comWB/Madd_PCnew_lut<7>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<7> (PCnew<7>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[7]_AND_20_o1 (comIF/PCupdate_PCnew[7]_AND_20_o)
+     LDC:CLR                   0.430          comIF/PC_7_LDC
+    ----------------------------------------
+    Total                      3.738ns (1.470ns logic, 2.268ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[8]_AND_17_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_8_LDC (LATCH)
+  Destination:       comIF/PC_8_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[8]_AND_17_o falling
+  Destination Clock: comIF/PCupdate_PCnew[8]_AND_17_o falling
+
+  Data Path: comIF/PC_8_LDC to comIF/PC_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_8_LDC (comIF/PC_8_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<8> (comWB/Madd_PCnew_lut<8>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<8> (PCnew<8>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[8]_AND_18_o1 (comIF/PCupdate_PCnew[8]_AND_18_o)
+     LDC:CLR                   0.430          comIF/PC_8_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[6]_AND_21_o'
+  Clock period: 3.738ns (frequency: 267.519MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.738ns (Levels of Logic = 3)
+  Source:            comIF/PC_6_LDC (LATCH)
+  Destination:       comIF/PC_6_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[6]_AND_21_o falling
+  Destination Clock: comIF/PCupdate_PCnew[6]_AND_21_o falling
+
+  Data Path: comIF/PC_6_LDC to comIF/PC_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.931  comIF/PC_6_LDC (comIF/PC_6_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<6> (comWB/Madd_PCnew_lut<6>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<6> (PCnew<6>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[6]_AND_22_o1 (comIF/PCupdate_PCnew[6]_AND_22_o)
+     LDC:CLR                   0.430          comIF/PC_6_LDC
+    ----------------------------------------
+    Total                      3.738ns (1.470ns logic, 2.268ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[9]_AND_15_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_9_LDC (LATCH)
+  Destination:       comIF/PC_9_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[9]_AND_15_o falling
+  Destination Clock: comIF/PCupdate_PCnew[9]_AND_15_o falling
+
+  Data Path: comIF/PC_9_LDC to comIF/PC_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_9_LDC (comIF/PC_9_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<9> (comWB/Madd_PCnew_lut<9>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<9> (PCnew<9>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[9]_AND_16_o1 (comIF/PCupdate_PCnew[9]_AND_16_o)
+     LDC:CLR                   0.430          comIF/PC_9_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[10]_AND_13_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_10_LDC (LATCH)
+  Destination:       comIF/PC_10_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[10]_AND_13_o falling
+  Destination Clock: comIF/PCupdate_PCnew[10]_AND_13_o falling
+
+  Data Path: comIF/PC_10_LDC to comIF/PC_10_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_10_LDC (comIF/PC_10_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<10> (comWB/Madd_PCnew_lut<10>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<10> (PCnew<10>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[10]_AND_14_o1 (comIF/PCupdate_PCnew[10]_AND_14_o)
+     LDC:CLR                   0.430          comIF/PC_10_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[11]_AND_11_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_11_LDC (LATCH)
+  Destination:       comIF/PC_11_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[11]_AND_11_o falling
+  Destination Clock: comIF/PCupdate_PCnew[11]_AND_11_o falling
+
+  Data Path: comIF/PC_11_LDC to comIF/PC_11_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_11_LDC (comIF/PC_11_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<11> (comWB/Madd_PCnew_lut<11>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<11> (PCnew<11>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[11]_AND_12_o1 (comIF/PCupdate_PCnew[11]_AND_12_o)
+     LDC:CLR                   0.430          comIF/PC_11_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[12]_AND_9_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_12_LDC (LATCH)
+  Destination:       comIF/PC_12_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[12]_AND_9_o falling
+  Destination Clock: comIF/PCupdate_PCnew[12]_AND_9_o falling
+
+  Data Path: comIF/PC_12_LDC to comIF/PC_12_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_12_LDC (comIF/PC_12_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<12> (comWB/Madd_PCnew_lut<12>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<12> (PCnew<12>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[12]_AND_10_o1 (comIF/PCupdate_PCnew[12]_AND_10_o)
+     LDC:CLR                   0.430          comIF/PC_12_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[13]_AND_7_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_13_LDC (LATCH)
+  Destination:       comIF/PC_13_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[13]_AND_7_o falling
+  Destination Clock: comIF/PCupdate_PCnew[13]_AND_7_o falling
+
+  Data Path: comIF/PC_13_LDC to comIF/PC_13_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_13_LDC (comIF/PC_13_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<13> (comWB/Madd_PCnew_lut<13>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<13> (PCnew<13>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[13]_AND_8_o1 (comIF/PCupdate_PCnew[13]_AND_8_o)
+     LDC:CLR                   0.430          comIF/PC_13_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[14]_AND_5_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_14_LDC (LATCH)
+  Destination:       comIF/PC_14_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[14]_AND_5_o falling
+  Destination Clock: comIF/PCupdate_PCnew[14]_AND_5_o falling
+
+  Data Path: comIF/PC_14_LDC to comIF/PC_14_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_14_LDC (comIF/PC_14_LDC)
+     LUT4:I0->O            1   0.203   0.000  comWB/Madd_PCnew_lut<14> (comWB/Madd_PCnew_lut<14>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<14> (PCnew<14>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[14]_AND_6_o1 (comIF/PCupdate_PCnew[14]_AND_6_o)
+     LDC:CLR                   0.430          comIF/PC_14_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIF/PCupdate_PCnew[15]_AND_3_o'
+  Clock period: 3.770ns (frequency: 265.287MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.770ns (Levels of Logic = 3)
+  Source:            comIF/PC_15_LDC (LATCH)
+  Destination:       comIF/PC_15_LDC (LATCH)
+  Source Clock:      comIF/PCupdate_PCnew[15]_AND_3_o falling
+  Destination Clock: comIF/PCupdate_PCnew[15]_AND_3_o falling
+
+  Data Path: comIF/PC_15_LDC to comIF/PC_15_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_15_LDC (comIF/PC_15_LDC)
+     LUT4:I0->O            0   0.203   0.000  comWB/Madd_PCnew_lut<15> (comWB/Madd_PCnew_lut<15>)
+     XORCY:LI->O           2   0.136   0.721  comWB/Madd_PCnew_xor<15> (PCnew<15>)
+     LUT3:I1->O            2   0.203   0.616  comIF/PCupdate_PCnew[15]_AND_4_o1 (comIF/PCupdate_PCnew[15]_AND_4_o)
+     LDC:CLR                   0.430          comIF/PC_15_LDC
+    ----------------------------------------
+    Total                      3.770ns (1.470ns logic, 2.299ns route)
+                                       (39.0% logic, 61.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 5 / 5
+  Total number of paths / destination ports: 100 / 68
 -------------------------------------------------------------------------
-Offset:              2.765ns (Levels of Logic = 1)
-  Source:            RST (PAD)
-  Destination:       comCLK/tmp[3]_dff_1_0 (FF)
-  Destination Clock: CLK rising
-
-  Data Path: RST to comCLK/tmp[3]_dff_1_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            21   1.222   1.113  RST_IBUF (RST_IBUF)
-     FDP:PRE                   0.430          comCLK/tmp[3]_dff_1_3
-    ----------------------------------------
-    Total                      2.765ns (1.652ns logic, 1.113ns route)
-                                       (59.8% logic, 40.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCLK/tmp[3]_dff_1_0'
-  Total number of paths / destination ports: 70 / 52
--------------------------------------------------------------------------
-Offset:              3.137ns (Levels of Logic = 1)
+Offset:              5.573ns (Levels of Logic = 4)
   Source:            CLK (PAD)
-  Destination:       comIF/nextPC_14 (LATCH)
-  Destination Clock: comCLK/tmp[3]_dff_1_0 falling
+  Destination:       comIF/PC_0_C_0 (FF)
+  Destination Clock: CLK falling
 
-  Data Path: CLK to comIF/nextPC_14
+  Data Path: CLK to comIF/PC_0_C_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            57   1.222   1.593  CLK_IBUF (CLK_IBUF)
-     LDE:GE                    0.322          comIF/nextPC_12
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[0]_AND_34_o1 (comIF/PCupdate_PCnew[0]_AND_34_o)
+     FDC_1:CLR                 0.430          comIF/PC_0_C_0
     ----------------------------------------
-    Total                      3.137ns (1.544ns logic, 1.593ns route)
-                                       (49.2% logic, 50.8% route)
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_T0_OR_1_o'
-  Total number of paths / destination ports: 32 / 32
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comAC/WR_RD_OR_69_o'
+  Total number of paths / destination ports: 80 / 40
 -------------------------------------------------------------------------
-Offset:              4.838ns (Levels of Logic = 3)
-  Source:            CLK (PAD)
-  Destination:       comIF/PC_0 (LATCH)
-  Destination Clock: comIF/PCupdate_T0_OR_1_o falling
+Offset:              2.309ns (Levels of Logic = 2)
+  Source:            IODB<0> (PAD)
+  Destination:       comAC/data_0 (LATCH)
+  Destination Clock: comAC/WR_RD_OR_69_o falling
 
-  Data Path: CLK to comIF/PC_0
+  Data Path: IODB<0> to comAC/data_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            57   1.222   1.938  CLK_IBUF (CLK_IBUF)
-     LUT5:I0->O           16   0.203   1.233  comWB/Mmux_PCupdate13 (PCupdate)
-     LUT3:I0->O            1   0.205   0.000  comIF/Mmux_PC[15]_PCnew[0]_MUX_80_o11 (comIF/PC[15]_PCnew[0]_MUX_80_o)
-     LDC:D                     0.037          comIF/PC_0
+     IOBUF:IO->O           2   1.222   0.845  IODB_0_IOBUF (N28)
+     LUT5:I2->O            3   0.205   0.000  comAC/Mmux_data[15]_ALUOUT[0]_MUX_201_o11 (comAC/data[15]_ALUOUT[0]_MUX_201_o)
+     LD:D                      0.037          comAC/data_0
     ----------------------------------------
-    Total                      4.838ns (1.667ns logic, 3.171ns route)
-                                       (34.5% logic, 65.5% route)
+    Total                      2.309ns (1.464ns logic, 0.845ns route)
+                                       (63.4% logic, 36.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCLK/tmp[3]_dff_1_2'
-  Total number of paths / destination ports: 40 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[0]_AND_33_o'
+  Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              4.423ns (Levels of Logic = 3)
+Offset:              5.573ns (Levels of Logic = 4)
   Source:            CLK (PAD)
-  Destination:       comMEM/Rtemp_7 (LATCH)
-  Destination Clock: comCLK/tmp[3]_dff_1_2 falling
+  Destination:       comIF/PC_0_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[0]_AND_33_o falling
 
-  Data Path: CLK to comMEM/Rtemp_7
+  Data Path: CLK to comIF/PC_0_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            57   1.222   1.698  CLK_IBUF (CLK_IBUF)
-     LUT4:I2->O            9   0.203   1.058  comAC/Mmux_address17 (IOAD_0_OBUF)
-     LUT4:I1->O            1   0.205   0.000  comAC/Mmux_Rtemp11 (Rtempdata<0>)
-     LDE:D                     0.037          comMEM/Rtemp_0
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[0]_AND_34_o1 (comIF/PCupdate_PCnew[0]_AND_34_o)
+     LDC:CLR                   0.430          comIF/PC_0_LDC
     ----------------------------------------
-    Total                      4.423ns (1.667ns logic, 2.756ns route)
-                                       (37.7% logic, 62.3% route)
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comCLK/tmp[3]_dff_1_1'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[1]_AND_31_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_1_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[1]_AND_31_o falling
+
+  Data Path: CLK to comIF/PC_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[1]_AND_32_o1 (comIF/PCupdate_PCnew[1]_AND_32_o)
+     LDC:CLR                   0.430          comIF/PC_1_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[2]_AND_29_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_2_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[2]_AND_29_o falling
+
+  Data Path: CLK to comIF/PC_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[2]_AND_30_o1 (comIF/PCupdate_PCnew[2]_AND_30_o)
+     LDC:CLR                   0.430          comIF/PC_2_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[3]_AND_27_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_3_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[3]_AND_27_o falling
+
+  Data Path: CLK to comIF/PC_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[3]_AND_28_o1 (comIF/PCupdate_PCnew[3]_AND_28_o)
+     LDC:CLR                   0.430          comIF/PC_3_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[4]_AND_25_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_4_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[4]_AND_25_o falling
+
+  Data Path: CLK to comIF/PC_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[4]_AND_26_o1 (comIF/PCupdate_PCnew[4]_AND_26_o)
+     LDC:CLR                   0.430          comIF/PC_4_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[5]_AND_23_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_5_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[5]_AND_23_o falling
+
+  Data Path: CLK to comIF/PC_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[5]_AND_24_o1 (comIF/PCupdate_PCnew[5]_AND_24_o)
+     LDC:CLR                   0.430          comIF/PC_5_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[7]_AND_19_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_7_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[7]_AND_19_o falling
+
+  Data Path: CLK to comIF/PC_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[7]_AND_20_o1 (comIF/PCupdate_PCnew[7]_AND_20_o)
+     LDC:CLR                   0.430          comIF/PC_7_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[8]_AND_17_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_8_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[8]_AND_17_o falling
+
+  Data Path: CLK to comIF/PC_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[8]_AND_18_o1 (comIF/PCupdate_PCnew[8]_AND_18_o)
+     LDC:CLR                   0.430          comIF/PC_8_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[6]_AND_21_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_6_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[6]_AND_21_o falling
+
+  Data Path: CLK to comIF/PC_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13 (PCupdate)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[6]_AND_22_o1 (comIF/PCupdate_PCnew[6]_AND_22_o)
+     LDC:CLR                   0.430          comIF/PC_6_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[9]_AND_15_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_9_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[9]_AND_15_o falling
+
+  Data Path: CLK to comIF/PC_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[9]_AND_16_o1 (comIF/PCupdate_PCnew[9]_AND_16_o)
+     LDC:CLR                   0.430          comIF/PC_9_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[10]_AND_13_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_10_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[10]_AND_13_o falling
+
+  Data Path: CLK to comIF/PC_10_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[10]_AND_14_o1 (comIF/PCupdate_PCnew[10]_AND_14_o)
+     LDC:CLR                   0.430          comIF/PC_10_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[11]_AND_11_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_11_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[11]_AND_11_o falling
+
+  Data Path: CLK to comIF/PC_11_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[11]_AND_12_o1 (comIF/PCupdate_PCnew[11]_AND_12_o)
+     LDC:CLR                   0.430          comIF/PC_11_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[12]_AND_9_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_12_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[12]_AND_9_o falling
+
+  Data Path: CLK to comIF/PC_12_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[12]_AND_10_o1 (comIF/PCupdate_PCnew[12]_AND_10_o)
+     LDC:CLR                   0.430          comIF/PC_12_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[13]_AND_7_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_13_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[13]_AND_7_o falling
+
+  Data Path: CLK to comIF/PC_13_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[13]_AND_8_o1 (comIF/PCupdate_PCnew[13]_AND_8_o)
+     LDC:CLR                   0.430          comIF/PC_13_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[14]_AND_5_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_14_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[14]_AND_5_o falling
+
+  Data Path: CLK to comIF/PC_14_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[14]_AND_6_o1 (comIF/PCupdate_PCnew[14]_AND_6_o)
+     LDC:CLR                   0.430          comIF/PC_14_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comIF/PCupdate_PCnew[15]_AND_3_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.573ns (Levels of Logic = 4)
+  Source:            CLK (PAD)
+  Destination:       comIF/PC_15_LDC (LATCH)
+  Destination Clock: comIF/PCupdate_PCnew[15]_AND_3_o falling
+
+  Data Path: CLK to comIF/PC_15_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.934  CLK_IBUF (CLK_IBUF)
+     LUT5:I3->O            3   0.203   0.755  comWB/Mmux_PCupdate12 (comWB/Mmux_PCupdate11)
+     LUT6:I4->O           16   0.203   1.005  comWB/Mmux_PCupdate13_1 (comWB/Mmux_PCupdate13)
+     LUT3:I2->O            2   0.205   0.616  comIF/PCupdate_PCnew[15]_AND_4_o1 (comIF/PCupdate_PCnew[15]_AND_4_o)
+     LDC:CLR                   0.430          comIF/PC_15_LDC
+    ----------------------------------------
+    Total                      5.573ns (2.263ns logic, 3.310ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comAC/nMEM_RDIR_OR_44_o'
   Total number of paths / destination ports: 19 / 19
 -------------------------------------------------------------------------
-Offset:              4.980ns (Levels of Logic = 2)
-  Source:            comEX/Addr_0 (FF)
-  Destination:       IOAD<0> (PAD)
-  Source Clock:      comCLK/tmp[3]_dff_1_1 rising
+Offset:              4.955ns (Levels of Logic = 2)
+  Source:            comAC/address_0 (LATCH)
+  Destination:       nBHE (PAD)
+  Source Clock:      comAC/nMEM_RDIR_OR_44_o falling
 
-  Data Path: comEX/Addr_0 to IOAD<0>
+  Data Path: comAC/address_0 to nBHE
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.447   0.931  comEX/Addr_0 (comEX/Addr_0)
-     LUT4:I0->O            9   0.203   0.829  comAC/Mmux_address17 (IOAD_0_OBUF)
-     OBUF:I->O                 2.571          IOAD_0_OBUF (IOAD<0>)
+     LD:G->Q              10   0.498   1.104  comAC/address_0 (comAC/address_0)
+     LUT6:I2->O            1   0.203   0.579  comAC/nBHE1 (nBHE_OBUF)
+     OBUF:I->O                 2.571          nBHE_OBUF (nBHE)
     ----------------------------------------
-    Total                      4.980ns (3.221ns logic, 1.759ns route)
-                                       (64.7% logic, 35.3% route)
+    Total                      4.955ns (3.272ns logic, 1.683ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comAC/WR_RD_OR_69_o'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            comAC/data_15_1 (LATCH)
+  Destination:       DBUS<15> (PAD)
+  Source Clock:      comAC/WR_RD_OR_69_o falling
+
+  Data Path: comAC/data_15_1 to DBUS<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  comAC/data_15_1 (comAC/data_15_1)
+     IOBUF:I->IO               2.571          DBUS_15_IOBUF (DBUS<15>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 45 / 45
+  Total number of paths / destination ports: 216 / 40
 -------------------------------------------------------------------------
-Offset:              5.453ns (Levels of Logic = 2)
-  Source:            comCLK/tmp[3]_dff_1_0 (FF)
-  Destination:       IOAD<0> (PAD)
-  Source Clock:      CLK rising
+Offset:              7.061ns (Levels of Logic = 3)
+  Source:            comIF/IR_13 (FF)
+  Destination:       nBHE (PAD)
+  Source Clock:      CLK falling
 
-  Data Path: comCLK/tmp[3]_dff_1_0 to IOAD<0>
+  Data Path: comIF/IR_13 to nBHE
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             24   0.447   1.401  comCLK/tmp[3]_dff_1_0 (comCLK/tmp[3]_dff_1_0)
-     LUT4:I1->O            9   0.205   0.829  comAC/Mmux_address17 (IOAD_0_OBUF)
-     OBUF:I->O                 2.571          IOAD_0_OBUF (IOAD<0>)
+     FDE_1:C->Q           47   0.447   1.733  comIF/IR_13 (comIF/IR_13)
+     LUT5:I2->O           20   0.205   1.321  comMEM/RD1 (RD)
+     LUT6:I3->O            1   0.205   0.579  comAC/nBHE1 (nBHE_OBUF)
+     OBUF:I->O                 2.571          nBHE_OBUF (nBHE)
     ----------------------------------------
-    Total                      5.453ns (3.223ns logic, 2.230ns route)
-                                       (59.1% logic, 40.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_T0_OR_1_o'
-  Total number of paths / destination ports: 33 / 25
--------------------------------------------------------------------------
-Offset:              4.786ns (Levels of Logic = 2)
-  Source:            comIF/PC_0 (LATCH)
-  Destination:       IOAD<0> (PAD)
-  Source Clock:      comIF/PCupdate_T0_OR_1_o falling
-
-  Data Path: comIF/PC_0 to IOAD<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              4   0.498   0.684  comIF/PC_0 (comIF/PC_0)
-     LUT4:I3->O            9   0.205   0.829  comAC/Mmux_address17 (IOAD_0_OBUF)
-     OBUF:I->O                 2.571          IOAD_0_OBUF (IOAD<0>)
-    ----------------------------------------
-    Total                      4.786ns (3.274ns logic, 1.512ns route)
-                                       (68.4% logic, 31.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comCLK/tmp[3]_dff_1_0'
-  Total number of paths / destination ports: 420 / 32
--------------------------------------------------------------------------
-Offset:              7.147ns (Levels of Logic = 3)
-  Source:            comIF/IR_12 (LATCH)
-  Destination:       DBUS<15> (PAD)
-  Source Clock:      comCLK/tmp[3]_dff_1_0 falling
-
-  Data Path: comIF/IR_12 to DBUS<15>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDE:G->Q             36   0.498   1.596  comIF/IR_12 (comIF/IR_12)
-     LUT5:I1->O           18   0.203   1.394  comMEM/WR1 (WR)
-     LUT5:I0->O            4   0.203   0.683  comAC/Mmux_data17 (IRdata<0>)
-     IOBUF:I->IO               2.571          DBUS_0_IOBUF (DBUS<0>)
-    ----------------------------------------
-    Total                      7.147ns (3.475ns logic, 3.672ns route)
-                                       (48.6% logic, 51.4% route)
+    Total                      7.061ns (3.428ns logic, 3.633ns route)
+                                       (48.5% logic, 51.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comFP/js_15'
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Offset:              4.151ns (Levels of Logic = 1)
+Offset:              3.820ns (Levels of Logic = 1)
   Source:            shift_3 (FF)
   Destination:       an<2> (PAD)
   Source Clock:      comFP/js_15 rising
@@ -890,30 +1637,358 @@ Offset:              4.151ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              22   0.447   1.133  shift_3 (shift_3)
+     FD:C->Q               8   0.447   0.802  shift_3 (shift_3)
      OBUF:I->O                 2.571          an_2_OBUF (an<2>)
     ----------------------------------------
-    Total                      4.151ns (3.018ns logic, 1.133ns route)
-                                       (72.7% logic, 27.3% route)
+    Total                      3.820ns (3.018ns logic, 0.802ns route)
+                                       (79.0% logic, 21.0% route)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 77 / 53
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[15]_AND_3_o'
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               6.523ns (Levels of Logic = 3)
-  Source:            CLK (PAD)
-  Destination:       IOAD<0> (PAD)
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_15_LDC (LATCH)
+  Destination:       led<7> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[15]_AND_3_o falling
 
-  Data Path: CLK to IOAD<0>
+  Data Path: comIF/PC_15_LDC to led<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            57   1.222   1.698  CLK_IBUF (CLK_IBUF)
-     LUT4:I2->O            9   0.203   0.829  comAC/Mmux_address17 (IOAD_0_OBUF)
-     OBUF:I->O                 2.571          IOAD_0_OBUF (IOAD<0>)
+     LDC:G->Q              5   0.498   0.962  comIF/PC_15_LDC (comIF/PC_15_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led81 (led_7_OBUF)
+     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
     ----------------------------------------
-    Total                      6.523ns (3.996ns logic, 2.527ns route)
-                                       (61.3% logic, 38.7% route)
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[7]_AND_19_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.587ns (Levels of Logic = 3)
+  Source:            comIF/PC_7_LDC (LATCH)
+  Destination:       led<7> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[7]_AND_19_o falling
+
+  Data Path: comIF/PC_7_LDC to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  comIF/PC_7_LDC (comIF/PC_7_LDC)
+     LUT3:I0->O            2   0.205   0.617  comIF/PC_71 (comIF/PC_7)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led81 (led_7_OBUF)
+     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      5.587ns (3.479ns logic, 2.108ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[14]_AND_5_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_14_LDC (LATCH)
+  Destination:       led<6> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[14]_AND_5_o falling
+
+  Data Path: comIF/PC_14_LDC to led<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_14_LDC (comIF/PC_14_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led71 (led_6_OBUF)
+     OBUF:I->O                 2.571          led_6_OBUF (led<6>)
+    ----------------------------------------
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[6]_AND_21_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.587ns (Levels of Logic = 3)
+  Source:            comIF/PC_6_LDC (LATCH)
+  Destination:       led<6> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[6]_AND_21_o falling
+
+  Data Path: comIF/PC_6_LDC to led<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  comIF/PC_6_LDC (comIF/PC_6_LDC)
+     LUT3:I0->O            2   0.205   0.617  comIF/PC_61 (comIF/PC_6)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led71 (led_6_OBUF)
+     OBUF:I->O                 2.571          led_6_OBUF (led<6>)
+    ----------------------------------------
+    Total                      5.587ns (3.479ns logic, 2.108ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[13]_AND_7_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_13_LDC (LATCH)
+  Destination:       led<5> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[13]_AND_7_o falling
+
+  Data Path: comIF/PC_13_LDC to led<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_13_LDC (comIF/PC_13_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led61 (led_5_OBUF)
+     OBUF:I->O                 2.571          led_5_OBUF (led<5>)
+    ----------------------------------------
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[5]_AND_23_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.587ns (Levels of Logic = 3)
+  Source:            comIF/PC_5_LDC (LATCH)
+  Destination:       led<5> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[5]_AND_23_o falling
+
+  Data Path: comIF/PC_5_LDC to led<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  comIF/PC_5_LDC (comIF/PC_5_LDC)
+     LUT3:I0->O            2   0.205   0.617  comIF/PC_51 (comIF/PC_5)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led61 (led_5_OBUF)
+     OBUF:I->O                 2.571          led_5_OBUF (led<5>)
+    ----------------------------------------
+    Total                      5.587ns (3.479ns logic, 2.108ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[12]_AND_9_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_12_LDC (LATCH)
+  Destination:       led<4> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[12]_AND_9_o falling
+
+  Data Path: comIF/PC_12_LDC to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_12_LDC (comIF/PC_12_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led51 (led_4_OBUF)
+     OBUF:I->O                 2.571          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[4]_AND_25_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.587ns (Levels of Logic = 3)
+  Source:            comIF/PC_4_LDC (LATCH)
+  Destination:       led<4> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[4]_AND_25_o falling
+
+  Data Path: comIF/PC_4_LDC to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  comIF/PC_4_LDC (comIF/PC_4_LDC)
+     LUT3:I0->O            2   0.205   0.617  comIF/PC_41 (comIF/PC_4)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led51 (led_4_OBUF)
+     OBUF:I->O                 2.571          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      5.587ns (3.479ns logic, 2.108ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[11]_AND_11_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_11_LDC (LATCH)
+  Destination:       led<3> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[11]_AND_11_o falling
+
+  Data Path: comIF/PC_11_LDC to led<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_11_LDC (comIF/PC_11_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led41 (led_3_OBUF)
+     OBUF:I->O                 2.571          led_3_OBUF (led<3>)
+    ----------------------------------------
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[3]_AND_27_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.587ns (Levels of Logic = 3)
+  Source:            comIF/PC_3_LDC (LATCH)
+  Destination:       led<3> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[3]_AND_27_o falling
+
+  Data Path: comIF/PC_3_LDC to led<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  comIF/PC_3_LDC (comIF/PC_3_LDC)
+     LUT3:I0->O            2   0.205   0.617  comIF/PC_31 (comIF/PC_3)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led41 (led_3_OBUF)
+     OBUF:I->O                 2.571          led_3_OBUF (led<3>)
+    ----------------------------------------
+    Total                      5.587ns (3.479ns logic, 2.108ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[10]_AND_13_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_10_LDC (LATCH)
+  Destination:       led<2> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[10]_AND_13_o falling
+
+  Data Path: comIF/PC_10_LDC to led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_10_LDC (comIF/PC_10_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led31 (led_2_OBUF)
+     OBUF:I->O                 2.571          led_2_OBUF (led<2>)
+    ----------------------------------------
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[2]_AND_29_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.587ns (Levels of Logic = 3)
+  Source:            comIF/PC_2_LDC (LATCH)
+  Destination:       led<2> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[2]_AND_29_o falling
+
+  Data Path: comIF/PC_2_LDC to led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.498   0.912  comIF/PC_2_LDC (comIF/PC_2_LDC)
+     LUT3:I0->O            2   0.205   0.617  comIF/PC_21 (comIF/PC_2)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led31 (led_2_OBUF)
+     OBUF:I->O                 2.571          led_2_OBUF (led<2>)
+    ----------------------------------------
+    Total                      5.587ns (3.479ns logic, 2.108ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[9]_AND_15_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_9_LDC (LATCH)
+  Destination:       led<1> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[9]_AND_15_o falling
+
+  Data Path: comIF/PC_9_LDC to led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_9_LDC (comIF/PC_9_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led21 (led_1_OBUF)
+     OBUF:I->O                 2.571          led_1_OBUF (led<1>)
+    ----------------------------------------
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[1]_AND_31_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.581ns (Levels of Logic = 3)
+  Source:            comIF/PC_1_LDC (LATCH)
+  Destination:       led<1> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[1]_AND_31_o falling
+
+  Data Path: comIF/PC_1_LDC to led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.943  comIF/PC_1_LDC (comIF/PC_1_LDC)
+     LUT3:I0->O            1   0.205   0.580  comIF/PC_16 (comIF/PC_1)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led21 (led_1_OBUF)
+     OBUF:I->O                 2.571          led_1_OBUF (led<1>)
+    ----------------------------------------
+    Total                      5.581ns (3.479ns logic, 2.102ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[8]_AND_17_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.813ns (Levels of Logic = 2)
+  Source:            comIF/PC_8_LDC (LATCH)
+  Destination:       led<0> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[8]_AND_17_o falling
+
+  Data Path: comIF/PC_8_LDC to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.498   0.962  comIF/PC_8_LDC (comIF/PC_8_LDC)
+     LUT5:I1->O            1   0.203   0.579  Mmux_led11 (led_0_OBUF)
+     OBUF:I->O                 2.571          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      4.813ns (3.272ns logic, 1.541ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIF/PCupdate_PCnew[0]_AND_33_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.588ns (Levels of Logic = 3)
+  Source:            comIF/PC_0_LDC (LATCH)
+  Destination:       led<0> (PAD)
+  Source Clock:      comIF/PCupdate_PCnew[0]_AND_33_o falling
+
+  Data Path: comIF/PC_0_LDC to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              3   0.498   0.879  comIF/PC_0_LDC (comIF/PC_0_LDC)
+     LUT3:I0->O            3   0.205   0.651  comIF/PC_01 (comIF/PC_0)
+     LUT5:I4->O            1   0.205   0.579  Mmux_led11 (led_0_OBUF)
+     OBUF:I->O                 2.571          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      5.588ns (3.479ns logic, 2.109ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Delay:               5.749ns (Levels of Logic = 3)
+  Source:            CLK (PAD)
+  Destination:       nMREQ (PAD)
+
+  Data Path: CLK to nMREQ
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   1.174  CLK_IBUF (CLK_IBUF)
+     LUT6:I1->O            1   0.203   0.579  comAC/nBHE1 (nBHE_OBUF)
+     OBUF:I->O                 2.571          nBHE_OBUF (nBHE)
+    ----------------------------------------
+    Total                      5.749ns (3.996ns logic, 1.753ns route)
+                                       (69.5% logic, 30.5% route)
 
 =========================================================================
 
@@ -921,14 +1996,30 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-CLK                  |    1.721|         |    3.582|         |
-comCLK/tmp[3]_dff_1_0|         |         |    5.587|         |
-comCLK/tmp[3]_dff_1_1|         |         |    4.106|         |
----------------------+---------+---------+---------+---------+
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |    1.954|         |    5.617|         |
+RDIR                             |         |         |    1.385|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    3.858|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    4.794|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    4.596|         |
+comIF/PCupdate_PCnew[11]_AND_11_o|         |         |    4.577|         |
+comIF/PCupdate_PCnew[12]_AND_9_o |         |         |    4.558|         |
+comIF/PCupdate_PCnew[13]_AND_7_o |         |         |    4.539|         |
+comIF/PCupdate_PCnew[14]_AND_5_o |         |         |    4.520|         |
+comIF/PCupdate_PCnew[15]_AND_3_o |         |         |    3.770|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    4.767|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    4.754|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    4.735|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    4.716|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    4.697|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    4.678|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    4.659|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    4.634|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    4.615|         |
+---------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock CLOCK
 ---------------+---------+---------+---------+---------+
@@ -938,86 +2029,384 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 CLOCK          |    1.952|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock RDIR
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+comAC/WR_RD_OR_69_o|         |         |    1.151|         |
+-------------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock Rupdate
 ---------------------+---------+---------+---------+---------+
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-CLK                  |         |    1.659|         |         |
-comCLK/tmp[3]_dff_1_0|         |    4.058|         |         |
+CLK                  |         |    4.014|         |         |
 comCLK/tmp[3]_dff_1_2|         |    1.385|         |         |
 ---------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCLK/tmp[3]_dff_1_0
-------------------------+---------+---------+---------+---------+
-                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------+---------+---------+---------+---------+
-CLK                     |         |         |    1.492|         |
-comCLK/tmp[3]_dff_1_0   |         |         |    3.931|         |
-comIF/PCupdate_T0_OR_1_o|         |         |    2.023|         |
-------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock comAC/WR_RD_OR_69_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    4.063|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comAC/nMEM_RDIR_OR_44_o
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |         |         |    4.225|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    1.306|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    1.636|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    1.700|         |
+comIF/PCupdate_PCnew[11]_AND_11_o|         |         |    1.700|         |
+comIF/PCupdate_PCnew[12]_AND_9_o |         |         |    1.700|         |
+comIF/PCupdate_PCnew[13]_AND_7_o |         |         |    1.700|         |
+comIF/PCupdate_PCnew[14]_AND_5_o |         |         |    1.700|         |
+comIF/PCupdate_PCnew[15]_AND_3_o |         |         |    1.700|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    1.700|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    1.669|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    1.669|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    1.669|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    1.669|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    1.669|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    1.669|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    1.700|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    1.700|         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comAC/nMEM_nMEM_OR_101_o
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+CLK                    |         |         |    4.063|         |
+comAC/WR_RD_OR_69_o    |         |         |    1.699|         |
+comAC/nMEM_RDIR_OR_44_o|         |         |    1.825|         |
+-----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCLK/tmp[3]_dff_1_1
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-Rupdate              |    1.773|         |         |         |
-comCLK/tmp[3]_dff_1_0|         |    2.585|         |         |
----------------------+---------+---------+---------+---------+
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |    2.548|         |         |
+Rupdate        |    1.773|         |         |         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCLK/tmp[3]_dff_1_2
 ------------------------+---------+---------+---------+---------+
                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
-CLK                     |         |         |    3.353|         |
-comCLK/tmp[3]_dff_1_0   |         |         |    5.064|         |
-comCLK/tmp[3]_dff_1_1   |         |         |    2.880|         |
-comIF/PCupdate_T0_OR_1_o|         |         |    2.686|         |
-------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock comCLK/tmp[3]_dff_1_3
-------------------------+---------+---------+---------+---------+
-                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------+---------+---------+---------+---------+
-comCLK/tmp[3]_dff_1_1   |    2.056|         |         |         |
-comIF/PCupdate_T0_OR_1_o|         |    2.209|         |         |
+CLK                     |         |         |    3.800|         |
+comAC/nMEM_nMEM_OR_101_o|         |         |    1.114|         |
 ------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comFP/js_15
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-CLK                  |    2.712|         |         |         |
-comCLK/tmp[3]_dff_1_0|         |    4.712|         |         |
-comFP/js_15          |    3.143|         |         |         |
----------------------+---------+---------+---------+---------+
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.945|    3.878|         |         |
+comFP/js_15    |    4.794|         |         |         |
+---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comIF/PCupdate_T0_OR_1_o
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-CLK                  |         |         |    5.045|         |
-comCLK/tmp[3]_dff_1_0|         |         |    4.941|         |
-comCLK/tmp[3]_dff_1_3|         |         |    1.269|         |
----------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[0]_AND_33_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.376|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    3.706|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[10]_AND_13_o
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    3.763|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    4.699|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    3.770|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    4.672|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    4.659|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    4.640|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    4.621|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    4.602|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    4.583|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    4.564|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    4.539|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    4.520|         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[11]_AND_11_o
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    3.782|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    4.718|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    4.520|         |
+comIF/PCupdate_PCnew[11]_AND_11_o|         |         |    3.770|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    4.691|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    4.678|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    4.659|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    4.640|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    4.621|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    4.602|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    4.583|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    4.558|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    4.539|         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[12]_AND_9_o
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    3.801|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    4.737|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    4.539|         |
+comIF/PCupdate_PCnew[11]_AND_11_o|         |         |    4.520|         |
+comIF/PCupdate_PCnew[12]_AND_9_o |         |         |    3.770|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    4.710|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    4.697|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    4.678|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    4.659|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    4.640|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    4.621|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    4.602|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    4.577|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    4.558|         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[13]_AND_7_o
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    3.820|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    4.756|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    4.558|         |
+comIF/PCupdate_PCnew[11]_AND_11_o|         |         |    4.539|         |
+comIF/PCupdate_PCnew[12]_AND_9_o |         |         |    4.520|         |
+comIF/PCupdate_PCnew[13]_AND_7_o |         |         |    3.770|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    4.729|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    4.716|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    4.697|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    4.678|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    4.659|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    4.640|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    4.621|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    4.596|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    4.577|         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[14]_AND_5_o
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    3.839|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    4.775|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    4.577|         |
+comIF/PCupdate_PCnew[11]_AND_11_o|         |         |    4.558|         |
+comIF/PCupdate_PCnew[12]_AND_9_o |         |         |    4.539|         |
+comIF/PCupdate_PCnew[13]_AND_7_o |         |         |    4.520|         |
+comIF/PCupdate_PCnew[14]_AND_5_o |         |         |    3.770|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    4.748|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    4.735|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    4.716|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    4.697|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    4.678|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    4.659|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    4.640|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    4.615|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    4.596|         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[15]_AND_3_o
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+CLK                              |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1            |         |         |    3.858|         |
+comIF/PCupdate_PCnew[0]_AND_33_o |         |         |    4.794|         |
+comIF/PCupdate_PCnew[10]_AND_13_o|         |         |    4.596|         |
+comIF/PCupdate_PCnew[11]_AND_11_o|         |         |    4.577|         |
+comIF/PCupdate_PCnew[12]_AND_9_o |         |         |    4.558|         |
+comIF/PCupdate_PCnew[13]_AND_7_o |         |         |    4.539|         |
+comIF/PCupdate_PCnew[14]_AND_5_o |         |         |    4.520|         |
+comIF/PCupdate_PCnew[15]_AND_3_o |         |         |    3.770|         |
+comIF/PCupdate_PCnew[1]_AND_31_o |         |         |    4.767|         |
+comIF/PCupdate_PCnew[2]_AND_29_o |         |         |    4.754|         |
+comIF/PCupdate_PCnew[3]_AND_27_o |         |         |    4.735|         |
+comIF/PCupdate_PCnew[4]_AND_25_o |         |         |    4.716|         |
+comIF/PCupdate_PCnew[5]_AND_23_o |         |         |    4.697|         |
+comIF/PCupdate_PCnew[6]_AND_21_o |         |         |    4.678|         |
+comIF/PCupdate_PCnew[7]_AND_19_o |         |         |    4.659|         |
+comIF/PCupdate_PCnew[8]_AND_17_o |         |         |    4.634|         |
+comIF/PCupdate_PCnew[9]_AND_15_o |         |         |    4.615|         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[1]_AND_31_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.592|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.528|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    3.770|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[2]_AND_29_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.611|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.547|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.520|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    3.738|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[3]_AND_27_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.630|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.566|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.539|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    4.526|         |
+comIF/PCupdate_PCnew[3]_AND_27_o|         |         |    3.738|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[4]_AND_25_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.649|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.585|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.558|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    4.545|         |
+comIF/PCupdate_PCnew[3]_AND_27_o|         |         |    4.526|         |
+comIF/PCupdate_PCnew[4]_AND_25_o|         |         |    3.738|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[5]_AND_23_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.668|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.604|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.577|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    4.564|         |
+comIF/PCupdate_PCnew[3]_AND_27_o|         |         |    4.545|         |
+comIF/PCupdate_PCnew[4]_AND_25_o|         |         |    4.526|         |
+comIF/PCupdate_PCnew[5]_AND_23_o|         |         |    3.738|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[6]_AND_21_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.687|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.623|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.596|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    4.583|         |
+comIF/PCupdate_PCnew[3]_AND_27_o|         |         |    4.564|         |
+comIF/PCupdate_PCnew[4]_AND_25_o|         |         |    4.545|         |
+comIF/PCupdate_PCnew[5]_AND_23_o|         |         |    4.526|         |
+comIF/PCupdate_PCnew[6]_AND_21_o|         |         |    3.738|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[7]_AND_19_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.706|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.642|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.615|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    4.602|         |
+comIF/PCupdate_PCnew[3]_AND_27_o|         |         |    4.583|         |
+comIF/PCupdate_PCnew[4]_AND_25_o|         |         |    4.564|         |
+comIF/PCupdate_PCnew[5]_AND_23_o|         |         |    4.545|         |
+comIF/PCupdate_PCnew[6]_AND_21_o|         |         |    4.526|         |
+comIF/PCupdate_PCnew[7]_AND_19_o|         |         |    3.738|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[8]_AND_17_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.725|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.661|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.634|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    4.621|         |
+comIF/PCupdate_PCnew[3]_AND_27_o|         |         |    4.602|         |
+comIF/PCupdate_PCnew[4]_AND_25_o|         |         |    4.583|         |
+comIF/PCupdate_PCnew[5]_AND_23_o|         |         |    4.564|         |
+comIF/PCupdate_PCnew[6]_AND_21_o|         |         |    4.545|         |
+comIF/PCupdate_PCnew[7]_AND_19_o|         |         |    4.526|         |
+comIF/PCupdate_PCnew[8]_AND_17_o|         |         |    3.770|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comIF/PCupdate_PCnew[9]_AND_15_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |         |         |    5.617|         |
+comCLK/tmp[3]_dff_1_1           |         |         |    3.744|         |
+comIF/PCupdate_PCnew[0]_AND_33_o|         |         |    4.680|         |
+comIF/PCupdate_PCnew[1]_AND_31_o|         |         |    4.653|         |
+comIF/PCupdate_PCnew[2]_AND_29_o|         |         |    4.640|         |
+comIF/PCupdate_PCnew[3]_AND_27_o|         |         |    4.621|         |
+comIF/PCupdate_PCnew[4]_AND_25_o|         |         |    4.602|         |
+comIF/PCupdate_PCnew[5]_AND_23_o|         |         |    4.583|         |
+comIF/PCupdate_PCnew[6]_AND_21_o|         |         |    4.564|         |
+comIF/PCupdate_PCnew[7]_AND_19_o|         |         |    4.545|         |
+comIF/PCupdate_PCnew[8]_AND_17_o|         |         |    4.520|         |
+comIF/PCupdate_PCnew[9]_AND_15_o|         |         |    3.770|         |
+--------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.09 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.71 secs
  
 --> 
 
-Total memory usage is 260420 kilobytes
+Total memory usage is 260292 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   57 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
 Number of infos    :    9 (   0 filtered)
 
