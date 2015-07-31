@@ -52,7 +52,8 @@ architecture Behavioral of IFctrl is
 begin
  -- Solution A
 	-- 形成下地址
-	nextPC <= PC + 2 when T0 = '1' and CLK = '1';
+	nextPC <= PC + 2 when T0 = '1' and CLK = '1' else
+				 X"0000" when RST = '1';
 	
 	-- 前半拍读指令字
 	RDIR <= '1' when (T0 = '1' and CLK = '1') else 

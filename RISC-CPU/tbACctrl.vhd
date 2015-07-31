@@ -146,6 +146,7 @@ BEGIN
 		wait for CLK_period/2;
 		RDIR <= '0';
 		PC <= X"0002";
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"7700";
 		wait for CLK_period*3;
@@ -156,6 +157,7 @@ BEGIN
 		wait for CLK_period/2;
 		RDIR <= '0';
 		PC <= X"0004";
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"7700";
 		wait for CLK_period/2;
@@ -169,14 +171,17 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0006";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= x"0001"; -- test x <=> X
 		wait for CLK_period;		
 		nMEM <= '0';
 		RD <= '1'; 
+		DBUS <= X"B000";
 		wait for CLK_period;
 		nMEM <= '1';
 		RD <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period;
 		
 		RDIR <= '1';
@@ -184,6 +189,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0008";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0003"; --T1
 		wait for CLK_period/2;
@@ -196,6 +202,7 @@ BEGIN
 		DBUS <= X"A000"; -- CLRC
 		wait for CLK_period/2;
 		PC <= X"000A";
+		DBUS <= (OTHERS => 'Z');
 		RDIR <= '0';
 		wait for CLK_period/2;
 		Addr <= X"0000";
@@ -208,6 +215,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"000C";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0003";
 		wait for CLK_period/2;
@@ -221,6 +229,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"000E";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0007";
 		wait for CLK_period/2;
@@ -234,6 +243,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0010";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0011";
 		wait for CLK_period/2;
@@ -247,6 +257,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0012";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"1101";
 		wait for CLK_period/2;
@@ -266,15 +277,18 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0014";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"1101";
 		wait for CLK_period;
 		--T2 <= '1';
 		nIO <= '0';
 		RD <= '1';
+		IODB <= X"01"; -- assume input 0x01
 		wait for CLK_period;
 		nIO <= '1';
 		RD <= '0';
+		IODB <= (others => 'Z');
 		wait for CLK_period;
 		
 		RDIR <= '1';
@@ -282,6 +296,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0016";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"1100";
 		wait for CLK_period/2;
@@ -295,6 +310,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0018";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0001";
 		wait for CLK_period/2;
@@ -308,6 +324,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"001A";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0001";
 		wait for CLK_period/2;
@@ -321,6 +338,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"001C";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0002";
 		wait for CLK_period/2;
@@ -340,6 +358,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"001E";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"0002";
 		wait for CLK_period/2;
@@ -359,6 +378,7 @@ BEGIN
 		DBUS <= X"9103"; -- OUT R1, "11" (R1 -> IO[11])
 		wait for CLK_period/2;
 		PC <= X"0022";
+		DBUS <= (OTHERS => 'Z');
 		RDIR <= '0';
 		wait for CLK_period/2;
 		Addr <= X"0003";
@@ -378,6 +398,7 @@ BEGIN
 		wait for CLK_period/2;
 		PC <= X"0024";
 		RDIR <= '0';
+		DBUS <= (OTHERS => 'Z');
 		wait for CLK_period/2;
 		Addr <= X"FFFE";
 		wait for CLK_period;
@@ -393,6 +414,7 @@ BEGIN
 		DBUS <= X"00FE"; -- JMP X"FE" (J: JMP J)
 		wait for CLK_period/2;
 		PC <= X"0024";
+		DBUS <= (OTHERS => 'Z');
 		RDIR <= '0';
 		wait for CLK_period/2;
 		Addr <= X"FFFE";
