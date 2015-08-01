@@ -1,0 +1,2 @@
+vhdl work "CPU.vhd"
+vhdl work "N3Adapter.vhd"

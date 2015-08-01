@@ -33,17 +33,17 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity RamAccess is
     Port ( sw : in  STD_LOGIC_VECTOR (7 downto 0);
-			  clk : in STD_LOGIC;
+           clk : in STD_LOGIC;
            btnRDWordU : in  STD_LOGIC;
            btnWRD : in  STD_LOGIC;
            btnRDL : in  STD_LOGIC;
-			  btnMEMR : in STD_LOGIC;
+           btnMEMR : in STD_LOGIC;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0);
-			  led : out  STD_LOGIC_VECTOR (7 downto 0);
-			  nBLE, nBHE, nMREQ, nRD, nWR : out  STD_LOGIC := '1';
-			  ABUS : out STD_LOGIC_VECTOR (22 downto 0);
-			  DBUS : inout STD_LOGIC_VECTOR (15 downto 0));
+           led : out  STD_LOGIC_VECTOR (7 downto 0);
+           nBLE, nBHE, nMREQ, nRD, nWR : out  STD_LOGIC := '1';
+           ABUS : out STD_LOGIC_VECTOR (22 downto 0);
+           DBUS : inout STD_LOGIC_VECTOR (15 downto 0));
 end RamAccess;
 
 architecture Behavioral of RamAccess is
