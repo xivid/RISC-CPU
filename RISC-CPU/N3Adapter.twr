@@ -33,145 +33,129 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Setup/Hold to clock btnr
-------------+------------+------------+------------+------------+--------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                          | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)         | Phase  |
-------------+------------+------------+------------+------------+--------------------------+--------+
-MemDB<0>    |   -2.570(F)|      FAST  |    4.958(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<1>    |   -2.707(F)|      FAST  |    5.083(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<2>    |   -2.770(F)|      FAST  |    5.191(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<3>    |   -2.553(F)|      FAST  |    4.940(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<4>    |   -2.630(F)|      FAST  |    5.070(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<5>    |   -2.256(F)|      FAST  |    4.650(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<6>    |   -2.345(F)|      FAST  |    4.732(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<7>    |   -2.754(F)|      FAST  |    5.249(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<8>    |   -1.883(F)|      FAST  |    4.058(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<9>    |   -2.147(F)|      FAST  |    4.460(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<10>   |   -2.788(F)|      FAST  |    5.254(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<11>   |   -2.880(F)|      FAST  |    5.342(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<12>   |   -2.994(F)|      FAST  |    5.546(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<13>   |   -3.043(F)|      FAST  |    5.652(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<14>   |   -2.729(F)|      FAST  |    5.294(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-MemDB<15>   |   -2.971(F)|      FAST  |    5.588(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<0>       |   -2.028(F)|      FAST  |    4.411(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<1>       |   -1.861(F)|      FAST  |    4.205(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<2>       |   -1.658(F)|      FAST  |    4.186(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<3>       |   -1.291(F)|      FAST  |    3.837(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<4>       |   -1.587(F)|      FAST  |    4.157(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<5>       |   -1.700(F)|      FAST  |    4.206(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<6>       |   -1.763(F)|      FAST  |    4.115(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-sw<7>       |   -1.395(F)|      FAST  |    3.595(F)|      SLOW  |comCPU/comAC/WR_RD_OR_69_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------+--------+
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+MemDB<0>    |   -2.824(R)|      FAST  |    5.875(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.914(F)|      FAST  |    5.958(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<1>    |   -2.989(R)|      FAST  |    6.023(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -3.061(F)|      FAST  |    6.105(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<2>    |   -3.021(R)|      FAST  |    6.105(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -3.037(F)|      FAST  |    6.096(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<3>    |   -2.758(R)|      FAST  |    5.796(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.797(F)|      FAST  |    5.784(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<4>    |   -3.239(R)|      FAST  |    6.398(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.799(F)|      FAST  |    5.873(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<5>    |   -2.675(R)|      FAST  |    5.716(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.477(F)|      FAST  |    5.471(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<6>    |   -2.624(R)|      FAST  |    5.633(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.391(F)|      FAST  |    5.343(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<7>    |   -3.004(R)|      FAST  |    6.124(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.510(F)|      FAST  |    5.481(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<8>    |   -1.953(R)|      FAST  |    4.599(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.413(F)|      FAST  |    5.381(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<9>    |   -2.184(R)|      FAST  |    4.940(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.434(F)|      FAST  |    5.456(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<10>   |   -2.550(R)|      FAST  |    5.423(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.762(F)|      FAST  |    5.708(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<11>   |   -2.607(R)|      FAST  |    5.523(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.732(F)|      FAST  |    5.695(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<12>   |   -2.251(R)|      FAST  |    4.925(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -3.106(F)|      FAST  |    6.206(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<13>   |   -2.691(R)|      FAST  |    5.726(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -3.464(F)|      FAST  |    6.731(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<14>   |   -2.937(R)|      FAST  |    5.913(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -2.989(F)|      FAST  |    6.190(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+MemDB<15>   |   -2.610(R)|      FAST  |    5.493(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+            |   -3.156(F)|      FAST  |    6.403(F)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+btns        |    4.598(R)|      SLOW  |   -2.022(R)|      FAST  |btnr_IBUF_BUFG    |   0.000|
+            |    3.242(F)|      SLOW  |   -1.738(F)|      FAST  |btnr_IBUF_BUFG    |   0.000|
+sw<0>       |   -2.439(R)|      FAST  |    5.388(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+sw<1>       |   -2.231(R)|      FAST  |    5.369(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+sw<2>       |   -2.613(R)|      FAST  |    5.575(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+sw<3>       |   -2.145(R)|      FAST  |    5.007(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+sw<4>       |   -1.870(R)|      FAST  |    5.445(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+sw<5>       |   -2.294(R)|      FAST  |    5.159(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+sw<6>       |   -2.091(R)|      FAST  |    5.093(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+sw<7>       |   -2.148(R)|      FAST  |    4.980(R)|      SLOW  |comCPU/RDIR_BUFG  |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
 
 Clock btnr to Pad
-------------+-----------------+------------+-----------------+------------+------------------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
-------------+-----------------+------------+-----------------+------------+------------------------------+--------+
-JA<0>       |        19.841(R)|      SLOW  |        10.481(R)|      FAST  |comCPU/Rupdate_BUFG           |   0.000|
-            |        13.716(F)|      SLOW  |         5.765(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-JA<1>       |        15.225(F)|      SLOW  |         6.508(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        20.104(R)|      SLOW  |         9.777(R)|      FAST  |comCPU/Rupdate_BUFG           |   0.000|
-JA<2>       |        20.724(R)|      SLOW  |        10.334(R)|      FAST  |comCPU/Rupdate_BUFG           |   0.000|
-            |        14.737(F)|      SLOW  |         5.421(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-JA<3>       |        19.724(R)|      SLOW  |        10.113(R)|      FAST  |comCPU/Rupdate_BUFG           |   0.000|
-            |        14.230(F)|      SLOW  |         5.480(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-JA<4>       |        13.891(F)|      SLOW  |         5.431(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        21.341(R)|      SLOW  |        11.204(R)|      FAST  |comCPU/Rupdate_BUFG           |   0.000|
-JA<5>       |        21.814(R)|      SLOW  |        11.436(R)|      FAST  |comCPU/Rupdate_BUFG           |   0.000|
-            |        14.364(F)|      SLOW  |         5.575(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-JA<6>       |        20.801(R)|      SLOW  |        10.393(R)|      FAST  |comCPU/Rupdate_BUFG           |   0.000|
-            |        14.443(F)|      SLOW  |         5.438(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-MemAdr<1>   |        11.173(F)|      SLOW  |         6.886(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<2>   |        11.173(F)|      SLOW  |         6.886(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<3>   |        11.033(F)|      SLOW  |         6.806(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<4>   |        11.033(F)|      SLOW  |         6.806(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<5>   |        11.398(F)|      SLOW  |         6.973(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<6>   |        11.398(F)|      SLOW  |         6.973(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<7>   |        11.574(F)|      SLOW  |         7.085(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<8>   |        11.574(F)|      SLOW  |         7.085(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<9>   |        11.746(F)|      SLOW  |         7.193(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<10>  |        11.746(F)|      SLOW  |         7.193(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<11>  |        12.410(F)|      SLOW  |         7.639(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<12>  |        12.410(F)|      SLOW  |         7.639(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<13>  |        12.586(F)|      SLOW  |         7.751(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<14>  |        12.586(F)|      SLOW  |         7.751(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemAdr<15>  |        12.749(F)|      SLOW  |         7.850(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-MemDB<0>    |        11.001(F)|      SLOW  |         5.972(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.063(F)|      SLOW  |         8.687(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<1>    |        10.470(F)|      SLOW  |         5.623(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.766(F)|      SLOW  |         8.523(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<2>    |        10.470(F)|      SLOW  |         5.623(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.759(F)|      SLOW  |         8.518(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<3>    |        10.677(F)|      SLOW  |         5.856(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.337(F)|      SLOW  |         8.874(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<4>    |        11.011(F)|      SLOW  |         6.114(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.081(F)|      SLOW  |         8.749(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<5>    |        11.124(F)|      SLOW  |         6.153(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.563(F)|      SLOW  |         9.080(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<6>    |        11.124(F)|      SLOW  |         6.153(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.505(F)|      SLOW  |         9.024(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<7>    |        10.774(F)|      SLOW  |         5.923(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.191(F)|      SLOW  |         8.795(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<8>    |        11.309(F)|      SLOW  |         6.259(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.625(F)|      SLOW  |         9.112(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<9>    |        11.309(F)|      SLOW  |         6.259(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.379(F)|      SLOW  |         8.928(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<10>   |        10.171(F)|      SLOW  |         5.426(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.643(F)|      SLOW  |         8.414(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<11>   |        10.432(F)|      SLOW  |         5.590(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.727(F)|      SLOW  |         8.449(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<12>   |        10.432(F)|      SLOW  |         5.590(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.725(F)|      SLOW  |         8.463(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<13>   |         9.465(F)|      SLOW  |         5.029(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.565(F)|      SLOW  |         8.364(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<14>   |         9.873(F)|      SLOW  |         5.361(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.839(F)|      SLOW  |         8.591(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemDB<15>   |         9.873(F)|      SLOW  |         5.361(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        13.839(F)|      SLOW  |         8.591(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-MemOE       |         9.318(R)|      SLOW  |         5.249(R)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        11.664(F)|      SLOW  |         5.924(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-MemWR       |        12.171(F)|      SLOW  |         6.699(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-RamCS       |        10.292(R)|      SLOW  |         5.912(R)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        11.432(F)|      SLOW  |         6.183(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-RamLB       |         9.953(R)|      SLOW  |         5.650(R)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        12.447(F)|      SLOW  |         6.297(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.769(F)|      SLOW  |         9.177(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-RamUB       |        10.164(R)|      SLOW  |         5.759(R)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        12.164(F)|      SLOW  |         6.286(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        15.593(F)|      SLOW  |         9.658(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<0>      |        12.894(F)|      SLOW  |         6.529(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        15.460(F)|      SLOW  |         9.321(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        18.075(F)|      SLOW  |        10.294(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<1>      |        12.981(F)|      SLOW  |         6.303(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        15.513(F)|      SLOW  |         9.296(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        18.273(F)|      SLOW  |        10.311(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<2>      |        13.111(F)|      SLOW  |         6.625(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        15.746(F)|      SLOW  |         9.419(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        18.603(F)|      SLOW  |        10.488(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<3>      |        13.337(F)|      SLOW  |         6.689(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        15.865(F)|      SLOW  |         9.317(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        18.829(F)|      SLOW  |        10.201(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<4>      |        12.539(F)|      SLOW  |         6.142(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        15.067(F)|      SLOW  |         8.770(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        18.031(F)|      SLOW  |         9.654(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<5>      |        12.522(F)|      SLOW  |         6.173(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        15.157(F)|      SLOW  |         8.967(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        18.014(F)|      SLOW  |        10.036(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<6>      |        12.326(F)|      SLOW  |         5.865(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.858(F)|      SLOW  |         8.858(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        17.618(F)|      SLOW  |         9.873(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-led<7>      |        12.250(F)|      SLOW  |         6.129(F)|      FAST  |btnr_IBUF_BUFG                |   0.000|
-            |        14.816(F)|      SLOW  |         8.921(F)|      FAST  |comCPU/comAC/WR_RD_OR_69_o    |   0.000|
-            |        17.431(F)|      SLOW  |         9.894(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_44_o|   0.000|
-------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+------------+-----------------+------------+-----------------+------------+--------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)               | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------+--------+
+JA<0>       |        14.492(R)|      SLOW  |         5.602(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        19.214(R)|      SLOW  |        10.261(R)|      FAST  |comCPU/Rupdate_BUFG             |   0.000|
+JA<1>       |        14.510(R)|      SLOW  |         5.670(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        19.848(R)|      SLOW  |        10.238(R)|      FAST  |comCPU/Rupdate_BUFG             |   0.000|
+JA<2>       |        14.512(R)|      SLOW  |         5.661(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        20.207(R)|      SLOW  |        10.183(R)|      FAST  |comCPU/Rupdate_BUFG             |   0.000|
+JA<3>       |        14.623(R)|      SLOW  |         5.113(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        19.185(R)|      SLOW  |        10.211(R)|      FAST  |comCPU/Rupdate_BUFG             |   0.000|
+JA<4>       |        15.085(R)|      SLOW  |         5.371(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        21.030(R)|      SLOW  |        10.917(R)|      FAST  |comCPU/Rupdate_BUFG             |   0.000|
+JA<5>       |        14.428(R)|      SLOW  |         6.495(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        20.373(R)|      SLOW  |        10.655(R)|      FAST  |comCPU/Rupdate_BUFG             |   0.000|
+JA<6>       |        14.000(R)|      SLOW  |         5.880(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        19.402(R)|      SLOW  |         9.948(R)|      FAST  |comCPU/Rupdate_BUFG             |   0.000|
+MemAdr<1>   |        11.898(F)|      SLOW  |         7.241(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<2>   |        11.898(F)|      SLOW  |         7.241(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<3>   |        12.264(F)|      SLOW  |         7.467(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<4>   |        12.264(F)|      SLOW  |         7.467(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<5>   |        12.758(F)|      SLOW  |         7.770(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<6>   |        12.758(F)|      SLOW  |         7.770(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<7>   |        12.935(F)|      SLOW  |         7.883(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<8>   |        12.935(F)|      SLOW  |         7.883(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<9>   |        13.106(F)|      SLOW  |         7.990(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<10>  |        13.106(F)|      SLOW  |         7.990(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<11>  |        13.765(F)|      SLOW  |         8.364(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<12>  |        13.765(F)|      SLOW  |         8.364(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<13>  |        13.942(F)|      SLOW  |         8.477(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<14>  |        13.942(F)|      SLOW  |         8.477(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+MemAdr<15>  |        14.105(F)|      SLOW  |         8.576(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+RamCS       |        13.038(R)|      SLOW  |         5.909(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+led<0>      |        15.541(R)|      SLOW  |         7.144(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        10.175(F)|      SLOW  |         5.795(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        18.520(F)|      SLOW  |         9.987(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        16.878(F)|      SLOW  |         9.511(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+led<1>      |        15.042(R)|      SLOW  |         6.853(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        10.153(F)|      SLOW  |         5.832(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        18.206(F)|      SLOW  |         9.705(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        16.497(F)|      SLOW  |         9.313(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+led<2>      |        15.565(R)|      SLOW  |         7.128(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        10.846(F)|      SLOW  |         5.897(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        18.468(F)|      SLOW  |         9.866(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        16.759(F)|      SLOW  |         9.477(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+led<3>      |        15.134(R)|      SLOW  |         6.866(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        10.635(F)|      SLOW  |         5.865(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        18.332(F)|      SLOW  |         9.753(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        16.623(F)|      SLOW  |         9.397(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+led<4>      |        14.354(R)|      SLOW  |         6.319(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |         9.855(F)|      SLOW  |         5.318(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        17.552(F)|      SLOW  |         9.206(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        15.843(F)|      SLOW  |         8.850(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+led<5>      |        14.793(R)|      SLOW  |         6.586(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        10.074(F)|      SLOW  |         5.355(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        17.696(F)|      SLOW  |         9.324(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        15.987(F)|      SLOW  |         8.935(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+led<6>      |        14.412(R)|      SLOW  |         6.433(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |         9.523(F)|      SLOW  |         5.412(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        17.576(F)|      SLOW  |         9.285(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        15.867(F)|      SLOW  |         8.893(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+led<7>      |        14.573(R)|      SLOW  |         6.517(R)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |         9.207(F)|      SLOW  |         5.168(F)|      FAST  |btnr_IBUF_BUFG                  |   0.000|
+            |        17.552(F)|      SLOW  |         9.360(F)|      FAST  |comCPU/comAC/RDIR_nMEM_AND_113_o|   0.000|
+            |        15.910(F)|      SLOW  |         8.884(F)|      FAST  |comCPU/comAC/nMEM_RDIR_OR_26_o  |   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------+--------+
 
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.177|         |         |         |
+CLK            |    4.494|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock btnr
@@ -179,54 +163,49 @@ Clock to Setup on destination clock btnr
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-btnr           |    1.328|   -0.620|    7.970|   14.024|
-btns           |    4.941|    4.941|    6.521|   14.024|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock btns
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-btnr           |         |         |    5.388|    5.547|
-btns           |         |         |    3.474|    5.547|
+btnr           |    3.024|    8.216|    3.645|    4.888|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-btnr           |MemOE          |   10.713|
-btnr           |RamCS          |   10.831|
-btnr           |RamLB          |   11.315|
-btnr           |RamUB          |   13.185|
-sw<0>          |led<0>         |    9.880|
-sw<0>          |led<7>         |    9.236|
-sw<1>          |led<1>         |    9.926|
-sw<1>          |led<6>         |    9.271|
-sw<2>          |led<2>         |   10.458|
-sw<2>          |led<5>         |    9.869|
-sw<3>          |led<3>         |   10.744|
-sw<3>          |led<4>         |    9.946|
-sw<4>          |led<3>         |   10.424|
-sw<4>          |led<4>         |    9.626|
-sw<5>          |led<2>         |   10.434|
-sw<5>          |led<5>         |    9.845|
-sw<6>          |led<1>         |   10.020|
-sw<6>          |led<6>         |    9.365|
-sw<7>          |led<0>         |   10.729|
-sw<7>          |led<7>         |   10.085|
+btnr           |RamCS          |   12.761|
+btnr           |led<0>         |   15.739|
+btnr           |led<1>         |   15.425|
+btnr           |led<2>         |   15.687|
+btnr           |led<3>         |   15.551|
+btnr           |led<4>         |   14.771|
+btnr           |led<5>         |   14.915|
+btnr           |led<6>         |   14.795|
+btnr           |led<7>         |   14.771|
+sw<0>          |led<0>         |    9.461|
+sw<0>          |led<7>         |    8.493|
+sw<1>          |led<1>         |    9.024|
+sw<1>          |led<6>         |    8.394|
+sw<2>          |led<2>         |    9.173|
+sw<2>          |led<5>         |    8.401|
+sw<3>          |led<3>         |    9.631|
+sw<3>          |led<4>         |    8.851|
+sw<4>          |led<3>         |    9.333|
+sw<4>          |led<4>         |    8.553|
+sw<5>          |led<2>         |    9.657|
+sw<5>          |led<5>         |    8.885|
+sw<6>          |led<1>         |    9.316|
+sw<6>          |led<6>         |    8.686|
+sw<7>          |led<0>         |   10.033|
+sw<7>          |led<7>         |    9.065|
 ---------------+---------------+---------+
 
 
-Analysis completed Sat Aug 01 21:42:53 2015 
+Analysis completed Sun Aug 02 00:04:28 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 243 MB
+Peak Memory Usage: 229 MB
 
 
 

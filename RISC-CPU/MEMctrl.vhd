@@ -51,10 +51,10 @@ begin
 	Addr <= Addrin;
 	
 	-- ¶ÁĞ´¿ØÖÆ
-	nMEM <= '0' when (OP = "01110" or OP = "01100") else '1';
-	nIO <= '0' when (OP = "10000" or OP = "10010") else '1';
-	WR <= '1' when (OP = "01100" or OP = "10010") else '0';
-	RD <= '1' when (OP = "01110" or OP = "10000") else '0';
+	nMEM <= '0' when (T2 = '1' and (OP = "01110" or OP = "01100")) else '1';
+	nIO <= '0' when (T2 = '1' and (OP = "10000" or OP = "10010")) else '1';
+	WR <= '1' when (T2 = '1' and (OP = "01100" or OP = "10010")) else '0';
+	RD <= '1' when (T2 = '1' and (OP = "01110" or OP = "10000")) else '0';
 --	process (T2, CLK, OP)
 --	begin
 --		WR <= '0';
@@ -81,7 +81,7 @@ begin
 --	end process;
 
 	-- ¸üĞÂRtemp
-	Rtemp <= DATA when (T2 = '1' and (OP = "01110" or OP = "10000"));
+	Rtemp <= DATA when (T2 = '1' and (OP = "01110" or OP = "10000")) else unaffected;
 --	process(T2, CLK, DATA, OP)
 --	begin
 --		if T2 = '1' and (OP = "01110" or OP = "10000") then

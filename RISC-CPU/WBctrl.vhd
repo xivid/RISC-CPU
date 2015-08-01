@@ -55,12 +55,14 @@ begin
 	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
 				ALUOUT;
 	Raddr <= AD1;
-	PCnew <= PC + Addr;
+	PCnew <= PC + Addr when OP = "00010" else
+             Addr when OP = "00000" else
+             PC;
 	
 	-- »ØĞ´¿ØÖÆĞÅºÅ
 	--JMP <= '1' when OP = "00000" else '0';
 	--JZ  <= '1' when OP = "00010" and ALUOUT = x"00" else '0';
-	PCupdate <= (T3 and CLK) when ((OP = "00000" or (OP = "00010" and ALUOUT = X"00"))) else '0'; -- and falling_edge(clk));
-	Rupdate <= (T3 and CLK) when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") else '0'; -- and falling_edge(CLK); -- IN, LDA, ADC, SBB, MVI, MOV
+	PCupdate <= (T3 and CLK) when ((OP = "00000" or (OP = "00010" and ALUOUT = X"00"))) else '0';
+	Rupdate <= (T3 and CLK) when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") else '0'; -- IN, LDA, ADC, SBB, MVI, MOV
 end Behavioral;
 

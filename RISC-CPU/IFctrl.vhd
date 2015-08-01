@@ -35,7 +35,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity IFctrl is
     Port ( T0 : in  STD_LOGIC;
-			  CLK : in STD_LOGIC;
+		   CLK : in STD_LOGIC;
            RST : in  STD_LOGIC;
            PCnew : in  STD_LOGIC_VECTOR (15 downto 0);
            PCupdate : in  STD_LOGIC;
@@ -57,15 +57,19 @@ begin
 	begin
 		if RST = '1' then
 			PC <= X"0000";
-		elsif PCupdate = '1' then
-				PC <= PCnew;
-		elsif (T0 = '1' and CLK'event and CLK = '0') then
-				IR <= IRdata; -- RDIR = '0'时访存控制输出不更新
-				PC <= PC + 2;
-		end if;
+        else
+            if rising_edge(PCupdate) then
+                PC <= PCnew;
+            end if;
+            if (T0 = '1' and falling_edge(CLK)) then
+                --IR <= IRdata; -- RDIR = '0'时访存控制输出不更新
+                PC <= PC + 2;
+            end if;
+        end if;
 	end process;
 	
 	PCout <= PC;
-	IRout <= IR;
+	IR <= IRdata when T0 = '1' and CLK = '0' else IR;
+    IRout <= IR;
 end Behavioral;
 
