@@ -57,19 +57,16 @@ begin
 	begin
 		if RST = '1' then
 			PC <= X"0000";
-        else
-            if rising_edge(PCupdate) then
-                PC <= PCnew;
-            end if;
-            if (T0 = '1' and falling_edge(CLK)) then
-                --IR <= IRdata; -- RDIR = '0'时访存控制输出不更新
-                PC <= PC + 2;
-            end if;
+        elsif PCupdate = '1' then
+            PC <= PCnew;
+        elsif (T0 = '1' and falling_edge(CLK)) then
+            --IR <= IRdata; -- RDIR = '0'时访存控制输出不更新
+            PC <= PC + 2;
         end if;
 	end process;
 	
 	PCout <= PC;
-	IR <= IRdata when T0 = '1' and CLK = '0' else IR;
+	IR <= IRdata when (T0 and CLK) = '1' else IR;
     IRout <= IR;
 end Behavioral;
 
