@@ -95,22 +95,18 @@ begin
 -- Solution B	
 	process (RDIR, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address)
 	begin
-		nMREQ <= '1';
-		nPREQ <= '1';
-		ABUS <= address;
-		
-		IOAD <= address(1 downto 0);
-		IODB <= (others => 'Z');
 		if RDIR = '1' then
 			nMREQ <= '0';
 			nBLE <= '0';
 			nBHE <= '0';
 			nRD <= '0';
 			nWR <= '1';
+            ABUS <= address;
             DBUS <= (others => 'Z');
 			IR <= DBUS;
 		elsif nMEM = '0' then
             nMREQ <= '0';
+            ABUS <= address;
             nBLE <= address(0);
             nBHE <= not address(0);
             nRD <= not RD;
@@ -126,16 +122,26 @@ begin
             end if;
 		elsif nIO = '0' then
             nPREQ <= '0';
+            IOAD <= address(1 downto 0);
+            nPRD <= not RD;
+            nPWR <= not WR;
             if RD = '1' then
-                nPRD <= '0';
-                nPWR <= '1';
+                -- nPRD <= '0'; 其实这样是对的
+                -- nPWR <= '1';
                 IODB <= (others => 'Z');
                 Rtemp <= IODB;
             elsif WR = '1' then
-                nPRD <= '1';
-                nPWR <= '0';
+                -- nPRD <= '1';
+                -- nPWR <= '0';
                 IODB <= ALUOUT;
             end if;
+        else
+            nMREQ <= '1';
+            nPREQ <= '1';
+            ABUS <= address;
+            DBUS <= (others => 'Z');
+            IOAD <= address(1 downto 0);
+            IODB <= (others => 'Z');
 		end if;
 	end process;
 	

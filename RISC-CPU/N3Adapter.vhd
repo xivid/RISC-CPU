@@ -253,10 +253,34 @@ architecture Behavioral of N3Adapter is
     signal IODB : std_logic_vector(7 downto 0);
     signal IOAD : std_logic_vector(1 downto 0);
     signal nPREQ, nPRD, nPWR : std_logic;
+    
+    -- Button debounce
+    constant CNTR_MAX : std_logic_vector(15 downto 0) := (others => '1');
+    signal btnr_deb : std_logic := '0';
 begin
+    btnr_debounce: process (CLK, btnr)
+        variable count: INTEGER := 0;
+    begin
+        if (rising_edge(CLK)) then
+            if btnr = '0' then
+                if (count = CNTR_MAX) then
+                    count := count;
+                else
+                    count := count + 1;
+                end if;
+                if count = CNTR_MAX - 1 then
+                    btnr_deb <= '0';
+                else
+                    btnr_deb <= '1';
+                end if;
+            else
+                count := 0;
+            end if;
+        end if;
+    end process;
     comCPU: CPU port map(
                RST => btns,
-               CLK => btnr,
+               CLK => btnr_deb,
                DBUS => MemDB,
                IODB => IODB,
                ABUS => ABUS,
