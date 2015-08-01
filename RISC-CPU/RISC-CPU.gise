@@ -103,7 +103,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438427794" xil_pn:in_ck="-7052637136942434486" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5791102634011909525" xil_pn:start_ts="1438427785">
+    <transform xil_pn:end_ts="1438436546" xil_pn:in_ck="-2267070151147088598" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5791102634011909525" xil_pn:start_ts="1438436534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -121,11 +121,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1438426456" xil_pn:in_ck="-6966985353893343" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3296058846128722950" xil_pn:start_ts="1438426456">
+    <transform xil_pn:end_ts="1438428941" xil_pn:in_ck="-6966985353893343" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3296058846128722950" xil_pn:start_ts="1438428941">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438427811" xil_pn:in_ck="-5744757781851512727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5247385673019886083" xil_pn:start_ts="1438427806">
+    <transform xil_pn:end_ts="1438436551" xil_pn:in_ck="-5744757781851512727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5247385673019886083" xil_pn:start_ts="1438436546">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.bld"/>
@@ -134,9 +134,8 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438427818" xil_pn:in_ck="-2853409407920078198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1438427811">
+    <transform xil_pn:end_ts="1438436560" xil_pn:in_ck="-2853409407920078198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1438436551">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.pcf"/>
       <outfile xil_pn:name="N3Adapter_map.map"/>
@@ -148,9 +147,8 @@
       <outfile xil_pn:name="N3Adapter_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438427829" xil_pn:in_ck="-472592165189938365" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1438427818">
+    <transform xil_pn:end_ts="1438436574" xil_pn:in_ck="-472592165189938365" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1438436560">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.ncd"/>
       <outfile xil_pn:name="N3Adapter.pad"/>
@@ -163,8 +161,9 @@
       <outfile xil_pn:name="N3Adapter_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438427843" xil_pn:in_ck="3650156213849930949" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1438427829">
+    <transform xil_pn:end_ts="1438436588" xil_pn:in_ck="3650156213849930949" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1438436574">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -175,7 +174,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1438427829" xil_pn:in_ck="2870230781031147910" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1438427825">
+    <transform xil_pn:end_ts="1438436574" xil_pn:in_ck="2870230781031147910" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1438436570">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.twr"/>

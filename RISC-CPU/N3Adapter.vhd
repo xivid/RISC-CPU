@@ -464,8 +464,7 @@ begin
                 LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
                 LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
                 LCD_CMDS(18)(7 downto 0) <= X"5d";
-                
-			when "00001" => -- JZ Rx, [0xff]
+			when "00010" => -- JZ Rx, [0xff]
 				LCD_CMDS(6)(7 downto 0) <= X"4a";
 				LCD_CMDS(7)(7 downto 0) <= X"5a";
 				LCD_CMDS(9)(7 downto 0) <= X"52";
@@ -477,7 +476,7 @@ begin
                 LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
                 LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
                 LCD_CMDS(18)(7 downto 0) <= X"5d";
-			when "00010" => -- SBB Rx, Rx
+			when "00100" => -- SBB Rx, Rx
 				LCD_CMDS(5)(7 downto 0) <= X"53";
 				LCD_CMDS(6)(7 downto 0) <= X"42";
 				LCD_CMDS(7)(7 downto 0) <= X"42";
@@ -486,7 +485,7 @@ begin
 				LCD_CMDS(11)(7 downto 0) <= X"2c";
                 LCD_CMDS(13)(7 downto 0) <= X"52";
                 LCD_CMDS(14)(7 downto 0) <= "00110"&IR(2 downto 0);
-			when "00011" => -- ADC Rx, Rx
+			when "00110" => -- ADC Rx, Rx
 				LCD_CMDS(5)(7 downto 0) <= X"41";
 				LCD_CMDS(6)(7 downto 0) <= X"44";
 				LCD_CMDS(7)(7 downto 0) <= X"43";
@@ -495,7 +494,7 @@ begin
 				LCD_CMDS(11)(7 downto 0) <= X"2c";
                 LCD_CMDS(13)(7 downto 0) <= X"52";
                 LCD_CMDS(14)(7 downto 0) <= "00110"&IR(2 downto 0);
-			when "00100" => -- MVI Rx, 0xff
+			when "01000" => -- MVI Rx, 0xff
 				LCD_CMDS(5)(7 downto 0) <= X"4d";
 				LCD_CMDS(6)(7 downto 0) <= X"56";
 				LCD_CMDS(7)(7 downto 0) <= X"49";
@@ -506,7 +505,7 @@ begin
                 LCD_CMDS(14)(7 downto 0) <= X"78";
                 LCD_CMDS(15)(7 downto 0) <= conv_ascii(IR(7 downto 4));
                 LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(3 downto 0));
-			when "00101" => -- MOV Rx, Rx
+			when "01010" => -- MOV Rx, Rx
 				LCD_CMDS(5)(7 downto 0) <= X"4d";
 				LCD_CMDS(6)(7 downto 0) <= X"4f";
 				LCD_CMDS(7)(7 downto 0) <= X"56";
@@ -515,7 +514,7 @@ begin
 				LCD_CMDS(11)(7 downto 0) <= X"2c";
                 LCD_CMDS(13)(7 downto 0) <= X"52";
                 LCD_CMDS(14)(7 downto 0) <= "00110"&IR(2 downto 0);
-			when "00110" => -- STA Rx, [0xff]
+			when "01100" => -- STA Rx, [0xff]
 				LCD_CMDS(5)(7 downto 0) <= X"53";
 				LCD_CMDS(6)(7 downto 0) <= X"54";
 				LCD_CMDS(7)(7 downto 0) <= X"41";
@@ -528,7 +527,7 @@ begin
                 LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
                 LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
                 LCD_CMDS(18)(7 downto 0) <= X"5d";
-			when "00111" => -- LDA Rx, [0xff]
+			when "01110" => -- LDA Rx, [0xff]
 				LCD_CMDS(5)(7 downto 0) <= X"4c";
 				LCD_CMDS(6)(7 downto 0) <= X"44";
 				LCD_CMDS(7)(7 downto 0) <= X"41";
@@ -541,31 +540,33 @@ begin
                 LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
                 LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
                 LCD_CMDS(18)(7 downto 0) <= X"5d";
-			when "01000" => -- IN Rx, [00]
+			when "10000" => -- IN Rx, [00]
 				LCD_CMDS(6)(7 downto 0) <= X"49";
 				LCD_CMDS(7)(7 downto 0) <= X"4e";
 				LCD_CMDS(9)(7 downto 0) <= X"52";
 				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
 				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= conv_ascii("000"&IR(1));
-                LCD_CMDS(14)(7 downto 0) <= conv_ascii("000"&IR(0));
-                LCD_CMDS(15)(7 downto 0) <= X"5d";
-			when "01001" => -- OUT Rx, [00]
+                LCD_CMDS(13)(7 downto 0) <= X"5b";
+                LCD_CMDS(14)(7 downto 0) <= conv_ascii("000"&IR(1));
+                LCD_CMDS(15)(7 downto 0) <= conv_ascii("000"&IR(0));
+                LCD_CMDS(16)(7 downto 0) <= X"5d";
+			when "10010" => -- OUT Rx, [00]
 				LCD_CMDS(5)(7 downto 0) <= X"4f";
 				LCD_CMDS(6)(7 downto 0) <= X"55";
 				LCD_CMDS(7)(7 downto 0) <= X"54";
 				LCD_CMDS(9)(7 downto 0) <= X"52";
 				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
 				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= conv_ascii("000"&IR(1));
-                LCD_CMDS(14)(7 downto 0) <= conv_ascii("000"&IR(0));
-                LCD_CMDS(15)(7 downto 0) <= X"5d";
-			when "01010" => -- CLRC
+                LCD_CMDS(13)(7 downto 0) <= X"5b";
+                LCD_CMDS(14)(7 downto 0) <= conv_ascii("000"&IR(1));
+                LCD_CMDS(15)(7 downto 0) <= conv_ascii("000"&IR(0));
+                LCD_CMDS(16)(7 downto 0) <= X"5d";
+			when "10100" => -- CLRC
 				LCD_CMDS(4)(7 downto 0) <= X"43";
 				LCD_CMDS(5)(7 downto 0) <= X"4c";
 				LCD_CMDS(6)(7 downto 0) <= X"52";
 				LCD_CMDS(7)(7 downto 0) <= X"43";
-			when "01011" => -- SETC
+			when "10110" => -- SETC
 				LCD_CMDS(4)(7 downto 0) <= X"53";
 				LCD_CMDS(5)(7 downto 0) <= X"45";
 				LCD_CMDS(6)(7 downto 0) <= X"54";
@@ -626,8 +627,7 @@ begin
 	digit2 <= (not T(1))&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
 	digit3 <= (not T(2))&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
 	digit4 <= (not T(3))&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
-	    
-    led <= "00000000";
+	
     MemAdv <= '0';
     MemWait <= '0';
     MemClk <= '0';
@@ -635,6 +635,37 @@ begin
     MemAdr(26 downto 16) <= (others => '0');
     MemAdr(15 downto 1) <= ABUS(15 downto 1);
     
-    IODB <= sw;
+    -- This is a IO controller adapted on Nexys3.
+    -- Address -> device:
+    -- 00 -> sw(7 downto 0)
+    -- 01 -> sw(0 to 7)
+    -- 10 -> led(7 downto 0)
+    -- 11 -> led(0 to 7)
+    process (IOAD, IODB, nPREQ, nPRD, nPWR, sw)
+    begin
+        IODB <= (others => 'Z');
+        led <= (others => '0');
+        if nPREQ = '0' then
+            if nPRD = '0' and nPWR = '1' then
+                case IOAD is
+                    when "00" => IODB <= sw;
+                    when "01" => 
+                    rev1: for i in 7 downto 0 loop
+                            IODB(i) <= sw(7-i);
+                          end loop rev1;
+                    when others => null;
+                end case;
+            elsif nPRD = '1' and nPWR = '0' then
+                case IOAD is
+                    when "10" => led <= IODB;
+                    when "11" =>
+                    rev2: for i in 7 downto 0 loop
+                            led(i) <= IODB(7-i);
+                          end loop rev2;
+                    when others => null;
+                end case;
+            end if;
+        end if;
+    end process;
 end Behavioral;
 
