@@ -123,6 +123,15 @@ Parsing architecture <Behavioral> of entity <clkctrl>.
 Parsing VHDL file "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\ACctrl.vhd" into library work
 Parsing entity <ACctrl>.
 Parsing architecture <Behavioral> of entity <acctrl>.
+Parsing VHDL file "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" into library work
+Parsing entity <segDisplay>.
+Parsing architecture <Behavioral> of entity <segdisplay>.
+Parsing VHDL file "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" into library work
+Parsing entity <PmodCLP>.
+Parsing architecture <Behavioral> of entity <pmodclp>.
+Parsing VHDL file "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\IOConv.vhd" into library work
+Parsing entity <IOConv>.
+Parsing architecture <Behavioral> of entity <ioconv>.
 Parsing VHDL file "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\CPU.vhd" into library work
 Parsing entity <CPU>.
 Parsing architecture <Behavioral> of entity <cpu>.
@@ -154,67 +163,73 @@ Elaborating entity <MEMctrl> (architecture <Behavioral>) from library <work>.
 Elaborating entity <WBctrl> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <ACctrl> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 253. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 229. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd" Line 160: Net <LCD_CMDS[0][9]> does not have a driver.
+
+Elaborating entity <IOConv> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PmodCLP> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 104: Net <LCD_CMDS[0][9]> does not have a driver.
+
+Elaborating entity <segDisplay> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd" Line 72. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -222,92 +237,8 @@ WARNING:HDLCompiler:634 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapte
 
 Synthesizing Unit <N3Adapter>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\N3Adapter.vhd".
-WARNING:Xst:2935 - Signal 'LCD_CMDS<0>', unconnected in block 'N3Adapter', is tied to its initial value (0000111100).
-WARNING:Xst:2935 - Signal 'LCD_CMDS<1>', unconnected in block 'N3Adapter', is tied to its initial value (0000001100).
-WARNING:Xst:2935 - Signal 'LCD_CMDS<2>', unconnected in block 'N3Adapter', is tied to its initial value (0000000001).
-WARNING:Xst:2935 - Signal 'LCD_CMDS<3>', unconnected in block 'N3Adapter', is tied to its initial value (0000000010).
-WARNING:Xst:2935 - Signal 'LCD_CMDS<20>', unconnected in block 'N3Adapter', is tied to its initial value (0011000000).
-WARNING:Xst:2935 - Signal 'LCD_CMDS<37>', unconnected in block 'N3Adapter', is tied to its initial value (0000000010).
-    Found 1-bit register for signal <OneUSClk>.
-    Found 21-bit register for signal <count>.
-    Found 6-bit register for signal <lcd_cmd_ptr>.
-    Found 4-bit register for signal <stCur>.
-    Found 16-bit register for signal <js>.
-    Found 4-bit register for signal <shift>.
-    Found 4-bit register for signal <an>.
-    Found 8-bit register for signal <seg>.
-    Found 7-bit register for signal <clkCount>.
-    Found finite state machine <FSM_0> for signal <stCur>.
-    -----------------------------------------------------------------------
-    | States             | 10                                             |
-    | Transitions        | 15                                             |
-    | Inputs             | 1                                              |
-    | Outputs            | 13                                             |
-    | Clock              | OneUSClk (rising_edge)                         |
-    | Reset              | btnr (positive)                                |
-    | Reset type         | synchronous                                    |
-    | Reset State        | stpoweron_delay                                |
-    | Power Up State     | stpoweron_delay                                |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 7-bit adder for signal <clkCount[6]_GND_5_o_add_1_OUT> created at line 305.
-    Found 21-bit adder for signal <count[20]_GND_5_o_add_4_OUT> created at line 317.
-    Found 6-bit adder for signal <lcd_cmd_ptr[5]_GND_5_o_add_21_OUT> created at line 339.
-    Found 16-bit adder for signal <js[15]_GND_5_o_add_114_OUT> created at line 640.
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<21><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<22><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<23><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<24><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<25><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<26><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<27><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<28><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<29><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<30><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<31><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<32><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<33><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<34><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<35><7:0>>
-    Found 16x8-bit Read Only RAM for signal <LCD_CMDS<36><7:0>>
-    Found 16x8-bit Read Only RAM for signal <IR[7]_GND_5_o_wide_mux_66_OUT>
-    Found 16x8-bit Read Only RAM for signal <GND_5_o_GND_5_o_wide_mux_88_OUT>
-    Found 16x8-bit Read Only RAM for signal <GND_5_o_GND_5_o_wide_mux_90_OUT>
-    Found 16x7-bit Read Only RAM for signal <PC[15]_GND_5_o_wide_mux_120_OUT>
-    Found 16x7-bit Read Only RAM for signal <IR[15]_GND_5_o_wide_mux_121_OUT>
-    Found 16x7-bit Read Only RAM for signal <PC[11]_GND_5_o_wide_mux_123_OUT>
-    Found 16x7-bit Read Only RAM for signal <IR[11]_GND_5_o_wide_mux_124_OUT>
-    Found 16x7-bit Read Only RAM for signal <PC[7]_GND_5_o_wide_mux_126_OUT>
-    Found 16x7-bit Read Only RAM for signal <PC[3]_GND_5_o_wide_mux_129_OUT>
-    Found 4x1-bit Read Only RAM for signal <IOAD[1]_GND_177_o_Mux_156_o>
-    Found 16x15-bit Read Only RAM for signal <_n0392>
-    Found 16x15-bit Read Only RAM for signal <_n0409>
-    Found 32x70-bit Read Only RAM for signal <_n0442>
-    Found 8-bit 3-to-1 multiplexer for signal <IOAD[1]_IODB[0]_wide_mux_135_OUT> created at line 696.
-    Found 1-bit tristate buffer for signal <IODB<7>> created at line 681
-    Found 1-bit tristate buffer for signal <IODB<6>> created at line 681
-    Found 1-bit tristate buffer for signal <IODB<5>> created at line 681
-    Found 1-bit tristate buffer for signal <IODB<4>> created at line 681
-    Found 1-bit tristate buffer for signal <IODB<3>> created at line 681
-    Found 1-bit tristate buffer for signal <IODB<2>> created at line 681
-    Found 1-bit tristate buffer for signal <IODB<1>> created at line 681
-    Found 1-bit tristate buffer for signal <IODB<0>> created at line 681
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<0> may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<1> may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<2> may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<3> may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<4> may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<5> may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<6> may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal IODB<7> may hinder XST clustering optimizations.
     Summary:
-	inferred  29 RAM(s).
-	inferred   4 Adder/Subtractor(s).
-	inferred  67 D-type flip-flop(s).
-	inferred  72 Multiplexer(s).
-	inferred   8 Tristate(s).
-	inferred   1 Finite State Machine(s).
+	no macro.
 Unit <N3Adapter> synthesized.
 
 Synthesizing Unit <btnDebounce>.
@@ -539,16 +470,80 @@ WARNING:Xst:737 - Found 1-bit latch for signal <nWR>. Latches may be generated f
 	inferred  24 Tristate(s).
 Unit <ACctrl> synthesized.
 
+Synthesizing Unit <IOConv>.
+    Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\IOConv.vhd".
+    Found 8-bit 3-to-1 multiplexer for signal <IOAD[1]_IODB[0]_wide_mux_1_OUT> created at line 67.
+    Found 1-bit tristate buffer for signal <IODB<7>> created at line 52
+    Found 1-bit tristate buffer for signal <IODB<6>> created at line 52
+    Found 1-bit tristate buffer for signal <IODB<5>> created at line 52
+    Found 1-bit tristate buffer for signal <IODB<4>> created at line 52
+    Found 1-bit tristate buffer for signal <IODB<3>> created at line 52
+    Found 1-bit tristate buffer for signal <IODB<2>> created at line 52
+    Found 1-bit tristate buffer for signal <IODB<1>> created at line 52
+    Found 1-bit tristate buffer for signal <IODB<0>> created at line 52
+    Summary:
+	inferred  12 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <IOConv> synthesized.
+
+Synthesizing Unit <PmodCLP>.
+    Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd".
+WARNING:Xst:2935 - Signal 'LCD_CMDS<0>', unconnected in block 'PmodCLP', is tied to its initial value (0000111100).
+WARNING:Xst:2935 - Signal 'LCD_CMDS<1>', unconnected in block 'PmodCLP', is tied to its initial value (0000001100).
+WARNING:Xst:2935 - Signal 'LCD_CMDS<2>', unconnected in block 'PmodCLP', is tied to its initial value (0000000001).
+WARNING:Xst:2935 - Signal 'LCD_CMDS<3>', unconnected in block 'PmodCLP', is tied to its initial value (0000000010).
+WARNING:Xst:2935 - Signal 'LCD_CMDS<20>', unconnected in block 'PmodCLP', is tied to its initial value (0011000000).
+WARNING:Xst:2935 - Signal 'LCD_CMDS<37>', unconnected in block 'PmodCLP', is tied to its initial value (0000000010).
+    Found 1-bit register for signal <OneUSClk>.
+    Found 21-bit register for signal <count>.
+    Found 6-bit register for signal <lcd_cmd_ptr>.
+    Found 4-bit register for signal <stCur>.
+    Found 7-bit register for signal <clkCount>.
+    Found finite state machine <FSM_0> for signal <stCur>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 25                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 13                                             |
+    | Clock              | OneUSClk (rising_edge)                         |
+    | Reset              | btnr (positive)                                |
+    | Reset type         | synchronous                                    |
+    | Reset State        | stpoweron_delay                                |
+    | Power Up State     | stpoweron_delay                                |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <clkCount[6]_GND_179_o_add_1_OUT> created at line 179.
+    Found 21-bit adder for signal <count[20]_GND_179_o_add_4_OUT> created at line 191.
+    Found 6-bit adder for signal <lcd_cmd_ptr[5]_GND_179_o_add_21_OUT> created at line 213.
+    Found 32x70-bit Read Only RAM for signal <_n0295>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred  60 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <PmodCLP> synthesized.
+
+Synthesizing Unit <segDisplay>.
+    Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\segDisplay.vhd".
+    Found 4-bit register for signal <shift>.
+    Found 4-bit register for signal <an>.
+    Found 8-bit register for signal <seg>.
+    Found 16-bit register for signal <js>.
+    Found 16-bit adder for signal <js[15]_GND_180_o_add_0_OUT> created at line 80.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred  13 Multiplexer(s).
+Unit <segDisplay> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 29
- 16x15-bit single-port Read Only RAM                   : 2
- 16x7-bit single-port Read Only RAM                    : 6
- 16x8-bit single-port Read Only RAM                    : 19
+# RAMs                                                 : 1
  32x70-bit single-port Read Only RAM                   : 1
- 4x1-bit single-port Read Only RAM                     : 1
 # Adders/Subtractors                                   : 11
  16-bit adder                                          : 3
  21-bit adder                                          : 1
@@ -568,11 +563,12 @@ Macro Statistics
  8-bit register                                        : 12
 # Latches                                              : 116
  1-bit latch                                           : 116
-# Multiplexers                                         : 153
+# Multiplexers                                         : 166
  1-bit 2-to-1 multiplexer                              : 77
- 10-bit 2-to-1 multiplexer                             : 47
+ 10-bit 2-to-1 multiplexer                             : 59
  16-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 23
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 8-to-1 multiplexer                              : 2
@@ -589,134 +585,16 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+INFO:Xst:2261 - The FF/Latch <shift_2> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_1> 
+INFO:Xst:2261 - The FF/Latch <shift_3> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_2> 
+INFO:Xst:2261 - The FF/Latch <shift_0> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_3> 
+INFO:Xst:2261 - The FF/Latch <shift_1> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_0> 
 
-Synthesizing (advanced) Unit <N3Adapter>.
-The following registers are absorbed into counter <js>: 1 register on signal <js>.
-The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Synthesizing (advanced) Unit <PmodCLP>.
 The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
 The following registers are absorbed into counter <lcd_cmd_ptr>: 1 register on signal <lcd_cmd_ptr>.
-INFO:Xst:3231 - The small RAM <Mram_PC[11]_GND_5_o_wide_mux_123_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PC<11:8>>      |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_PC[15]_GND_5_o_wide_mux_120_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PC<15:12>>     |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_PC[7]_GND_5_o_wide_mux_126_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PC<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_PC[3]_GND_5_o_wide_mux_129_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PC<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_LCD_CMDS<21><7:0>> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R0<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<21>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_LCD_CMDS<22><7:0>> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R0<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<22>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_IOAD[1]_GND_177_o_Mux_156_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 1-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <IOAD>          |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_IR[15]_GND_5_o_wide_mux_121_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <IR<15:12>>     |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_IR[11]_GND_5_o_wide_mux_124_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <IR<11:8>>      |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0392> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 15-bit                    |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <IR<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0409> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 15-bit                    |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <IR<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0442> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0295> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -727,209 +605,22 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0442> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<23><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R1<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<23>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<24><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R1<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<24>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<25><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R2<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<25>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<26><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R2<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<26>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<27><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R3<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<27>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<28><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R3<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<28>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<29><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R4<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<29>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<30><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R4<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<30>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<31><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R5<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<31>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<32><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R5<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<32>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<33><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R6<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<33>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<34><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R6<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <LCD_CMDS<34>>  |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<35><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R7<7:4>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LCD_CMDS<36><7:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <R7<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_IR[7]_GND_5_o_wide_mux_66_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <(IR<7>,IR<7>,IR<7>,IR<7>)> |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_5_o_GND_5_o_wide_mux_88_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <("000",IR<1>)> |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_5_o_GND_5_o_wide_mux_90_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <("000",IR<0>)> |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <N3Adapter> synthesized (advanced).
+Unit <PmodCLP> synthesized (advanced).
 
 Synthesizing (advanced) Unit <btnDebounce>.
 The following registers are absorbed into counter <btn_debounce.count>: 1 register on signal <btn_debounce.count>.
 Unit <btnDebounce> synthesized (advanced).
 
+Synthesizing (advanced) Unit <segDisplay>.
+The following registers are absorbed into counter <js>: 1 register on signal <js>.
+Unit <segDisplay> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 29
- 16x15-bit single-port distributed Read Only RAM       : 2
- 16x7-bit single-port distributed Read Only RAM        : 6
- 16x8-bit single-port distributed Read Only RAM        : 19
+# RAMs                                                 : 1
  32x70-bit single-port distributed Read Only RAM       : 1
- 4x1-bit single-port distributed Read Only RAM         : 1
 # Adders/Subtractors                                   : 5
  16-bit adder                                          : 2
  32-bit adder                                          : 1
@@ -943,9 +634,9 @@ Macro Statistics
  7-bit up counter                                      : 1
 # Registers                                            : 159
  Flip-Flops                                            : 159
-# Multiplexers                                         : 153
+# Multiplexers                                         : 165
  1-bit 2-to-1 multiplexer                              : 77
- 10-bit 2-to-1 multiplexer                             : 47
+ 10-bit 2-to-1 multiplexer                             : 59
  16-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 23
@@ -960,26 +651,26 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <shift_2> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <an_1> 
-INFO:Xst:2261 - The FF/Latch <shift_3> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <an_2> 
-INFO:Xst:2261 - The FF/Latch <shift_0> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <an_3> 
-INFO:Xst:2261 - The FF/Latch <shift_1> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <an_0> 
+INFO:Xst:2261 - The FF/Latch <shift_2> in Unit <segDisplay> is equivalent to the following FF/Latch, which will be removed : <an_1> 
+INFO:Xst:2261 - The FF/Latch <shift_3> in Unit <segDisplay> is equivalent to the following FF/Latch, which will be removed : <an_2> 
+INFO:Xst:2261 - The FF/Latch <shift_0> in Unit <segDisplay> is equivalent to the following FF/Latch, which will be removed : <an_3> 
+INFO:Xst:2261 - The FF/Latch <shift_1> in Unit <segDisplay> is equivalent to the following FF/Latch, which will be removed : <an_0> 
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <stCur[1:10]> with one-hot encoding.
---------------------------------------
+Optimizing FSM <comPmodCLP/FSM_0> on signal <stCur[1:4]> with user encoding.
+------------------------------------
  State                  | Encoding
---------------------------------------
- stfunctionset          | 0000010000
- stdisplayctrlset       | 0000100000
- stdisplayclear         | 0001000000
- stpoweron_delay        | 0000000001
- stfunctionset_delay    | 0000000010
- stdisplayctrlset_delay | 0000000100
- stdisplayclear_delay   | 0000001000
- stinitdne              | 0010000000
- stactwr                | 0100000000
- stchardelay            | 1000000000
---------------------------------------
+------------------------------------
+ stfunctionset          | 0000
+ stdisplayctrlset       | 0001
+ stdisplayclear         | 0010
+ stpoweron_delay        | 0011
+ stfunctionset_delay    | 0100
+ stdisplayctrlset_delay | 0101
+ stdisplayclear_delay   | 0110
+ stinitdne              | 0111
+ stactwr                | 1000
+ stchardelay            | 1001
+------------------------------------
 WARNING:Xst:2677 - Node <btn_debounce.count_17> of sequential type is unconnected in block <btnDebounce>.
 WARNING:Xst:2677 - Node <btn_debounce.count_18> of sequential type is unconnected in block <btnDebounce>.
 WARNING:Xst:2677 - Node <btn_debounce.count_19> of sequential type is unconnected in block <btnDebounce>.
@@ -1022,6 +713,7 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
     comCPU/comAC/nMREQ in unit <N3Adapter>
 
 WARNING:Xst:2040 - Unit N3Adapter: 8 multi-source signals are replaced by logic (pull-up yes): IODB<0>, IODB<1>, IODB<2>, IODB<3>, IODB<4>, IODB<5>, IODB<6>, IODB<7>.
+WARNING:Xst:2042 - Unit IOConv: 8 internal tristates are replaced by logic (pull-up yes): IODB<0>, IODB<1>, IODB<2>, IODB<3>, IODB<4>, IODB<5>, IODB<6>, IODB<7>.
 
 Optimizing unit <IFctrl> ...
 
@@ -1029,28 +721,32 @@ Optimizing unit <N3Adapter> ...
 
 Optimizing unit <btnDebounce> ...
 
+Optimizing unit <PmodCLP> ...
+
+Optimizing unit <segDisplay> ...
+
 Optimizing unit <WBctrl> ...
 
 Optimizing unit <EXctrl> ...
 
 Optimizing unit <MEMctrl> ...
-WARNING:Xst:1710 - FF/Latch <clkCount_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_5> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comBtnrDeb/btn_debounce.count_16> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <js_0> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <clkCount_0> 
-INFO:Xst:2261 - The FF/Latch <OneUSClk> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <js_1> 
+WARNING:Xst:1293 - FF/Latch <comBtnrDeb/btn_debounce.count_16> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_5> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <comPmodCLP/OneUSClk> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comsegDisplay/js_1> 
+INFO:Xst:2261 - The FF/Latch <comPmodCLP/clkCount_0> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comsegDisplay/js_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block N3Adapter, actual ratio is 11.
-Latch comCPU/comIF/IRout_11 has been replicated 4 time(s)
-Latch comCPU/comIF/IRout_12 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block N3Adapter, actual ratio is 14.
+Latch comCPU/comIF/IRout_11 has been replicated 3 time(s)
+Latch comCPU/comIF/IRout_12 has been replicated 2 time(s)
 Latch comCPU/comIF/IRout_13 has been replicated 3 time(s)
-Latch comCPU/comIF/IRout_14 has been replicated 5 time(s)
+Latch comCPU/comIF/IRout_14 has been replicated 3 time(s)
 Latch comCPU/comIF/IRout_15 has been replicated 2 time(s)
 
 Final Macro Processing ...
@@ -1059,8 +755,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 223
- Flip-Flops                                            : 223
+# Registers                                            : 217
+ Flip-Flops                                            : 217
 
 =========================================================================
 
@@ -1083,32 +779,32 @@ Top Level Output File Name         : N3Adapter.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1012
+# BELS                             : 1156
 #      GND                         : 1
 #      INV                         : 10
 #      LUT1                        : 65
 #      LUT2                        : 43
-#      LUT3                        : 143
-#      LUT4                        : 71
-#      LUT5                        : 153
-#      LUT6                        : 277
+#      LUT3                        : 173
+#      LUT4                        : 84
+#      LUT5                        : 179
+#      LUT6                        : 355
 #      MUXCY                       : 111
-#      MUXF7                       : 19
+#      MUXF7                       : 17
 #      VCC                         : 1
-#      XORCY                       : 118
-# FlipFlops/Latches                : 353
-#      FD                          : 75
+#      XORCY                       : 117
+# FlipFlops/Latches                : 345
+#      FD                          : 74
 #      FDC                         : 19
 #      FDE                         : 66
 #      FDE_1                       : 9
 #      FDP                         : 1
-#      FDR                         : 47
-#      FDRE                        : 5
-#      FDS                         : 1
+#      FDR                         : 40
+#      FDRE                        : 6
+#      FDS                         : 2
 #      LD                          : 59
 #      LDC                         : 17
 #      LDC_1                       : 3
-#      LDE                         : 39
+#      LDE                         : 37
 #      LDE_1                       : 11
 #      LDP_1                       : 1
 # Clock Buffers                    : 4
@@ -1126,15 +822,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             317  out of  18224     1%  
- Number of Slice LUTs:                  762  out of   9112     8%  
-    Number used as Logic:               762  out of   9112     8%  
+ Number of Slice Registers:             309  out of  18224     1%  
+ Number of Slice LUTs:                  909  out of   9112     9%  
+    Number used as Logic:               909  out of   9112     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    879
-   Number with an unused Flip Flop:     562  out of    879    63%  
-   Number with an unused LUT:           117  out of    879    13%  
-   Number of fully used LUT-FF pairs:   200  out of    879    22%  
+ Number of LUT Flip Flop pairs used:   1024
+   Number with an unused Flip Flop:     715  out of   1024    69%  
+   Number with an unused LUT:           115  out of   1024    11%  
+   Number of fully used LUT-FF pairs:   194  out of   1024    18%  
    Number of unique control sets:        35
 
 IO Utilization: 
@@ -1166,17 +862,17 @@ Clock Information:
 ---------------------------------------------------------------------+--------------------------------------------+-------+
 Clock Signal                                                         | Clock buffer(FF name)                      | Load  |
 ---------------------------------------------------------------------+--------------------------------------------+-------+
-CLK                                                                  | BUFGP                                      | 54    |
-js_15                                                                | NONE(shift_0)                              | 12    |
 comBtnrDeb/btn_deb                                                   | NONE(comCPU/comCLK/tmp[2]_dff_1_3)         | 13    |
-OneUSClk                                                             | NONE(stCur_FSM_FFd10)                      | 16    |
-comCPU/comCLK/tmp[2]_dff_1_0                                         | BUFG                                       | 74    |
+comCPU/comCLK/tmp[2]_dff_1_0                                         | BUFG                                       | 72    |
 comCPU/comAC/nMREQ_G(comCPU/comAC/RDIR_nMEM_OR_59_o1:O)              | NONE(*)(comCPU/comAC/ABUS_2)               | 16    |
 comCPU/nMEM(comCPU/comMEM/nMEM1:O)                                   | NONE(*)(comCPU/comAC/nBLE)                 | 4     |
 comCPU/comAC/nMEM_RDIR_OR_41_o(comCPU/comAC/nMEM_RDIR_OR_41_o1:O)    | NONE(*)(comCPU/comAC/address_15)           | 16    |
 comCPU/comAC/nIO_RD_MUX_241_o(comCPU/comAC/Mmux_nIO_RD_MUX_241_o11:O)| NONE(*)(comCPU/comAC/nMEM_nIO_DLATCH_63_q) | 17    |
 comCPU/comAC/RDIR_nMEM_AND_84_o(comCPU/comAC/RDIR_nMEM_AND_84_o1:O)  | NONE(*)(comCPU/comAC/nIO_RDIR_DLATCH_124_q)| 9     |
 comCPU/comAC/RDIR_nMEM_AND_80_o(comCPU/comAC/RDIR_nMEM_AND_80_o1:O)  | NONE(*)(comCPU/comAC/nPWR)                 | 2     |
+CLK                                                                  | BUFGP                                      | 54    |
+comPmodCLP/OneUSClk                                                  | NONE(comPmodCLP/lcd_cmd_ptr_5)             | 10    |
+comsegDisplay/js_15                                                  | NONE(comsegDisplay/seg_7)                  | 12    |
 comCPU/comCLK/tmp[2]_dff_1_3                                         | NONE(comCPU/comWB/PCnew_15)                | 16    |
 comCPU/comCLK/tmp[2]_dff_1_1                                         | BUFG                                       | 32    |
 comCPU/Rupdate(comCPU/comWB/Rupdate1:O)                              | BUFG(*)(comCPU/comEX/Reg_0_7)              | 64    |
@@ -1195,71 +891,21 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.196ns (Maximum Frequency: 138.970MHz)
-   Minimum input arrival time before clock: 6.544ns
-   Maximum output required time after clock: 11.202ns
-   Maximum combinational path delay: 6.397ns
+   Minimum period: 9.017ns (Maximum Frequency: 110.900MHz)
+   Minimum input arrival time before clock: 7.067ns
+   Maximum output required time after clock: 14.943ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 5.445ns (frequency: 183.652MHz)
-  Total number of paths / destination ports: 2056 / 76
--------------------------------------------------------------------------
-Delay:               5.445ns (Levels of Logic = 3)
-  Source:            count_14 (FF)
-  Destination:       count_0 (FF)
-  Source Clock:      CLK rising
-  Destination Clock: CLK rising
-
-  Data Path: count_14 to count_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              4   0.447   1.028  count_14 (count_14)
-     LUT5:I0->O            1   0.203   0.924  delayOK10 (delayOK10)
-     LUT5:I0->O            4   0.203   0.788  delayOK13 (delayOK13)
-     LUT5:I3->O           27   0.203   1.220  delayOK14 (delayOK)
-     FDR:R                     0.430          count_0
-    ----------------------------------------
-    Total                      5.445ns (1.486ns logic, 3.959ns route)
-                                       (27.3% logic, 72.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'js_15'
-  Clock period: 5.721ns (frequency: 174.800MHz)
-  Total number of paths / destination ports: 267 / 12
--------------------------------------------------------------------------
-Delay:               5.721ns (Levels of Logic = 5)
-  Source:            shift_1 (FF)
-  Destination:       seg_3 (FF)
-  Source Clock:      js_15 rising
-  Destination Clock: js_15 rising
-
-  Data Path: shift_1 to seg_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q              26   0.447   1.311  shift_1 (shift_1)
-     LUT4:I2->O           10   0.203   0.857  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1141 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT114)
-     LUT5:I4->O            1   0.205   0.684  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT12122 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT12122)
-     LUT4:I2->O            2   0.203   0.721  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT12124 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1212)
-     LUT6:I4->O            1   0.203   0.580  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1210 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT129)
-     LUT6:I5->O            1   0.205   0.000  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1211 (shift[3]_digit4[7]_wide_mux_116_OUT<3>)
-     FD:D                      0.102          seg_3
-    ----------------------------------------
-    Total                      5.721ns (1.568ns logic, 4.153ns route)
-                                       (27.4% logic, 72.6% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'comBtnrDeb/btn_deb'
-  Clock period: 4.918ns (frequency: 203.326MHz)
+  Clock period: 5.602ns (frequency: 178.501MHz)
   Total number of paths / destination ports: 33 / 22
 -------------------------------------------------------------------------
-Delay:               2.459ns (Levels of Logic = 1)
+Delay:               2.801ns (Levels of Logic = 1)
   Source:            comCPU/comCLK/tmp[2]_dff_1_1 (FF)
   Destination:       comCPU/comEX/ALUOUT_7 (FF)
   Source Clock:      comBtnrDeb/btn_deb rising
@@ -1269,85 +915,114 @@ Delay:               2.459ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.447   0.684  comCPU/comCLK/tmp[2]_dff_1_1 (comCPU/comCLK/tmp[2]_dff_1_1)
-     LUT6:I5->O            8   0.205   0.802  comCPU/comEX/_n0222_inv1 (comCPU/comEX/_n0222_inv)
+     FDC:C->Q              4   0.447   1.028  comCPU/comCLK/tmp[2]_dff_1_1 (comCPU/comCLK/tmp[2]_dff_1_1)
+     LUT6:I1->O            8   0.203   0.802  comCPU/comEX/_n0222_inv1 (comCPU/comEX/_n0222_inv)
      FDE_1:CE                  0.322          comCPU/comEX/ALUOUT_0
     ----------------------------------------
-    Total                      2.459ns (0.974ns logic, 1.485ns route)
-                                       (39.6% logic, 60.4% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'OneUSClk'
-  Clock period: 5.906ns (frequency: 169.329MHz)
-  Total number of paths / destination ports: 358 / 30
--------------------------------------------------------------------------
-Delay:               5.906ns (Levels of Logic = 4)
-  Source:            stCur_FSM_FFd10 (FF)
-  Destination:       lcd_cmd_ptr_0 (FF)
-  Source Clock:      OneUSClk rising
-  Destination Clock: OneUSClk rising
-
-  Data Path: stCur_FSM_FFd10 to lcd_cmd_ptr_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDS:C->Q              6   0.447   0.745  stCur_FSM_FFd10 (stCur_FSM_FFd10)
-     LUT6:I5->O            4   0.205   0.912  delayOK5 (delayOK5)
-     LUT5:I2->O           27   0.205   1.221  delayOK14 (delayOK)
-     LUT6:I5->O            2   0.205   0.617  Mcount_lcd_cmd_ptr_val11 (Mcount_lcd_cmd_ptr_val1)
-     LUT3:I2->O            5   0.205   0.714  Mcount_lcd_cmd_ptr_val2 (Mcount_lcd_cmd_ptr_val)
-     FDRE:R                    0.430          lcd_cmd_ptr_0
-    ----------------------------------------
-    Total                      5.906ns (1.697ns logic, 4.209ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                      2.801ns (0.972ns logic, 1.829ns route)
+                                       (34.7% logic, 65.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'comCPU/comCLK/tmp[2]_dff_1_0'
-  Clock period: 7.196ns (frequency: 138.970MHz)
-  Total number of paths / destination ports: 271 / 51
+  Clock period: 9.017ns (frequency: 110.900MHz)
+  Total number of paths / destination ports: 276 / 49
 -------------------------------------------------------------------------
-Delay:               3.598ns (Levels of Logic = 3)
-  Source:            comCPU/comIF/IRout_15_2 (LATCH)
+Delay:               4.509ns (Levels of Logic = 4)
+  Source:            comCPU/comIF/IRout_12_1 (LATCH)
   Destination:       comCPU/comAC/Rtemp_7 (LATCH)
   Source Clock:      comCPU/comCLK/tmp[2]_dff_1_0 falling
   Destination Clock: comCPU/comCLK/tmp[2]_dff_1_0 rising
 
-  Data Path: comCPU/comIF/IRout_15_2 to comCPU/comAC/Rtemp_7
+  Data Path: comCPU/comIF/IRout_12_1 to comCPU/comAC/Rtemp_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q              2   0.498   0.961  comCPU/comIF/IRout_15_2 (comCPU/comIF/IRout_15_2)
-     LUT6:I1->O           12   0.203   0.909  comCPU/comMEM/RD1 (comCPU/RD)
-     LUT5:I4->O            1   0.205   0.580  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_398_o12 (comCPU/comAC/Rtemp[7]_Rtemp[7]_MUX_398_o)
+     LDE:G->Q              1   0.498   0.924  comCPU/comIF/IRout_12_1 (comCPU/comIF/IRout_12_1)
+     LUT6:I1->O           19   0.203   1.072  comCPU/comMEM/RD1 (comCPU/RD)
+     LUT6:I5->O            1   0.205   0.580  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_398_o12 (comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_398_o11)
+     LUT6:I5->O            1   0.205   0.580  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_398_o15 (comCPU/comAC/Rtemp[7]_Rtemp[7]_MUX_398_o)
      LUT6:I5->O            1   0.205   0.000  comCPU/comAC/Rtemp_7_dpot (comCPU/comAC/Rtemp_7_dpot)
      LDE_1:D                   0.037          comCPU/comAC/Rtemp_7
     ----------------------------------------
-    Total                      3.598ns (1.148ns logic, 2.450ns route)
-                                       (31.9% logic, 68.1% route)
+    Total                      4.509ns (1.353ns logic, 3.156ns route)
+                                       (30.0% logic, 70.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'js_15'
-  Total number of paths / destination ports: 78 / 8
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.286ns (frequency: 159.093MHz)
+  Total number of paths / destination ports: 2057 / 77
 -------------------------------------------------------------------------
-Offset:              6.544ns (Levels of Logic = 6)
-  Source:            btnu (PAD)
-  Destination:       seg_0 (FF)
-  Destination Clock: js_15 rising
+Delay:               6.286ns (Levels of Logic = 4)
+  Source:            comPmodCLP/count_16 (FF)
+  Destination:       comPmodCLP/count_20 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
 
-  Data Path: btnu to seg_0
+  Data Path: comPmodCLP/count_16 to comPmodCLP/count_20
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.222   1.256  btnu_IBUF (btnu_IBUF)
-     LUT3:I0->O           14   0.205   0.958  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1131 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT113)
-     LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1817 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1816)
-     LUT6:I5->O            1   0.205   0.684  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1818 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1817)
-     LUT6:I4->O            2   0.203   0.721  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT1819 (Mmux_shift[3]_digit4[7]_wide_mux_116_OUT181)
-     LUT6:I4->O            1   0.203   0.000  Mmux_shift[3]_digit4[7]_wide_mux_116_OUT311 (shift[3]_digit4[7]_wide_mux_116_OUT<0>)
-     FD:D                      0.102          seg_0
+     FDR:C->Q              4   0.447   1.048  comPmodCLP/count_16 (comPmodCLP/count_16)
+     LUT6:I0->O            2   0.203   0.961  comPmodCLP/delayOK211 (comPmodCLP/delayOK21)
+     LUT5:I0->O            1   0.203   0.684  comPmodCLP/delayOK3 (comPmodCLP/delayOK3)
+     LUT4:I2->O            1   0.203   0.684  comPmodCLP/delayOK4 (comPmodCLP/delayOK4)
+     LUT6:I4->O           27   0.203   1.220  comPmodCLP/delayOK12 (comPmodCLP/delayOK)
+     FDR:R                     0.430          comPmodCLP/count_0
     ----------------------------------------
-    Total                      6.544ns (2.345ns logic, 4.199ns route)
-                                       (35.8% logic, 64.2% route)
+    Total                      6.286ns (1.689ns logic, 4.597ns route)
+                                       (26.9% logic, 73.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comPmodCLP/OneUSClk'
+  Clock period: 6.884ns (frequency: 145.258MHz)
+  Total number of paths / destination ports: 287 / 22
+-------------------------------------------------------------------------
+Delay:               6.884ns (Levels of Logic = 5)
+  Source:            comPmodCLP/stCur_FSM_FFd4 (FF)
+  Destination:       comPmodCLP/lcd_cmd_ptr_5 (FF)
+  Source Clock:      comPmodCLP/OneUSClk rising
+  Destination Clock: comPmodCLP/OneUSClk rising
+
+  Data Path: comPmodCLP/stCur_FSM_FFd4 to comPmodCLP/lcd_cmd_ptr_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             10   0.447   1.085  comPmodCLP/stCur_FSM_FFd4 (comPmodCLP/stCur_FSM_FFd4)
+     LUT6:I3->O            1   0.205   0.580  comPmodCLP/delayOK10 (comPmodCLP/delayOK10)
+     LUT6:I5->O            1   0.205   0.580  comPmodCLP/delayOK12_SW0 (N128)
+     LUT6:I5->O           27   0.205   1.221  comPmodCLP/delayOK12 (comPmodCLP/delayOK)
+     LUT5:I4->O            8   0.205   0.803  comPmodCLP/GND_179_o_GND_179_o_OR_187_o1 (comPmodCLP/GND_179_o_GND_179_o_OR_187_o)
+     LUT6:I5->O            5   0.205   0.714  comPmodCLP/Reset_OR_DriverANDClockEnable1 (comPmodCLP/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.430          comPmodCLP/lcd_cmd_ptr_1
+    ----------------------------------------
+    Total                      6.884ns (1.902ns logic, 4.982ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comsegDisplay/js_15'
+  Clock period: 6.606ns (frequency: 151.377MHz)
+  Total number of paths / destination ports: 267 / 12
+-------------------------------------------------------------------------
+Delay:               6.606ns (Levels of Logic = 5)
+  Source:            comsegDisplay/shift_2 (FF)
+  Destination:       comsegDisplay/seg_3 (FF)
+  Source Clock:      comsegDisplay/js_15 rising
+  Destination Clock: comsegDisplay/js_15 rising
+
+  Data Path: comsegDisplay/shift_2 to comsegDisplay/seg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              27   0.447   1.468  comsegDisplay/shift_2 (comsegDisplay/shift_2)
+     LUT4:I0->O           10   0.203   1.201  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1151 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT115)
+     LUT5:I0->O            1   0.203   0.808  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12122 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12122)
+     LUT3:I0->O            2   0.205   0.981  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12124 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1212)
+     LUT6:I0->O            1   0.203   0.580  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1210 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT129)
+     LUT6:I5->O            1   0.205   0.000  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1211 (comsegDisplay/shift[3]_digit4[7]_wide_mux_2_OUT<3>)
+     FD:D                      0.102          comsegDisplay/seg_3
+    ----------------------------------------
+    Total                      6.606ns (1.568ns logic, 5.038ns route)
+                                       (23.7% logic, 76.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comBtnrDeb/btn_deb'
@@ -1369,52 +1044,32 @@ Offset:              2.744ns (Levels of Logic = 1)
                                        (60.2% logic, 39.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'OneUSClk'
-  Total number of paths / destination ports: 10 / 10
--------------------------------------------------------------------------
-Offset:              3.700ns (Levels of Logic = 2)
-  Source:            btnr (PAD)
-  Destination:       stCur_FSM_FFd6 (FF)
-  Destination Clock: OneUSClk rising
-
-  Data Path: btnr to stCur_FSM_FFd6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            25   1.222   1.193  btnr_IBUF (btnr_IBUF)
-     LUT6:I5->O            3   0.205   0.650  delayOK_01 (delayOK_0)
-     FDR:R                     0.430          stCur_FSM_FFd6
-    ----------------------------------------
-    Total                      3.700ns (1.857ns logic, 1.843ns route)
-                                       (50.2% logic, 49.8% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comCLK/tmp[2]_dff_1_0'
   Total number of paths / destination ports: 48 / 24
 -------------------------------------------------------------------------
-Offset:              4.195ns (Levels of Logic = 4)
+Offset:              4.095ns (Levels of Logic = 4)
   Source:            sw<7> (PAD)
-  Destination:       comCPU/comAC/Rtemp_0 (LATCH)
+  Destination:       comCPU/comAC/Rtemp_7 (LATCH)
   Destination Clock: comCPU/comCLK/tmp[2]_dff_1_0 rising
 
-  Data Path: sw<7> to comCPU/comAC/Rtemp_0
+  Data Path: sw<7> to comCPU/comAC/Rtemp_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.864  sw_7_IBUF (sw_7_IBUF)
-     LUT6:I2->O            3   0.203   0.879  IODB<0>LogicTrst1 (IODB<0>)
-     LUT5:I2->O            1   0.205   0.580  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_447_o12 (comCPU/comAC/Rtemp[7]_Rtemp[7]_MUX_447_o)
-     LUT6:I5->O            1   0.205   0.000  comCPU/comAC/Rtemp_0_dpot (comCPU/comAC/Rtemp_0_dpot)
-     LDE_1:D                   0.037          comCPU/comAC/Rtemp_0
+     IBUF:I->O             2   1.222   0.721  sw_7_IBUF (sw_7_IBUF)
+     LUT3:I1->O            1   0.203   0.924  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_398_o14 (comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_398_o14)
+     LUT6:I1->O            1   0.203   0.580  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_398_o15 (comCPU/comAC/Rtemp[7]_Rtemp[7]_MUX_398_o)
+     LUT6:I5->O            1   0.205   0.000  comCPU/comAC/Rtemp_7_dpot (comCPU/comAC/Rtemp_7_dpot)
+     LDE_1:D                   0.037          comCPU/comAC/Rtemp_7
     ----------------------------------------
-    Total                      4.195ns (1.872ns logic, 2.323ns route)
-                                       (44.6% logic, 55.4% route)
+    Total                      4.095ns (1.870ns logic, 2.225ns route)
+                                       (45.7% logic, 54.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
   Total number of paths / destination ports: 17 / 17
 -------------------------------------------------------------------------
-Offset:              3.521ns (Levels of Logic = 2)
+Offset:              3.482ns (Levels of Logic = 2)
   Source:            btnr (PAD)
   Destination:       comBtnrDeb/btn_deb (FF)
   Destination Clock: CLK rising
@@ -1423,12 +1078,55 @@ Offset:              3.521ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            25   1.222   1.192  btnr_IBUF (btnr_IBUF)
+     IBUF:I->O            23   1.222   1.153  btnr_IBUF (btnr_IBUF)
      INV:I->O              1   0.206   0.579  comBtnrDeb/btn_inv1_INV_0 (comBtnrDeb/btn_inv)
      FDE:CE                    0.322          comBtnrDeb/btn_deb
     ----------------------------------------
-    Total                      3.521ns (1.750ns logic, 1.771ns route)
-                                       (49.7% logic, 50.3% route)
+    Total                      3.482ns (1.750ns logic, 1.732ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comPmodCLP/OneUSClk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              2.805ns (Levels of Logic = 1)
+  Source:            btnr (PAD)
+  Destination:       comPmodCLP/stCur_FSM_FFd1 (FF)
+  Destination Clock: comPmodCLP/OneUSClk rising
+
+  Data Path: btnr to comPmodCLP/stCur_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            23   1.222   1.153  btnr_IBUF (btnr_IBUF)
+     FDS:S                     0.430          comPmodCLP/stCur_FSM_FFd4
+    ----------------------------------------
+    Total                      2.805ns (1.652ns logic, 1.153ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comsegDisplay/js_15'
+  Total number of paths / destination ports: 83 / 8
+-------------------------------------------------------------------------
+Offset:              7.067ns (Levels of Logic = 6)
+  Source:            btnu (PAD)
+  Destination:       comsegDisplay/seg_3 (FF)
+  Destination Clock: comsegDisplay/js_15 rising
+
+  Data Path: btnu to comsegDisplay/seg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.222   1.154  btnu_IBUF (btnu_IBUF)
+     LUT4:I2->O           10   0.203   1.201  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1151 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT115)
+     LUT5:I0->O            1   0.203   0.808  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12122 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12122)
+     LUT3:I0->O            2   0.205   0.981  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12124 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1212)
+     LUT6:I0->O            1   0.203   0.580  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1210 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT129)
+     LUT6:I5->O            1   0.205   0.000  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1211 (comsegDisplay/shift[3]_digit4[7]_wide_mux_2_OUT<3>)
+     FD:D                      0.102          comsegDisplay/seg_3
+    ----------------------------------------
+    Total                      7.067ns (2.343ns logic, 4.724ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comCLK/tmp[2]_dff_1_3'
@@ -1462,7 +1160,7 @@ Offset:              2.217ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           3   1.222   0.755  MemDB_15_IOBUF (N10)
+     IOBUF:IO->O           3   1.222   0.755  MemDB_15_IOBUF (N8)
      LUT3:I1->O            1   0.203   0.000  comCPU/comAC/Mmux_DBUS[15]_ALUOUT[7]_mux_2_OUT<15>11 (comCPU/comAC/DBUS[15]_ALUOUT[7]_mux_2_OUT<15>)
      LDC:D                     0.037          comCPU/comAC/Z_13_o_nIO_DLATCH_62_q
     ----------------------------------------
@@ -1471,56 +1169,55 @@ Offset:              2.217ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comCLK/tmp[2]_dff_1_0'
-  Total number of paths / destination ports: 1160 / 15
+  Total number of paths / destination ports: 960 / 15
 -------------------------------------------------------------------------
-Offset:              11.202ns (Levels of Logic = 7)
+Offset:              10.911ns (Levels of Logic = 7)
   Source:            comCPU/comIF/IRout_12 (LATCH)
-  Destination:       JA<1> (PAD)
+  Destination:       JC<1> (PAD)
   Source Clock:      comCPU/comCLK/tmp[2]_dff_1_0 falling
 
-  Data Path: comCPU/comIF/IRout_12 to JA<1>
+  Data Path: comCPU/comIF/IRout_12 to JC<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q             92   0.498   2.169  comCPU/comIF/IRout_12 (comCPU/comIF/IRout_12)
-     LUT5:I0->O            7   0.203   1.021  _n0488<15>1 (_n0488)
-     LUT5:I1->O            5   0.203   1.059  n0189<0>41 (n0189<0>4)
-     LUT5:I0->O            1   0.203   0.580  n0189<1>55 (n0189<1>30)
-     LUT6:I5->O            1   0.205   0.924  n0189<1>56 (n0189<1>31)
-     LUT6:I1->O            1   0.203   0.580  n0189<1>67 (n0189<1>43)
-     LUT6:I5->O            1   0.205   0.579  n0189<1>68 (JA_1_OBUF)
-     OBUF:I->O                 2.571          JA_1_OBUF (JA<1>)
+     LDE:G->Q             96   0.498   2.195  comCPU/comIF/IRout_12 (comCPU/comIF/IRout_12)
+     LUT5:I0->O            4   0.203   0.912  comPmodCLP/Mram__n0295231 (comPmodCLP/Mram__n029523)
+     LUT5:I2->O            6   0.205   1.089  comPmodCLP/n0140<3>91 (comPmodCLP/n0140<3>9)
+     LUT6:I1->O            1   0.203   0.580  comPmodCLP/n0140<1>12 (comPmodCLP/n0140<1>24)
+     LUT6:I5->O            1   0.205   0.684  comPmodCLP/n0140<1>13 (comPmodCLP/n0140<1>25)
+     LUT6:I4->O            1   0.203   0.580  comPmodCLP/n0140<1>14 (comPmodCLP/n0140<1>26)
+     LUT6:I5->O            1   0.205   0.579  comPmodCLP/n0140<1>22 (JC_1_OBUF)
+     OBUF:I->O                 2.571          JC_1_OBUF (JC<1>)
     ----------------------------------------
-    Total                     11.202ns (4.291ns logic, 6.911ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                     10.911ns (4.293ns logic, 6.618ns route)
+                                       (39.3% logic, 60.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/RDIR_nMEM_AND_80_o'
-  Total number of paths / destination ports: 48 / 8
+  Total number of paths / destination ports: 16 / 8
 -------------------------------------------------------------------------
-Offset:              7.043ns (Levels of Logic = 4)
-  Source:            comCPU/comAC/nPWR (LATCH)
+Offset:              5.988ns (Levels of Logic = 3)
+  Source:            comCPU/comAC/nPRD (LATCH)
   Destination:       led<7> (PAD)
   Source Clock:      comCPU/comAC/RDIR_nMEM_AND_80_o falling
 
-  Data Path: comCPU/comAC/nPWR to led<7>
+  Data Path: comCPU/comAC/nPRD to led<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               2   0.498   0.864  comCPU/comAC/nPWR (comCPU/comAC/nPWR)
-     LUT4:I0->O            8   0.203   1.167  nPREQ_nPRD_AND_134_o_inv1 (nPREQ_nPRD_AND_134_o_inv)
-     LUT6:I0->O            3   0.203   0.755  IODB<0>LogicTrst1 (IODB<0>)
-     LUT4:I2->O            1   0.203   0.579  Mmux_led11 (led_0_OBUF)
-     OBUF:I->O                 2.571          led_0_OBUF (led<0>)
+     LD:G->Q               4   0.498   0.788  comCPU/comAC/nPRD (comCPU/comAC/nPRD)
+     LUT4:I2->O            8   0.203   1.147  comIOConv/Mmux_led121 (comIOConv/Mmux_led12)
+     LUT5:I0->O            1   0.203   0.579  comIOConv/Mmux_led41 (led_3_OBUF)
+     OBUF:I->O                 2.571          led_3_OBUF (led<3>)
     ----------------------------------------
-    Total                      7.043ns (3.678ns logic, 3.365ns route)
-                                       (52.2% logic, 47.8% route)
+    Total                      5.988ns (3.475ns logic, 2.513ns route)
+                                       (58.0% logic, 42.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/RDIR_nMEM_AND_84_o'
-  Total number of paths / destination ports: 32 / 8
+  Total number of paths / destination ports: 24 / 8
 -------------------------------------------------------------------------
-Offset:              5.716ns (Levels of Logic = 3)
+Offset:              4.858ns (Levels of Logic = 2)
   Source:            comCPU/comAC/nIO_RDIR_DLATCH_124_q (LATCH)
   Destination:       led<7> (PAD)
   Source Clock:      comCPU/comAC/RDIR_nMEM_AND_84_o falling
@@ -1529,82 +1226,86 @@ Offset:              5.716ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               8   0.498   0.907  comCPU/comAC/nIO_RDIR_DLATCH_124_q (comCPU/comAC/nIO_RDIR_DLATCH_124_q)
-     LUT6:I4->O            3   0.203   0.755  IODB<0>LogicTrst1 (IODB<0>)
-     LUT4:I2->O            1   0.203   0.579  Mmux_led11 (led_0_OBUF)
-     OBUF:I->O                 2.571          led_0_OBUF (led<0>)
+     LD:G->Q              16   0.498   1.005  comCPU/comAC/nIO_RDIR_DLATCH_124_q (comCPU/comAC/nIO_RDIR_DLATCH_124_q)
+     LUT5:I4->O            1   0.205   0.579  comIOConv/Mmux_led41 (led_3_OBUF)
+     OBUF:I->O                 2.571          led_3_OBUF (led<3>)
     ----------------------------------------
-    Total                      5.716ns (3.475ns logic, 2.241ns route)
-                                       (60.8% logic, 39.2% route)
+    Total                      4.858ns (3.274ns logic, 1.584ns route)
+                                       (67.4% logic, 32.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'js_15'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comsegDisplay/js_15'
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Offset:              4.224ns (Levels of Logic = 1)
-  Source:            shift_2 (FF)
+Offset:              4.238ns (Levels of Logic = 1)
+  Source:            comsegDisplay/shift_2 (FF)
   Destination:       an<1> (PAD)
-  Source Clock:      js_15 rising
+  Source Clock:      comsegDisplay/js_15 rising
 
-  Data Path: shift_2 to an<1>
+  Data Path: comsegDisplay/shift_2 to an<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              26   0.447   1.206  shift_2 (shift_2)
+     FD:C->Q              27   0.447   1.220  comsegDisplay/shift_2 (comsegDisplay/shift_2)
      OBUF:I->O                 2.571          an_1_OBUF (an<1>)
     ----------------------------------------
-    Total                      4.224ns (3.018ns logic, 1.206ns route)
-                                       (71.5% logic, 28.5% route)
+    Total                      4.238ns (3.018ns logic, 1.220ns route)
+                                       (71.2% logic, 28.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'OneUSClk'
-  Total number of paths / destination ports: 1658 / 10
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comPmodCLP/OneUSClk'
+  Total number of paths / destination ports: 3861 / 10
 -------------------------------------------------------------------------
-Offset:              10.833ns (Levels of Logic = 7)
-  Source:            lcd_cmd_ptr_2 (FF)
-  Destination:       JA<1> (PAD)
-  Source Clock:      OneUSClk rising
+Offset:              14.943ns (Levels of Logic = 10)
+  Source:            comPmodCLP/lcd_cmd_ptr_1 (FF)
+  Destination:       JC<2> (PAD)
+  Source Clock:      comPmodCLP/OneUSClk rising
 
-  Data Path: lcd_cmd_ptr_2 to JA<1>
+  Data Path: comPmodCLP/lcd_cmd_ptr_1 to JC<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             43   0.447   1.813  lcd_cmd_ptr_2 (lcd_cmd_ptr_2)
-     LUT6:I0->O            5   0.203   1.059  _n0926<5>1 (_n0926)
-     LUT5:I0->O            5   0.203   1.059  n0189<0>41 (n0189<0>4)
-     LUT5:I0->O            1   0.203   0.580  n0189<1>55 (n0189<1>30)
-     LUT6:I5->O            1   0.205   0.924  n0189<1>56 (n0189<1>31)
-     LUT6:I1->O            1   0.203   0.580  n0189<1>67 (n0189<1>43)
-     LUT6:I5->O            1   0.205   0.579  n0189<1>68 (JA_1_OBUF)
-     OBUF:I->O                 2.571          JA_1_OBUF (JA<1>)
+     FDRE:C->Q            64   0.447   1.984  comPmodCLP/lcd_cmd_ptr_1 (comPmodCLP/lcd_cmd_ptr_1)
+     LUT6:I1->O           16   0.203   1.349  comPmodCLP/_n2236<5>1 (comPmodCLP/_n2236)
+     LUT5:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>13 (comPmodCLP/n0140<6>13)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>14 (comPmodCLP/n0140<6>14)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>15 (comPmodCLP/n0140<6>15)
+     LUT6:I0->O            2   0.203   0.845  comPmodCLP/n0140<6>19 (comPmodCLP/n0140<6>1)
+     LUT3:I0->O            1   0.205   0.580  comPmodCLP/n0140<1>1_SW0 (N4)
+     LUT6:I5->O            2   0.205   0.981  comPmodCLP/n0140<1>1 (comPmodCLP/n0140<1>1)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<2>8 (comPmodCLP/n0140<2>9)
+     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<2>42 (JC_2_OBUF)
+     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
     ----------------------------------------
-    Total                     10.833ns (4.240ns logic, 6.593ns route)
-                                       (39.1% logic, 60.9% route)
+    Total                     14.943ns (4.849ns logic, 10.094ns route)
+                                       (32.5% logic, 67.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/Rupdate'
-  Total number of paths / destination ports: 396 / 7
+  Total number of paths / destination ports: 2277 / 7
 -------------------------------------------------------------------------
-Offset:              10.267ns (Levels of Logic = 7)
-  Source:            comCPU/comEX/Reg_7_3 (FF)
-  Destination:       JA<5> (PAD)
+Offset:              12.681ns (Levels of Logic = 9)
+  Source:            comCPU/comEX/Reg_3_6 (FF)
+  Destination:       JC<2> (PAD)
   Source Clock:      comCPU/Rupdate rising
 
-  Data Path: comCPU/comEX/Reg_7_3 to JA<5>
+  Data Path: comCPU/comEX/Reg_3_6 to JC<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              9   0.447   1.058  comCPU/comEX/Reg_7_3 (comCPU/comEX/Reg_7_3)
-     LUT3:I0->O            2   0.205   0.845  Mram_LCD_CMDS<36><7:0>41 (Mram_LCD_CMDS<36><7:0>4)
-     LUT6:I3->O            1   0.205   0.944  n0189<4>24 (n0189<4>24)
-     LUT6:I0->O            1   0.203   0.808  n0189<4>25 (n0189<4>25)
-     LUT5:I2->O            1   0.205   0.808  n0189<4>26 (n0189<4>26)
-     LUT6:I3->O            2   0.205   0.981  n0189<4>210 (n0189<4>2)
-     LUT6:I0->O            1   0.203   0.579  n0189<5>12 (JA_5_OBUF)
-     OBUF:I->O                 2.571          JA_5_OBUF (JA<5>)
+     FDE:C->Q             17   0.447   1.275  comCPU/comEX/Reg_3_6 (comCPU/comEX/Reg_3_6)
+     LUT5:I1->O            1   0.203   0.944  comPmodCLP/n0140<6>13 (comPmodCLP/n0140<6>13)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>14 (comPmodCLP/n0140<6>14)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>15 (comPmodCLP/n0140<6>15)
+     LUT6:I0->O            2   0.203   0.845  comPmodCLP/n0140<6>19 (comPmodCLP/n0140<6>1)
+     LUT3:I0->O            1   0.205   0.580  comPmodCLP/n0140<1>1_SW0 (N4)
+     LUT6:I5->O            2   0.205   0.981  comPmodCLP/n0140<1>1 (comPmodCLP/n0140<1>1)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<2>8 (comPmodCLP/n0140<2>9)
+     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<2>42 (JC_2_OBUF)
+     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
     ----------------------------------------
-    Total                     10.267ns (4.244ns logic, 6.023ns route)
-                                       (41.3% logic, 58.7% route)
+    Total                     12.681ns (4.646ns logic, 8.035ns route)
+                                       (36.6% logic, 63.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/nMREQ_G'
@@ -1665,47 +1366,18 @@ Offset:              3.648ns (Levels of Logic = 1)
                                        (84.1% logic, 15.9% route)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 32 / 8
--------------------------------------------------------------------------
-Delay:               6.397ns (Levels of Logic = 4)
-  Source:            sw<0> (PAD)
-  Destination:       led<7> (PAD)
-
-  Data Path: sw<0> to led<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.864  sw_0_IBUF (sw_0_IBUF)
-     LUT6:I2->O            3   0.203   0.755  IODB<7>LogicTrst1 (IODB<7>)
-     LUT4:I2->O            1   0.203   0.579  Mmux_led81 (led_7_OBUF)
-     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
-    ----------------------------------------
-    Total                      6.397ns (4.199ns logic, 2.198ns route)
-                                       (65.6% logic, 34.4% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |    5.445|         |         |         |
-OneUSClk       |    4.163|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock OneUSClk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |    7.187|         |         |         |
-OneUSClk       |    5.906|         |         |         |
----------------+---------+---------+---------+---------+
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+CLK                |    6.286|         |         |         |
+comPmodCLP/OneUSClk|    4.957|         |         |         |
+-------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comBtnrDeb/btn_deb
 ----------------------------+---------+---------+---------+---------+
@@ -1713,7 +1385,7 @@ Clock to Setup on destination clock comBtnrDeb/btn_deb
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |    1.783|         |    4.098|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.428|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.454|         |
 comCPU/comCLK/tmp[2]_dff_1_1|         |         |    3.808|         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1723,7 +1395,7 @@ Clock to Setup on destination clock comCPU/Rupdate
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |         |    1.571|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |    4.313|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |    4.339|         |         |
 comCPU/comCLK/tmp[2]_dff_1_2|         |    1.385|         |         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1733,7 +1405,7 @@ Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_80_o
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |         |         |    2.048|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.985|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.993|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_84_o
@@ -1742,7 +1414,7 @@ Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_84_o
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |         |         |    2.031|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.874|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.933|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/nIO_RD_MUX_241_o
@@ -1750,9 +1422,9 @@ Clock to Setup on destination clock comCPU/comAC/nIO_RD_MUX_241_o
                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb            |         |         |    3.816|         |
-comCPU/comAC/nMEM_RDIR_OR_41_o|         |         |    2.061|         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.294|         |
+comBtnrDeb/btn_deb            |         |         |    3.958|         |
+comCPU/comAC/nMEM_RDIR_OR_41_o|         |         |    1.926|         |
+comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.319|         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_41_o
@@ -1760,8 +1432,8 @@ Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_41_o
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |         |    3.799|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.277|         |
+comBtnrDeb/btn_deb          |         |         |    3.815|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.064|         |
 comCPU/comCLK/tmp[2]_dff_1_1|         |         |    1.585|         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1770,9 +1442,9 @@ Clock to Setup on destination clock comCPU/comAC/nMREQ_G
                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb            |         |         |    3.673|         |
-comCPU/comAC/nMEM_RDIR_OR_41_o|         |         |    1.627|         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.151|         |
+comBtnrDeb/btn_deb            |         |         |    3.941|         |
+comCPU/comAC/nMEM_RDIR_OR_41_o|         |         |    1.492|         |
+comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.190|         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_0
@@ -1780,12 +1452,12 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_0
                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
-CLK                            |         |         |    2.245|         |
-comBtnrDeb/btn_deb             |    4.063|         |         |         |
-comCPU/comAC/RDIR_nMEM_AND_80_o|         |    4.841|         |         |
-comCPU/comAC/RDIR_nMEM_AND_84_o|         |    3.514|         |         |
-comCPU/comAC/nMEM_RDIR_OR_41_o |         |    4.010|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0   |    4.698|    3.598|    1.279|         |
+CLK                            |         |         |    2.217|         |
+comBtnrDeb/btn_deb             |    5.011|         |         |         |
+comCPU/comAC/RDIR_nMEM_AND_80_o|         |    4.610|         |         |
+comCPU/comAC/RDIR_nMEM_AND_84_o|         |    5.048|         |         |
+comCPU/comAC/nMEM_RDIR_OR_41_o |         |    4.578|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0   |    4.707|    4.509|    1.218|         |
 comCPU/comCLK/tmp[2]_dff_1_3   |    1.128|         |         |         |
 -------------------------------+---------+---------+---------+---------+
 
@@ -1794,8 +1466,8 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_1
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comCPU/Rupdate              |    1.979|         |         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |    4.286|         |         |
+comCPU/Rupdate              |    2.180|         |         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |    4.201|         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
@@ -1803,7 +1475,7 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.099|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.125|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_3
@@ -1811,8 +1483,8 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_3
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |    5.666|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|    4.260|    5.554|         |         |
+comBtnrDeb/btn_deb          |         |    5.647|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|    4.260|    5.561|         |         |
 comCPU/comCLK/tmp[2]_dff_1_1|    3.926|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1822,32 +1494,41 @@ Clock to Setup on destination clock comCPU/nMEM
 Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb            |    2.111|         |         |         |
-comCPU/comAC/nMEM_RDIR_OR_41_o|         |    2.433|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |    2.985|         |         |
+comCPU/comAC/nMEM_RDIR_OR_41_o|         |    2.301|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0  |         |    2.993|         |         |
 ------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock js_15
+Clock to Setup on destination clock comPmodCLP/OneUSClk
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+CLK                |    8.213|         |         |         |
+comPmodCLP/OneUSClk|    6.884|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock comsegDisplay/js_15
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |    2.231|         |         |         |
+CLK                         |    2.203|         |         |         |
 comBtnrDeb/btn_deb          |    2.983|         |         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|    4.625|    6.661|         |         |
-js_15                       |    5.721|         |         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|    4.848|    5.557|         |         |
+comsegDisplay/js_15         |    6.606|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.80 secs
+Total CPU time to Xst completion: 11.67 secs
  
 --> 
 
-Total memory usage is 267524 kilobytes
+Total memory usage is 275588 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  152 (   0 filtered)
-Number of infos    :   45 (   0 filtered)
+Number of warnings :  153 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
 

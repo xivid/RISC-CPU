@@ -37,7 +37,7 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-btnr        |    3.043(R)|      SLOW  |   -0.898(R)|      FAST  |CLK_BUFGP         |   0.000|
+btnr        |    2.340(R)|      SLOW  |   -0.560(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -45,40 +45,18 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.158|         |         |         |
+CLK            |    4.839|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-sw<0>          |led<0>         |    9.493|
-sw<0>          |led<7>         |    8.776|
-sw<1>          |led<1>         |    9.325|
-sw<1>          |led<6>         |    8.846|
-sw<2>          |led<2>         |   10.122|
-sw<2>          |led<5>         |    9.712|
-sw<3>          |led<3>         |    9.319|
-sw<3>          |led<4>         |    8.821|
-sw<4>          |led<3>         |    9.235|
-sw<4>          |led<4>         |    8.737|
-sw<5>          |led<2>         |    9.987|
-sw<5>          |led<5>         |    9.577|
-sw<6>          |led<1>         |    9.208|
-sw<6>          |led<6>         |    8.729|
-sw<7>          |led<0>         |   10.310|
-sw<7>          |led<7>         |    9.593|
----------------+---------------+---------+
 
-
-Analysis completed Sun Aug 02 17:43:36 2015 
+Analysis completed Sun Aug 02 19:36:23 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 231 MB
+Peak Memory Usage: 234 MB
 
 
 
