@@ -255,32 +255,32 @@ architecture Behavioral of N3Adapter is
     signal nPREQ, nPRD, nPWR : std_logic;
     
     -- Button debounce
-    constant CNTR_MAX : std_logic_vector(15 downto 0) := (others => '1');
+    -- constant CNTR_MAX : std_logic_vector(15 downto 0) := (others => '1');
     signal btnr_deb : std_logic := '0';
 begin
     btnr_debounce: process (CLK, btnr)
-        variable count: INTEGER := 0;
+        variable count: integer := 0;
     begin
-        if (rising_edge(CLK)) then
-            if btnr = '0' then
-                if (count = CNTR_MAX) then
-                    count := count;
-                else
+        if (CLK = '1' and CLK'event) then
+            if btnr = '1' then
+                if (count /= 500000) then
                     count := count + 1;
                 end if;
-                if count = CNTR_MAX - 1 then
-                    btnr_deb <= '0';
-                else
+                if count = 499999 then
                     btnr_deb <= '1';
+                else
+                    btnr_deb <= '0';
                 end if;
             else
                 count := 0;
             end if;
         end if;
     end process;
+
     comCPU: CPU port map(
                RST => btns,
                CLK => btnr_deb,
+               -- CLK => btnr,
                DBUS => MemDB,
                IODB => IODB,
                ABUS => ABUS,
@@ -359,10 +359,10 @@ begin
 		end process;
 	
 	--This process runs the LCD state machine
-	process (oneUSClk, btnr)
+	process (oneUSClk, btnr_deb)
 		begin
 			if oneUSClk = '1' and oneUSClk'Event then
-				if btnr = '1' then
+				if btnr_deb = '1' then
 					stCur <= stPowerOn_Delay;
 				else
 					stCur <= stNext;
@@ -647,10 +647,10 @@ begin
 		end if;
 	end process;
     
-    digit1 <= (not T(0))&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
-	digit2 <= (not T(1))&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
-	digit3 <= (not T(2))&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
-	digit4 <= (not T(3))&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
+    digit1 <= btnr_deb&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
+	digit2 <= btnr_deb&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
+	digit3 <= btnr_deb&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
+	digit4 <= btnr_deb&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
 	
     MemAdv <= '0';
     MemWait <= '0';

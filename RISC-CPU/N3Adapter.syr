@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: N3Adapter.prj
 
@@ -240,7 +240,7 @@ WARNING:Xst:2935 - Signal 'LCD_CMDS<37>', unconnected in block 'N3Adapter', is t
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <btnr_debounce.count[31]_GND_5_o_add_1_OUT> created at line 269.
+    Found 32-bit adder for signal <btnr_debounce.count[31]_GND_5_o_add_1_OUT> created at line 267.
     Found 7-bit adder for signal <clkCount[6]_GND_5_o_add_7_OUT> created at line 316.
     Found 21-bit adder for signal <count[20]_GND_5_o_add_10_OUT> created at line 328.
     Found 6-bit adder for signal <lcd_cmd_ptr[5]_GND_5_o_add_27_OUT> created at line 350.
@@ -270,9 +270,9 @@ WARNING:Xst:2935 - Signal 'LCD_CMDS<37>', unconnected in block 'N3Adapter', is t
     Found 16x7-bit Read Only RAM for signal <PC[7]_GND_5_o_wide_mux_124_OUT>
     Found 16x7-bit Read Only RAM for signal <PC[3]_GND_5_o_wide_mux_127_OUT>
     Found 4x1-bit Read Only RAM for signal <IOAD[1]_GND_176_o_Mux_154_o>
-    Found 16x15-bit Read Only RAM for signal <_n0389>
-    Found 16x15-bit Read Only RAM for signal <_n0414>
-    Found 32x100-bit Read Only RAM for signal <_n0447>
+    Found 16x15-bit Read Only RAM for signal <_n0395>
+    Found 16x15-bit Read Only RAM for signal <_n0420>
+    Found 32x100-bit Read Only RAM for signal <_n0453>
     Found 8-bit 3-to-1 multiplexer for signal <IOAD[1]_IODB[0]_wide_mux_133_OUT> created at line 683.
     Found 1-bit tristate buffer for signal <IODB<7>> created at line 668
     Found 1-bit tristate buffer for signal <IODB<6>> created at line 668
@@ -399,8 +399,8 @@ Unit <MEMctrl> synthesized.
 Synthesizing Unit <WBctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\WBctrl.vhd".
     Found 16-bit register for signal <PCnew>.
-    Found 16-bit register for signal <PC[15]_dff_7>.
-    Found 16-bit adder for signal <PC[15]_Addr[15]_add_8_OUT> created at line 58.
+    Found 16-bit register for signal <PC[15]_dff_8>.
+    Found 16-bit adder for signal <PC[15]_Addr[15]_add_9_OUT> created at line 58.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -642,7 +642,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_IR[11]_GND_5_o_wide_mux_122_OUT> wil
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0389> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0395> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -653,7 +653,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0389> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0414> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0420> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -664,7 +664,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0414> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0447> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0453> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -957,21 +957,6 @@ Optimizing FSM <FSM_0> on signal <stCur[1:10]> with one-hot encoding.
  stactwr                | 0100000000
  stchardelay            | 1000000000
 --------------------------------------
-WARNING:Xst:2677 - Node <btnr_debounce.count_17> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_18> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_19> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_20> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_21> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_22> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_23> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_24> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_25> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_26> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_27> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_28> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_29> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_30> of sequential type is unconnected in block <N3Adapter>.
-WARNING:Xst:2677 - Node <btnr_debounce.count_31> of sequential type is unconnected in block <N3Adapter>.
 WARNING:Xst:2677 - Node <comCPU/comAC/ABUS_0> of sequential type is unconnected in block <N3Adapter>.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
@@ -1025,13 +1010,25 @@ Optimizing unit <EXctrl> ...
 Optimizing unit <MEMctrl> ...
 
 Optimizing unit <WBctrl> ...
-WARNING:Xst:1293 - FF/Latch <btnr_debounce.count_16> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clkCount_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_5> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clkCount_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_31> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_30> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_29> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_28> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_27> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_26> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_25> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_24> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_23> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_22> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_21> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_20> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <btnr_debounce.count_19> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <js_0> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <clkCount_0> 
 INFO:Xst:2261 - The FF/Latch <OneUSClk> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <js_1> 
 
@@ -1045,8 +1042,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 255
- Flip-Flops                                            : 255
+# Registers                                            : 258
+ Flip-Flops                                            : 258
 
 =========================================================================
 
@@ -1069,20 +1066,20 @@ Top Level Output File Name         : N3Adapter.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1053
+# BELS                             : 1081
 #      GND                         : 1
 #      INV                         : 10
-#      LUT1                        : 79
+#      LUT1                        : 85
 #      LUT2                        : 26
-#      LUT3                        : 182
-#      LUT4                        : 85
-#      LUT5                        : 129
-#      LUT6                        : 293
-#      MUXCY                       : 111
+#      LUT3                        : 166
+#      LUT4                        : 83
+#      LUT5                        : 139
+#      LUT6                        : 311
+#      MUXCY                       : 117
 #      MUXF7                       : 18
 #      VCC                         : 1
-#      XORCY                       : 118
-# FlipFlops/Latches                : 386
+#      XORCY                       : 124
+# FlipFlops/Latches                : 389
 #      FD                          : 91
 #      FDC                         : 3
 #      FDC_1                       : 16
@@ -1090,7 +1087,7 @@ Primitive and Black Box Usage:
 #      FDE_1                       : 9
 #      FDP                         : 1
 #      FDP_1                       : 16
-#      FDR                         : 47
+#      FDR                         : 50
 #      FDRE                        : 5
 #      FDS                         : 1
 #      LD                          : 59
@@ -1114,15 +1111,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             350  out of  18224     1%  
- Number of Slice LUTs:                  804  out of   9112     8%  
-    Number used as Logic:               804  out of   9112     8%  
+ Number of Slice Registers:             353  out of  18224     1%  
+ Number of Slice LUTs:                  820  out of   9112     8%  
+    Number used as Logic:               820  out of   9112     8%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    925
-   Number with an unused Flip Flop:     575  out of    925    62%  
-   Number with an unused LUT:           121  out of    925    13%  
-   Number of fully used LUT-FF pairs:   229  out of    925    24%  
+ Number of LUT Flip Flop pairs used:    941
+   Number with an unused Flip Flop:     588  out of    941    62%  
+   Number with an unused LUT:           121  out of    941    12%  
+   Number of fully used LUT-FF pairs:   232  out of    941    24%  
    Number of unique control sets:        82
 
 IO Utilization: 
@@ -1154,14 +1151,14 @@ Clock Information:
 -------------------------------------------------------------------------------------+--------------------------------------------+-------+
 Clock Signal                                                                         | Clock buffer(FF name)                      | Load  |
 -------------------------------------------------------------------------------------+--------------------------------------------+-------+
-CLK                                                                                  | BUFGP                                      | 54    |
+CLK                                                                                  | BUFGP                                      | 57    |
 js_15                                                                                | NONE(shift_0)                              | 12    |
 btnr_deb                                                                             | BUFG                                       | 77    |
 OneUSClk                                                                             | NONE(stCur_FSM_FFd10)                      | 16    |
 comCPU/RDIR(comCPU/comIF/RDIR1:O)                                                    | BUFG(*)(comCPU/comAC/Rtemp_0)              | 27    |
-comCPU/comAC/nMREQ_G(comCPU/comAC/RDIR_nMEM_OR_76_o1:O)                              | NONE(*)(comCPU/comAC/ABUS_2)               | 16    |
+comCPU/comAC/nMREQ_G(comCPU/comAC/RDIR_nMEM_OR_122_o1:O)                             | NONE(*)(comCPU/comAC/ABUS_2)               | 16    |
 comCPU/nMEM(comCPU/comMEM/nMEM1:O)                                                   | NONE(*)(comCPU/comAC/nBLE)                 | 4     |
-comCPU/comAC/nMEM_RDIR_OR_58_o(comCPU/comAC/nMEM_RDIR_OR_58_o1:O)                    | NONE(*)(comCPU/comAC/address_15)           | 16    |
+comCPU/comAC/nMEM_RDIR_OR_104_o(comCPU/comAC/nMEM_RDIR_OR_104_o1:O)                  | NONE(*)(comCPU/comAC/address_15)           | 16    |
 comCPU/comAC/nIO_RD_MUX_259_o(comCPU/comAC/Mmux_nIO_RD_MUX_259_o11:O)                | NONE(*)(comCPU/comAC/nMEM_nIO_DLATCH_63_q) | 17    |
 comCPU/comAC/RDIR_nMEM_AND_121_o(comCPU/comAC/RDIR_nMEM_AND_121_o1:O)                | NONE(*)(comCPU/comAC/nIO_RDIR_DLATCH_124_q)| 9     |
 comCPU/comAC/RDIR_nMEM_AND_117_o(comCPU/comAC/RDIR_nMEM_AND_117_o1:O)                | NONE(*)(comCPU/comAC/nPWR)                 | 2     |
@@ -1169,22 +1166,22 @@ comCPU/comCLK/tmp[2]_dff_1_0                                                    
 comCPU/comCLK/tmp[2]_dff_1_1                                                         | BUFG                                       | 32    |
 comCPU/Rupdate(comCPU/comWB/Mmux_Rupdate1:O)                                         | BUFG(*)(comCPU/comEX/Reg_0_7)              | 64    |
 comCPU/comCLK/tmp[2]_dff_1_2                                                         | NONE(comCPU/comMEM/Rtemp_7)                | 8     |
-comCPU/comIF/PCupdate_PCnew[0]_AND_36_o(comCPU/comIF/PCupdate_PCnew[0]_AND_36_o1:O)  | NONE(*)(comCPU/comIF/PC_0_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[2]_AND_32_o(comCPU/comIF/PCupdate_PCnew[2]_AND_32_o1:O)  | NONE(*)(comCPU/comIF/PC_2_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[3]_AND_30_o(comCPU/comIF/PCupdate_PCnew[3]_AND_30_o1:O)  | NONE(*)(comCPU/comIF/PC_3_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[1]_AND_34_o(comCPU/comIF/PCupdate_PCnew[1]_AND_34_o1:O)  | NONE(*)(comCPU/comIF/PC_1_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[4]_AND_28_o(comCPU/comIF/PCupdate_PCnew[4]_AND_28_o1:O)  | NONE(*)(comCPU/comIF/PC_4_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[5]_AND_26_o(comCPU/comIF/PCupdate_PCnew[5]_AND_26_o1:O)  | NONE(*)(comCPU/comIF/PC_5_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[6]_AND_24_o(comCPU/comIF/PCupdate_PCnew[6]_AND_24_o1:O)  | NONE(*)(comCPU/comIF/PC_6_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[7]_AND_22_o(comCPU/comIF/PCupdate_PCnew[7]_AND_22_o1:O)  | NONE(*)(comCPU/comIF/PC_7_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[9]_AND_18_o(comCPU/comIF/PCupdate_PCnew[9]_AND_18_o1:O)  | NONE(*)(comCPU/comIF/PC_9_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[10]_AND_16_o(comCPU/comIF/PCupdate_PCnew[10]_AND_16_o1:O)| NONE(*)(comCPU/comIF/PC_10_LDC)            | 1     |
-comCPU/comIF/PCupdate_PCnew[8]_AND_20_o(comCPU/comIF/PCupdate_PCnew[8]_AND_20_o1:O)  | NONE(*)(comCPU/comIF/PC_8_LDC)             | 1     |
-comCPU/comIF/PCupdate_PCnew[12]_AND_12_o(comCPU/comIF/PCupdate_PCnew[12]_AND_12_o1:O)| NONE(*)(comCPU/comIF/PC_12_LDC)            | 1     |
-comCPU/comIF/PCupdate_PCnew[13]_AND_10_o(comCPU/comIF/PCupdate_PCnew[13]_AND_10_o1:O)| NONE(*)(comCPU/comIF/PC_13_LDC)            | 1     |
-comCPU/comIF/PCupdate_PCnew[11]_AND_14_o(comCPU/comIF/PCupdate_PCnew[11]_AND_14_o1:O)| NONE(*)(comCPU/comIF/PC_11_LDC)            | 1     |
-comCPU/comIF/PCupdate_PCnew[15]_AND_6_o(comCPU/comIF/PCupdate_PCnew[15]_AND_6_o1:O)  | NONE(*)(comCPU/comIF/PC_15_LDC)            | 1     |
-comCPU/comIF/PCupdate_PCnew[14]_AND_8_o(comCPU/comIF/PCupdate_PCnew[14]_AND_8_o1:O)  | NONE(*)(comCPU/comIF/PC_14_LDC)            | 1     |
+comCPU/comIF/PCupdate_PCnew[0]_AND_35_o(comCPU/comIF/PCupdate_PCnew[0]_AND_35_o1:O)  | NONE(*)(comCPU/comIF/PC_0_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[2]_AND_31_o(comCPU/comIF/PCupdate_PCnew[2]_AND_31_o1:O)  | NONE(*)(comCPU/comIF/PC_2_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[3]_AND_29_o(comCPU/comIF/PCupdate_PCnew[3]_AND_29_o1:O)  | NONE(*)(comCPU/comIF/PC_3_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[1]_AND_33_o(comCPU/comIF/PCupdate_PCnew[1]_AND_33_o1:O)  | NONE(*)(comCPU/comIF/PC_1_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[4]_AND_27_o(comCPU/comIF/PCupdate_PCnew[4]_AND_27_o1:O)  | NONE(*)(comCPU/comIF/PC_4_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[5]_AND_25_o(comCPU/comIF/PCupdate_PCnew[5]_AND_25_o1:O)  | NONE(*)(comCPU/comIF/PC_5_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[6]_AND_23_o(comCPU/comIF/PCupdate_PCnew[6]_AND_23_o1:O)  | NONE(*)(comCPU/comIF/PC_6_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[7]_AND_21_o(comCPU/comIF/PCupdate_PCnew[7]_AND_21_o1:O)  | NONE(*)(comCPU/comIF/PC_7_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[9]_AND_17_o(comCPU/comIF/PCupdate_PCnew[9]_AND_17_o1:O)  | NONE(*)(comCPU/comIF/PC_9_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[10]_AND_15_o(comCPU/comIF/PCupdate_PCnew[10]_AND_15_o1:O)| NONE(*)(comCPU/comIF/PC_10_LDC)            | 1     |
+comCPU/comIF/PCupdate_PCnew[8]_AND_19_o(comCPU/comIF/PCupdate_PCnew[8]_AND_19_o1:O)  | NONE(*)(comCPU/comIF/PC_8_LDC)             | 1     |
+comCPU/comIF/PCupdate_PCnew[12]_AND_11_o(comCPU/comIF/PCupdate_PCnew[12]_AND_11_o1:O)| NONE(*)(comCPU/comIF/PC_12_LDC)            | 1     |
+comCPU/comIF/PCupdate_PCnew[13]_AND_9_o(comCPU/comIF/PCupdate_PCnew[13]_AND_9_o1:O)  | NONE(*)(comCPU/comIF/PC_13_LDC)            | 1     |
+comCPU/comIF/PCupdate_PCnew[11]_AND_13_o(comCPU/comIF/PCupdate_PCnew[11]_AND_13_o1:O)| NONE(*)(comCPU/comIF/PC_11_LDC)            | 1     |
+comCPU/comIF/PCupdate_PCnew[15]_AND_5_o(comCPU/comIF/PCupdate_PCnew[15]_AND_5_o1:O)  | NONE(*)(comCPU/comIF/PC_15_LDC)            | 1     |
+comCPU/comIF/PCupdate_PCnew[14]_AND_7_o(comCPU/comIF/PCupdate_PCnew[14]_AND_7_o1:O)  | NONE(*)(comCPU/comIF/PC_14_LDC)            | 1     |
 -------------------------------------------------------------------------------------+--------------------------------------------+-------+
 (*) These 24 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -1199,8 +1196,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.556ns (Maximum Frequency: 132.340MHz)
-   Minimum input arrival time before clock: 7.077ns
+   Minimum period: 7.678ns (Maximum Frequency: 130.251MHz)
+   Minimum input arrival time before clock: 7.021ns
    Maximum output required time after clock: 10.644ns
    Maximum combinational path delay: 6.397ns
 
@@ -1211,7 +1208,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 6.067ns (frequency: 164.830MHz)
-  Total number of paths / destination ports: 2056 / 76
+  Total number of paths / destination ports: 2296 / 79
 -------------------------------------------------------------------------
 Delay:               6.067ns (Levels of Logic = 4)
   Source:            count_12 (FF)
@@ -1226,7 +1223,7 @@ Delay:               6.067ns (Levels of Logic = 4)
      FDR:C->Q              4   0.447   1.028  count_12 (count_12)
      LUT5:I0->O            1   0.203   0.924  delayOK10 (delayOK10)
      LUT5:I0->O            1   0.203   0.580  delayOK13 (delayOK13)
-     LUT6:I5->O            1   0.205   0.580  delayOK14_SW0 (N66)
+     LUT6:I5->O            1   0.205   0.580  delayOK14_SW0 (N68)
      LUT6:I5->O           30   0.205   1.263  delayOK14 (delayOK)
      FDR:R                     0.430          count_0
     ----------------------------------------
@@ -1235,10 +1232,10 @@ Delay:               6.067ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'js_15'
-  Clock period: 6.276ns (frequency: 159.333MHz)
-  Total number of paths / destination ports: 251 / 12
+  Clock period: 6.301ns (frequency: 158.710MHz)
+  Total number of paths / destination ports: 248 / 12
 -------------------------------------------------------------------------
-Delay:               6.276ns (Levels of Logic = 6)
+Delay:               6.301ns (Levels of Logic = 6)
   Source:            shift_1 (FF)
   Destination:       seg_0 (FF)
   Source Clock:      js_15 rising
@@ -1249,55 +1246,40 @@ Delay:               6.276ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q              26   0.447   1.207  shift_1 (shift_1)
-     LUT3:I2->O           13   0.205   0.933  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1121 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT112)
+     LUT3:I2->O           14   0.205   0.958  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1131 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT113)
      LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12121 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12121)
-     LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12124_SW0 (N64)
+     LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12124_SW0 (N66)
      LUT6:I5->O            2   0.205   0.617  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12124 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1212)
      LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1210 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT129)
      LUT6:I5->O            1   0.205   0.000  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1211 (shift[3]_digit4[7]_wide_mux_114_OUT<3>)
      FD:D                      0.102          seg_3
     ----------------------------------------
-    Total                      6.276ns (1.779ns logic, 4.497ns route)
-                                       (28.3% logic, 71.7% route)
+    Total                      6.301ns (1.779ns logic, 4.522ns route)
+                                       (28.2% logic, 71.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'btnr_deb'
-  Clock period: 7.556ns (frequency: 132.340MHz)
-  Total number of paths / destination ports: 1487 / 118
+  Clock period: 7.678ns (frequency: 130.251MHz)
+  Total number of paths / destination ports: 1615 / 118
 -------------------------------------------------------------------------
-Delay:               3.778ns (Levels of Logic = 18)
-  Source:            comCPU/comIF/PC_0_P_0 (FF)
-  Destination:       comCPU/comWB/PC[15]_dff_10_15 (FF)
+Delay:               3.839ns (Levels of Logic = 3)
+  Source:            comCPU/comEX/ALUOUT_5 (FF)
+  Destination:       comCPU/comWB/PC[15]_dff_11_15 (FF)
   Source Clock:      btnr_deb falling
   Destination Clock: btnr_deb rising
 
-  Data Path: comCPU/comIF/PC_0_P_0 to comCPU/comWB/PC[15]_dff_10_15
+  Data Path: comCPU/comEX/ALUOUT_5 to comCPU/comWB/PC[15]_dff_11_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP_1:C->Q            6   0.447   0.849  comCPU/comIF/PC_0_P_0 (comCPU/comIF/PC_0_P_0)
-     LUT3:I1->O            8   0.203   0.802  comCPU/comIF/PC_01 (comCPU/comIF/PC_0)
-     MUXCY:DI->O           1   0.145   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<0> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<1> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<2> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<3> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<4> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<5> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<6> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<7> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<8> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<9> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<10> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<11> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<12> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<13> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<13>)
-     MUXCY:CI->O           0   0.019   0.000  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<14> (comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_cy<14>)
-     XORCY:CI->O           1   0.180   0.580  comCPU/comWB/Madd_PC[15]_Addr[15]_add_8_OUT_xor<15> (comCPU/comWB/PC[15]_Addr[15]_add_8_OUT<15>)
-     LUT3:I2->O            1   0.205   0.000  comCPU/comWB/Mmux_PC[15]_PC[15]_mux_9_OUT71 (comCPU/comWB/PC[15]_PC[15]_mux_9_OUT<15>)
-     FD:D                      0.102          comCPU/comWB/PC[15]_dff_10_15
+     FDE_1:C->Q            5   0.447   0.943  comCPU/comEX/ALUOUT_5 (comCPU/comEX/ALUOUT_5)
+     LUT6:I3->O            1   0.205   0.580  comCPU/comWB/OP[15]_ALUOUT[7]_AND_58_o_SW0 (N32)
+     LUT6:I5->O           18   0.205   1.154  comCPU/comWB/OP[15]_ALUOUT[7]_AND_58_o (comCPU/comWB/OP[15]_ALUOUT[7]_AND_58_o)
+     LUT3:I1->O            1   0.203   0.000  comCPU/comWB/Mmux_PC[15]_PC[15]_mux_10_OUT51 (comCPU/comWB/PC[15]_PC[15]_mux_10_OUT<13>)
+     FD:D                      0.102          comCPU/comWB/PC[15]_dff_11_13
     ----------------------------------------
-    Total                      3.778ns (1.548ns logic, 2.230ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      3.839ns (1.162ns logic, 2.677ns route)
+                                       (30.3% logic, 69.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'OneUSClk'
@@ -1315,7 +1297,7 @@ Delay:               6.689ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDS:C->Q              6   0.447   0.745  stCur_FSM_FFd10 (stCur_FSM_FFd10)
-     LUT6:I5->O            1   0.205   0.580  delayOK5_SW0 (N68)
+     LUT6:I5->O            1   0.205   0.580  delayOK5_SW0 (N70)
      LUT6:I5->O            1   0.205   0.684  delayOK5 (delayOK5)
      LUT6:I4->O           30   0.203   1.264  delayOK14 (delayOK)
      LUT6:I5->O            8   0.205   0.803  GND_5_o_writeDone_AND_151_o1 (GND_5_o_writeDone_AND_151_o)
@@ -1351,29 +1333,29 @@ Delay:               3.685ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 17 / 17
+  Total number of paths / destination ports: 20 / 20
 -------------------------------------------------------------------------
-Offset:              3.521ns (Levels of Logic = 2)
+Offset:              3.785ns (Levels of Logic = 2)
   Source:            btnr (PAD)
-  Destination:       btnr_deb (FF)
+  Destination:       btnr_debounce.count_0 (FF)
   Destination Clock: CLK rising
 
-  Data Path: btnr to btnr_deb
+  Data Path: btnr to btnr_debounce.count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            25   1.222   1.192  btnr_IBUF (btnr_IBUF)
-     INV:I->O              1   0.206   0.579  btnr_inv1_INV_0 (btnr_inv)
-     FDE:CE                    0.322          btnr_deb
+     IBUF:I->O            10   1.222   0.856  btnr_IBUF (btnr_IBUF)
+     INV:I->O             19   0.206   1.071  btnr_inv1_INV_0 (btnr_inv)
+     FDR:R                     0.430          btnr_debounce.count_0
     ----------------------------------------
-    Total                      3.521ns (1.750ns logic, 1.771ns route)
-                                       (49.7% logic, 50.3% route)
+    Total                      3.785ns (1.858ns logic, 1.927ns route)
+                                       (49.1% logic, 50.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'js_15'
   Total number of paths / destination ports: 73 / 7
 -------------------------------------------------------------------------
-Offset:              7.077ns (Levels of Logic = 7)
+Offset:              7.021ns (Levels of Logic = 7)
   Source:            btnu (PAD)
   Destination:       seg_0 (FF)
   Destination Clock: js_15 rising
@@ -1382,17 +1364,17 @@ Offset:              7.077ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   1.222   1.233  btnu_IBUF (btnu_IBUF)
-     LUT3:I0->O           13   0.205   0.933  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1121 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT112)
+     IBUF:I->O            18   1.222   1.154  btnu_IBUF (btnu_IBUF)
+     LUT3:I1->O           14   0.203   0.958  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1131 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT113)
      LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12121 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12121)
-     LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12124_SW0 (N64)
+     LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12124_SW0 (N66)
      LUT6:I5->O            2   0.205   0.617  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT12124 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1212)
      LUT6:I5->O            1   0.205   0.580  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1210 (Mmux_shift[3]_digit4[7]_wide_mux_114_OUT129)
      LUT6:I5->O            1   0.205   0.000  Mmux_shift[3]_digit4[7]_wide_mux_114_OUT1211 (shift[3]_digit4[7]_wide_mux_114_OUT<3>)
      FD:D                      0.102          seg_3
     ----------------------------------------
-    Total                      7.077ns (2.554ns logic, 4.523ns route)
-                                       (36.1% logic, 63.9% route)
+    Total                      7.021ns (2.552ns logic, 4.469ns route)
+                                       (36.3% logic, 63.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'btnr_deb'
@@ -1408,7 +1390,7 @@ Offset:              4.050ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[0]_AND_37_o1 (comCPU/comIF/PCupdate_PCnew[0]_AND_37_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[0]_AND_36_o1 (comCPU/comIF/PCupdate_PCnew[0]_AND_36_o)
      FDC_1:CLR                 0.430          comCPU/comIF/PC_0_C_0
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
@@ -1418,7 +1400,7 @@ Offset:              4.050ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OneUSClk'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              3.802ns (Levels of Logic = 2)
+Offset:              3.466ns (Levels of Logic = 2)
   Source:            btnr (PAD)
   Destination:       stCur_FSM_FFd6 (FF)
   Destination Clock: OneUSClk rising
@@ -1427,12 +1409,12 @@ Offset:              3.802ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            25   1.222   1.297  btnr_IBUF (btnr_IBUF)
+     IBUF:I->O            10   1.222   0.961  btnr_IBUF (btnr_IBUF)
      LUT2:I0->O            3   0.203   0.650  delayOK_01 (delayOK_0)
      FDR:R                     0.430          stCur_FSM_FFd6
     ----------------------------------------
-    Total                      3.802ns (1.855ns logic, 1.947ns route)
-                                       (48.8% logic, 51.2% route)
+    Total                      3.466ns (1.855ns logic, 1.611ns route)
+                                       (53.5% logic, 46.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/RDIR'
@@ -1447,7 +1429,7 @@ Offset:              3.242ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           3   1.222   0.651  MemDB_8_IOBUF (N39)
+     IOBUF:IO->O           3   1.222   0.651  MemDB_8_IOBUF (N41)
      LUT4:I3->O            1   0.205   0.924  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_465_o1_SW0 (N22)
      LUT6:I1->O            1   0.203   0.000  comCPU/comAC/Mmux_Rtemp[7]_Rtemp[7]_MUX_465_o1 (comCPU/comAC/Rtemp[7]_Rtemp[7]_MUX_465_o)
      LDE_1:D                   0.037          comCPU/comAC/Rtemp_0
@@ -1456,320 +1438,320 @@ Offset:              3.242ns (Levels of Logic = 3)
                                        (51.4% logic, 48.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[0]_AND_36_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[0]_AND_35_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_0_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[0]_AND_36_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[0]_AND_35_o falling
 
   Data Path: btns to comCPU/comIF/PC_0_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[0]_AND_37_o1 (comCPU/comIF/PCupdate_PCnew[0]_AND_37_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[0]_AND_36_o1 (comCPU/comIF/PCupdate_PCnew[0]_AND_36_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_0_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[2]_AND_32_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[2]_AND_31_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_2_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[2]_AND_32_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[2]_AND_31_o falling
 
   Data Path: btns to comCPU/comIF/PC_2_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[2]_AND_33_o1 (comCPU/comIF/PCupdate_PCnew[2]_AND_33_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[2]_AND_32_o1 (comCPU/comIF/PCupdate_PCnew[2]_AND_32_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_2_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[3]_AND_30_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[3]_AND_29_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_3_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[3]_AND_30_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[3]_AND_29_o falling
 
   Data Path: btns to comCPU/comIF/PC_3_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[3]_AND_31_o1 (comCPU/comIF/PCupdate_PCnew[3]_AND_31_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[3]_AND_30_o1 (comCPU/comIF/PCupdate_PCnew[3]_AND_30_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_3_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[1]_AND_34_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[1]_AND_33_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_1_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[1]_AND_34_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[1]_AND_33_o falling
 
   Data Path: btns to comCPU/comIF/PC_1_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[1]_AND_35_o1 (comCPU/comIF/PCupdate_PCnew[1]_AND_35_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[1]_AND_34_o1 (comCPU/comIF/PCupdate_PCnew[1]_AND_34_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_1_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[4]_AND_28_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[4]_AND_27_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_4_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[4]_AND_28_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[4]_AND_27_o falling
 
   Data Path: btns to comCPU/comIF/PC_4_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[4]_AND_29_o1 (comCPU/comIF/PCupdate_PCnew[4]_AND_29_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[4]_AND_28_o1 (comCPU/comIF/PCupdate_PCnew[4]_AND_28_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_4_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[5]_AND_26_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[5]_AND_25_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_5_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[5]_AND_26_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[5]_AND_25_o falling
 
   Data Path: btns to comCPU/comIF/PC_5_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[5]_AND_27_o1 (comCPU/comIF/PCupdate_PCnew[5]_AND_27_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[5]_AND_26_o1 (comCPU/comIF/PCupdate_PCnew[5]_AND_26_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_5_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[6]_AND_24_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[6]_AND_23_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_6_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[6]_AND_24_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[6]_AND_23_o falling
 
   Data Path: btns to comCPU/comIF/PC_6_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[6]_AND_25_o1 (comCPU/comIF/PCupdate_PCnew[6]_AND_25_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[6]_AND_24_o1 (comCPU/comIF/PCupdate_PCnew[6]_AND_24_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_6_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[7]_AND_22_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[7]_AND_21_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_7_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[7]_AND_22_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[7]_AND_21_o falling
 
   Data Path: btns to comCPU/comIF/PC_7_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[7]_AND_23_o1 (comCPU/comIF/PCupdate_PCnew[7]_AND_23_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[7]_AND_22_o1 (comCPU/comIF/PCupdate_PCnew[7]_AND_22_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_7_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[9]_AND_18_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[9]_AND_17_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_9_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[9]_AND_18_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[9]_AND_17_o falling
 
   Data Path: btns to comCPU/comIF/PC_9_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[9]_AND_19_o1 (comCPU/comIF/PCupdate_PCnew[9]_AND_19_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[9]_AND_18_o1 (comCPU/comIF/PCupdate_PCnew[9]_AND_18_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_9_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[10]_AND_16_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[10]_AND_15_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_10_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[10]_AND_16_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[10]_AND_15_o falling
 
   Data Path: btns to comCPU/comIF/PC_10_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[10]_AND_17_o1 (comCPU/comIF/PCupdate_PCnew[10]_AND_17_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[10]_AND_16_o1 (comCPU/comIF/PCupdate_PCnew[10]_AND_16_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_10_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[8]_AND_20_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[8]_AND_19_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_8_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[8]_AND_20_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[8]_AND_19_o falling
 
   Data Path: btns to comCPU/comIF/PC_8_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[8]_AND_21_o1 (comCPU/comIF/PCupdate_PCnew[8]_AND_21_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[8]_AND_20_o1 (comCPU/comIF/PCupdate_PCnew[8]_AND_20_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_8_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[12]_AND_12_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[12]_AND_11_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_12_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[12]_AND_12_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[12]_AND_11_o falling
 
   Data Path: btns to comCPU/comIF/PC_12_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[12]_AND_13_o1 (comCPU/comIF/PCupdate_PCnew[12]_AND_13_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[12]_AND_12_o1 (comCPU/comIF/PCupdate_PCnew[12]_AND_12_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_12_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[13]_AND_10_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[13]_AND_9_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_13_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[13]_AND_10_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[13]_AND_9_o falling
 
   Data Path: btns to comCPU/comIF/PC_13_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[13]_AND_11_o1 (comCPU/comIF/PCupdate_PCnew[13]_AND_11_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[13]_AND_10_o1 (comCPU/comIF/PCupdate_PCnew[13]_AND_10_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_13_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[11]_AND_14_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[11]_AND_13_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_11_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[11]_AND_14_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[11]_AND_13_o falling
 
   Data Path: btns to comCPU/comIF/PC_11_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[11]_AND_15_o1 (comCPU/comIF/PCupdate_PCnew[11]_AND_15_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[11]_AND_14_o1 (comCPU/comIF/PCupdate_PCnew[11]_AND_14_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_11_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[15]_AND_6_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[15]_AND_5_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_15_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[15]_AND_6_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[15]_AND_5_o falling
 
   Data Path: btns to comCPU/comIF/PC_15_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[15]_AND_7_o1 (comCPU/comIF/PCupdate_PCnew[15]_AND_7_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[15]_AND_6_o1 (comCPU/comIF/PCupdate_PCnew[15]_AND_6_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_15_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
                                        (45.8% logic, 54.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[14]_AND_8_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comIF/PCupdate_PCnew[14]_AND_7_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.050ns (Levels of Logic = 2)
   Source:            btns (PAD)
   Destination:       comCPU/comIF/PC_14_LDC (LATCH)
-  Destination Clock: comCPU/comIF/PCupdate_PCnew[14]_AND_8_o falling
+  Destination Clock: comCPU/comIF/PCupdate_PCnew[14]_AND_7_o falling
 
   Data Path: btns to comCPU/comIF/PC_14_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.222   1.577  btns_IBUF (btns_IBUF)
-     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[14]_AND_9_o1 (comCPU/comIF/PCupdate_PCnew[14]_AND_9_o)
+     LUT3:I0->O            2   0.205   0.616  comCPU/comIF/PCupdate_PCnew[14]_AND_8_o1 (comCPU/comIF/PCupdate_PCnew[14]_AND_8_o)
      LDC:CLR                   0.430          comCPU/comIF/PC_14_LDC
     ----------------------------------------
     Total                      4.050ns (1.857ns logic, 2.193ns route)
@@ -1779,7 +1761,7 @@ Offset:              4.050ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comAC/nIO_RD_MUX_259_o'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              2.115ns (Levels of Logic = 2)
+Offset:              2.217ns (Levels of Logic = 2)
   Source:            MemDB<15> (PAD)
   Destination:       comCPU/comAC/Z_12_o_nIO_DLATCH_62_q (LATCH)
   Destination Clock: comCPU/comAC/nIO_RD_MUX_259_o falling
@@ -1788,12 +1770,12 @@ Offset:              2.115ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           3   1.222   0.651  MemDB_15_IOBUF (N32)
-     LUT3:I2->O            1   0.205   0.000  comCPU/comAC/Mmux_DBUS[15]_ALUOUT[7]_mux_2_OUT<15>11 (comCPU/comAC/DBUS[15]_ALUOUT[7]_mux_2_OUT<15>)
+     IOBUF:IO->O           3   1.222   0.755  MemDB_15_IOBUF (N34)
+     LUT3:I1->O            1   0.203   0.000  comCPU/comAC/Mmux_DBUS[15]_ALUOUT[7]_mux_2_OUT<15>11 (comCPU/comAC/DBUS[15]_ALUOUT[7]_mux_2_OUT<15>)
      LDC:D                     0.037          comCPU/comAC/Z_12_o_nIO_DLATCH_62_q
     ----------------------------------------
-    Total                      2.115ns (1.464ns logic, 0.651ns route)
-                                       (69.2% logic, 30.8% route)
+    Total                      2.217ns (1.462ns logic, 0.755ns route)
+                                       (65.9% logic, 34.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/RDIR'
@@ -1864,7 +1846,7 @@ Offset:              5.716ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'js_15'
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Offset:              4.224ns (Levels of Logic = 1)
+Offset:              4.252ns (Levels of Logic = 1)
   Source:            shift_2 (FF)
   Destination:       an<1> (PAD)
   Source Clock:      js_15 rising
@@ -1873,11 +1855,11 @@ Offset:              4.224ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              26   0.447   1.206  shift_2 (shift_2)
+     FD:C->Q              28   0.447   1.234  shift_2 (shift_2)
      OBUF:I->O                 2.571          an_1_OBUF (an<1>)
     ----------------------------------------
-    Total                      4.224ns (3.018ns logic, 1.206ns route)
-                                       (71.5% logic, 28.5% route)
+    Total                      4.252ns (3.018ns logic, 1.234ns route)
+                                       (71.0% logic, 29.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'OneUSClk'
@@ -1893,12 +1875,12 @@ Offset:              10.644ns (Levels of Logic = 7)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q             46   0.447   1.855  lcd_cmd_ptr_2 (lcd_cmd_ptr_2)
-     LUT6:I0->O            3   0.203   0.898  _n0855<5>1 (_n0855)
-     LUT4:I0->O            4   0.203   0.684  n0195<0>41 (n0195<0>4)
-     LUT4:I3->O            1   0.205   0.580  n0195<6>211 (n0195<6>21)
-     LUT5:I4->O            2   0.205   0.981  n0195<6>2 (n0195<6>2)
-     LUT6:I0->O            1   0.203   0.827  n0195<6>6 (n0195<6>7)
-     LUT4:I0->O            1   0.203   0.579  n0195<6>25 (JA_6_OBUF)
+     LUT6:I0->O            3   0.203   0.898  _n0904<5>1 (_n0904)
+     LUT4:I0->O            4   0.203   0.684  n0194<0>41 (n0194<0>4)
+     LUT4:I3->O            1   0.205   0.580  n0194<6>211 (n0194<6>21)
+     LUT5:I4->O            2   0.205   0.981  n0194<6>2 (n0194<6>2)
+     LUT6:I0->O            1   0.203   0.827  n0194<6>6 (n0194<6>7)
+     LUT4:I0->O            1   0.203   0.579  n0194<6>25 (JA_6_OBUF)
      OBUF:I->O                 2.571          JA_6_OBUF (JA<6>)
     ----------------------------------------
     Total                     10.644ns (4.240ns logic, 6.404ns route)
@@ -1908,7 +1890,7 @@ Offset:              10.644ns (Levels of Logic = 7)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comCLK/tmp[2]_dff_1_0'
   Total number of paths / destination ports: 711 / 7
 -------------------------------------------------------------------------
-Offset:              10.565ns (Levels of Logic = 6)
+Offset:              10.579ns (Levels of Logic = 6)
   Source:            comCPU/comIF/IR_15 (LATCH)
   Destination:       JA<0> (PAD)
   Source Clock:      comCPU/comCLK/tmp[2]_dff_1_0 falling
@@ -1917,22 +1899,22 @@ Offset:              10.565ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q             77   0.498   1.954  comCPU/comIF/IR_15 (comCPU/comIF/IR_15)
-     LUT4:I1->O           10   0.205   1.221  Mram__n0447901 (Mram__n044790)
-     LUT6:I0->O            6   0.203   1.089  n0195<1>21 (n0195<1>2)
-     LUT5:I0->O            1   0.203   0.808  n0195<0>48 (n0195<0>8)
-     LUT6:I3->O            1   0.205   0.827  n0195<0>50 (n0195<0>10)
-     LUT4:I0->O            1   0.203   0.579  n0195<0>75 (JA_0_OBUF)
+     LDE:G->Q             79   0.498   1.967  comCPU/comIF/IR_15 (comCPU/comIF/IR_15)
+     LUT4:I1->O           10   0.205   1.221  Mram__n0453901 (Mram__n045390)
+     LUT6:I0->O            6   0.203   1.089  n0194<1>21 (n0194<1>2)
+     LUT5:I0->O            1   0.203   0.808  n0194<0>48 (n0194<0>8)
+     LUT6:I3->O            1   0.205   0.827  n0194<0>50 (n0194<0>10)
+     LUT4:I0->O            1   0.203   0.579  n0194<0>75 (JA_0_OBUF)
      OBUF:I->O                 2.571          JA_0_OBUF (JA<0>)
     ----------------------------------------
-    Total                     10.565ns (4.088ns logic, 6.477ns route)
-                                       (38.7% logic, 61.3% route)
+    Total                     10.579ns (4.088ns logic, 6.491ns route)
+                                       (38.6% logic, 61.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/Rupdate'
   Total number of paths / destination ports: 384 / 7
 -------------------------------------------------------------------------
-Offset:              9.457ns (Levels of Logic = 6)
+Offset:              9.197ns (Levels of Logic = 6)
   Source:            comCPU/comEX/Reg_1_3 (FF)
   Destination:       JA<5> (PAD)
   Source Clock:      comCPU/Rupdate rising
@@ -1943,14 +1925,14 @@ Offset:              9.457ns (Levels of Logic = 6)
     ----------------------------------------  ------------
      FDE:C->Q              8   0.447   1.031  comCPU/comEX/Reg_1_3 (comCPU/comEX/Reg_1_3)
      LUT3:I0->O            1   0.205   0.944  LCD_CMDS<34><4>1 (LCD_CMDS<34><4>)
-     LUT6:I0->O            1   0.203   0.944  n0195<4>55 (n0195<4>55)
-     LUT6:I0->O            1   0.203   0.944  n0195<4>57 (n0195<4>57)
-     LUT6:I0->O            2   0.203   0.981  n0195<4>510 (n0195<4>5)
-     LUT6:I0->O            1   0.203   0.579  n0195<5>9 (JA_5_OBUF)
+     LUT6:I0->O            1   0.203   0.944  n0194<4>55 (n0194<4>55)
+     LUT6:I0->O            1   0.203   0.684  n0194<4>57 (n0194<4>57)
+     LUT6:I4->O            2   0.203   0.981  n0194<4>510 (n0194<4>5)
+     LUT6:I0->O            1   0.203   0.579  n0194<5>9 (JA_5_OBUF)
      OBUF:I->O                 2.571          JA_5_OBUF (JA<5>)
     ----------------------------------------
-    Total                      9.457ns (4.035ns logic, 5.422ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      9.197ns (4.035ns logic, 5.162ns route)
+                                       (43.9% logic, 56.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/nMREQ_G'
@@ -2058,26 +2040,26 @@ Clock to Setup on destination clock btnr_deb
                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------+---------+---------+---------+---------+
-CLK                                     |         |         |    5.268|         |
-btnr_deb                                |    1.940|    3.778|    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0            |         |    4.440|    6.254|         |
-comCPU/comCLK/tmp[2]_dff_1_1            |    3.053|         |    3.808|         |
-comCPU/comIF/PCupdate_PCnew[0]_AND_36_o |         |    3.955|    1.778|         |
-comCPU/comIF/PCupdate_PCnew[10]_AND_16_o|         |    3.821|    4.054|         |
-comCPU/comIF/PCupdate_PCnew[11]_AND_14_o|         |    3.797|    4.030|         |
-comCPU/comIF/PCupdate_PCnew[12]_AND_12_o|         |    3.752|    3.985|         |
-comCPU/comIF/PCupdate_PCnew[13]_AND_10_o|         |    3.708|    3.941|         |
-comCPU/comIF/PCupdate_PCnew[14]_AND_8_o |         |    3.687|    3.920|         |
-comCPU/comIF/PCupdate_PCnew[15]_AND_6_o |         |    2.716|    3.706|         |
-comCPU/comIF/PCupdate_PCnew[1]_AND_34_o |         |    3.936|    3.065|         |
-comCPU/comIF/PCupdate_PCnew[2]_AND_32_o |         |    3.917|    4.150|         |
-comCPU/comIF/PCupdate_PCnew[3]_AND_30_o |         |    3.898|    4.131|         |
-comCPU/comIF/PCupdate_PCnew[4]_AND_28_o |         |    3.904|    4.137|         |
-comCPU/comIF/PCupdate_PCnew[5]_AND_26_o |         |    3.860|    4.093|         |
-comCPU/comIF/PCupdate_PCnew[6]_AND_24_o |         |    3.866|    4.099|         |
-comCPU/comIF/PCupdate_PCnew[7]_AND_22_o |         |    3.849|    4.082|         |
-comCPU/comIF/PCupdate_PCnew[8]_AND_20_o |         |    3.854|    4.087|         |
-comCPU/comIF/PCupdate_PCnew[9]_AND_18_o |         |    3.809|    4.042|         |
+CLK                                     |         |         |    4.352|         |
+btnr_deb                                |    1.940|    3.839|    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0            |         |    6.216|    8.393|         |
+comCPU/comCLK/tmp[2]_dff_1_1            |    3.098|         |    3.808|         |
+comCPU/comIF/PCupdate_PCnew[0]_AND_35_o |         |    4.000|    1.778|         |
+comCPU/comIF/PCupdate_PCnew[10]_AND_15_o|         |    3.865|    4.053|         |
+comCPU/comIF/PCupdate_PCnew[11]_AND_13_o|         |    3.842|    4.030|         |
+comCPU/comIF/PCupdate_PCnew[12]_AND_11_o|         |    3.754|    3.987|         |
+comCPU/comIF/PCupdate_PCnew[13]_AND_9_o |         |    3.708|    3.941|         |
+comCPU/comIF/PCupdate_PCnew[14]_AND_7_o |         |    3.687|    3.920|         |
+comCPU/comIF/PCupdate_PCnew[15]_AND_5_o |         |    2.716|    3.706|         |
+comCPU/comIF/PCupdate_PCnew[1]_AND_33_o |         |    3.981|    3.065|         |
+comCPU/comIF/PCupdate_PCnew[2]_AND_31_o |         |    3.962|    4.150|         |
+comCPU/comIF/PCupdate_PCnew[3]_AND_29_o |         |    3.941|    4.129|         |
+comCPU/comIF/PCupdate_PCnew[4]_AND_27_o |         |    3.980|    4.168|         |
+comCPU/comIF/PCupdate_PCnew[5]_AND_25_o |         |    3.930|    4.118|         |
+comCPU/comIF/PCupdate_PCnew[6]_AND_23_o |         |    3.937|    4.125|         |
+comCPU/comIF/PCupdate_PCnew[7]_AND_21_o |         |    3.922|    4.110|         |
+comCPU/comIF/PCupdate_PCnew[8]_AND_19_o |         |    3.899|    4.087|         |
+comCPU/comIF/PCupdate_PCnew[9]_AND_17_o |         |    3.854|    4.042|         |
 ----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/RDIR
@@ -2089,8 +2071,8 @@ btnr_deb                        |    4.806|         |         |         |
 comCPU/RDIR                     |    3.685|         |         |         |
 comCPU/comAC/RDIR_nMEM_AND_117_o|         |    3.828|         |         |
 comCPU/comAC/RDIR_nMEM_AND_121_o|         |    2.501|         |         |
-comCPU/comAC/nMEM_RDIR_OR_58_o  |         |    2.988|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0    |         |    5.736|         |         |
+comCPU/comAC/nMEM_RDIR_OR_104_o |         |    2.988|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0    |         |    5.750|         |         |
 --------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/Rupdate
@@ -2098,9 +2080,9 @@ Clock to Setup on destination clock comCPU/Rupdate
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-btnr_deb                    |         |    1.499|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |    4.271|         |         |
-comCPU/comCLK/tmp[2]_dff_1_2|         |    1.487|         |         |
+btnr_deb                    |         |    1.571|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |    4.265|         |         |
+comCPU/comCLK/tmp[2]_dff_1_2|         |    1.385|         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_117_o
@@ -2109,7 +2091,7 @@ Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_117_o
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 btnr_deb                    |         |         |    1.962|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.868|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.861|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_121_o
@@ -2118,63 +2100,63 @@ Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_121_o
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 btnr_deb                    |         |         |    1.945|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.854|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.848|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/nIO_RD_MUX_259_o
-------------------------------+---------+---------+---------+---------+
-                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------+---------+---------+---------+---------+
-CLK                           |         |         |    3.368|         |
-btnr_deb                      |         |         |    3.688|         |
-comCPU/comAC/nMEM_RDIR_OR_58_o|         |         |    1.901|         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.650|         |
-------------------------------+---------+---------+---------+---------+
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+CLK                            |         |         |    3.387|         |
+btnr_deb                       |         |         |    3.688|         |
+comCPU/comAC/nMEM_RDIR_OR_104_o|         |         |    1.926|         |
+comCPU/comCLK/tmp[2]_dff_1_0   |         |         |    4.663|         |
+-------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_58_o
+Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_104_o
 ----------------------------------------+---------+---------+---------+---------+
                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------+---------+---------+---------+---------+
 btnr_deb                                |         |         |    3.777|         |
-comCPU/comCLK/tmp[2]_dff_1_0            |         |         |    4.767|         |
+comCPU/comCLK/tmp[2]_dff_1_0            |         |         |    4.780|         |
 comCPU/comCLK/tmp[2]_dff_1_1            |         |         |    1.340|         |
-comCPU/comIF/PCupdate_PCnew[0]_AND_36_o |         |         |    1.730|         |
-comCPU/comIF/PCupdate_PCnew[10]_AND_16_o|         |         |    1.759|         |
-comCPU/comIF/PCupdate_PCnew[11]_AND_14_o|         |         |    1.700|         |
-comCPU/comIF/PCupdate_PCnew[12]_AND_12_o|         |         |    1.700|         |
-comCPU/comIF/PCupdate_PCnew[13]_AND_10_o|         |         |    1.730|         |
-comCPU/comIF/PCupdate_PCnew[14]_AND_8_o |         |         |    1.700|         |
-comCPU/comIF/PCupdate_PCnew[15]_AND_6_o |         |         |    1.730|         |
-comCPU/comIF/PCupdate_PCnew[1]_AND_34_o |         |         |    1.759|         |
-comCPU/comIF/PCupdate_PCnew[2]_AND_32_o |         |         |    1.730|         |
-comCPU/comIF/PCupdate_PCnew[3]_AND_30_o |         |         |    1.730|         |
-comCPU/comIF/PCupdate_PCnew[4]_AND_28_o |         |         |    1.700|         |
-comCPU/comIF/PCupdate_PCnew[5]_AND_26_o |         |         |    1.730|         |
-comCPU/comIF/PCupdate_PCnew[6]_AND_24_o |         |         |    1.700|         |
-comCPU/comIF/PCupdate_PCnew[7]_AND_22_o |         |         |    1.730|         |
-comCPU/comIF/PCupdate_PCnew[8]_AND_20_o |         |         |    1.700|         |
-comCPU/comIF/PCupdate_PCnew[9]_AND_18_o |         |         |    1.700|         |
+comCPU/comIF/PCupdate_PCnew[0]_AND_35_o |         |         |    1.730|         |
+comCPU/comIF/PCupdate_PCnew[10]_AND_15_o|         |         |    1.730|         |
+comCPU/comIF/PCupdate_PCnew[11]_AND_13_o|         |         |    1.700|         |
+comCPU/comIF/PCupdate_PCnew[12]_AND_11_o|         |         |    1.730|         |
+comCPU/comIF/PCupdate_PCnew[13]_AND_9_o |         |         |    1.730|         |
+comCPU/comIF/PCupdate_PCnew[14]_AND_7_o |         |         |    1.700|         |
+comCPU/comIF/PCupdate_PCnew[15]_AND_5_o |         |         |    1.730|         |
+comCPU/comIF/PCupdate_PCnew[1]_AND_33_o |         |         |    1.759|         |
+comCPU/comIF/PCupdate_PCnew[2]_AND_31_o |         |         |    1.730|         |
+comCPU/comIF/PCupdate_PCnew[3]_AND_29_o |         |         |    1.700|         |
+comCPU/comIF/PCupdate_PCnew[4]_AND_27_o |         |         |    1.759|         |
+comCPU/comIF/PCupdate_PCnew[5]_AND_25_o |         |         |    1.700|         |
+comCPU/comIF/PCupdate_PCnew[6]_AND_23_o |         |         |    1.700|         |
+comCPU/comIF/PCupdate_PCnew[7]_AND_21_o |         |         |    1.730|         |
+comCPU/comIF/PCupdate_PCnew[8]_AND_19_o |         |         |    1.700|         |
+comCPU/comIF/PCupdate_PCnew[9]_AND_17_o |         |         |    1.700|         |
 ----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/nMREQ_G
-------------------------------+---------+---------+---------+---------+
-                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------+---------+---------+---------+---------+
-CLK                           |         |         |    1.862|         |
-btnr_deb                      |         |         |    3.660|         |
-comCPU/comAC/nMEM_RDIR_OR_58_o|         |         |    1.467|         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.650|         |
-------------------------------+---------+---------+---------+---------+
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+CLK                            |         |         |    1.882|         |
+btnr_deb                       |         |         |    3.660|         |
+comCPU/comAC/nMEM_RDIR_OR_104_o|         |         |    1.467|         |
+comCPU/comCLK/tmp[2]_dff_1_0   |         |         |    4.663|         |
+-------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_0
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |         |         |    1.941|         |
+CLK            |         |         |    1.961|         |
 comCPU/RDIR    |         |         |    1.114|         |
 ---------------+---------+---------+---------+---------+
 
@@ -2184,7 +2166,7 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_1
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comCPU/Rupdate              |    1.952|         |         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |    4.440|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |    4.062|         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
@@ -2193,217 +2175,217 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comCPU/RDIR                 |         |         |    1.151|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.057|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.051|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[0]_AND_36_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[0]_AND_35_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[10]_AND_16_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[10]_AND_15_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.223|         |
-btnr_deb                    |         |         |    4.886|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.208|         |
+CLK                         |         |         |    4.306|         |
+btnr_deb                    |         |         |    5.970|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.347|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[11]_AND_14_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[11]_AND_13_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.223|         |
-btnr_deb                    |         |         |    4.886|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.208|         |
+CLK                         |         |         |    4.306|         |
+btnr_deb                    |         |         |    5.970|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.347|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[12]_AND_12_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[12]_AND_11_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.223|         |
-btnr_deb                    |         |         |    4.886|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.208|         |
+CLK                         |         |         |    4.306|         |
+btnr_deb                    |         |         |    5.970|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.347|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[13]_AND_10_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[13]_AND_9_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.223|         |
-btnr_deb                    |         |         |    4.886|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.208|         |
+CLK                         |         |         |    4.306|         |
+btnr_deb                    |         |         |    5.970|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.347|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[14]_AND_8_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[14]_AND_7_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.223|         |
-btnr_deb                    |         |         |    4.886|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.208|         |
+CLK                         |         |         |    4.306|         |
+btnr_deb                    |         |         |    5.970|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.347|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[15]_AND_6_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[15]_AND_5_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.223|         |
-btnr_deb                    |         |         |    4.886|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.208|         |
+CLK                         |         |         |    4.306|         |
+btnr_deb                    |         |         |    5.970|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.347|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[1]_AND_34_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[1]_AND_33_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[2]_AND_32_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[2]_AND_31_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[3]_AND_30_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[3]_AND_29_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[4]_AND_28_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[4]_AND_27_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[5]_AND_26_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[5]_AND_25_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[6]_AND_24_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[6]_AND_23_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[7]_AND_22_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[7]_AND_21_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[8]_AND_20_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[8]_AND_19_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.268|         |
-btnr_deb                    |         |         |    4.932|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.254|         |
+CLK                         |         |         |    4.352|         |
+btnr_deb                    |         |         |    6.016|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.393|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[9]_AND_18_o
+Clock to Setup on destination clock comCPU/comIF/PCupdate_PCnew[9]_AND_17_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    5.223|         |
-btnr_deb                    |         |         |    4.886|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    6.208|         |
+CLK                         |         |         |    4.306|         |
+btnr_deb                    |         |         |    5.970|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.347|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/nMEM
-------------------------------+---------+---------+---------+---------+
-                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------+---------+---------+---------+---------+
-CLK                           |    3.368|         |         |         |
-btnr_deb                      |    3.688|         |         |         |
-comCPU/comAC/nMEM_RDIR_OR_58_o|         |    2.277|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |    2.868|         |         |
-------------------------------+---------+---------+---------+---------+
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+CLK                            |    3.387|         |         |         |
+btnr_deb                       |    3.688|         |         |         |
+comCPU/comAC/nMEM_RDIR_OR_104_o|         |    2.277|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0   |         |    2.861|         |         |
+-------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock js_15
 ----------------------------------------+---------+---------+---------+---------+
                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------+---------+---------+---------+---------+
-btnr_deb                                |    2.931|    5.719|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0            |         |    5.993|         |         |
-comCPU/comIF/PCupdate_PCnew[0]_AND_36_o |         |    5.470|         |         |
-comCPU/comIF/PCupdate_PCnew[10]_AND_16_o|         |    5.461|         |         |
-comCPU/comIF/PCupdate_PCnew[11]_AND_14_o|         |    5.570|         |         |
-comCPU/comIF/PCupdate_PCnew[12]_AND_12_o|         |    5.369|         |         |
-comCPU/comIF/PCupdate_PCnew[13]_AND_10_o|         |    5.572|         |         |
-comCPU/comIF/PCupdate_PCnew[14]_AND_8_o |         |    5.443|         |         |
-comCPU/comIF/PCupdate_PCnew[15]_AND_6_o |         |    4.988|         |         |
-comCPU/comIF/PCupdate_PCnew[1]_AND_34_o |         |    5.344|         |         |
-comCPU/comIF/PCupdate_PCnew[2]_AND_32_o |         |    4.819|         |         |
-comCPU/comIF/PCupdate_PCnew[3]_AND_30_o |         |    5.242|         |         |
-comCPU/comIF/PCupdate_PCnew[4]_AND_28_o |         |    5.777|         |         |
-comCPU/comIF/PCupdate_PCnew[5]_AND_26_o |         |    5.849|         |         |
-comCPU/comIF/PCupdate_PCnew[6]_AND_24_o |         |    5.760|         |         |
-comCPU/comIF/PCupdate_PCnew[7]_AND_22_o |         |    5.896|         |         |
-comCPU/comIF/PCupdate_PCnew[8]_AND_20_o |         |    5.533|         |         |
-comCPU/comIF/PCupdate_PCnew[9]_AND_18_o |         |    5.447|         |         |
-js_15                                   |    6.276|         |         |         |
+btnr_deb                                |    2.931|    6.736|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0            |         |    5.694|         |         |
+comCPU/comIF/PCupdate_PCnew[0]_AND_35_o |         |    4.945|         |         |
+comCPU/comIF/PCupdate_PCnew[10]_AND_15_o|         |    6.378|         |         |
+comCPU/comIF/PCupdate_PCnew[11]_AND_13_o|         |    6.258|         |         |
+comCPU/comIF/PCupdate_PCnew[12]_AND_11_o|         |    5.497|         |         |
+comCPU/comIF/PCupdate_PCnew[13]_AND_9_o |         |    5.698|         |         |
+comCPU/comIF/PCupdate_PCnew[14]_AND_7_o |         |    5.569|         |         |
+comCPU/comIF/PCupdate_PCnew[15]_AND_5_o |         |    4.988|         |         |
+comCPU/comIF/PCupdate_PCnew[1]_AND_33_o |         |    4.913|         |         |
+comCPU/comIF/PCupdate_PCnew[2]_AND_31_o |         |    4.811|         |         |
+comCPU/comIF/PCupdate_PCnew[3]_AND_29_o |         |    5.036|         |         |
+comCPU/comIF/PCupdate_PCnew[4]_AND_27_o |         |    6.821|         |         |
+comCPU/comIF/PCupdate_PCnew[5]_AND_25_o |         |    5.544|         |         |
+comCPU/comIF/PCupdate_PCnew[6]_AND_23_o |         |    6.913|         |         |
+comCPU/comIF/PCupdate_PCnew[7]_AND_21_o |         |    5.513|         |         |
+comCPU/comIF/PCupdate_PCnew[8]_AND_19_o |         |    6.355|         |         |
+comCPU/comIF/PCupdate_PCnew[9]_AND_17_o |         |    6.215|         |         |
+js_15                                   |    6.301|         |         |         |
 ----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.59 secs
+Total CPU time to Xst completion: 10.37 secs
  
 --> 
 
-Total memory usage is 266628 kilobytes
+Total memory usage is 267332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  149 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
 Number of infos    :   43 (   0 filtered)
 

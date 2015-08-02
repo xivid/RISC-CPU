@@ -74,7 +74,7 @@ begin
 			A <= Reg(conv_integer(IR(10 downto 8)));
 			B <= Reg(conv_integer(IR(2 downto 0)));
 			Addr(7 downto 0) <= IR(7 downto 0);
-			if IR(15 downto 11) = "00010" then
+			if IR(15 downto 11) = "00010" then  -- JZ
 				Addr(15 downto 8) <= (others => IR(7)); -- ·ûºÅÎ»À©Õ¹
 			else
 				Addr(15 downto 8) <= Reg(7); -- R7À©Õ¹Ñ°Ö·

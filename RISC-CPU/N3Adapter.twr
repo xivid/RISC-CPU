@@ -37,7 +37,7 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-btnr        |    2.767(R)|      SLOW  |   -0.655(R)|      SLOW  |CLK_BUFGP         |   0.000|
+btnr        |    4.333(R)|      SLOW  |   -1.709(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -45,7 +45,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.458|         |         |         |
+CLK            |    4.518|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock btns
@@ -53,41 +53,41 @@ Clock to Setup on destination clock btns
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |         |         |    5.796|         |
-btns           |         |         |    1.465|    1.465|
+CLK            |         |         |    1.671|         |
+btns           |         |         |    1.567|    1.567|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-sw<0>          |led<0>         |    9.493|
-sw<0>          |led<7>         |    8.812|
-sw<1>          |led<1>         |    9.564|
-sw<1>          |led<6>         |    8.933|
-sw<2>          |led<2>         |    9.622|
-sw<2>          |led<5>         |    9.047|
-sw<3>          |led<3>         |    9.388|
-sw<3>          |led<4>         |    8.808|
-sw<4>          |led<3>         |    9.240|
-sw<4>          |led<4>         |    8.660|
-sw<5>          |led<2>         |    9.749|
-sw<5>          |led<5>         |    9.174|
-sw<6>          |led<1>         |    9.401|
-sw<6>          |led<6>         |    8.770|
-sw<7>          |led<0>         |   10.017|
-sw<7>          |led<7>         |    9.336|
+sw<0>          |led<0>         |    9.875|
+sw<0>          |led<7>         |    9.135|
+sw<1>          |led<1>         |    9.720|
+sw<1>          |led<6>         |    9.233|
+sw<2>          |led<2>         |    9.305|
+sw<2>          |led<5>         |    8.780|
+sw<3>          |led<3>         |   10.050|
+sw<3>          |led<4>         |    9.491|
+sw<4>          |led<3>         |    9.635|
+sw<4>          |led<4>         |    9.076|
+sw<5>          |led<2>         |    9.648|
+sw<5>          |led<5>         |    9.123|
+sw<6>          |led<1>         |    9.355|
+sw<6>          |led<6>         |    8.868|
+sw<7>          |led<0>         |   10.159|
+sw<7>          |led<7>         |    9.419|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Aug 02 02:05:44 2015 
+Analysis completed Sun Aug 02 13:16:29 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 238 MB
+Peak Memory Usage: 240 MB
 
 
 
