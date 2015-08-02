@@ -71,7 +71,7 @@ architecture Behavioral of CPU is
 	PORT(
 		T0 : IN  std_logic;
 		CLK : IN  std_logic;
-		RST : IN  std_logic;
+		-- RST : IN  std_logic;
 		PCnew : IN  std_logic_vector(15 downto 0);
 		PCupdate : IN  std_logic;
 		IRdata : IN  std_logic_vector(15 downto 0);
@@ -121,6 +121,7 @@ architecture Behavioral of CPU is
 	COMPONENT WBctrl
 	PORT(
 		CLK : IN  std_logic;
+        RST : IN  std_logic;
 		Rtemp : IN  std_logic_vector(7 downto 0);
 		PC : IN  std_logic_vector(15 downto 0);
 		Addr : IN  std_logic_vector(15 downto 0);
@@ -189,7 +190,7 @@ begin
    comIF: IFctrl PORT MAP (
           T0 => Tout(0),
           CLK => CLK,
-          RST => RST,
+          -- RST => RST,
           PCnew => PCnew,
           PCupdate => PCupdate,
           IRdata => IRdata,
@@ -230,6 +231,7 @@ begin
         );
    comWB: WBctrl PORT MAP (
           CLK => CLK,
+          RST => RST,
           Rtemp => Rtemp,
           PC => PCout,
           Addr => Addr,

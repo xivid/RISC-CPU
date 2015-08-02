@@ -32,20 +32,20 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity WBctrl is
-    Port ( --RST : in  STD_LOGIC;
-			  CLK : in STD_LOGIC;
-           Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
-           PC : in  STD_LOGIC_VECTOR (15 downto 0);
-           Addr : in  STD_LOGIC_VECTOR (15 downto 0);
-           ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
-           T3 : in  STD_LOGIC;
-			  OP : in STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
-			  AD1 : in STD_LOGIC_VECTOR (10 downto 8); -- IR(10 downto 8)
-           Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
-           Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
-           Rupdate : out  STD_LOGIC;
-           PCnew : out  STD_LOGIC_VECTOR (15 downto 0);
-           PCupdate : out  STD_LOGIC);
+    Port (  RST : in  STD_LOGIC;
+            CLK : in STD_LOGIC;
+            Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
+            PC : in  STD_LOGIC_VECTOR (15 downto 0);
+            Addr : in  STD_LOGIC_VECTOR (15 downto 0);
+            ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
+            T3 : in  STD_LOGIC;
+            OP : in STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
+            AD1 : in STD_LOGIC_VECTOR (10 downto 8); -- IR(10 downto 8)
+            Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
+            Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
+            Rupdate : out  STD_LOGIC;
+            PCnew : out  STD_LOGIC_VECTOR (15 downto 0);
+            PCupdate : out  STD_LOGIC);
 end WBctrl;
 
 architecture Behavioral of WBctrl is
@@ -55,14 +55,29 @@ begin
 	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
 				ALUOUT;
 	Raddr <= AD1;
-	PCnew <= PC + Addr when (OP = "00010" and ALUOUT = X"00" and rising_edge(CLK)) else
-             Addr when (OP = "00000" and rising_edge(CLK)) else
-             PC;
+--	PCnew <= X"0000" when RST = '1' else
+--             PC + Addr when (OP = "00010" and ALUOUT = X"00" and T3 = '1') else
+--             Addr when (OP = "00000" and T3 = '1') else
+--             PC + 2;
+    process (RST, OP, ALUOUT, T3)
+    begin
+        if RST = '1' then
+            PCnew <= X"0000";
+        elsif T3 = '1' and T3'event then
+            if OP = "00000" then
+                PCnew <= Addr;
+            elsif (OP = "00010" and ALUOUT = X"00") then
+                PCnew <= PC + Addr + 2;
+            else
+                PCnew <= PC + 2;
+            end if;
+        end if;
+    end process;
 	
 	-- »ØÐ´¿ØÖÆÐÅºÅ
 	--JMP <= '1' when OP = "00000" else '0';
 	--JZ  <= '1' when OP = "00010" and ALUOUT = x"00" else '0';
-	PCupdate <= (T3 and CLK) when ((OP = "00000" or (OP = "00010" and ALUOUT = X"00"))) else '0';
-	Rupdate <= (T3 and CLK) when (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000") else '0'; -- IN, LDA, ADC, SBB, MVI, MOV
+	-- PCupdate <= '1' when (T3 = '1' and ((OP = "00000" or (OP = "00010" and ALUOUT = X"00")))) else '0';
+	Rupdate <= '1' when (T3 = '1' and (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000")) else '0'; -- IN, LDA, ADC, SBB, MVI, MOV
 end Behavioral;
 

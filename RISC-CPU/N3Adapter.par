@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-RL-20150714JIFE::  Sun Aug 02 13:28:24 2015
+RL-20150714JIFE::  Sun Aug 02 17:43:24 2015
 
 par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd
 N3Adapter.pcf 
@@ -27,16 +27,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   354 out of  18,224    1%
-    Number used as Flip Flops:                 258
-    Number used as Latches:                     95
+  Number of Slice Registers:                   317 out of  18,224    1%
+    Number used as Flip Flops:                 223
+    Number used as Latches:                     94
     Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        696 out of   9,112    7%
-    Number used as logic:                      693 out of   9,112    7%
-      Number using O6 output only:             498
-      Number using O5 output only:              68
-      Number using O5 and O6:                  127
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        631 out of   9,112    6%
+    Number used as logic:                      628 out of   9,112    6%
+      Number using O6 output only:             416
+      Number using O5 output only:              62
+      Number using O5 and O6:                  150
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
     Number used exclusively as route-thrus:      3
@@ -45,12 +45,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   282 out of   2,278   12%
-  Number of MUXCYs used:                       136 out of   4,556    2%
-  Number of LUT Flip Flop pairs used:          755
-    Number with an unused Flip Flop:           408 out of     755   54%
-    Number with an unused LUT:                  59 out of     755    7%
-    Number of fully used LUT-FF pairs:         288 out of     755   38%
+  Number of occupied Slices:                   271 out of   2,278   11%
+  Number of MUXCYs used:                       132 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          724
+    Number with an unused Flip Flop:           430 out of     724   59%
+    Number with an unused LUT:                  93 out of     724   12%
+    Number of fully used LUT-FF pairs:         201 out of     724   27%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -70,8 +70,8 @@ Specific Feature Utilization:
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       5 out of      16   31%
-    Number used as BUFGs:                        5
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
@@ -102,29 +102,29 @@ Finished initial Timing Analysis.  REAL time: 3 secs
 Starting Router
 
 
-Phase  1  : 4076 unrouted;      REAL time: 3 secs 
+Phase  1  : 3752 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 3693 unrouted;      REAL time: 3 secs 
+Phase  2  : 3390 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 1690 unrouted;      REAL time: 5 secs 
+Phase  3  : 1420 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 1718 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 1424 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: N3Adapter.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
-Total REAL time to Router completion: 7 secs 
-Total CPU time to Router completion: 7 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Total REAL time to Router completion: 6 secs 
+Total CPU time to Router completion: 6 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -144,20 +144,20 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net One | SETUP       |         N/A|     5.720ns|     N/A|           0
-  USClk                                     | HOLD        |     0.405ns|            |       0|           0
+  Autotimespec constraint for clock net One | SETUP       |         N/A|     4.777ns|     N/A|           0
+  USClk                                     | HOLD        |     0.445ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     3.788ns|     N/A|           0
-  CPU/RDIR_BUFG                             | HOLD        |     0.976ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     4.158ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.446ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     4.584ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.433ns|            |       0|           0
+  Autotimespec constraint for clock net js< | SETUP       |         N/A|     4.908ns|     N/A|           0
+  15>                                       | HOLD        |     0.467ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net js< | SETUP       |         N/A|     4.159ns|     N/A|           0
-  15>                                       | HOLD        |     0.412ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     4.426ns|     N/A|           0
+  CPU/comCLK/tmp[2]_dff_1_0_BUFG            | HOLD        |     0.430ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net btn | SETUP       |         N/A|     8.038ns|     N/A|           0
-  r_deb_BUFG                                | HOLD        |     0.421ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     3.475ns|     N/A|           0
+  BtnrDeb/btn_deb                           | HOLD        |     0.393ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -173,10 +173,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
-Total CPU time to PAR completion: 8 secs 
+Total REAL time to PAR completion: 7 secs 
+Total CPU time to PAR completion: 7 secs 
 
-Peak Memory Usage:  378 MB
+Peak Memory Usage:  377 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

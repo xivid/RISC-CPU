@@ -265,7 +265,7 @@ begin
     comBtnrDeb: btnDebounce port map(
                 CLK => CLK,
                 btn => btnr,
-                btn_deb >= btnr_deb);
+                btn_deb => btnr_deb);
     comCPU: CPU port map(
                RST => btns,
                CLK => btnr_deb,
@@ -348,10 +348,10 @@ begin
 		end process;
 	
 	--This process runs the LCD state machine
-	process (oneUSClk, btnr_deb)
+	process (oneUSClk, btnr)
 		begin
 			if oneUSClk = '1' and oneUSClk'Event then
-				if btnr_deb = '1' then
+				if btnr = '1' then
 					stCur <= stPowerOn_Delay;
 				else
 					stCur <= stNext;
@@ -660,10 +660,10 @@ begin
 		end if;
 	end process;
     
-    digit1 <= btnr_deb&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
-	digit2 <= btnr_deb&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
-	digit3 <= btnr_deb&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
-	digit4 <= btnr_deb&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
+    digit1 <= (not btnr_deb)&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
+	digit2 <= (not btnr_deb)&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
+	digit3 <= (not btnr_deb)&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
+	digit4 <= (not btnr_deb)&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
 	
     MemAdv <= '0';
     MemWait <= '0';

@@ -19,7 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -36,26 +37,29 @@ entity btnDebounce is
 end btnDebounce;
 
 architecture Behavioral of btnDebounce is
-
+    constant CNTR_MAX : std_logic_vector(15 downto 0) := (others => '1');
 begin
-    process (CLK, btn)
-        variable count: integer := 0;
+    btn_debounce: process (CLK, btn)
+        variable count: INTEGER := 0;
     begin
-        if (CLK = '1' and CLK'event) then
-            if btn = '1' then
-                if (count /= 500000) then
+        if (rising_edge(CLK)) then
+            if btn = '0' then
+                if (count = CNTR_MAX) then
+                    count := count;
+                else
                     count := count + 1;
                 end if;
-                if count = 499999 then
-                    btn_deb <= '1';
-                else
+                if count = CNTR_MAX - 1 then
                     btn_deb <= '0';
+                else
+                    btn_deb <= '1';
                 end if;
             else
                 count := 0;
             end if;
         end if;
     end process;
+
 
 end Behavioral;
 
