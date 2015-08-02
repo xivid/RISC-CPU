@@ -91,6 +91,11 @@ architecture Behavioral of N3Adapter is
            T : out STD_LOGIC_VECTOR (3 downto 0));
     end component;
     
+    component btnDebounce
+    Port ( CLK : in std_logic;
+           btn : in std_logic;
+           btn_deb : out std_logic);
+    end component;
 ------------------------------------------------------------------
 --  Local Type Declarations
 -----------------------------------------------------------------
@@ -254,29 +259,13 @@ architecture Behavioral of N3Adapter is
     signal IOAD : std_logic_vector(1 downto 0);
     signal nPREQ, nPRD, nPWR : std_logic;
     
-    -- Button debounce
-    -- constant CNTR_MAX : std_logic_vector(15 downto 0) := (others => '1');
-    signal btnr_deb : std_logic := '0';
+    -- Debounce btnr
+    signal btnr_deb : std_logic;
 begin
-    btnr_debounce: process (CLK, btnr)
-        variable count: integer := 0;
-    begin
-        if (CLK = '1' and CLK'event) then
-            if btnr = '1' then
-                if (count /= 500000) then
-                    count := count + 1;
-                end if;
-                if count = 499999 then
-                    btnr_deb <= '1';
-                else
-                    btnr_deb <= '0';
-                end if;
-            else
-                count := 0;
-            end if;
-        end if;
-    end process;
-
+    comBtnrDeb: btnDebounce port map(
+                CLK => CLK,
+                btn => btnr,
+                btn_deb >= btnr_deb);
     comCPU: CPU port map(
                RST => btns,
                CLK => btnr_deb,
@@ -461,130 +450,153 @@ begin
 		LCD_CMDS(17) <= "10"&X"20";
 		LCD_CMDS(18) <= "10"&X"20";
 		LCD_CMDS(19) <= "10"&X"20";
-        LCD_CMDS(21) <= "10"&conv_ascii(R7(7 downto 4)); -- R7
-        LCD_CMDS(22) <= "10"&conv_ascii(R7(3 downto 0));
-        LCD_CMDS(23) <= "10"&conv_ascii(R6(7 downto 4)); -- R6
-        LCD_CMDS(24) <= "10"&conv_ascii(R6(3 downto 0));
-        LCD_CMDS(25) <= "10"&conv_ascii(R5(7 downto 4)); -- R5
-        LCD_CMDS(26) <= "10"&conv_ascii(R5(3 downto 0));
-        LCD_CMDS(27) <= "10"&conv_ascii(R4(7 downto 4)); -- R4
-        LCD_CMDS(28) <= "10"&conv_ascii(R4(3 downto 0));
-        LCD_CMDS(29) <= "10"&conv_ascii(R3(7 downto 4)); -- R3
-        LCD_CMDS(30) <= "10"&conv_ascii(R3(3 downto 0));
-        LCD_CMDS(31) <= "10"&conv_ascii(R2(7 downto 4)); -- R2
-        LCD_CMDS(32) <= "10"&conv_ascii(R2(3 downto 0));
-        LCD_CMDS(33) <= "10"&conv_ascii(R1(7 downto 4)); -- R1
-        LCD_CMDS(34) <= "10"&conv_ascii(R1(3 downto 0));
-        LCD_CMDS(35) <= "10"&conv_ascii(R0(7 downto 4)); -- R0
-        LCD_CMDS(36) <= "10"&conv_ascii(R0(3 downto 0));
+        LCD_CMDS(21) <= "10"&conv_ascii(R0(7 downto 4)); -- R0
+        LCD_CMDS(22) <= "10"&conv_ascii(R0(3 downto 0));
+        LCD_CMDS(23) <= "10"&conv_ascii(R1(7 downto 4)); -- R1
+        LCD_CMDS(24) <= "10"&conv_ascii(R1(3 downto 0));
+        LCD_CMDS(25) <= "10"&conv_ascii(R2(7 downto 4)); -- R2
+        LCD_CMDS(26) <= "10"&conv_ascii(R2(3 downto 0));
+        LCD_CMDS(27) <= "10"&conv_ascii(R3(7 downto 4)); -- R3
+        LCD_CMDS(28) <= "10"&conv_ascii(R3(3 downto 0));
+        LCD_CMDS(29) <= "10"&conv_ascii(R4(7 downto 4)); -- R4
+        LCD_CMDS(30) <= "10"&conv_ascii(R4(3 downto 0));
+        LCD_CMDS(31) <= "10"&conv_ascii(R5(7 downto 4)); -- R5
+        LCD_CMDS(32) <= "10"&conv_ascii(R5(3 downto 0));
+        LCD_CMDS(33) <= "10"&conv_ascii(R6(7 downto 4)); -- R6
+        LCD_CMDS(34) <= "10"&conv_ascii(R6(3 downto 0));
+        LCD_CMDS(35) <= "10"&conv_ascii(R7(7 downto 4)); -- R7
+        LCD_CMDS(36) <= "10"&conv_ascii(R7(3 downto 0));
 		case IR(15 downto 11) is
-			when "00000" => -- JMP [0xff]
-				LCD_CMDS(5)(7 downto 0) <= X"4a";
-				LCD_CMDS(6)(7 downto 0) <= X"4d";
-				LCD_CMDS(7)(7 downto 0) <= X"50";
-                LCD_CMDS(13)(7 downto 0) <= X"5b";
-                LCD_CMDS(14)(7 downto 0) <= X"30";
-                LCD_CMDS(15)(7 downto 0) <= X"78";
-                LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
-                LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
-                LCD_CMDS(18)(7 downto 0) <= X"5d";
-			when "00010" => -- JZ Rx, [0xff]
-				LCD_CMDS(6)(7 downto 0) <= X"4a";
-				LCD_CMDS(7)(7 downto 0) <= X"5a";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c"; --,
-                LCD_CMDS(13)(7 downto 0) <= X"5b";
-                LCD_CMDS(14)(7 downto 0) <= X"30";
-                LCD_CMDS(15)(7 downto 0) <= X"78";
-                LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
-                LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
-                LCD_CMDS(18)(7 downto 0) <= X"5d";
-			when "00100" => -- SBB Rx, Rx
-				LCD_CMDS(5)(7 downto 0) <= X"53";
-				LCD_CMDS(6)(7 downto 0) <= X"42";
-				LCD_CMDS(7)(7 downto 0) <= X"42";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= X"52";
-                LCD_CMDS(14)(7 downto 0) <= "00110"&IR(2 downto 0);
-			when "00110" => -- ADC Rx, Rx
-				LCD_CMDS(5)(7 downto 0) <= X"41";
-				LCD_CMDS(6)(7 downto 0) <= X"44";
-				LCD_CMDS(7)(7 downto 0) <= X"43";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= X"52";
-                LCD_CMDS(14)(7 downto 0) <= "00110"&IR(2 downto 0);
-			when "01000" => -- MVI Rx, 0xff
+			when "00000" => -- JMP [R7//0xff]
+				LCD_CMDS(4)(7 downto 0) <= X"4a";
 				LCD_CMDS(5)(7 downto 0) <= X"4d";
+				LCD_CMDS(6)(7 downto 0) <= X"50";
+                
+                LCD_CMDS(8)(7 downto 0) <= X"5b"; -- [
+				LCD_CMDS(9)(7 downto 0) <= conv_ascii(R7(7 downto 4)); -- R7
+				LCD_CMDS(10)(7 downto 0) <= conv_ascii(R7(3 downto 0)); -- R7
+				LCD_CMDS(11)(7 downto 0) <= X"2f"; -- /
+                LCD_CMDS(12)(7 downto 0) <= X"2f"; -- /
+                LCD_CMDS(13)(7 downto 0) <= X"30"; -- 0
+                LCD_CMDS(14)(7 downto 0) <= X"78"; -- x
+                LCD_CMDS(15)(7 downto 0) <= conv_ascii(IR(7 downto 4));
+                LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(3 downto 0));
+                LCD_CMDS(17)(7 downto 0) <= X"5d";
+			when "00010" => -- JZ Rx, 0xffff
+				LCD_CMDS(4)(7 downto 0) <= X"4a";
+				LCD_CMDS(5)(7 downto 0) <= X"5a";
+                
+				LCD_CMDS(7)(7 downto 0) <= X"52";
+				LCD_CMDS(8)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(9)(7 downto 0) <= X"2c"; -- ,
+                
+                LCD_CMDS(11)(7 downto 0) <= X"30"; -- 0
+                LCD_CMDS(12)(7 downto 0) <= X"78"; -- x
+                LCD_CMDS(13)(7 downto 0) <= conv_ascii(IR(7)&IR(7)&IR(7)&IR(7)); -- sign
+                LCD_CMDS(14)(7 downto 0) <= conv_ascii(IR(7)&IR(7)&IR(7)&IR(7)); -- sign
+                LCD_CMDS(15)(7 downto 0) <= conv_ascii(IR(7 downto 4));
+                LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(3 downto 0));
+			when "00100" => -- SBB Rx, Rx
+				LCD_CMDS(4)(7 downto 0) <= X"53";
+				LCD_CMDS(5)(7 downto 0) <= X"42";
+				LCD_CMDS(6)(7 downto 0) <= X"42";
+                
+				LCD_CMDS(8)(7 downto 0) <= X"52";
+				LCD_CMDS(9)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(10)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(12)(7 downto 0) <= X"52";
+                LCD_CMDS(13)(7 downto 0) <= "00110"&IR(2 downto 0);
+			when "00110" => -- ADC Rx, Rx
+				LCD_CMDS(4)(7 downto 0) <= X"41";
+				LCD_CMDS(5)(7 downto 0) <= X"44";
+				LCD_CMDS(6)(7 downto 0) <= X"43";
+                
+				LCD_CMDS(8)(7 downto 0) <= X"52";
+				LCD_CMDS(9)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(10)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(12)(7 downto 0) <= X"52";
+                LCD_CMDS(13)(7 downto 0) <= "00110"&IR(2 downto 0);
+			when "01000" => -- MVI Rx, 0xff
+				LCD_CMDS(4)(7 downto 0) <= X"4d";
+				LCD_CMDS(5)(7 downto 0) <= X"56";
+				LCD_CMDS(6)(7 downto 0) <= X"49";
+                
+				LCD_CMDS(8)(7 downto 0) <= X"52";
+				LCD_CMDS(9)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(10)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(12)(7 downto 0) <= X"30";
+                LCD_CMDS(13)(7 downto 0) <= X"78";
+                LCD_CMDS(14)(7 downto 0) <= conv_ascii(IR(7 downto 4));
+                LCD_CMDS(15)(7 downto 0) <= conv_ascii(IR(3 downto 0));
+			when "01010" => -- MOV Rx, Rx
+				LCD_CMDS(4)(7 downto 0) <= X"4d";
+				LCD_CMDS(5)(7 downto 0) <= X"4f";
 				LCD_CMDS(6)(7 downto 0) <= X"56";
-				LCD_CMDS(7)(7 downto 0) <= X"49";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
+                
+				LCD_CMDS(8)(7 downto 0) <= X"52";
+				LCD_CMDS(9)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(10)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(12)(7 downto 0) <= X"52";
+                LCD_CMDS(13)(7 downto 0) <= "00110"&IR(2 downto 0);
+			when "01100" => -- STA Rx, [0xff]
+				LCD_CMDS(4)(7 downto 0) <= X"53";
+				LCD_CMDS(5)(7 downto 0) <= X"54";
+				LCD_CMDS(6)(7 downto 0) <= X"41";
+                
+				LCD_CMDS(8)(7 downto 0) <= X"52";
+				LCD_CMDS(9)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(10)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(12)(7 downto 0) <= X"5b";
                 LCD_CMDS(13)(7 downto 0) <= X"30";
                 LCD_CMDS(14)(7 downto 0) <= X"78";
                 LCD_CMDS(15)(7 downto 0) <= conv_ascii(IR(7 downto 4));
                 LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(3 downto 0));
-			when "01010" => -- MOV Rx, Rx
-				LCD_CMDS(5)(7 downto 0) <= X"4d";
-				LCD_CMDS(6)(7 downto 0) <= X"4f";
-				LCD_CMDS(7)(7 downto 0) <= X"56";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= X"52";
-                LCD_CMDS(14)(7 downto 0) <= "00110"&IR(2 downto 0);
-			when "01100" => -- STA Rx, [0xff]
-				LCD_CMDS(5)(7 downto 0) <= X"53";
-				LCD_CMDS(6)(7 downto 0) <= X"54";
-				LCD_CMDS(7)(7 downto 0) <= X"41";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= X"5b";
-                LCD_CMDS(14)(7 downto 0) <= X"30";
-                LCD_CMDS(15)(7 downto 0) <= X"78";
-                LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
-                LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
-                LCD_CMDS(18)(7 downto 0) <= X"5d";
+                LCD_CMDS(17)(7 downto 0) <= X"5d";
 			when "01110" => -- LDA Rx, [0xff]
-				LCD_CMDS(5)(7 downto 0) <= X"4c";
-				LCD_CMDS(6)(7 downto 0) <= X"44";
-				LCD_CMDS(7)(7 downto 0) <= X"41";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= X"5b";
-                LCD_CMDS(14)(7 downto 0) <= X"30";
-                LCD_CMDS(15)(7 downto 0) <= X"78";
-                LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(7 downto 4));
-                LCD_CMDS(17)(7 downto 0) <= conv_ascii(IR(3 downto 0));
-                LCD_CMDS(18)(7 downto 0) <= X"5d";
+				LCD_CMDS(4)(7 downto 0) <= X"4c";
+				LCD_CMDS(5)(7 downto 0) <= X"44";
+				LCD_CMDS(6)(7 downto 0) <= X"41";
+                
+				LCD_CMDS(8)(7 downto 0) <= X"52";
+				LCD_CMDS(9)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(10)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(12)(7 downto 0) <= X"5b";
+                LCD_CMDS(13)(7 downto 0) <= X"30";
+                LCD_CMDS(14)(7 downto 0) <= X"78";
+                LCD_CMDS(15)(7 downto 0) <= conv_ascii(IR(7 downto 4));
+                LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(3 downto 0));
+                LCD_CMDS(17)(7 downto 0) <= X"5d";
 			when "10000" => -- IN Rx, [00]
-				LCD_CMDS(6)(7 downto 0) <= X"49";
-				LCD_CMDS(7)(7 downto 0) <= X"4e";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= X"5b";
-                LCD_CMDS(14)(7 downto 0) <= conv_ascii("000"&IR(1));
-                LCD_CMDS(15)(7 downto 0) <= conv_ascii("000"&IR(0));
-                LCD_CMDS(16)(7 downto 0) <= X"5d";
+				LCD_CMDS(4)(7 downto 0) <= X"49";
+				LCD_CMDS(5)(7 downto 0) <= X"4e";
+                
+				LCD_CMDS(7)(7 downto 0) <= X"52";
+				LCD_CMDS(8)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(9)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(11)(7 downto 0) <= X"5b";
+                LCD_CMDS(12)(7 downto 0) <= conv_ascii("000"&IR(1));
+                LCD_CMDS(13)(7 downto 0) <= conv_ascii("000"&IR(0));
+                LCD_CMDS(14)(7 downto 0) <= X"5d";
 			when "10010" => -- OUT Rx, [00]
-				LCD_CMDS(5)(7 downto 0) <= X"4f";
-				LCD_CMDS(6)(7 downto 0) <= X"55";
-				LCD_CMDS(7)(7 downto 0) <= X"54";
-				LCD_CMDS(9)(7 downto 0) <= X"52";
-				LCD_CMDS(10)(7 downto 0) <= "00110"&IR(10 downto 8);
-				LCD_CMDS(11)(7 downto 0) <= X"2c";
-                LCD_CMDS(13)(7 downto 0) <= X"5b";
-                LCD_CMDS(14)(7 downto 0) <= conv_ascii("000"&IR(1));
-                LCD_CMDS(15)(7 downto 0) <= conv_ascii("000"&IR(0));
-                LCD_CMDS(16)(7 downto 0) <= X"5d";
+				LCD_CMDS(4)(7 downto 0) <= X"4f";
+				LCD_CMDS(5)(7 downto 0) <= X"55";
+				LCD_CMDS(6)(7 downto 0) <= X"54";
+                
+				LCD_CMDS(8)(7 downto 0) <= X"52";
+				LCD_CMDS(9)(7 downto 0) <= "00110"&IR(10 downto 8);
+				LCD_CMDS(10)(7 downto 0) <= X"2c";
+                
+                LCD_CMDS(12)(7 downto 0) <= X"5b";
+                LCD_CMDS(13)(7 downto 0) <= conv_ascii("000"&IR(1));
+                LCD_CMDS(14)(7 downto 0) <= conv_ascii("000"&IR(0));
+                LCD_CMDS(15)(7 downto 0) <= X"5d";
 			when "10100" => -- CLRC
 				LCD_CMDS(4)(7 downto 0) <= X"43";
 				LCD_CMDS(5)(7 downto 0) <= X"4c";
@@ -595,7 +607,7 @@ begin
 				LCD_CMDS(5)(7 downto 0) <= X"45";
 				LCD_CMDS(6)(7 downto 0) <= X"54";
 				LCD_CMDS(7)(7 downto 0) <= X"43";
-			when others => -- Undefined.. >_<
+			when others => -- Undefined... >_<
 				LCD_CMDS(4)(7 downto 0) <= X"55";
 				LCD_CMDS(5)(7 downto 0) <= X"6e";
 				LCD_CMDS(6)(7 downto 0) <= X"64";
@@ -607,6 +619,7 @@ begin
 				LCD_CMDS(12)(7 downto 0) <= X"64";
                 LCD_CMDS(13)(7 downto 0) <= X"2e";
                 LCD_CMDS(14)(7 downto 0) <= X"2e";
+                
                 LCD_CMDS(16)(7 downto 0) <= X"3e";
                 LCD_CMDS(17)(7 downto 0) <= X"5f";
                 LCD_CMDS(18)(7 downto 0) <= X"3c";

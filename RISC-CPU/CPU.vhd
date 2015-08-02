@@ -163,23 +163,23 @@ architecture Behavioral of CPU is
 		  );
 		END COMPONENT;
 	--///////////////////////////////////////////////
-	signal Tout : std_logic_vector(3 downto 0) := "1000";
-   signal RDIR : std_logic;
-   signal Addrin : std_logic_vector(15 downto 0) := (others => '0');
-   signal ALUOUT : std_logic_vector(7 downto 0) := (others => '0');
-   signal Addr : std_logic_vector(15 downto 0) := (others => '0');
-   signal Rtemp : std_logic_vector(7 downto 0) := (others => '0');
-   signal nMEM : std_logic := '1';
-   signal nIO : std_logic := '1';
-   signal RD : std_logic := '0';
-   signal WR : std_logic := '0';  
-   signal Raddr : std_logic_vector(2 downto 0) := (others => '0');
-   signal Rdata : std_logic_vector(7 downto 0) := (others => '0');
-   signal Rupdate : std_logic := '0';
-   signal PCnew : std_logic_vector(15 downto 0) := (others => '0'); -- Gated clock?
-   signal PCupdate : std_logic := '0';
-   signal IRdata, IRout, PCout : std_logic_vector(15 downto 0) := (others => '0');
-   signal Rtempdata : std_logic_vector(7 downto 0) := (others => '0');
+    signal Tout : std_logic_vector(3 downto 0) := "1000";
+    signal RDIR : std_logic;
+    signal Addrin : std_logic_vector(15 downto 0) := (others => '0');
+    signal ALUOUT : std_logic_vector(7 downto 0) := (others => '0');
+    signal Addr : std_logic_vector(15 downto 0) := (others => '0');
+    signal Rtemp : std_logic_vector(7 downto 0) := (others => '0');
+    signal nMEM : std_logic := '1';
+    signal nIO : std_logic := '1';
+    signal RD : std_logic := '0';
+    signal WR : std_logic := '0';  
+    signal Raddr : std_logic_vector(2 downto 0) := (others => '0');
+    signal Rdata : std_logic_vector(7 downto 0) := (others => '0');
+    signal Rupdate : std_logic := '0';
+    signal PCnew : std_logic_vector(15 downto 0) := (others => '0'); -- Gated clock?
+    signal PCupdate : std_logic := '0';
+    signal IRdata, IRout, PCout : std_logic_vector(15 downto 0) := (others => '0');
+    signal Rtempdata : std_logic_vector(7 downto 0) := (others => '0');
 begin
    comCLK: CLKctrl PORT MAP (
           CLK => CLK,
