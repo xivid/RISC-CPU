@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: N3Adapter.prj
 
@@ -1165,10 +1165,10 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comCLK/tmp[2]_dff_
 -------------------------------------------------------------------------
 Offset:              11.243ns (Levels of Logic = 7)
   Source:            comCPU/comIF/IRout_14 (LATCH)
-  Destination:       JA<6> (PAD)
+  Destination:       JC<6> (PAD)
   Source Clock:      comCPU/comCLK/tmp[2]_dff_1_0 falling
 
-  Data Path: comCPU/comIF/IRout_14 to JA<6>
+  Data Path: comCPU/comIF/IRout_14 to JC<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1178,8 +1178,8 @@ Offset:              11.243ns (Levels of Logic = 7)
      LUT6:I4->O            1   0.203   0.808  comPmodCLP/n0140<0>42 (comPmodCLP/n0140<0>42)
      LUT6:I3->O            1   0.205   0.580  comPmodCLP/n0140<0>43 (comPmodCLP/n0140<0>43)
      LUT6:I5->O            2   0.205   0.981  comPmodCLP/n0140<0>414 (comPmodCLP/n0140<0>4)
-     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<6>25 (JA_6_OBUF)
-     OBUF:I->O                 2.571          JA_6_OBUF (JA<6>)
+     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<6>25 (JC_6_OBUF)
+     OBUF:I->O                 2.571          JC_6_OBUF (JC<6>)
     ----------------------------------------
     Total                     11.243ns (4.293ns logic, 6.950ns route)
                                        (38.2% logic, 61.8% route)
@@ -1250,10 +1250,10 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'comPmodCLP/OneUSClk'
 -------------------------------------------------------------------------
 Offset:              14.739ns (Levels of Logic = 10)
   Source:            comPmodCLP/lcd_cmd_ptr_1 (FF)
-  Destination:       JA<4> (PAD)
+  Destination:       JC<4> (PAD)
   Source Clock:      comPmodCLP/OneUSClk rising
 
-  Data Path: comPmodCLP/lcd_cmd_ptr_1 to JA<4>
+  Data Path: comPmodCLP/lcd_cmd_ptr_1 to JC<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1266,8 +1266,8 @@ Offset:              14.739ns (Levels of Logic = 10)
      LUT6:I1->O            2   0.203   0.961  comPmodCLP/n0140<4>219 (comPmodCLP/n0140<4>21)
      LUT5:I0->O            2   0.203   0.961  comPmodCLP/n0140<5>214 (comPmodCLP/n0140<5>2)
      LUT6:I1->O            1   0.203   0.580  comPmodCLP/n0140<4>12_SW0 (N122)
-     LUT6:I5->O            1   0.205   0.579  comPmodCLP/n0140<4>12 (JA_4_OBUF)
-     OBUF:I->O                 2.571          JA_4_OBUF (JA<4>)
+     LUT6:I5->O            1   0.205   0.579  comPmodCLP/n0140<4>12 (JC_4_OBUF)
+     OBUF:I->O                 2.571          JC_4_OBUF (JC<4>)
     ----------------------------------------
     Total                     14.739ns (4.849ns logic, 9.890ns route)
                                        (32.9% logic, 67.1% route)
@@ -1278,10 +1278,10 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/Rupdate'
 -------------------------------------------------------------------------
 Offset:              12.912ns (Levels of Logic = 9)
   Source:            comCPU/comEX/Reg_3_4 (FF)
-  Destination:       JA<4> (PAD)
+  Destination:       JC<4> (PAD)
   Source Clock:      comCPU/Rupdate rising
 
-  Data Path: comCPU/comEX/Reg_3_4 to JA<4>
+  Data Path: comCPU/comEX/Reg_3_4 to JC<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1293,8 +1293,8 @@ Offset:              12.912ns (Levels of Logic = 9)
      LUT6:I1->O            2   0.203   0.961  comPmodCLP/n0140<4>219 (comPmodCLP/n0140<4>21)
      LUT5:I0->O            2   0.203   0.961  comPmodCLP/n0140<5>214 (comPmodCLP/n0140<5>2)
      LUT6:I1->O            1   0.203   0.580  comPmodCLP/n0140<4>12_SW0 (N122)
-     LUT6:I5->O            1   0.205   0.579  comPmodCLP/n0140<4>12 (JA_4_OBUF)
-     OBUF:I->O                 2.571          JA_4_OBUF (JA<4>)
+     LUT6:I5->O            1   0.205   0.579  comPmodCLP/n0140<4>12 (JC_4_OBUF)
+     OBUF:I->O                 2.571          JC_4_OBUF (JC<4>)
     ----------------------------------------
     Total                     12.912ns (4.644ns logic, 8.268ns route)
                                        (36.0% logic, 64.0% route)
@@ -1512,12 +1512,12 @@ comsegDisplay/js_15         |    5.943|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.33 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.14 secs
  
 --> 
 
-Total memory usage is 273988 kilobytes
+Total memory usage is 274052 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  150 (   0 filtered)

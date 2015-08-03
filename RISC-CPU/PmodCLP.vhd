@@ -43,13 +43,13 @@ entity PmodCLP is
             R6:     in std_logic_vector(7 downto 0);
             R7:     in std_logic_vector(7 downto 0);
 			--lcd input signals
-			--signal on connector JA 
-			JA:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
-            -- signal on connector JB
-                --JB(4)register selection pin  (RS)
-                --JB(5)selects between read/write modes (RW)
-                --JB(6)enable signal for starting the data read/write (E)
-            JB:	out std_logic_vector (6 downto 4)  
+			--signal on connector JC 
+			JC:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
+            -- signal on connector JD
+                --JD(4)register selection pin  (RS)
+                --JD(5)selects between read/write modes (RW)
+                --JD(6)enable signal for starting the data read/write (E)
+            JD:	out std_logic_vector (6 downto 4)  
 			);		
 end PmodCLP;
 
@@ -503,10 +503,10 @@ begin
         
 	end process;
 	
-	JB(4) <= LCD_CMDS(lcd_cmd_ptr)(9);
-	JB(5) <= LCD_CMDS(lcd_cmd_ptr)(8);
-	JA <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
-	JB(6) <= '1' when stCur = stFunctionSet or stCur = stDisplayCtrlSet or stCur = stDisplayClear or stCur = stActWr
+	JD(4) <= LCD_CMDS(lcd_cmd_ptr)(9);
+	JD(5) <= LCD_CMDS(lcd_cmd_ptr)(8);
+	JC <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
+	JD(6) <= '1' when stCur = stFunctionSet or stCur = stDisplayCtrlSet or stCur = stDisplayClear or stCur = stActWr
 				else '0';	
 end Behavioral;
 
