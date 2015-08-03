@@ -45,7 +45,6 @@ entity CPU is
            nBLE : out  STD_LOGIC;
            nPRD : out  STD_LOGIC;
            nPWR : out  STD_LOGIC;
-           Cout : out  STD_LOGIC;
            IR : out  STD_LOGIC_VECTOR (15 downto 0);
            PC : out  STD_LOGIC_VECTOR (15 downto 0);
            R0 : out  STD_LOGIC_VECTOR (7 downto 0);
@@ -56,7 +55,19 @@ entity CPU is
            R5 : out  STD_LOGIC_VECTOR (7 downto 0);
            R6 : out  STD_LOGIC_VECTOR (7 downto 0);
            R7 : out  STD_LOGIC_VECTOR (7 downto 0);
-           T : out STD_LOGIC_VECTOR (3 downto 0));
+           T : out STD_LOGIC_VECTOR (3 downto 0);
+			  intServicePort: in integer;
+			  intr: out std_logic_vector(7 downto 0);
+			  intrUpdate: out std_logic;
+			  irrUpdated: in std_logic;
+			  nextService: in std_logic;
+			  fetchImr: out std_logic;
+			  protectPC: out std_logic;
+			  imrFetched: in std_logic;
+			  pcProtected: in std_logic;
+			  returnLastInt: out std_logic;
+			  alreadyReturn: in std_logic
+			  );
 end CPU;
 
 architecture Behavioral of CPU is
@@ -72,7 +83,9 @@ architecture Behavioral of CPU is
 	PORT(
 		T0 : IN  std_logic;
 		CLK : IN  std_logic;
+		RST : IN  std_logic;
 		PCnew : IN  std_logic_vector(15 downto 0);
+		PCupdate : IN  std_logic;
 		IRdata : IN  std_logic_vector(15 downto 0);
 		PCout : OUT  std_logic_vector(15 downto 0);
 		RDIR : OUT  std_logic;
@@ -88,7 +101,6 @@ architecture Behavioral of CPU is
 		Raddr : IN  std_logic_vector(2 downto 0);
 		Rdata : IN  std_logic_vector(7 downto 0);
 		IR : IN  std_logic_vector(15 downto 0);
-        Cout : out std_logic;
 		R0 : out STD_LOGIC_VECTOR (7 downto 0);
 		R1 : out STD_LOGIC_VECTOR (7 downto 0);
 		R2 : out STD_LOGIC_VECTOR (7 downto 0);
@@ -120,7 +132,7 @@ architecture Behavioral of CPU is
 	--///////////////////////////////////////////////
 	COMPONENT WBctrl
 	PORT(
-        RST : IN  std_logic;
+		CLK : IN  std_logic;
 		Rtemp : IN  std_logic_vector(7 downto 0);
 		PC : IN  std_logic_vector(15 downto 0);
 		Addr : IN  std_logic_vector(15 downto 0);
@@ -131,7 +143,8 @@ architecture Behavioral of CPU is
 		Raddr : OUT  std_logic_vector(2 downto 0);
 		Rdata : OUT  std_logic_vector(7 downto 0);
 		Rupdate : OUT  std_logic;
-		PCnew : OUT  std_logic_vector(15 downto 0)
+		PCnew : OUT  std_logic_vector(15 downto 0);
+		PCupdate : OUT  std_logic
 	  );
 	END COMPONENT;
 	--///////////////////////////////////////////////
@@ -162,22 +175,24 @@ architecture Behavioral of CPU is
 		  );
 		END COMPONENT;
 	--///////////////////////////////////////////////
-    signal Tout : std_logic_vector(3 downto 0) := "1000";
-    signal RDIR : std_logic;
-    signal Addrin : std_logic_vector(15 downto 0) := (others => '0');
-    signal ALUOUT : std_logic_vector(7 downto 0) := (others => '0');
-    signal Addr : std_logic_vector(15 downto 0) := (others => '0');
-    signal Rtemp : std_logic_vector(7 downto 0) := (others => '0');
-    signal nMEM : std_logic := '1';
-    signal nIO : std_logic := '1';
-    signal RD : std_logic := '0';
-    signal WR : std_logic := '0';  
-    signal Raddr : std_logic_vector(2 downto 0) := (others => '0');
-    signal Rdata : std_logic_vector(7 downto 0) := (others => '0');
-    signal Rupdate : std_logic := '0';
-    signal PCnew : std_logic_vector(15 downto 0) := (others => '0');
-    signal IRdata, IRout, PCout : std_logic_vector(15 downto 0) := (others => '0');
-    signal Rtempdata : std_logic_vector(7 downto 0) := (others => '0');
+	signal Tout : std_logic_vector(3 downto 0) := "1000";
+   signal RDIR : std_logic;
+   signal Addrin : std_logic_vector(15 downto 0) := (others => '0');
+   signal ALUOUT : std_logic_vector(7 downto 0) := (others => '0');
+   signal Addr : std_logic_vector(15 downto 0) := (others => '0');
+   signal Rtemp : std_logic_vector(7 downto 0) := (others => '0');
+   signal nMEM : std_logic := '1';
+   signal nIO : std_logic := '1';
+   signal RD : std_logic := '0';
+   signal WR : std_logic := '0';  
+   signal Raddr : std_logic_vector(2 downto 0) := (others => '0');
+   signal Rdata : std_logic_vector(7 downto 0) := (others => '0');
+   signal Rupdate : std_logic := '0';
+   signal PCnew : std_logic_vector(15 downto 0) := (others => '0'); -- Gated clock?
+   signal PCupdate : std_logic := '0';
+   signal IRdata, IRout, PCout : std_logic_vector(15 downto 0) := (others => '0');
+   signal Rtempdata : std_logic_vector(7 downto 0) := (others => '0');
+	signal intrReg: std_logic_vector(7 downto 0):= (others=>'0');
 begin
    comCLK: CLKctrl PORT MAP (
           CLK => CLK,
@@ -187,7 +202,9 @@ begin
    comIF: IFctrl PORT MAP (
           T0 => Tout(0),
           CLK => CLK,
+          RST => RST,
           PCnew => PCnew,
+          PCupdate => PCupdate,
           IRdata => IRdata,
           PCout => PCout,
           RDIR => RDIR,
@@ -200,7 +217,6 @@ begin
           Raddr => Raddr,
           Rdata => Rdata,
           IR => IRout,
-          Cout => Cout,
 		  R0 => R0,
 		  R1 => R1, 
 		  R2 => R2,
@@ -226,7 +242,7 @@ begin
           WR => WR
         );
    comWB: WBctrl PORT MAP (
-          RST => RST,
+          CLK => CLK,
           Rtemp => Rtemp,
           PC => PCout,
           Addr => Addr,
@@ -237,7 +253,8 @@ begin
           Raddr => Raddr,
           Rdata => Rdata,
           Rupdate => Rupdate,
-          PCnew => PCnew
+          PCnew => PCnew,
+          PCupdate => PCupdate
         );
 	comAC: ACctrl PORT MAP (
           nIO => nIO,
@@ -266,5 +283,49 @@ begin
     PC <= PCout;
     IR <= IRout;
     T <= Tout;
+	 
+	process(IRdata,irrUpdated)--apply intr
+	begin
+		if	irrUpdated='1' then
+			intrUpdate <= '0';
+			intrReg <= "00000000";--ready for new intr
+		end if;
+		if conv_integer(intrReg)=0 then
+			if IRdata(15 downto 11) = "11000" then--new intr
+				intrReg(conv_integer(IRdata(3 downto 0)))<='1';
+				intrUpdate <= '1';
+			end if;
+		end if;
+	end process;
+	intr <= intrReg;
+	
+	process(intServicePort,nextService)--new service, protect reg\pc
+	begin
+		if (nextService='1') then
+			fetchImr <= '1';
+			protectPC <= '1';
+		else
+			fetchImr <= '0';
+			protectPC <= '0';
+		end if;
+	end process;
+	
+	process(pcProtected,imrFetched)
+	begin
+		if (pcProtected='1' and imrFetched='1') then
+			fetchImr <= '0';
+			protectPC <= '0';
+		end if;
+	end process;
+	
+	process(IRdata,alreadyReturn)
+	begin
+		if IRdata(15 downto 11)="11111" and alreadyReturn = '0' then
+			returnLastInt<='1';
+		else
+			returnLastInt<='0';
+		end if;
+	end process;
+	
 end Behavioral;
 

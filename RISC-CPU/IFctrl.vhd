@@ -36,7 +36,9 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity IFctrl is
     Port ( T0 : in  STD_LOGIC;
 		   CLK : in STD_LOGIC;
+           RST : in  STD_LOGIC;
            PCnew : in  STD_LOGIC_VECTOR (15 downto 0);
+           PCupdate : in  STD_LOGIC;
            IRdata : in  STD_LOGIC_VECTOR (15 downto 0); -- 从访存控制模块发来的指令字
            PCout : out  STD_LOGIC_VECTOR (15 downto 0); -- 发送指令地址
            RDIR : out  STD_LOGIC; -- 高电平令访存控制模块读指令字
@@ -49,16 +51,22 @@ architecture Behavioral of IFctrl is
 	
 begin
 
-	RDIR <= T0; -- 控制读指令
+	RDIR <= T0 and CLK; -- 控制读指令
 	
-	process (T0)
+	process (T0, CLK, IRdata, PCupdate, PCnew, RST)
 	begin
-		if T0 = '1' and T0'event then
+		if RST = '1' then
+			PC <= X"0008";--main program starts from 0010h
+        elsif PCupdate = '1' then
             PC <= PCnew;
+        elsif (T0 = '1' and falling_edge(CLK)) then
+            --IR <= IRdata; -- RDIR = '0'时访存控制输出不更新
+            PC <= PC + 2;
         end if;
 	end process;
 	
 	PCout <= PC;
-	IRout <= IRdata when (T0 and CLK) = '1' else unaffected;
+	IR <= IRdata when (T0 and CLK) = '1' else IR;
+    IRout <= IR;
 end Behavioral;
 
