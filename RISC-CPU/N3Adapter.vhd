@@ -37,6 +37,7 @@ entity N3Adapter is
            btnr : in  STD_LOGIC;
            btns : in  STD_LOGIC;
            btnu : in  STD_LOGIC;
+           btnd : in std_logic;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0);
            --signal on connector JA 
@@ -78,6 +79,7 @@ architecture Behavioral of N3Adapter is
            nBLE : out  STD_LOGIC;
            nPRD : out  STD_LOGIC;
            nPWR : out  STD_LOGIC;
+           Cout : out  std_logic;
            IR : out  STD_LOGIC_VECTOR (15 downto 0);
            PC : out  STD_LOGIC_VECTOR (15 downto 0);
            R0 : out  STD_LOGIC_VECTOR (7 downto 0);
@@ -108,8 +110,8 @@ architecture Behavioral of N3Adapter is
     end component;
     
     component PmodCLP
-    Port ( 	btnr:	in std_logic;									--use BTNR as reset input
-			clk:	in std_logic;									--100 MHz clock input
+    Port ( 	RESET:	in std_logic;									--use BTNS as reset input
+			CLK:	in std_logic;									--100 MHz clock input
 			IR:     in std_logic_vector(15 downto 0);
             R0:     in std_logic_vector(7 downto 0);
             R1:     in std_logic_vector(7 downto 0);
@@ -136,7 +138,7 @@ architecture Behavioral of N3Adapter is
            btnu : in  STD_LOGIC;
            T : in  STD_LOGIC_VECTOR (3 downto 0);
            clk : in  STD_LOGIC;
-           btnr_deb : in  STD_LOGIC;
+           Cy : in  STD_LOGIC;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0));
     end component;
@@ -148,6 +150,7 @@ architecture Behavioral of N3Adapter is
     signal T : std_logic_vector(3 downto 0);
     signal IR : STD_LOGIC_VECTOR (15 downto 0);
     signal PC : STD_LOGIC_VECTOR (15 downto 0);
+    signal Cout : std_logic;
     signal R0 : STD_LOGIC_VECTOR (7 downto 0);
     signal R1 : STD_LOGIC_VECTOR (7 downto 0);
     signal R2 : STD_LOGIC_VECTOR (7 downto 0);
@@ -172,6 +175,20 @@ begin
                 CLK => CLK,
                 btn => btnr,
                 btn_deb => btnr_deb);
+    comPmodCLP: PmodCLP port map(
+                RESET => btns,
+                CLK => CLK,
+                IR => IR,
+                R0 => R0,
+                R1 => R1,
+                R2 => R2,
+                R3 => R3,
+                R4 => R4,
+                R5 => R5,
+                R6 => R6,
+                R7 => R7,
+                JA => JA,
+                JB => JB);
     comCPU: CPU port map(
                RST => btns,
                CLK => btnr_deb,
@@ -187,6 +204,7 @@ begin
                nBLE => RamLB,
                nPRD => nPRD,
                nPWR => nPWR,
+               Cout => Cout,
                IR => IR,
                PC => PC,
                R0 => R0,
@@ -206,26 +224,12 @@ begin
                nPWR => nPWR,
                sw => sw,
                led => led);
-    comPmodCLP: PmodCLP port map(
-            btnr => btnu,
-			clk => clk,
-			IR => IR,
-            R0 => R0,
-            R1 => R1,
-            R2 => R2,
-            R3 => R3,
-            R4 => R4,
-            R5 => R5,
-            R6 => R6,
-            R7 => R7,
-			JA => JA,
-            JB => JB);
 	comsegDisplay: segDisplay port map(
             T => T,
             PC => PC,
             IR => IR,
             btnu => btnu,
-            btnr_deb => btnr_deb, -- Cy
+            Cy => Cout,
             clk => clk,
             an => an,
             seg => seg);

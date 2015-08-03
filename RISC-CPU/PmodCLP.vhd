@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity PmodCLP is
-    Port ( 	btnr:	in std_logic;									--use BTNR as reset input
+    Port ( 	RESET:	in std_logic;									--use RESET as reset input
 			clk:	in std_logic;									--100 MHz clock input
 			IR:     in std_logic_vector(15 downto 0);
             R0:     in std_logic_vector(7 downto 0);
@@ -140,7 +140,7 @@ architecture Behavioral of PmodCLP is
                         34 => "10"&X"20",
                         35 => "10"&X"20",
                         36 => "10"&X"20",
-                        37 => "00"&X"02");          --return home					
+                        37 => "00"&X"02");          --return home
     signal lcd_cmd_ptr : integer range 0 to LCD_CMDS'HIGH + 1 := 0;
 
     
@@ -224,10 +224,10 @@ begin
 		end process;
 	
 	--This process runs the LCD state machine
-	process (oneUSClk, btnr)
+	process (oneUSClk, RESET)
 		begin
 			if oneUSClk = '1' and oneUSClk'Event then
-				if btnr = '1' then
+				if RESET = '1' then
 					stCur <= stPowerOn_Delay;
 				else
 					stCur <= stNext;

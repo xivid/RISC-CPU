@@ -33,22 +33,23 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity EXctrl is
     Port ( -- RST : in  STD_LOGIC;
-			  CLK : in STD_LOGIC;
-           T1 : in  STD_LOGIC;
-           Rupdate : in  STD_LOGIC;
-           Raddr : in  STD_LOGIC_VECTOR (2 downto 0);
-           Rdata : in  STD_LOGIC_VECTOR (7 downto 0);
-           IR : in  STD_LOGIC_VECTOR (15 downto 0);
-			  R0 : out STD_LOGIC_VECTOR (7 downto 0);
-			  R1 : out STD_LOGIC_VECTOR (7 downto 0);
-			  R2 : out STD_LOGIC_VECTOR (7 downto 0);
-			  R3 : out STD_LOGIC_VECTOR (7 downto 0);
-			  R4 : out STD_LOGIC_VECTOR (7 downto 0);
-			  R5 : out STD_LOGIC_VECTOR (7 downto 0);
-			  R6 : out STD_LOGIC_VECTOR (7 downto 0);
-			  R7 : out STD_LOGIC_VECTOR (7 downto 0);
-           Addr : out  STD_LOGIC_VECTOR (15 downto 0) := X"0000";
-           ALUOUT : out  STD_LOGIC_VECTOR (7 downto 0) := X"00");
+            CLK : in STD_LOGIC;
+            T1 : in  STD_LOGIC;
+            Rupdate : in  STD_LOGIC;
+            Raddr : in  STD_LOGIC_VECTOR (2 downto 0);
+            Rdata : in  STD_LOGIC_VECTOR (7 downto 0);
+            IR : in  STD_LOGIC_VECTOR (15 downto 0);
+            Cout : out std_logic;
+            R0 : out STD_LOGIC_VECTOR (7 downto 0);
+            R1 : out STD_LOGIC_VECTOR (7 downto 0);
+            R2 : out STD_LOGIC_VECTOR (7 downto 0);
+            R3 : out STD_LOGIC_VECTOR (7 downto 0);
+            R4 : out STD_LOGIC_VECTOR (7 downto 0);
+            R5 : out STD_LOGIC_VECTOR (7 downto 0);
+            R6 : out STD_LOGIC_VECTOR (7 downto 0);
+            R7 : out STD_LOGIC_VECTOR (7 downto 0);
+            Addr : out  STD_LOGIC_VECTOR (15 downto 0) := X"0000";
+            ALUOUT : out  STD_LOGIC_VECTOR (7 downto 0) := X"00");
 end EXctrl;
 
 architecture Behavioral of EXctrl is
@@ -57,7 +58,7 @@ architecture Behavioral of EXctrl is
 	signal A, B : STD_LOGIC_VECTOR(7 downto 0) := X"00";
 	signal Cy : STD_LOGIC := '0';
 begin
-	
+	Cout <= Cy;
 	R0 <= Reg(0);
 	R1 <= Reg(1);
 	R2 <= Reg(2);

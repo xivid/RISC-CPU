@@ -45,6 +45,7 @@ entity CPU is
            nBLE : out  STD_LOGIC;
            nPRD : out  STD_LOGIC;
            nPWR : out  STD_LOGIC;
+           Cout : out  STD_LOGIC;
            IR : out  STD_LOGIC_VECTOR (15 downto 0);
            PC : out  STD_LOGIC_VECTOR (15 downto 0);
            R0 : out  STD_LOGIC_VECTOR (7 downto 0);
@@ -89,6 +90,7 @@ architecture Behavioral of CPU is
 		Raddr : IN  std_logic_vector(2 downto 0);
 		Rdata : IN  std_logic_vector(7 downto 0);
 		IR : IN  std_logic_vector(15 downto 0);
+        Cout : out std_logic;
 		R0 : out STD_LOGIC_VECTOR (7 downto 0);
 		R1 : out STD_LOGIC_VECTOR (7 downto 0);
 		R2 : out STD_LOGIC_VECTOR (7 downto 0);
@@ -184,7 +186,7 @@ architecture Behavioral of CPU is
 begin
    comCLK: CLKctrl PORT MAP (
           CLK => CLK,
-          RST => RST,
+          RST => RST, --加个信号有初始值0？
           T => Tout
         );
    comIF: IFctrl PORT MAP (
@@ -205,6 +207,7 @@ begin
           Raddr => Raddr,
           Rdata => Rdata,
           IR => IRout,
+          Cout => Cout,
 		  R0 => R0,
 		  R1 => R1, 
 		  R2 => R2,

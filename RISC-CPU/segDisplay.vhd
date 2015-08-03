@@ -36,7 +36,7 @@ entity segDisplay is
            btnu : in  STD_LOGIC;
            T : in  STD_LOGIC_VECTOR (3 downto 0);
            clk : in  STD_LOGIC;
-           btnr_deb : in  STD_LOGIC;
+           Cy : in  STD_LOGIC;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0));
 end segDisplay;
@@ -100,10 +100,10 @@ begin
 		end if;
 	end process;
     
-    digit1 <= (not btnr_deb)&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
-	digit2 <= (not btnr_deb)&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
-	digit3 <= (not btnr_deb)&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
-	digit4 <= (not btnr_deb)&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
+    digit1 <= (not Cy)&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
+	digit2 <= (not Cy)&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
+	digit3 <= (not Cy)&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
+	digit4 <= (not Cy)&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
 
 end Behavioral;
 
