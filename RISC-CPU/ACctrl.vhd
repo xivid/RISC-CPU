@@ -19,7 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -38,6 +39,8 @@ entity ACctrl is
            PC : in  STD_LOGIC_VECTOR (15 downto 0);
            Addr : in  STD_LOGIC_VECTOR (15 downto 0);
            ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
+           pushPC : in std_logic;
+           popPC : in std_logic;
            nBLE : out  STD_LOGIC;
            nBHE : out  STD_LOGIC;
            ABUS : out  STD_LOGIC_VECTOR (15 downto 0);
@@ -52,115 +55,54 @@ entity ACctrl is
            nPREQ : out  STD_LOGIC;
            IR : out  STD_LOGIC_VECTOR (15 downto 0);
            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
-			  protectPC: in std_logic;
-			  pcProtected: out std_logic;
-			  T3: in std_logic;
-			  inIR: in std_logic_vector(15 downto 0);
-			  returnAddr: out std_logic_vector(15 downto 0)
-			  );
+           returnAddr : out STD_LOGIC_VECTOR (15 downto 0));
 end ACctrl;
 
 architecture Behavioral of ACctrl is
-	signal address, data : std_logic_vector (15 downto 0);
-	shared variable stackAddress: std_logic_vector(15 downto 0):= "00001000000000000";--starts from 1000h
-	shared variable top: integer:=0;
+	signal address : std_logic_vector (15 downto 0);
+    signal stackTop : std_logic_vector (15 downto 0) := X"1000";
 begin
-
 	-- 形成访存/访IO的地址
 	address <= Addr when (nMEM = '0' or nIO = '0') else
 			   PC when RDIR = '1' else
                address;
-
-	process(protectPC,T3)
+	process (RDIR, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address, pushPC, popPC)
 	begin
-		if protectPC = '1' and T3 = '1' then
-			nMREQ <= '0';
-			nBLE <= '0';
-			nBHE <= '0';
-			nRD <= '1';
-			nWR <= '0';
-			top:= top+2;
-			ABUS <= stackAddr+conv_std_logic_vector(top,16);
-			DBUS <= PC+conv_std_logic_vector(2,16);--next instruction
-			pcProtected <= '1';
-		else
-			nMREQ <= '1';
-			nBLE <= '1';
-			nBHE <= '1';
-			nRD <= '1';
-			nWR <= '1';
-			pcProtected <= '0';
-		end if;
-	end process;
-	
-	process(inIR,T2)--return address
-	begin
-		if inIR(15 downto 11) = "11111" and T2 = '1' then
-			nMREQ <= '0';
-			nBLE <= '0';
-			nBHE <= '0';
-			nRD <= '0';
-			nWR <= '1';
-			ABUS <= stackAddr+conv_std_logic_vector(top,16);
-			top:= top - 2;
-			DBUS <= (others=>'Z');
-			returnAddr <= DBUS;
-		else
-			nMREQ <= '1';
-			nBLE <= '1';
-			nBHE <= '1';
-			nRD <= '1';
-			nWR <= '1';
-		end if;
-	end process;
-
---	-- 发访存控制信号
-----	nMREQ <= (not RDIR) and nMEM;
-----	nBLE <= (not RDIR) and address(0);
-----	nBHE <= RDIR nor address(0); -- neither read word nor read upper byte -> 1
-----	nRD <= (RDIR nor RD) or nMEM;
-----	nWR <= (not WR) or nMEM; -- RDIR or?
---	nMREQ <= '0' when (nMEM = '0' or RDIR = '1') else '1';
---	nBLE <= '0' when ((nMEM = '0' and (RD = '1' or WR = '1') and address(0) = '0') or RDIR = '1') else '1';
---	nBHE <= '0' when ((nMEM = '0' and (RD = '1' or WR = '1') and address(0) = '1') or RDIR = '1') else '1';
---	nRD <= '0' when ((nMEM = '0' and RD = '1') or RDIR = '1') else '1';
---	nWR <= '0' when (nMEM = '0' and WR = '1') else '1';
---	ABUS <= address;
---	DBUS <= data when (WR = '1' and nMEM = '0') else (others => 'Z');
---	
---	-- 发访IO控制信号
---	nPREQ <= nIO;
---	nPRD <= (not RD) or nIO; -- RD = '1' and nIO = '0'
---	nPWR <= (not WR) or nIO; -- WR = '1' and nIO = '0'
---	IOAD <= address(1 downto 0);
---	IODB <= data(7 downto 0) when (WR = '1' and nIO = '0') else (others => 'Z');
---	
---	-- 数据暂存与输出
---	data <= ALUOUT & ALUOUT when WR = '1' else -- 复制扩展，以便自由送高位或低位
---			  IODB & IODB when (RD = '1' and nIO = '0') else
---			  DBUS when (RDIR = '1' or (RD = '1' and nMEM = '0'));
---	Rtemp <= data(7 downto 0) when ((nMEM = '0' and address(0) = '0') or (nIO = '0' and RD = '1')) else 
---				data(15 downto 8) when (nMEM = '0' and address(0) = '1');
---	IR <= data when RDIR = '1';
---	
--- Solution B	
-	process (RDIR, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address)
-	begin
-		nMREQ <= '1';
-		nPREQ <= '1';
-		ABUS <= address;
-		IOAD <= address(1 downto 0);
-		IODB <= (others => 'Z');
+        if pushPC'event and pushPC = '0' then
+            stackTop <= stackTop + 2;
+        end if;
+        if popPC'event and popPC = '0' then
+            stackTop <= stackTop - 2;
+        end if;
 		if RDIR = '1' then
 			nMREQ <= '0';
 			nBLE <= '0';
 			nBHE <= '0';
 			nRD <= '0';
 			nWR <= '1';
+            ABUS <= address;
             DBUS <= (others => 'Z');
 			IR <= DBUS;
+        elsif pushPC = '1' then -- 要进入下一层中断，先将PC压栈
+            nMREQ <= '0';
+            nBLE <= '0';
+            nBHE <= '0';
+            nRD <= '1';
+            nWR <= '0';
+            ABUS <= stackTop;
+            DBUS <= PC;
+        elsif popPC = '1' then
+            nMREQ <= '0';
+            nBLE <= '0';
+            nBHE <= '0';
+            nRD <= '0';
+            nWR <= '1';
+            ABUS <= stackTop - 2;
+            DBUS <= (others => 'Z');
+            returnAddr <= DBUS;
 		elsif nMEM = '0' then
             nMREQ <= '0';
+            ABUS <= address;
             nBLE <= address(0);
             nBHE <= not address(0);
             nRD <= not RD;
@@ -176,18 +118,25 @@ begin
             end if;
 		elsif nIO = '0' then
             nPREQ <= '0';
+            IOAD <= address(1 downto 0);
+            nPRD <= not RD;
+            nPWR <= not WR;
             if RD = '1' then
-                nPRD <= '0';
-                nPWR <= '1';
                 IODB <= (others => 'Z');
                 Rtemp <= IODB;
             elsif WR = '1' then
-                nPRD <= '1';
-                nPWR <= '0';
                 IODB <= ALUOUT;
             end if;
+        else
+            nMREQ <= '1';
+            nPREQ <= '1';
+            ABUS <= address;
+            DBUS <= (others => 'Z');
+            IOAD <= address(1 downto 0);
+            IODB <= (others => 'Z');
 		end if;
 	end process;
+	
 	
 end Behavioral;
 

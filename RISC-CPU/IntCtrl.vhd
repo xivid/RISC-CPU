@@ -29,83 +29,64 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity IntCtrl is
+entity INTctrl is
 port(
 	intr: in std_logic_vector(7 downto 0);
 	newImr: in std_logic_vector(7 downto 0);
-	intServicePort: out integer;
-	eint: in std_logic;
-	T3: in std_logic;
 	intrUpdate: in std_logic;
-	irrUpdated: out std_logic;
+	imrUpdate: in std_logic;
+    isrUpdate: in std_logic;
 	nextService: out std_logic;
-	pcProtected: in std_logic;
-	imrFetched: in std_logic;
-	returnLastInt: in std_logic;
-	alreadyReturn: out std_logic
+    intServicePort: out integer;
+    nowimr: out std_logic_vector(7 downto 0)
 );
-end IntCtrl;
+end INTctrl;
 
-architecture Behavioral of IntCtrl is
-	signal irr: std_logic_vector(7 downto 0):= "00000000";
-	signal isr: std_logic_vector(7 downto 0):= "00000000";
-	signal imr: std_logic_vector(7 downto 0):= "00000000";
-	type stackType is array(7 downto 0) of std_logic_vector(7 downto 0);
-	shared variable imrStack: stackType;
-	shared variable top: integer:=0;
+architecture Behavioral of INTctrl is
+	signal irr: std_logic_vector(7 downto 0):= "00000000"; -- 待响应的序号
+	signal isr: std_logic_vector(7 downto 0):= "00000000"; -- 尚未执行完毕的中断服务程序
+	signal imr: std_logic_vector(7 downto 0):= "00000000"; -- 屏蔽字
+    signal runningPort : integer;
 begin
-	
-	process(intrUpdate)
-		variable servicePort: integer:=0;
+	intServicePort <= runningPort;
+    nowimr <= imr;
+	process(intrUpdate, intr, imr)
 	begin
 		if intrUpdate='1' then
-			setIRR: while servicePort < 8 loop
-				irr(servicePort) <= '0' when imr(i) = '1' else intr(i);
+			setIRR: for servicePort in 0 to 7 loop
+				irr(servicePort) <= '0' when imr(servicePort) = '1' else intr(servicePort);
 			end loop;
-			irrUpdated<='1';
-		else
-			irrUpdated<='0';
 		end if;
 	end process;
 	
-	process(irr,eint,isr,imr)--int active
-		variable servicePort: integer:=0;
+    process(isrUpdate, runningPort)
+    begin
+        if isrUpdate = '1' then
+            isr(runningPort) <= '0';
+        end if;
+    end process;
+	process(irr,isr) --int active
 	begin
 		if conv_integer(irr)/=0 then
-			getNextInt: while servicePort < 8 loop
-			if (irr(servicePort) and not isr(servicePort))='1' and imr(servicePort) then
-				isr(servicePort) <= '1';
-				irr(servicePort) <= '0';
-				intServicePort <= servicePort;
-				nextServicePort <= '1';
-				imrStack(top):=imr;
-				top:=top+1;
-				exit;
-			else 
-				servicePort := servicePort+1;
-				nextServicePort <= '0';
-			end if;
+            nextService <= '0';
+			getNextInt: for servicePort in 0 to 7 loop
+                if (irr(servicePort) and (not isr(servicePort)))='1' then
+                    isr(servicePort) <= '1';
+                    irr(servicePort) <= '0';
+                    runningPort <= servicePort;
+                    nextService <= '1';
+                    exit;
+                end if;
 			end loop;
 		else
-			nextServicePort <= '0';
+			nextService <= '0';
 		end if;
 	end process;
 
-	process(imrFetched,pcProtected)
+	process(imrUpdate, newImr)
 	begin
-		if imrFetched = '1' and pcProtected = '1' then
+		if imrUpdate = '1' then
 			imr <= newImr;
-		end if;
-	end process;
-	
-	process(returnLastInt)
-	begin
-		if returnLastInt = '1' and T3='1' then
-			imr <= imrStack(top);
-			top:= top-1;
-			alreadyReturn <= '1';
-		else
-			alreadyReturn <= '0';
 		end if;
 	end process;
 

@@ -30,22 +30,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity MEMctrl is
-    Port ( -- RST : in  STD_LOGIC;
-			  CLK : in STD_LOGIC;
-           Addrin : in  STD_LOGIC_VECTOR (15 downto 0);
+    Port ( Addrin : in  STD_LOGIC_VECTOR (15 downto 0);
            Addr : out  STD_LOGIC_VECTOR (15 downto 0);
-           OP : in  STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
+           IR : in  STD_LOGIC_VECTOR (15 downto 0);
            DATA : in  STD_LOGIC_VECTOR (7 downto 0);
            T2 : in  STD_LOGIC;
-			  T3: in STD_LOGIC;
+           intr : out std_logic_vector (7 downto 0);
+           intrUpdate : out std_logic;
+           isrUpdate : out std_logic;
            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
            nMEM : out  STD_LOGIC;
            nIO : out  STD_LOGIC;
            RD : out  STD_LOGIC;
            WR : out  STD_LOGIC;
-			  fetchImr: in std_logic;
-			  protectPC: in std_logic
-			  );
+           popPC : out STD_LOGIC);
 end MEMctrl;
 
 architecture Behavioral of MEMctrl is
@@ -55,44 +53,15 @@ begin
 	Addr <= Addrin;
 	
 	-- ¶ÁÐ´¿ØÖÆ
-	nMEM <= '0' when (T2 = '1' and (OP = "01110" or OP = "01100" or (OP="11000" and fetchImr = '1'))) else '1';
-	nIO <= '0' when (T2 = '1' and (OP = "10000" or OP = "10010")) else '1';
-	WR <= '1' when (T2 = '1' and (OP = "01100" or OP = "10010")) else'0';
-	RD <= '1' when (T2 = '1' and (OP = "01110" or OP = "10000" or (OP="11000" and fetchImr = '1'))) else '0';
---	process (T2, CLK, OP)
---	begin
---		WR <= '0';
---		RD <= '0';
---		nIO <= '1';
---		nMEM <= '1';
---		if T2 = '1' then
---			case OP is
---				when "01110" => -- LDA
---					nMEM <= '0';
---					RD <= '1';
---				when "10000" => -- IN
---					nIO <= '0';
---					RD <= '1';
---				when "01100" => -- STA
---					nMEM <= '0';
---					WR <= '1';
---				when "10010" => -- OUT
---					nIO <= '0';
---					WR <= '1';
---				when others => null;
---			end case;
---		end if;
---	end process;
-
+	nMEM <= '0' when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "01100")) else '1';
+	nIO <= '0' when (T2 = '1' and (IR(15 downto 11) = "10000" or IR(15 downto 11) = "10010")) else '1';
+	WR <= '1' when (T2 = '1' and (IR(15 downto 11) = "01100" or IR(15 downto 11) = "10010")) else '0';
+	RD <= '1' when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "10000")) else '0';
+    intr(conv_integer(IR(2 downto 0))) <= '1' when (T2 = '1' and (IR(15 downto 11) = "11000")) else '0';
+    intrUpdate <= '1' when (T2 = '1' and (IR(15 downto 11) = "11000")) else '0'; -- int
+    isrUpdate <= '1' when (T2 = '1' and (IR(15 downto 11) = "11010")) else '0'; -- iret
+    popPC <= '1' when (T2 = '1' and (IR(15 downto 11) = "11010")) else '0';
 	-- ¸üÐÂRtemp
-	Rtemp <= DATA when (T2 = '1' and (OP = "01110" or OP = "10000" or (OP="11000" and fetchImr='1'))) else unaffected;
---	process(T2, CLK, DATA, OP)
---	begin
---		if T2 = '1' and (OP = "01110" or OP = "10000") then
---			if falling_edge(CLK) then
---				Rtemp <= DATA;
---			end if;
---		end if;
---	end process;
+	Rtemp <= DATA when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "10000")) else unaffected;
 end Behavioral;
 

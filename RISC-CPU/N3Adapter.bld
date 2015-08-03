@@ -31,7 +31,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 165420 kilobytes
 
 Writing NGD file "N3Adapter.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "N3Adapter.bld"...
