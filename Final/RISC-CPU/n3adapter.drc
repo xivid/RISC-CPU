@@ -1,0 +1,31 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Aug 02 17:43:41 2015
+
+drc -z N3Adapter.ncd N3Adapter.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/nMEM_RDIR_OR_41_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/nIO_RD_MUX_241_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/comAC/nMREQ_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_nMEM_AND_84_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_nMEM_AND_80_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+DRC detected 0 errors and 6 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

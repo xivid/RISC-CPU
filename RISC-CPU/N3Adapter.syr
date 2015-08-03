@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.06 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: N3Adapter.prj
 
@@ -167,58 +167,58 @@ Elaborating entity <ACctrl> (architecture <Behavioral>) from library <work>.
 Elaborating entity <IOConv> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <PmodCLP> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 167. Case statement is complete. others clause is never selected
 WARNING:HDLCompiler:634 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 104: Net <LCD_CMDS[0][9]> does not have a driver.
 
 Elaborating entity <segDisplay> (architecture <Behavioral>) from library <work>.
@@ -513,15 +513,15 @@ WARNING:Xst:2935 - Signal 'LCD_CMDS<37>', unconnected in block 'PmodCLP', is tie
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 7-bit adder for signal <clkCount[6]_GND_179_o_add_1_OUT> created at line 179.
-    Found 21-bit adder for signal <count[20]_GND_179_o_add_4_OUT> created at line 191.
-    Found 6-bit adder for signal <lcd_cmd_ptr[5]_GND_179_o_add_21_OUT> created at line 213.
+    Found 7-bit adder for signal <clkCount[6]_GND_179_o_add_1_OUT> created at line 181.
+    Found 21-bit adder for signal <count[20]_GND_179_o_add_4_OUT> created at line 193.
+    Found 6-bit adder for signal <lcd_cmd_ptr[5]_GND_179_o_add_21_OUT> created at line 215.
     Found 32x70-bit Read Only RAM for signal <_n0295>
     Summary:
 	inferred   1 RAM(s).
 	inferred   3 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
-	inferred  60 Multiplexer(s).
+	inferred  48 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <PmodCLP> synthesized.
 
@@ -563,9 +563,9 @@ Macro Statistics
  8-bit register                                        : 12
 # Latches                                              : 116
  1-bit latch                                           : 116
-# Multiplexers                                         : 166
+# Multiplexers                                         : 154
  1-bit 2-to-1 multiplexer                              : 77
- 10-bit 2-to-1 multiplexer                             : 59
+ 10-bit 2-to-1 multiplexer                             : 47
  16-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 1
  6-bit 2-to-1 multiplexer                              : 1
@@ -591,8 +591,8 @@ INFO:Xst:2261 - The FF/Latch <shift_0> in Unit <comsegDisplay> is equivalent to 
 INFO:Xst:2261 - The FF/Latch <shift_1> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_0> 
 
 Synthesizing (advanced) Unit <PmodCLP>.
-The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
 The following registers are absorbed into counter <lcd_cmd_ptr>: 1 register on signal <lcd_cmd_ptr>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0295> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
@@ -634,9 +634,9 @@ Macro Statistics
  7-bit up counter                                      : 1
 # Registers                                            : 159
  Flip-Flops                                            : 159
-# Multiplexers                                         : 165
+# Multiplexers                                         : 153
  1-bit 2-to-1 multiplexer                              : 77
- 10-bit 2-to-1 multiplexer                             : 59
+ 10-bit 2-to-1 multiplexer                             : 47
  16-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 23
@@ -779,17 +779,17 @@ Top Level Output File Name         : N3Adapter.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1156
+# BELS                             : 1158
 #      GND                         : 1
 #      INV                         : 10
 #      LUT1                        : 65
 #      LUT2                        : 43
-#      LUT3                        : 173
-#      LUT4                        : 84
-#      LUT5                        : 179
-#      LUT6                        : 355
+#      LUT3                        : 177
+#      LUT4                        : 78
+#      LUT5                        : 186
+#      LUT6                        : 353
 #      MUXCY                       : 111
-#      MUXF7                       : 17
+#      MUXF7                       : 16
 #      VCC                         : 1
 #      XORCY                       : 117
 # FlipFlops/Latches                : 345
@@ -823,14 +823,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             309  out of  18224     1%  
- Number of Slice LUTs:                  909  out of   9112     9%  
-    Number used as Logic:               909  out of   9112     9%  
+ Number of Slice LUTs:                  912  out of   9112    10%  
+    Number used as Logic:               912  out of   9112    10%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1024
-   Number with an unused Flip Flop:     715  out of   1024    69%  
-   Number with an unused LUT:           115  out of   1024    11%  
-   Number of fully used LUT-FF pairs:   194  out of   1024    18%  
+ Number of LUT Flip Flop pairs used:   1027
+   Number with an unused Flip Flop:     718  out of   1027    69%  
+   Number with an unused LUT:           115  out of   1027    11%  
+   Number of fully used LUT-FF pairs:   194  out of   1027    18%  
    Number of unique control sets:        35
 
 IO Utilization: 
@@ -892,8 +892,8 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 9.017ns (Maximum Frequency: 110.900MHz)
-   Minimum input arrival time before clock: 7.067ns
-   Maximum output required time after clock: 14.943ns
+   Minimum input arrival time before clock: 7.190ns
+   Maximum output required time after clock: 13.980ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -953,16 +953,16 @@ Timing constraint: Default period analysis for Clock 'CLK'
   Total number of paths / destination ports: 2057 / 77
 -------------------------------------------------------------------------
 Delay:               6.286ns (Levels of Logic = 4)
-  Source:            comPmodCLP/count_16 (FF)
+  Source:            comPmodCLP/count_7 (FF)
   Destination:       comPmodCLP/count_20 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: comPmodCLP/count_16 to comPmodCLP/count_20
+  Data Path: comPmodCLP/count_7 to comPmodCLP/count_20
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              4   0.447   1.048  comPmodCLP/count_16 (comPmodCLP/count_16)
+     FDR:C->Q              4   0.447   1.048  comPmodCLP/count_7 (comPmodCLP/count_7)
      LUT6:I0->O            2   0.203   0.961  comPmodCLP/delayOK211 (comPmodCLP/delayOK21)
      LUT5:I0->O            1   0.203   0.684  comPmodCLP/delayOK3 (comPmodCLP/delayOK3)
      LUT4:I2->O            1   0.203   0.684  comPmodCLP/delayOK4 (comPmodCLP/delayOK4)
@@ -989,7 +989,7 @@ Delay:               6.884ns (Levels of Logic = 5)
     ----------------------------------------  ------------
      FDS:C->Q             10   0.447   1.085  comPmodCLP/stCur_FSM_FFd4 (comPmodCLP/stCur_FSM_FFd4)
      LUT6:I3->O            1   0.205   0.580  comPmodCLP/delayOK10 (comPmodCLP/delayOK10)
-     LUT6:I5->O            1   0.205   0.580  comPmodCLP/delayOK12_SW0 (N128)
+     LUT6:I5->O            1   0.205   0.580  comPmodCLP/delayOK12_SW0 (N126)
      LUT6:I5->O           27   0.205   1.221  comPmodCLP/delayOK12 (comPmodCLP/delayOK)
      LUT5:I4->O            8   0.205   0.803  comPmodCLP/GND_179_o_GND_179_o_OR_187_o1 (comPmodCLP/GND_179_o_GND_179_o_OR_187_o)
      LUT6:I5->O            5   0.205   0.714  comPmodCLP/Reset_OR_DriverANDClockEnable1 (comPmodCLP/Reset_OR_DriverANDClockEnable)
@@ -1069,7 +1069,7 @@ Offset:              4.095ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
   Total number of paths / destination ports: 17 / 17
 -------------------------------------------------------------------------
-Offset:              3.482ns (Levels of Logic = 2)
+Offset:              3.356ns (Levels of Logic = 2)
   Source:            btnr (PAD)
   Destination:       comBtnrDeb/btn_deb (FF)
   Destination Clock: CLK rising
@@ -1078,37 +1078,37 @@ Offset:              3.482ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            23   1.222   1.153  btnr_IBUF (btnr_IBUF)
+     IBUF:I->O            17   1.222   1.027  btnr_IBUF (btnr_IBUF)
      INV:I->O              1   0.206   0.579  comBtnrDeb/btn_inv1_INV_0 (comBtnrDeb/btn_inv)
      FDE:CE                    0.322          comBtnrDeb/btn_deb
     ----------------------------------------
-    Total                      3.482ns (1.750ns logic, 1.732ns route)
-                                       (50.3% logic, 49.7% route)
+    Total                      3.356ns (1.750ns logic, 1.606ns route)
+                                       (52.2% logic, 47.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comPmodCLP/OneUSClk'
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              2.805ns (Levels of Logic = 1)
-  Source:            btnr (PAD)
+Offset:              2.824ns (Levels of Logic = 1)
+  Source:            btnu (PAD)
   Destination:       comPmodCLP/stCur_FSM_FFd1 (FF)
   Destination Clock: comPmodCLP/OneUSClk rising
 
-  Data Path: btnr to comPmodCLP/stCur_FSM_FFd1
+  Data Path: btnu to comPmodCLP/stCur_FSM_FFd1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            23   1.222   1.153  btnr_IBUF (btnr_IBUF)
+     IBUF:I->O            24   1.222   1.172  btnu_IBUF (btnu_IBUF)
      FDS:S                     0.430          comPmodCLP/stCur_FSM_FFd4
     ----------------------------------------
-    Total                      2.805ns (1.652ns logic, 1.153ns route)
-                                       (58.9% logic, 41.1% route)
+    Total                      2.824ns (1.652ns logic, 1.172ns route)
+                                       (58.5% logic, 41.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comsegDisplay/js_15'
   Total number of paths / destination ports: 83 / 8
 -------------------------------------------------------------------------
-Offset:              7.067ns (Levels of Logic = 6)
+Offset:              7.190ns (Levels of Logic = 6)
   Source:            btnu (PAD)
   Destination:       comsegDisplay/seg_3 (FF)
   Destination Clock: comsegDisplay/js_15 rising
@@ -1117,7 +1117,7 @@ Offset:              7.067ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            18   1.222   1.154  btnu_IBUF (btnu_IBUF)
+     IBUF:I->O            24   1.222   1.277  btnu_IBUF (btnu_IBUF)
      LUT4:I2->O           10   0.203   1.201  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1151 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT115)
      LUT5:I0->O            1   0.203   0.808  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12122 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12122)
      LUT3:I0->O            2   0.205   0.981  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT12124 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1212)
@@ -1125,8 +1125,8 @@ Offset:              7.067ns (Levels of Logic = 6)
      LUT6:I5->O            1   0.205   0.000  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1211 (comsegDisplay/shift[3]_digit4[7]_wide_mux_2_OUT<3>)
      FD:D                      0.102          comsegDisplay/seg_3
     ----------------------------------------
-    Total                      7.067ns (2.343ns logic, 4.724ns route)
-                                       (33.2% logic, 66.8% route)
+    Total                      7.190ns (2.343ns logic, 4.847ns route)
+                                       (32.6% logic, 67.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comCLK/tmp[2]_dff_1_3'
@@ -1160,7 +1160,7 @@ Offset:              2.217ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           3   1.222   0.755  MemDB_15_IOBUF (N8)
+     IOBUF:IO->O           3   1.222   0.755  MemDB_15_IOBUF (N2)
      LUT3:I1->O            1   0.203   0.000  comCPU/comAC/Mmux_DBUS[15]_ALUOUT[7]_mux_2_OUT<15>11 (comCPU/comAC/DBUS[15]_ALUOUT[7]_mux_2_OUT<15>)
      LDC:D                     0.037          comCPU/comAC/Z_13_o_nIO_DLATCH_62_q
     ----------------------------------------
@@ -1169,28 +1169,28 @@ Offset:              2.217ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comCLK/tmp[2]_dff_1_0'
-  Total number of paths / destination ports: 960 / 15
+  Total number of paths / destination ports: 991 / 15
 -------------------------------------------------------------------------
-Offset:              10.911ns (Levels of Logic = 7)
-  Source:            comCPU/comIF/IRout_12 (LATCH)
-  Destination:       JC<1> (PAD)
+Offset:              11.413ns (Levels of Logic = 7)
+  Source:            comCPU/comIF/IRout_14 (LATCH)
+  Destination:       JA<1> (PAD)
   Source Clock:      comCPU/comCLK/tmp[2]_dff_1_0 falling
 
-  Data Path: comCPU/comIF/IRout_12 to JC<1>
+  Data Path: comCPU/comIF/IRout_14 to JA<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q             96   0.498   2.195  comCPU/comIF/IRout_12 (comCPU/comIF/IRout_12)
-     LUT5:I0->O            4   0.203   0.912  comPmodCLP/Mram__n0295231 (comPmodCLP/Mram__n029523)
-     LUT5:I2->O            6   0.205   1.089  comPmodCLP/n0140<3>91 (comPmodCLP/n0140<3>9)
-     LUT6:I1->O            1   0.203   0.580  comPmodCLP/n0140<1>12 (comPmodCLP/n0140<1>24)
-     LUT6:I5->O            1   0.205   0.684  comPmodCLP/n0140<1>13 (comPmodCLP/n0140<1>25)
-     LUT6:I4->O            1   0.203   0.580  comPmodCLP/n0140<1>14 (comPmodCLP/n0140<1>26)
-     LUT6:I5->O            1   0.205   0.579  comPmodCLP/n0140<1>22 (JC_1_OBUF)
-     OBUF:I->O                 2.571          JC_1_OBUF (JC<1>)
+     LDE:G->Q            104   0.498   2.116  comCPU/comIF/IRout_14 (comCPU/comIF/IRout_14)
+     LUT3:I0->O           13   0.205   1.037  comPmodCLP/Mmux_LCD_CMDS<13>121 (comPmodCLP/Mmux_LCD_CMDS<13>12)
+     LUT5:I3->O            5   0.203   1.059  comPmodCLP/n0140<1>141 (comPmodCLP/n0140<1>14)
+     LUT5:I0->O            1   0.203   0.580  comPmodCLP/n0140<1>21 (comPmodCLP/n0140<1>36)
+     LUT6:I5->O            1   0.205   0.924  comPmodCLP/n0140<1>22 (comPmodCLP/n0140<1>37)
+     LUT6:I1->O            1   0.203   0.827  comPmodCLP/n0140<1>23 (comPmodCLP/n0140<1>38)
+     LUT5:I1->O            1   0.203   0.579  comPmodCLP/n0140<1>24 (JA_1_OBUF)
+     OBUF:I->O                 2.571          JA_1_OBUF (JA<1>)
     ----------------------------------------
-    Total                     10.911ns (4.293ns logic, 6.618ns route)
-                                       (39.3% logic, 60.7% route)
+    Total                     11.413ns (4.291ns logic, 7.122ns route)
+                                       (37.6% logic, 62.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/RDIR_nMEM_AND_80_o'
@@ -1254,58 +1254,56 @@ Offset:              4.238ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comPmodCLP/OneUSClk'
-  Total number of paths / destination ports: 3861 / 10
+  Total number of paths / destination ports: 3866 / 10
 -------------------------------------------------------------------------
-Offset:              14.943ns (Levels of Logic = 10)
+Offset:              13.980ns (Levels of Logic = 9)
   Source:            comPmodCLP/lcd_cmd_ptr_1 (FF)
-  Destination:       JC<2> (PAD)
+  Destination:       JA<5> (PAD)
   Source Clock:      comPmodCLP/OneUSClk rising
 
-  Data Path: comPmodCLP/lcd_cmd_ptr_1 to JC<2>
+  Data Path: comPmodCLP/lcd_cmd_ptr_1 to JA<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            64   0.447   1.984  comPmodCLP/lcd_cmd_ptr_1 (comPmodCLP/lcd_cmd_ptr_1)
-     LUT6:I1->O           16   0.203   1.349  comPmodCLP/_n2236<5>1 (comPmodCLP/_n2236)
-     LUT5:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>13 (comPmodCLP/n0140<6>13)
-     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>14 (comPmodCLP/n0140<6>14)
-     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>15 (comPmodCLP/n0140<6>15)
-     LUT6:I0->O            2   0.203   0.845  comPmodCLP/n0140<6>19 (comPmodCLP/n0140<6>1)
-     LUT3:I0->O            1   0.205   0.580  comPmodCLP/n0140<1>1_SW0 (N4)
-     LUT6:I5->O            2   0.205   0.981  comPmodCLP/n0140<1>1 (comPmodCLP/n0140<1>1)
-     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<2>8 (comPmodCLP/n0140<2>9)
-     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<2>42 (JC_2_OBUF)
-     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
+     FDRE:C->Q            69   0.447   2.017  comPmodCLP/lcd_cmd_ptr_1 (comPmodCLP/lcd_cmd_ptr_1)
+     LUT6:I1->O           16   0.203   1.005  comPmodCLP/_n2272<5>1 (comPmodCLP/_n2272)
+     LUT5:I4->O            1   0.205   0.944  comPmodCLP/n0140<4>2123 (comPmodCLP/n0140<4>2123)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<4>2124 (comPmodCLP/n0140<4>2124)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<4>2125 (comPmodCLP/n0140<4>2125)
+     LUT6:I0->O            2   0.203   0.961  comPmodCLP/n0140<4>2129 (comPmodCLP/n0140<4>212)
+     LUT6:I1->O            2   0.203   0.961  comPmodCLP/n0140<4>219 (comPmodCLP/n0140<4>21)
+     LUT5:I0->O            2   0.203   0.981  comPmodCLP/n0140<5>214 (comPmodCLP/n0140<5>2)
+     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<5>16 (JA_5_OBUF)
+     OBUF:I->O                 2.571          JA_5_OBUF (JA<5>)
     ----------------------------------------
-    Total                     14.943ns (4.849ns logic, 10.094ns route)
-                                       (32.5% logic, 67.5% route)
+    Total                     13.980ns (4.644ns logic, 9.336ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/Rupdate'
-  Total number of paths / destination ports: 2277 / 7
+  Total number of paths / destination ports: 2263 / 7
 -------------------------------------------------------------------------
-Offset:              12.681ns (Levels of Logic = 9)
-  Source:            comCPU/comEX/Reg_3_6 (FF)
-  Destination:       JC<2> (PAD)
+Offset:              12.147ns (Levels of Logic = 8)
+  Source:            comCPU/comEX/Reg_3_4 (FF)
+  Destination:       JA<5> (PAD)
   Source Clock:      comCPU/Rupdate rising
 
-  Data Path: comCPU/comEX/Reg_3_6 to JC<2>
+  Data Path: comCPU/comEX/Reg_3_4 to JA<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             17   0.447   1.275  comCPU/comEX/Reg_3_6 (comCPU/comEX/Reg_3_6)
-     LUT5:I1->O            1   0.203   0.944  comPmodCLP/n0140<6>13 (comPmodCLP/n0140<6>13)
-     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>14 (comPmodCLP/n0140<6>14)
-     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<6>15 (comPmodCLP/n0140<6>15)
-     LUT6:I0->O            2   0.203   0.845  comPmodCLP/n0140<6>19 (comPmodCLP/n0140<6>1)
-     LUT3:I0->O            1   0.205   0.580  comPmodCLP/n0140<1>1_SW0 (N4)
-     LUT6:I5->O            2   0.205   0.981  comPmodCLP/n0140<1>1 (comPmodCLP/n0140<1>1)
-     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<2>8 (comPmodCLP/n0140<2>9)
-     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<2>42 (JC_2_OBUF)
-     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
+     FDE:C->Q             18   0.447   1.394  comCPU/comEX/Reg_3_4 (comCPU/comEX/Reg_3_4)
+     LUT5:I0->O            1   0.203   0.944  comPmodCLP/n0140<4>2123 (comPmodCLP/n0140<4>2123)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<4>2124 (comPmodCLP/n0140<4>2124)
+     LUT6:I0->O            1   0.203   0.944  comPmodCLP/n0140<4>2125 (comPmodCLP/n0140<4>2125)
+     LUT6:I0->O            2   0.203   0.961  comPmodCLP/n0140<4>2129 (comPmodCLP/n0140<4>212)
+     LUT6:I1->O            2   0.203   0.961  comPmodCLP/n0140<4>219 (comPmodCLP/n0140<4>21)
+     LUT5:I0->O            2   0.203   0.981  comPmodCLP/n0140<5>214 (comPmodCLP/n0140<5>2)
+     LUT6:I0->O            1   0.203   0.579  comPmodCLP/n0140<5>16 (JA_5_OBUF)
+     OBUF:I->O                 2.571          JA_5_OBUF (JA<5>)
     ----------------------------------------
-    Total                     12.681ns (4.646ns logic, 8.035ns route)
-                                       (36.6% logic, 63.4% route)
+    Total                     12.147ns (4.439ns logic, 7.708ns route)
+                                       (36.5% logic, 63.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/nMREQ_G'
@@ -1385,7 +1383,7 @@ Clock to Setup on destination clock comBtnrDeb/btn_deb
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |    1.783|         |    4.098|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.454|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.461|         |
 comCPU/comCLK/tmp[2]_dff_1_1|         |         |    3.808|         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1395,7 +1393,7 @@ Clock to Setup on destination clock comCPU/Rupdate
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |         |    1.571|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |    4.339|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |    4.346|         |         |
 comCPU/comCLK/tmp[2]_dff_1_2|         |    1.385|         |         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1405,7 +1403,7 @@ Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_80_o
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |         |         |    2.048|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.993|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.990|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_84_o
@@ -1413,8 +1411,8 @@ Clock to Setup on destination clock comCPU/comAC/RDIR_nMEM_AND_84_o
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |         |    2.031|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.933|         |
+comBtnrDeb/btn_deb          |         |         |    1.905|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.960|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/nIO_RD_MUX_241_o
@@ -1424,7 +1422,7 @@ Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb            |         |         |    3.958|         |
 comCPU/comAC/nMEM_RDIR_OR_41_o|         |         |    1.926|         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.319|         |
+comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.442|         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_41_o
@@ -1433,7 +1431,7 @@ Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_41_o
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |         |         |    3.815|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.064|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.299|         |
 comCPU/comCLK/tmp[2]_dff_1_1|         |         |    1.585|         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1444,7 +1442,7 @@ Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb            |         |         |    3.941|         |
 comCPU/comAC/nMEM_RDIR_OR_41_o|         |         |    1.492|         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.190|         |
+comCPU/comCLK/tmp[2]_dff_1_0  |         |         |    4.425|         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_0
@@ -1467,7 +1465,7 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_1
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comCPU/Rupdate              |    2.180|         |         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |    4.201|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |    4.337|         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
@@ -1475,7 +1473,7 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.125|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.132|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_3
@@ -1483,8 +1481,8 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_3
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |    5.647|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|    4.260|    5.561|         |         |
+comBtnrDeb/btn_deb          |         |    5.419|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|    4.260|    5.828|         |         |
 comCPU/comCLK/tmp[2]_dff_1_1|    3.926|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -1495,7 +1493,7 @@ Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb            |    2.111|         |         |         |
 comCPU/comAC/nMEM_RDIR_OR_41_o|         |    2.301|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0  |         |    2.993|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0  |         |    2.990|         |         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comPmodCLP/OneUSClk
@@ -1514,19 +1512,19 @@ Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 CLK                         |    2.203|         |         |         |
 comBtnrDeb/btn_deb          |    2.983|         |         |         |
-comCPU/comCLK/tmp[2]_dff_1_0|    4.848|    5.557|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|    4.848|    5.555|         |         |
 comsegDisplay/js_15         |    6.606|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.67 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.39 secs
  
 --> 
 
-Total memory usage is 275588 kilobytes
+Total memory usage is 275908 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  153 (   0 filtered)

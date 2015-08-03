@@ -44,12 +44,12 @@ entity PmodCLP is
             R7:     in std_logic_vector(7 downto 0);
 			--lcd input signals
 			--signal on connector JA 
-			JC:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
+			JA:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
             -- signal on connector JB
                 --JB(4)register selection pin  (RS)
                 --JB(5)selects between read/write modes (RW)
                 --JB(6)enable signal for starting the data read/write (E)
-            JD:	out std_logic_vector (6 downto 4)  
+            JB:	out std_logic_vector (6 downto 4)  
 			);		
 end PmodCLP;
 
@@ -142,6 +142,7 @@ architecture Behavioral of PmodCLP is
                         36 => "10"&X"20",
                         37 => "00"&X"02");          --return home					
     signal lcd_cmd_ptr : integer range 0 to LCD_CMDS'HIGH + 1 := 0;
+
     
     -- convert 4-bit data into Hexadecimal ascii display character
 	function conv_ascii(X : STD_LOGIC_VECTOR) return STD_LOGIC_VECTOR is
@@ -166,6 +167,7 @@ architecture Behavioral of PmodCLP is
             when others => return X"58"; -- X
 		end case;
 	end conv_ascii;
+    
 begin
 	--This process counts to 100, and then resets.  It is used to divide the clock signal.
 	--This makes oneUSClock peak aprox. once every 1microsecond
@@ -347,12 +349,12 @@ begin
 				LCD_CMDS(6)(7 downto 0) <= X"50";
                 
                 LCD_CMDS(8)(7 downto 0) <= X"5b"; -- [
-                LCD_CMDS(9)(7 downto 0) <= X"30"; -- 0
-                LCD_CMDS(10)(7 downto 0) <= X"78"; -- x
-				LCD_CMDS(11)(7 downto 0) <= conv_ascii(R7(7 downto 4)); -- R7
-				LCD_CMDS(12)(7 downto 0) <= conv_ascii(R7(3 downto 0)); -- R7
-				LCD_CMDS(13)(7 downto 0) <= X"2f"; -- /
-                LCD_CMDS(14)(7 downto 0) <= X"2f"; -- /
+				LCD_CMDS(9)(7 downto 0) <= conv_ascii(R7(7 downto 4)); -- R7
+				LCD_CMDS(10)(7 downto 0) <= conv_ascii(R7(3 downto 0)); -- R7
+				LCD_CMDS(11)(7 downto 0) <= X"2f"; -- /
+                LCD_CMDS(12)(7 downto 0) <= X"2f"; -- /
+                LCD_CMDS(13)(7 downto 0) <= X"30"; -- 0
+                LCD_CMDS(14)(7 downto 0) <= X"78"; -- x
                 LCD_CMDS(15)(7 downto 0) <= conv_ascii(IR(7 downto 4));
                 LCD_CMDS(16)(7 downto 0) <= conv_ascii(IR(3 downto 0));
                 LCD_CMDS(17)(7 downto 0) <= X"5d";
@@ -501,11 +503,10 @@ begin
         
 	end process;
 	
-	JD(4) <= LCD_CMDS(lcd_cmd_ptr)(9);
-	JD(5) <= LCD_CMDS(lcd_cmd_ptr)(8);
-	JC <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
-	JD(6) <= '1' when stCur = stFunctionSet or stCur = stDisplayCtrlSet or stCur = stDisplayClear or stCur = stActWr
+	JB(4) <= LCD_CMDS(lcd_cmd_ptr)(9);
+	JB(5) <= LCD_CMDS(lcd_cmd_ptr)(8);
+	JA <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
+	JB(6) <= '1' when stCur = stFunctionSet or stCur = stDisplayCtrlSet or stCur = stDisplayClear or stCur = stActWr
 				else '0';	
-
 end Behavioral;
 

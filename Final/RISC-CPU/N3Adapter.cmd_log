@@ -1,0 +1,335 @@
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.xst" -ofn "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/N3Adapter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 N3Adapter.ngc N3Adapter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o N3Adapter_map.ncd N3Adapter.ngd N3Adapter.pcf 
+par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd N3Adapter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml N3Adapter.twx N3Adapter.ncd -o N3Adapter.twr N3Adapter.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f N3Adapter.ut N3Adapter.ncd 

@@ -39,13 +39,13 @@ entity N3Adapter is
            btnu : in  STD_LOGIC;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0);
-           --signal on connector JC 
-           JC:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
-           -- signal on connector JD
-           --JD(4)register selection pin  (RS)
-           --JD(5)selects between read/write modes (RW)
-           --JD(6)enable signal for starting the data read/write (E)
-           JD:	out std_logic_vector (6 downto 4);
+           --signal on connector JA 
+           JA:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
+           -- signal on connector JB
+           --JB(4)register selection pin  (RS)
+           --JB(5)selects between read/write modes (RW)
+           --JB(6)enable signal for starting the data read/write (E)
+           JB:	out std_logic_vector (6 downto 4);
            MemOE : out  STD_LOGIC;
            MemWR : out  STD_LOGIC;
            MemAdv : out  STD_LOGIC;
@@ -121,12 +121,12 @@ architecture Behavioral of N3Adapter is
             R7:     in std_logic_vector(7 downto 0);
 			--lcd input signals
 			--signal on connector JA 
-			JC:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
+			JA:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
             -- signal on connector JB
                 --JB(4)register selection pin  (RS)
                 --JB(5)selects between read/write modes (RW)
                 --JB(6)enable signal for starting the data read/write (E)
-            JD:	out std_logic_vector (6 downto 4)  
+            JB:	out std_logic_vector (6 downto 4)  
 			);		
     end component;
     
@@ -207,7 +207,7 @@ begin
                sw => sw,
                led => led);
     comPmodCLP: PmodCLP port map(
-            btnr => btnr,
+            btnr => btnu,
 			clk => clk,
 			IR => IR,
             R0 => R0,
@@ -218,14 +218,14 @@ begin
             R5 => R5,
             R6 => R6,
             R7 => R7,
-			JC => JC,
-            JD => JD);
+			JA => JA,
+            JB => JB);
 	comsegDisplay: segDisplay port map(
             T => T,
             PC => PC,
             IR => IR,
             btnu => btnu,
-            btnr_deb => btnr_deb,
+            btnr_deb => btnr_deb, -- Cy
             clk => clk,
             an => an,
             seg => seg);
