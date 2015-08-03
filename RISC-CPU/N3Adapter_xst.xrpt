@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Aug 03 10:57:03 2015">
+  <application stringID="Xst" timeStamp="Mon Aug 03 11:04:53 2015">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -129,9 +129,6 @@
         <item dataType="int" stringID="XST_1BIT_TRISTATE_BUFFER" value="32"/>
       </item>
       <item dataType="int" stringID="XST_FSMS" value="1"/>
-      <item dataType="int" stringID="XST_XORS" value="2">
-        <item dataType="int" stringID="XST_1BIT_XOR2" value="2"/>
-      </item>
     </section>
     <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
       <item dataType="int" stringID="XST_RAMS" value="1"></item>
@@ -152,9 +149,6 @@
         <item dataType="int" stringID="XST_8BIT_8TO1_MULTIPLEXER" value="2"/>
       </item>
       <item dataType="int" stringID="XST_FSMS" value="1"/>
-      <item dataType="int" stringID="XST_XORS" value="2">
-        <item dataType="int" stringID="XST_1BIT_XOR2" value="2"/>
-      </item>
     </section>
     <section stringID="XST_FINAL_REGISTER_REPORT">
       <item dataType="int" stringID="XST_REGISTERS" value="223">
@@ -177,9 +171,9 @@
           <item dataType="int" stringID="XST_LUT1" value="65"/>
           <item dataType="int" stringID="XST_LUT2" value="44"/>
           <item dataType="int" stringID="XST_LUT3" value="179"/>
-          <item dataType="int" stringID="XST_LUT4" value="69"/>
+          <item dataType="int" stringID="XST_LUT4" value="70"/>
           <item dataType="int" stringID="XST_LUT5" value="192"/>
-          <item dataType="int" stringID="XST_LUT6" value="352"/>
+          <item dataType="int" stringID="XST_LUT6" value="351"/>
           <item dataType="int" stringID="XST_MUXCY" value="111"/>
           <item dataType="int" stringID="XST_MUXF7" value="18"/>
           <item dataType="int" stringID="XST_VCC" value="1"/>

@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Aug 03 10:57:20 2015
+Mapped Date    : Mon Aug 03 11:05:11 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,8 +19,8 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 3 secs 
-Total CPU  time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
 
 Phase 1.1  Initial Placement Analysis
 Phase 1.1  Initial Placement Analysis (Checksum:61e66d87) REAL time: 4 secs 
@@ -49,26 +49,26 @@ Phase 8.5  Local Placement Optimization
 Phase 8.5  Local Placement Optimization (Checksum:85bfa53d) REAL time: 5 secs 
 
 Phase 9.8  Global Placement
-..................
-..........................
-.......................................
-....................
-Phase 9.8  Global Placement (Checksum:69d459b3) REAL time: 5 secs 
+.................
+.........................................
+............................
+...............
+Phase 9.8  Global Placement (Checksum:bcf2f5ab) REAL time: 6 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:69d459b3) REAL time: 5 secs 
+Phase 10.5  Local Placement Optimization (Checksum:bcf2f5ab) REAL time: 6 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:5fb32843) REAL time: 7 secs 
+Phase 11.18  Placement Optimization (Checksum:e035a3db) REAL time: 7 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:5fb32843) REAL time: 7 secs 
+Phase 12.5  Local Placement Optimization (Checksum:e035a3db) REAL time: 7 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:44a03262) REAL time: 7 secs 
+Phase 13.34  Placement Validation (Checksum:d9fd9d0f) REAL time: 7 secs 
 
-Total REAL time to Placer completion: 7 secs 
-Total CPU  time to Placer completion: 7 secs 
+Total REAL time to Placer completion: 8 secs 
+Total CPU  time to Placer completion: 8 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -119,12 +119,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   306 out of   2,278   13%
+  Number of occupied Slices:                   316 out of   2,278   13%
   Number of MUXCYs used:                       132 out of   4,556    2%
-  Number of LUT Flip Flop pairs used:          838
-    Number with an unused Flip Flop:           545 out of     838   65%
-    Number with an unused LUT:                  86 out of     838   10%
-    Number of fully used LUT-FF pairs:         207 out of     838   24%
+  Number of LUT Flip Flop pairs used:          852
+    Number with an unused Flip Flop:           559 out of     852   65%
+    Number with an unused LUT:                 100 out of     852   11%
+    Number of fully used LUT-FF pairs:         193 out of     852   22%
     Number of unique control sets:              34
     Number of slice register sites lost
       to control set restrictions:              85 out of  18,224    1%
@@ -169,9 +169,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.54
 
-Peak Memory Usage:  369 MB
-Total REAL time to MAP completion:  8 secs 
-Total CPU time to MAP completion:   8 secs 
+Peak Memory Usage:  368 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
 
 Mapping completed.
 See MAP report file "N3Adapter_map.mrp" for details.

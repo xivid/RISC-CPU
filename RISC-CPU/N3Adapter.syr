@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: N3Adapter.prj
 
@@ -345,7 +345,7 @@ Synthesizing Unit <EXctrl>.
     Found 8-bit register for signal <Reg<1>>.
     Found 8-bit register for signal <Reg<0>>.
     Found 8-bit register for signal <A>.
-    Found 9-bit adder for signal <n0104> created at line 95.
+    Found 9-bit adder for signal <n0102> created at line 95.
     Found 9-bit adder for signal <A[7]_GND_28_o_add_15_OUT> created at line 95.
     Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_17_OUT<8:0>> created at line 98.
     Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_18_OUT<8:0>> created at line 98.
@@ -575,8 +575,6 @@ Macro Statistics
 # Tristates                                            : 32
  1-bit tristate buffer                                 : 32
 # FSMs                                                 : 1
-# Xors                                                 : 2
- 1-bit xor2                                            : 2
 
 =========================================================================
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -643,8 +641,6 @@ Macro Statistics
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 8-to-1 multiplexer                              : 2
 # FSMs                                                 : 1
-# Xors                                                 : 2
- 1-bit xor2                                            : 2
 
 =========================================================================
 
@@ -785,9 +781,9 @@ Primitive and Black Box Usage:
 #      LUT1                        : 65
 #      LUT2                        : 44
 #      LUT3                        : 179
-#      LUT4                        : 69
+#      LUT4                        : 70
 #      LUT5                        : 192
-#      LUT6                        : 352
+#      LUT6                        : 351
 #      MUXCY                       : 111
 #      MUXF7                       : 18
 #      VCC                         : 1
@@ -903,7 +899,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'comBtnrDeb/btn_deb'
   Clock period: 4.918ns (frequency: 203.326MHz)
-  Total number of paths / destination ports: 33 / 22
+  Total number of paths / destination ports: 31 / 22
 -------------------------------------------------------------------------
 Delay:               2.459ns (Levels of Logic = 1)
   Source:            comCPU/comCLK/tmp[2]_dff_1_1 (FF)
@@ -916,7 +912,7 @@ Delay:               2.459ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              4   0.447   0.684  comCPU/comCLK/tmp[2]_dff_1_1 (comCPU/comCLK/tmp[2]_dff_1_1)
-     LUT6:I5->O            8   0.205   0.802  comCPU/comEX/_n0223_inv1 (comCPU/comEX/_n0223_inv)
+     LUT6:I5->O            8   0.205   0.802  comCPU/comEX/_n0221_inv1 (comCPU/comEX/_n0221_inv)
      FDE_1:CE                  0.322          comCPU/comEX/ALUOUT_0
     ----------------------------------------
     Total                      2.459ns (0.974ns logic, 1.485ns route)
@@ -1384,9 +1380,9 @@ Clock to Setup on destination clock comBtnrDeb/btn_deb
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |    1.783|         |    4.132|         |
+comBtnrDeb/btn_deb          |    1.783|         |    4.095|         |
 comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.461|         |
-comCPU/comCLK/tmp[2]_dff_1_1|         |         |    3.808|         |
+comCPU/comCLK/tmp[2]_dff_1_1|         |         |    3.771|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/Rupdate
@@ -1521,11 +1517,11 @@ comsegDisplay/js_15         |    5.943|         |         |         |
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.08 secs
+Total CPU time to Xst completion: 10.50 secs
  
 --> 
 
-Total memory usage is 274436 kilobytes
+Total memory usage is 274820 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  154 (   0 filtered)
