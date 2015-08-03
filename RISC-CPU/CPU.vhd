@@ -72,9 +72,7 @@ architecture Behavioral of CPU is
 	PORT(
 		T0 : IN  std_logic;
 		CLK : IN  std_logic;
-		-- RST : IN  std_logic;
 		PCnew : IN  std_logic_vector(15 downto 0);
-		PCupdate : IN  std_logic;
 		IRdata : IN  std_logic_vector(15 downto 0);
 		PCout : OUT  std_logic_vector(15 downto 0);
 		RDIR : OUT  std_logic;
@@ -122,7 +120,6 @@ architecture Behavioral of CPU is
 	--///////////////////////////////////////////////
 	COMPONENT WBctrl
 	PORT(
-		CLK : IN  std_logic;
         RST : IN  std_logic;
 		Rtemp : IN  std_logic_vector(7 downto 0);
 		PC : IN  std_logic_vector(15 downto 0);
@@ -134,8 +131,7 @@ architecture Behavioral of CPU is
 		Raddr : OUT  std_logic_vector(2 downto 0);
 		Rdata : OUT  std_logic_vector(7 downto 0);
 		Rupdate : OUT  std_logic;
-		PCnew : OUT  std_logic_vector(15 downto 0);
-		PCupdate : OUT  std_logic
+		PCnew : OUT  std_logic_vector(15 downto 0)
 	  );
 	END COMPONENT;
 	--///////////////////////////////////////////////
@@ -179,22 +175,19 @@ architecture Behavioral of CPU is
     signal Raddr : std_logic_vector(2 downto 0) := (others => '0');
     signal Rdata : std_logic_vector(7 downto 0) := (others => '0');
     signal Rupdate : std_logic := '0';
-    signal PCnew : std_logic_vector(15 downto 0) := (others => '0'); -- Gated clock?
-    signal PCupdate : std_logic := '0';
+    signal PCnew : std_logic_vector(15 downto 0) := (others => '0');
     signal IRdata, IRout, PCout : std_logic_vector(15 downto 0) := (others => '0');
     signal Rtempdata : std_logic_vector(7 downto 0) := (others => '0');
 begin
    comCLK: CLKctrl PORT MAP (
           CLK => CLK,
-          RST => RST, --加个信号有初始值0？
+          RST => RST,
           T => Tout
         );
    comIF: IFctrl PORT MAP (
           T0 => Tout(0),
           CLK => CLK,
-          -- RST => RST,
           PCnew => PCnew,
-          PCupdate => PCupdate,
           IRdata => IRdata,
           PCout => PCout,
           RDIR => RDIR,
@@ -233,7 +226,6 @@ begin
           WR => WR
         );
    comWB: WBctrl PORT MAP (
-          CLK => CLK,
           RST => RST,
           Rtemp => Rtemp,
           PC => PCout,
@@ -245,8 +237,7 @@ begin
           Raddr => Raddr,
           Rdata => Rdata,
           Rupdate => Rupdate,
-          PCnew => PCnew,
-          PCupdate => PCupdate
+          PCnew => PCnew
         );
 	comAC: ACctrl PORT MAP (
           nIO => nIO,

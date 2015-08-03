@@ -33,7 +33,6 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity WBctrl is
     Port (  RST : in  STD_LOGIC;
-            CLK : in STD_LOGIC;
             Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
             PC : in  STD_LOGIC_VECTOR (15 downto 0);
             Addr : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -44,21 +43,15 @@ entity WBctrl is
             Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
             Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
             Rupdate : out  STD_LOGIC;
-            PCnew : out  STD_LOGIC_VECTOR (15 downto 0);
-            PCupdate : out  STD_LOGIC);
+            PCnew : out  STD_LOGIC_VECTOR (15 downto 0));
 end WBctrl;
 
 architecture Behavioral of WBctrl is
-	--signal JMP, JZ : std_logic;
 begin
 	-- 提供回写内容
 	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
 				ALUOUT;
 	Raddr <= AD1;
---	PCnew <= X"0000" when RST = '1' else
---             PC + Addr when (OP = "00010" and ALUOUT = X"00" and T3 = '1') else
---             Addr when (OP = "00000" and T3 = '1') else
---             PC + 2;
     process (RST, OP, ALUOUT, T3)
     begin
         if RST = '1' then
@@ -75,9 +68,6 @@ begin
     end process;
 	
 	-- 回写控制信号
-	--JMP <= '1' when OP = "00000" else '0';
-	--JZ  <= '1' when OP = "00010" and ALUOUT = x"00" else '0';
-	-- PCupdate <= '1' when (T3 = '1' and ((OP = "00000" or (OP = "00010" and ALUOUT = X"00")))) else '0';
 	Rupdate <= '1' when (T3 = '1' and (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000")) else '0'; -- IN, LDA, ADC, SBB, MVI, MOV
 end Behavioral;
 

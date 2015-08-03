@@ -36,9 +36,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity IFctrl is
     Port ( T0 : in  STD_LOGIC;
 		   CLK : in STD_LOGIC;
-           -- RST : in  STD_LOGIC;
            PCnew : in  STD_LOGIC_VECTOR (15 downto 0);
-           PCupdate : in  STD_LOGIC;
            IRdata : in  STD_LOGIC_VECTOR (15 downto 0); -- 从访存控制模块发来的指令字
            PCout : out  STD_LOGIC_VECTOR (15 downto 0); -- 发送指令地址
            RDIR : out  STD_LOGIC; -- 高电平令访存控制模块读指令字
@@ -62,6 +60,5 @@ begin
 	
 	PCout <= PC;
 	IRout <= IRdata when (T0 and CLK) = '1' else unaffected;
-    -- IRout <= IR;
 end Behavioral;
 

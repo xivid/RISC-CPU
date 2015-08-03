@@ -55,44 +55,13 @@ entity ACctrl is
 end ACctrl;
 
 architecture Behavioral of ACctrl is
-	signal address, data : std_logic_vector (15 downto 0);
+	signal address : std_logic_vector (15 downto 0);
 begin
 
 	-- 形成访存/访IO的地址
 	address <= Addr when (nMEM = '0' or nIO = '0') else
 			   PC when RDIR = '1' else
                address;
-	
---	-- 发访存控制信号
-----	nMREQ <= (not RDIR) and nMEM;
-----	nBLE <= (not RDIR) and address(0);
-----	nBHE <= RDIR nor address(0); -- neither read word nor read upper byte -> 1
-----	nRD <= (RDIR nor RD) or nMEM;
-----	nWR <= (not WR) or nMEM; -- RDIR or?
---	nMREQ <= '0' when (nMEM = '0' or RDIR = '1') else '1';
---	nBLE <= '0' when ((nMEM = '0' and (RD = '1' or WR = '1') and address(0) = '0') or RDIR = '1') else '1';
---	nBHE <= '0' when ((nMEM = '0' and (RD = '1' or WR = '1') and address(0) = '1') or RDIR = '1') else '1';
---	nRD <= '0' when ((nMEM = '0' and RD = '1') or RDIR = '1') else '1';
---	nWR <= '0' when (nMEM = '0' and WR = '1') else '1';
---	ABUS <= address;
---	DBUS <= data when (WR = '1' and nMEM = '0') else (others => 'Z');
---	
---	-- 发访IO控制信号
---	nPREQ <= nIO;
---	nPRD <= (not RD) or nIO; -- RD = '1' and nIO = '0'
---	nPWR <= (not WR) or nIO; -- WR = '1' and nIO = '0'
---	IOAD <= address(1 downto 0);
---	IODB <= data(7 downto 0) when (WR = '1' and nIO = '0') else (others => 'Z');
---	
---	-- 数据暂存与输出
---	data <= ALUOUT & ALUOUT when WR = '1' else -- 复制扩展，以便自由送高位或低位
---			  IODB & IODB when (RD = '1' and nIO = '0') else
---			  DBUS when (RDIR = '1' or (RD = '1' and nMEM = '0'));
---	Rtemp <= data(7 downto 0) when ((nMEM = '0' and address(0) = '0') or (nIO = '0' and RD = '1')) else 
---				data(15 downto 8) when (nMEM = '0' and address(0) = '1');
---	IR <= data when RDIR = '1';
---	
--- Solution B	
 	process (RDIR, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address)
 	begin
 		if RDIR = '1' then
@@ -126,13 +95,9 @@ begin
             nPRD <= not RD;
             nPWR <= not WR;
             if RD = '1' then
-                -- nPRD <= '0'; 其实这样是对的
-                -- nPWR <= '1';
                 IODB <= (others => 'Z');
                 Rtemp <= IODB;
             elsif WR = '1' then
-                -- nPRD <= '1';
-                -- nPWR <= '0';
                 IODB <= ALUOUT;
             end if;
         else

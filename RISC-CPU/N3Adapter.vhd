@@ -37,7 +37,6 @@ entity N3Adapter is
            btnr : in  STD_LOGIC;
            btns : in  STD_LOGIC;
            btnu : in  STD_LOGIC;
-           btnd : in std_logic;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0);
            --signal on connector JA 

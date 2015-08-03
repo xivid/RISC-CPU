@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Aug 03 11:05:11 2015
+Mapped Date    : Mon Aug 03 12:27:08 2015
 
 Design Summary
 --------------
@@ -135,7 +135,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/comAC/nMREQ_G is
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network btnd has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs

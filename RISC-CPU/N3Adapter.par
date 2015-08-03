@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-RL-20150714JIFE::  Mon Aug 03 11:05:22 2015
+RL-20150714JIFE::  Mon Aug 03 12:27:19 2015
 
 par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd
 N3Adapter.pcf 
@@ -114,17 +114,17 @@ Updating file: N3Adapter.ncd with current fully routed design.
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
-Total REAL time to Router completion: 7 secs 
-Total CPU time to Router completion: 7 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Total REAL time to Router completion: 6 secs 
+Total CPU time to Router completion: 6 secs 
 
 Partition Implementation Status
 -------------------------------
