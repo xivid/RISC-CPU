@@ -46,6 +46,7 @@ ARCHITECTURE behavior OF tbINTctrl IS
          intrUpdate : IN  std_logic;
          imrUpdate : IN  std_logic;
          isrUpdate : IN  std_logic;
+         entered : in std_logic;
          nextService : OUT  std_logic;
          intServicePort : OUT  integer;
          nowimr : OUT  std_logic_vector(7 downto 0)
@@ -59,6 +60,7 @@ ARCHITECTURE behavior OF tbINTctrl IS
    signal intrUpdate : std_logic := '0';
    signal imrUpdate : std_logic := '0';
    signal isrUpdate : std_logic := '0';
+    signal entered : std_logic := '0';
 
  	--Outputs
    signal nextService : std_logic;
@@ -74,6 +76,7 @@ BEGIN
           intrUpdate => intrUpdate,
           imrUpdate => imrUpdate,
           isrUpdate => isrUpdate,
+          entered => entered,
           nextService => nextService,
           intServicePort => intServicePort,
           nowimr => nowimr
@@ -89,7 +92,11 @@ BEGIN
       wait for 100 ns;
       intr <= "00000000";
       intrUpdate <= '0';
-      wait for 200 ns;
+      wait for 100 ns;
+      entered <= '1';
+      wait for 100 ns;
+      entered <= '0';
+      wait for 100 ns;
       newIMR <= "11101110";
       imrUpdate <= '1';
       wait for 100 ns;
@@ -100,6 +107,10 @@ BEGIN
       wait for 100 ns;
       intr <= "00000000";
       intrUpdate <= '0';
+      wait for 100 ns;
+      entered <= '1';
+      wait for 100 ns;
+      entered <= '0';
       wait for 100 ns;
       isrUpdate <= '1';
       wait for 100 ns;

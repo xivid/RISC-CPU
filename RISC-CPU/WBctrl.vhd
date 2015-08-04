@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity WBctrl is
-    Port (  RST : in  STD_LOGIC;
+    Port (  CLK : in std_logic;
+            RST : in  STD_LOGIC;
             Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
             PC : in  STD_LOGIC_VECTOR (15 downto 0);
             Addr : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -46,7 +47,8 @@ entity WBctrl is
             Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
             Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
             Rupdate : out  STD_LOGIC;
-            PCnew : out  STD_LOGIC_VECTOR (15 downto 0));
+            PCnew : out  STD_LOGIC_VECTOR (15 downto 0);
+            entered : out std_logic);
 end WBctrl;
 
 architecture Behavioral of WBctrl is
@@ -75,6 +77,7 @@ begin
     end process;
 	
 	-- »ØÐ´¿ØÖÆÐÅºÅ
+    entered <= '1' when (T3 = '1' and clk = '0' and (OP = "11000" and nextService = '1')) else '0';
 	Rupdate <= '1' when (T3 = '1' and (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000" or OP = "11110")) else '0'; -- IN, LDA, ADC, SBB, MVI, MOV, popr
 end Behavioral;
 

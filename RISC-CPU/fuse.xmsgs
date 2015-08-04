@@ -5,35 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 104: &lt;<arg fmt="%s" index="1">pushstack</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 116: &lt;<arg fmt="%s" index="1">popstack</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 122: &lt;<arg fmt="%s" index="1">popstack</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 119: &lt;<arg fmt="%s" index="1">popstack</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="989" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 119: Attribute <arg fmt="%s" index="1">event</arg> requires a static signal prefix
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 126: &lt;<arg fmt="%s" index="1">pushstack</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 124: &lt;<arg fmt="%s" index="1">pushstack</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="989" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 124: Attribute <arg fmt="%s" index="1">event</arg> requires a static signal prefix
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 86: &lt;<arg fmt="%s" index="1">pushstack</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 46: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 

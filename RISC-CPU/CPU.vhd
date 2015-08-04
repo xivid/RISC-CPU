@@ -62,7 +62,8 @@ entity CPU is
            intServicePort : in integer;
            intr : out std_logic_vector(7 downto 0);
            intrUpdate : out std_logic;
-           isrUpdate : out std_logic
+           isrUpdate : out std_logic;
+           entered : out std_logic
            );
 end CPU;
 
@@ -133,7 +134,8 @@ architecture Behavioral of CPU is
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT WBctrl
-    Port (  RST : in  STD_LOGIC;
+    Port (  clk : in std_logic;
+            RST : in  STD_LOGIC;
             Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
             PC : in  STD_LOGIC_VECTOR (15 downto 0);
             Addr : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -147,7 +149,8 @@ architecture Behavioral of CPU is
             Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
             Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
             Rupdate : out  STD_LOGIC;
-            PCnew : out  STD_LOGIC_VECTOR (15 downto 0));
+            PCnew : out  STD_LOGIC_VECTOR (15 downto 0);
+            entered : out std_logic);
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT ACctrl
@@ -266,6 +269,7 @@ begin
           popr => popr
         );
    comWB: WBctrl PORT MAP (
+          clk => clk,
           RST => RST,
           Rtemp => Rtemp,
           PC => PCout,
@@ -280,7 +284,8 @@ begin
           Raddr => Raddr,
           Rdata => Rdata,
           Rupdate => Rupdate,
-          PCnew => PCnew
+          PCnew => PCnew,
+          entered => entered
         );
 	comAC: ACctrl PORT MAP (
           nIO => nIO,

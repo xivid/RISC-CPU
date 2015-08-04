@@ -44,7 +44,8 @@ entity IOConv is
            intServicePort : out integer;
            intr : in std_logic_vector(7 downto 0);
            intrUpdate : in std_logic;
-           isrUpdate : in std_logic);
+           isrUpdate : in std_logic;
+           entered : in std_logic);
 end IOConv;
 
 architecture Behavioral of IOConv is
@@ -56,6 +57,7 @@ architecture Behavioral of IOConv is
             intrUpdate: in std_logic;
             imrUpdate: in std_logic;
             isrUpdate: in std_logic;
+            entered : in std_logic;
             nextService: out std_logic;
             intServicePort: out integer;
             nowImr: out std_logic_vector(7 downto 0)
@@ -74,6 +76,7 @@ begin
                 intrUpdate => intrUpdate,
                 imrUpdate => imrUpdate,
                 isrUpdate => isrUpdate,
+                entered => entered,
                 nextService => thenextService,
                 intServicePort => theintServicePort,
                 nowImr => nowImr);
@@ -111,6 +114,7 @@ begin
                 led(0) <= thenextService;
                 led(1) <= intrUpdate;
                 led(2) <= isrUpdate;
+                led(3) <= entered;
                 led(7 downto 4) <= conv_std_logic_vector(theintServicePort, 4);
             end if;
         end if;

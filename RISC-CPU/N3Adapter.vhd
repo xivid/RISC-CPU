@@ -96,7 +96,8 @@ architecture Behavioral of N3Adapter is
            intServicePort : in integer;
            intr : out std_logic_vector(7 downto 0);
            intrUpdate : out std_logic;
-           isrUpdate : out std_logic
+           isrUpdate : out std_logic;
+           entered : out std_logic
            );
     end component;
     
@@ -113,7 +114,8 @@ architecture Behavioral of N3Adapter is
        intServicePort : out integer;
        intr : in std_logic_vector(7 downto 0);
        intrUpdate : in std_logic;
-       isrUpdate : in std_logic
+       isrUpdate : in std_logic;
+       entered : in std_logic
        );
     end component;
     
@@ -187,6 +189,7 @@ architecture Behavioral of N3Adapter is
     signal intr : std_logic_vector(7 downto 0);
     signal intrUpdate : std_logic;
     signal isrUpdate : std_logic;
+    signal entered : std_logic;
     
     -- Debounce btnr
     signal btnr_deb : std_logic;
@@ -241,7 +244,8 @@ begin
                intServicePort => intServicePort,
                intr => intr,
                intrUpdate => intrUpdate,
-               isrUpdate => isrUpdate);
+               isrUpdate => isrUpdate,
+               entered => entered);
     comIOConv: IOConv port map(
                IOAD => IOAD,
                IODB => IODB,
@@ -255,7 +259,8 @@ begin
                intServicePort => intServicePort,
                intr => intr,
                intrUpdate => intrUpdate,
-               isrUpdate => isrUpdate);
+               isrUpdate => isrUpdate,
+               entered => entered);
 	comsegDisplay: segDisplay port map(
             T => T,
             PC => PC,
