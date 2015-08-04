@@ -615,6 +615,7 @@ Unit <ACctrl> synthesized.
 
 Synthesizing Unit <IOConv>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\IOConv.vhd".
+WARNING:Xst:647 - Input <btnd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit tristate buffer for signal <IODB<7>> created at line 86
     Found 1-bit tristate buffer for signal <IODB<6>> created at line 86
     Found 1-bit tristate buffer for signal <IODB<5>> created at line 86
@@ -633,7 +634,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <newImr<0>>. Latches may be gener
 WARNING:Xst:737 - Found 1-bit latch for signal <newImr<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   8 Latch(s).
-	inferred  16 Multiplexer(s).
+	inferred  15 Multiplexer(s).
 	inferred   8 Tristate(s).
 Unit <IOConv> synthesized.
 
@@ -1065,7 +1066,7 @@ Macro Statistics
  8-bit register                                        : 10
 # Latches                                              : 497
  1-bit latch                                           : 497
-# Multiplexers                                         : 2854
+# Multiplexers                                         : 2853
  1-bit 2-to-1 multiplexer                              : 2720
  1-bit 8-to-1 multiplexer                              : 16
  10-bit 2-to-1 multiplexer                             : 57
@@ -1075,7 +1076,7 @@ Macro Statistics
  3-bit 2-to-1 multiplexer                              : 4
  32-bit 2-to-1 multiplexer                             : 19
  32-bit 9-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 27
+ 8-bit 2-to-1 multiplexer                              : 26
 # Tristates                                            : 32
  1-bit tristate buffer                                 : 32
 # FSMs                                                 : 1
@@ -1152,9 +1153,9 @@ WARNING:Xst:1710 - FF/Latch <newImr_5> (without init value) has a constant value
 WARNING:Xst:1710 - FF/Latch <newImr_4> (without init value) has a constant value of 0 in block <comIOConv>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <newImr_3> (without init value) has a constant value of 0 in block <comIOConv>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <newImr_2> (without init value) has a constant value of 0 in block <comIOConv>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <newImr_7> (without init value) has a constant value of 0 in block <comIOConv>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <newImr_1> (without init value) has a constant value of 0 in block <comIOConv>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <newImr_0> (without init value) has a constant value of 0 in block <comIOConv>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <newImr_7> (without init value) has a constant value of 0 in block <comIOConv>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Rtemp_6> (without init value) has a constant value of 0 in block <comMEM>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Rtemp_5> (without init value) has a constant value of 0 in block <comMEM>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Rtemp_4> (without init value) has a constant value of 0 in block <comMEM>. This FF/Latch will be trimmed during the optimization process.
@@ -1239,7 +1240,7 @@ Macro Statistics
  16-bit down accumulator                               : 1
 # Registers                                            : 199
  Flip-Flops                                            : 199
-# Multiplexers                                         : 2854
+# Multiplexers                                         : 2853
  1-bit 2-to-1 multiplexer                              : 2720
  1-bit 8-to-1 multiplexer                              : 16
  10-bit 2-to-1 multiplexer                             : 57
@@ -1249,7 +1250,7 @@ Macro Statistics
  3-bit 2-to-1 multiplexer                              : 4
  32-bit 2-to-1 multiplexer                             : 19
  32-bit 9-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 27
+ 8-bit 2-to-1 multiplexer                              : 26
 # FSMs                                                 : 1
 
 =========================================================================
@@ -1680,6 +1681,16 @@ Optimizing unit <EXctrl> ...
 Optimizing unit <MEMctrl> ...
 WARNING:Xst:1426 - The value init of the FF/Latch comIOConv/comINTctrl/imr_7 hinder the constant cleaning in the block N3Adapter.
    You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch comIOConv/comINTctrl/imr_6 hinder the constant cleaning in the block N3Adapter.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch comIOConv/comINTctrl/imr_1 hinder the constant cleaning in the block N3Adapter.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch comIOConv/comINTctrl/imr_2 hinder the constant cleaning in the block N3Adapter.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch comIOConv/comINTctrl/imr_3 hinder the constant cleaning in the block N3Adapter.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_5> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_7> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
@@ -1697,12 +1708,8 @@ WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Z_14_o_RDIR_DLATCH_204_q> (without ini
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Z_14_o_RDIR_DLATCH_206_q> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/nPREQ> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comIOConv/newImr_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comIOConv/newImr_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comIOConv/newImr_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comIOConv/newImr_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comIOConv/newImr_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comIOConv/newImr_5> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comIOConv/newImr_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
@@ -1714,35 +1721,37 @@ WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_8> (without init value) has
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_10> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_11> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/nMREQ> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/IOAD_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/IOAD_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_15> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_12> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_14> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_13> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_9> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_5> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_7> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_13> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_14> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_12> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/returnAddr_15> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/IOAD_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/IOAD_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/nMREQ> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comCPU/comAC/Rtemp_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_5> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_6> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_2> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_7> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_0> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_4> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_5> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comCPU/comMEM/Rtemp_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_4> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_0> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comIOConv/newImr_6> (without init value) has a constant value of 1 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comIOConv/newImr_3> (without init value) has a constant value of 1 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comIOConv/newImr_2> (without init value) has a constant value of 1 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comIOConv/newImr_1> (without init value) has a constant value of 1 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comIOConv/newImr_7> (without init value) has a constant value of 1 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_2> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_6> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_7> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_3> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_1> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_0> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comIOConv/newImr_7> (without init value) has a constant value of 1 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comIOConv/comINTctrl/imr_7> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1294 - Latch <comCPU/comAC/ABUS_1> is equivalent to a wire in block <N3Adapter>.
 WARNING:Xst:1294 - Latch <comCPU/comAC/ABUS_2> is equivalent to a wire in block <N3Adapter>.
 WARNING:Xst:1294 - Latch <comCPU/comAC/ABUS_3> is equivalent to a wire in block <N3Adapter>.
@@ -3892,14 +3901,14 @@ isrUpdate                                                                 |    5
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.56 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.84 secs
  
 --> 
 
-Total memory usage is 285572 kilobytes
+Total memory usage is 284548 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1076 (   0 filtered)
+Number of warnings : 1081 (   0 filtered)
 Number of infos    :   13 (   0 filtered)
 
