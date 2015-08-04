@@ -1,0 +1,17 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbINTctrl_isim_beh.exe" -prj "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbINTctrl_beh.prj" "work.tbINTctrl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" into library work
+ERROR:HDLCompiler:69 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 104: <pushstack> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 116: <popstack> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 122: <popstack> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 119: <popstack> is not declared.
+ERROR:HDLCompiler:989 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 119: Attribute event requires a static signal prefix
+ERROR:HDLCompiler:69 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 126: <pushstack> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 124: <pushstack> is not declared.
+ERROR:HDLCompiler:989 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 124: Attribute event requires a static signal prefix
+ERROR:HDLCompiler:69 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 86: <pushstack> is not declared.
+ERROR:HDLCompiler:854 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd" Line 46: Unit <behavioral> ignored due to previous errors.
+VHDL file C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/INTctrl.vhd ignored due to errors
