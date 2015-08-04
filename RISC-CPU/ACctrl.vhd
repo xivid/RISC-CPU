@@ -75,6 +75,12 @@ begin
                address;
 	process (RDIR, RDINT, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address, pushPC, popPC, pushr, popr)
 	begin
+        nMREQ <= '1';
+        nPREQ <= '1';
+        ABUS <= address;
+        DBUS <= (others => 'Z');
+        IOAD <= address(1 downto 0);
+        IODB <= (others => 'Z');
 		if RDIR = '1' then
 			nMREQ <= '0';
 			nBLE <= '0';
@@ -154,13 +160,6 @@ begin
             elsif WR = '1' then
                 IODB <= ALUOUT;
             end if;
-        else
-            nMREQ <= '1';
-            nPREQ <= '1';
-            ABUS <= address;
-            DBUS <= (others => 'Z');
-            IOAD <= address(1 downto 0);
-            IODB <= (others => 'Z');
 		end if;
         if pushPC'event and pushPC = '0' then --ÏÂ½µÑØ
             stackTop <= stackTop + 2;

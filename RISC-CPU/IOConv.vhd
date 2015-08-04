@@ -86,7 +86,7 @@ begin
     process (IOAD, IODB, nPREQ, nPRD, nPWR, sw, nowImr, btnd, intr, thenextService, intrUpdate, isrUpdate, theintServicePort)
     begin
         IODB <= (others => 'Z');
-        led <= (others => not nPREQ);
+        led <= (others => '0');
         imrUpdate <= '0';
         if nPREQ = '0' then
             if nPRD = '0' and nPWR = '1' then -- IN
@@ -104,16 +104,15 @@ begin
                     when others => null;
                 end case;
             end if;
---        else
---            led <= (others => '1');
---            if btnd = '1' then
---                led <= intr;
---            else
---                led(0) <= thenextService;
---                led(1) <= intrUpdate;
---                led(2) <= isrUpdate;
---                led(7 downto 4) <= conv_std_logic_vector(theintServicePort, 4);
---            end if;
+        else
+            if btnd = '1' then
+                led <= intr;
+            else
+                led(0) <= thenextService;
+                led(1) <= intrUpdate;
+                led(2) <= isrUpdate;
+                led(7 downto 4) <= conv_std_logic_vector(theintServicePort, 4);
+            end if;
         end if;
     end process;
 
