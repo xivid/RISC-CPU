@@ -38,16 +38,16 @@ entity INTctrl is
         imrUpdate: in std_logic;
         isrUpdate: in std_logic;
         entered : in std_logic;
-        nextService: out std_logic;
+        nextService: out std_logic; -- 告诉CPU可以进入
         intServicePort: out integer;
         nowimr: out std_logic_vector(7 downto 0)
     );
 end INTctrl;
 
 architecture Behavioral of INTctrl is
-	signal irr: std_logic_vector(7 downto 0):= "00000000"; -- 待响应的序号
-	signal isr: std_logic_vector(7 downto 0):= "00000000"; -- 尚未执行完毕的中断服务程序
-	signal imr: std_logic_vector(7 downto 0):= "00000000"; -- 屏蔽字
+	-- signal irr: std_logic_vector(7 downto 0):= "00000000"; -- 待响应的序号
+	signal isr: std_logic_vector(7 downto 0):= "00000000"; -- 所有正在执行的中断服务程序
+	signal imr: std_logic_vector(7 downto 0):= "10000000"; -- 屏蔽字
     type stackType is array(0 to 8) of integer;
     signal PortStack : stackType := (8, 0, 0, 0, 0, 0, 0, 0, 0);
     signal stackTop : integer := 0;
@@ -56,41 +56,46 @@ architecture Behavioral of INTctrl is
 begin
 	intServicePort <= runningPort;
     nowimr <= imr;
-	process(intrUpdate, isrUpdate, runningPort, irr, isr, intr, imr, entered, pushStack, popStack)
-	begin
-		if intrUpdate='1' and intrUpdate'event then
-			setIRR: for servicePort in 0 to 7 loop
-                if imr(servicePort) = '1' then
-                    irr(servicePort) <= '0';
-                else
-                    irr(servicePort) <= intr(servicePort);
-                end if;
-			end loop;
-        end if;
-        if conv_integer(irr)/=0 then
+    imr <= newImr when rising_edge(imrUpdate);
+	
+    process(intrUpdate, entered, isrUpdate, intr, isr, imr)
+    begin
+        if intrUpdate = '1' then
+            if intr(0) = '1' and imr(0) = '0' then
+                nextService <= '1';
+                runningPort <= 0;
+            elsif intr(1) = '1' and imr(1) = '0' then
+                nextService <= '1';
+                runningPort <= 1;
+            elsif intr(2) = '1' and imr(2) = '0' then
+                nextService <= '1';
+                runningPort <= 2;
+            elsif intr(3) = '1' and imr(3) = '0' then
+                nextService <= '1';
+                runningPort <= 3;
+            elsif intr(4) = '1' and imr(4) = '0' then
+                nextService <= '1';
+                runningPort <= 4;
+            elsif intr(5) = '1' and imr(5) = '0' then
+                nextService <= '1';
+                runningPort <= 5;
+            elsif intr(6) = '1' and imr(6) = '0' then
+                nextService <= '1';
+                runningPort <= 6;
+            elsif intr(7) = '1' and imr(7) = '0' then
+                nextService <= '1';
+                runningPort <= 7;
+            else
+                nextService <= '0';
+                runningPort <= 8;
+            end if;
+        elsif entered = '1' then
             nextService <= '0';
-            getNextInt: for servicePort in 0 to 7 loop
-                if (irr(servicePort) and (not isr(servicePort)))='1' then
-                    isr(servicePort) <= '1';
-                    irr(servicePort) <= '0';
-                    runningPort <= servicePort;
-                    PortStack(stackTop + 1) <= servicePort;
-                    stackTop <= stackTop + 1;
-                    nextService <= '1';
-                    exit;
-                end if;
-            end loop;
-        end if;
-        if isrUpdate = '1' and isrUpdate'event then
+            isr(runningPort) <= '1';
+        elsif isrUpdate = '1' and isrUpdate'event then
             isr(runningPort) <= '0';
-            runningPort <= PortStack(stackTop - 1);
-            stackTop <= stackTop - 1;
+            runningPort <= 8;
         end if;
-    	if entered = '1' then
-            nextService <= '0';
-        end if;
-	end process;
-
-    imr <= newImr when imrUpdate = '1' else imr;
+    end process;
 
 end Behavioral;

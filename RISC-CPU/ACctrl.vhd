@@ -37,6 +37,7 @@ entity ACctrl is
            WR : in  STD_LOGIC;
            RDIR : in  STD_LOGIC;
            PC : in  STD_LOGIC_VECTOR (15 downto 0);
+           OP : in STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
            Addr : in  STD_LOGIC_VECTOR (15 downto 0);
            ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
            pushPC : in std_logic;
@@ -45,6 +46,8 @@ entity ACctrl is
            intAddr : in std_logic_vector(15 downto 0);
            pushr : in std_logic;
            popr : in std_logic;
+           inctop : in std_logic;
+           dectop : in std_logic;
            nBLE : out  STD_LOGIC;
            nBHE : out  STD_LOGIC;
            ABUS : out  STD_LOGIC_VECTOR (15 downto 0);
@@ -60,20 +63,22 @@ entity ACctrl is
            IR : out  STD_LOGIC_VECTOR (15 downto 0);
            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
            returnAddr : out STD_LOGIC_VECTOR (15 downto 0);
-           serviceAddr : out std_logic_vector (15 downto 0) -- 中断服务程序入口地址
+           serviceAddr : out std_logic_vector (15 downto 0); -- 中断服务程序入口地址
+           stackTop : out std_logic_vector(15 downto 0)
            );
 end ACctrl;
 
 architecture Behavioral of ACctrl is
 	signal address : std_logic_vector (15 downto 0);
-    signal stackTop : std_logic_vector (15 downto 0) := X"1000";
+    signal top : std_logic_vector (15 downto 0) := X"0100";
 begin
+    stackTop <= top;
 	-- 形成访存/访IO的地址
 	address <= Addr when (nMEM = '0' or nIO = '0') else
 			   PC when RDIR = '1' else
                intAddr when RDINT = '1' else
                address;
-	process (RDIR, RDINT, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address, pushPC, popPC, pushr, popr)
+	process (RDIR, RDINT, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address, top, pushPC, popPC, pushr, popr)
 	begin
         nMREQ <= '1';
         nPREQ <= '1';
@@ -105,7 +110,7 @@ begin
             nBHE <= '0';
             nRD <= '1';
             nWR <= '0';
-            ABUS <= stackTop;
+            ABUS <= top;
             DBUS <= PC + 2;
         elsif pushr = '1' then
             nMREQ <= '0';
@@ -113,7 +118,7 @@ begin
             nBHE <= '0';
             nRD <= '1';
             nWR <= '0';
-            ABUS <= stackTop;
+            ABUS <= top;
             DBUS <= ALUOUT&ALUOUT;
         elsif popPC = '1' then
             nMREQ <= '0';
@@ -121,7 +126,7 @@ begin
             nBHE <= '0';
             nRD <= '0';
             nWR <= '1';
-            ABUS <= stackTop - 2;
+            ABUS <= top - 2;
             DBUS <= (others => 'Z');
             returnAddr <= DBUS;
         elsif popr = '1' then
@@ -130,9 +135,9 @@ begin
             nBHE <= '0';
             nRD <= '0';
             nWR <= '1';
-            ABUS <= stackTop - 2;
+            ABUS <= top - 2;
             DBUS <= (others => 'Z');
-            Rtemp <= DBUS(7 downto 0);
+            Rtemp <= DBUS(15 downto 8);
 		elsif nMEM = '0' then
             nMREQ <= '0';
             ABUS <= address;
@@ -154,27 +159,24 @@ begin
             IOAD <= address(1 downto 0);
             nPRD <= not RD;
             nPWR <= not WR;
-            if RD = '1' then
+            if RD = '1' then -- IN
                 IODB <= (others => 'Z');
                 Rtemp <= IODB;
-            elsif WR = '1' then
+            elsif WR = '1' then -- OUT
                 IODB <= ALUOUT;
             end if;
 		end if;
-        if pushPC'event and pushPC = '0' then --下降沿
-            stackTop <= stackTop + 2;
-        end if;
-        if pushr'event and pushr = '0' then
-            stackTop <= stackTop + 2;
-        end if;
-        if popr'event and popr = '0' then
-            stackTop <= stackTop - 2;
-        end if;
-        if popPC'event and popPC = '0' then
-            stackTop <= stackTop - 2;
-        end if;
 	end process;
 	
-	
+	process (inctop)
+    begin
+        if rising_edge(inctop) then
+            if (OP = "11000" or OP = "11100") then
+                top <= top + 2;
+            elsif (OP = "11010" or OP = "11110") then
+                top <= top - 2;
+            end if;
+        end if;
+    end process;
 end Behavioral;
 

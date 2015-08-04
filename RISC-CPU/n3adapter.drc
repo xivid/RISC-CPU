@@ -1,58 +1,76 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Aug 04 16:34:20 2015
+Tue Aug 04 22:24:37 2015
 
 drc -z N3Adapter.ncd N3Adapter.pcf
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_34_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net isrUpdate is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net comIOConv/comINTctrl/n0011
-   is sourced by a combinatorial pin. This is not good design practice. Use the
-   CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_452_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net intrUpdate is sourced by a
+   comIOConv/nPRD_nPRD_AND_84_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net nPREQ is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_836_o is sourced by a combinatorial
+   comIOConv/comINTctrl/intrUpdate_entered_OR_17_o is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comEX/T1_IR[15]_AND_13_o is sourced by a combinatorial pin. This is
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_39_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_RDINT_AND_375_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/comAC/nRD_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_37_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_35_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_RDINT_AND_490_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_644_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comCPU/comAC/RDIR_RDINT_AND_441_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_516_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comIOConv/nPREQ_nPRD_OR_27_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_964_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comIOConv/nPRD_IOAD[1]_MUX_81_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_580_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comCPU/comAC/nMEM_RDIR_OR_144_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_708_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_900_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_772_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-DRC detected 0 errors and 13 warnings.  Please see the previously displayed
+   comCPU/comEX/T1_IR[15]_AND_121_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+DRC detected 0 errors and 18 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

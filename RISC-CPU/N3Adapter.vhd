@@ -38,6 +38,7 @@ entity N3Adapter is
            btns : in  STD_LOGIC;
            btnu : in  STD_LOGIC;
            btnd : in std_logic;
+           btnl : in std_logic;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0);
            --signal on connector JC 
@@ -97,7 +98,8 @@ architecture Behavioral of N3Adapter is
            intr : out std_logic_vector(7 downto 0);
            intrUpdate : out std_logic;
            isrUpdate : out std_logic;
-           entered : out std_logic
+           entered : out std_logic;
+           stackTop : out std_logic_vector(15 downto 0)
            );
     end component;
     
@@ -109,6 +111,7 @@ architecture Behavioral of N3Adapter is
        nPWR : in  STD_LOGIC;
        sw : in  STD_LOGIC_VECTOR (7 downto 0);
        btnd : in std_logic;
+       btnl : in std_logic;
        led : out  STD_LOGIC_VECTOR (7 downto 0);
        nextService : out std_logic;
        intServicePort : out integer;
@@ -153,6 +156,8 @@ architecture Behavioral of N3Adapter is
     Port ( PC : in  STD_LOGIC_VECTOR (15 downto 0);
            IR : in  STD_LOGIC_VECTOR (15 downto 0);
            btnu : in  STD_LOGIC;
+           btnd : in std_logic;
+           stackTop : in std_logic_vector(15 downto 0);
            T : in  STD_LOGIC_VECTOR (3 downto 0);
            clk : in  STD_LOGIC;
            Cy : in  STD_LOGIC;
@@ -179,6 +184,7 @@ architecture Behavioral of N3Adapter is
     signal ABUS :  STD_LOGIC_VECTOR (15 downto 0);
     signal nRD : STD_LOGIC;
     signal nWR : STD_LOGIC;
+    signal stackTop : std_logic_vector(15 downto 0);
     
     -- This signals are for IO controller.
     signal IODB : std_logic_vector(7 downto 0);
@@ -198,6 +204,22 @@ begin
                 CLK => CLK,
                 btn => btnr,
                 btn_deb => btnr_deb);
+    comIOConv: IOConv port map(
+               IOAD => IOAD,
+               IODB => IODB,
+               nPREQ => nPREQ,
+               nPRD => nPRD,
+               nPWR => nPWR,
+               sw => sw,
+               btnd => btnd,
+               btnl => btnl,
+               led => led,
+               nextService => nextService,
+               intServicePort => intServicePort,
+               intr => intr,
+               intrUpdate => intrUpdate,
+               isrUpdate => isrUpdate,
+               entered => entered);
     comPmodCLP: PmodCLP port map(
                 RESET => btns,
                 CLK => CLK,
@@ -245,27 +267,15 @@ begin
                intr => intr,
                intrUpdate => intrUpdate,
                isrUpdate => isrUpdate,
-               entered => entered);
-    comIOConv: IOConv port map(
-               IOAD => IOAD,
-               IODB => IODB,
-               nPREQ => nPREQ,
-               nPRD => nPRD,
-               nPWR => nPWR,
-               sw => sw,
-               btnd => btnd,
-               led => led,
-               nextService => nextService,
-               intServicePort => intServicePort,
-               intr => intr,
-               intrUpdate => intrUpdate,
-               isrUpdate => isrUpdate,
-               entered => entered);
+               entered => entered,
+               stackTop => stackTop);
 	comsegDisplay: segDisplay port map(
             T => T,
             PC => PC,
             IR => IR,
             btnu => btnu,
+            btnd => btnd,
+            stackTop => stackTop,
             Cy => Cout,
             clk => clk,
             an => an,

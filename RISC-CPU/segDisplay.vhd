@@ -34,6 +34,8 @@ entity segDisplay is
     Port ( PC : in  STD_LOGIC_VECTOR (15 downto 0);
            IR : in  STD_LOGIC_VECTOR (15 downto 0);
            btnu : in  STD_LOGIC;
+           btnd : in std_logic;
+           stackTop : in std_logic_vector(15 downto 0);
            T : in  STD_LOGIC_VECTOR (3 downto 0);
            clk : in  STD_LOGIC;
            Cy : in  STD_LOGIC;
@@ -100,10 +102,29 @@ begin
 		end if;
 	end process;
     
-    digit1 <= (not Cy)&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
-	digit2 <= (not Cy)&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
-	digit3 <= (not Cy)&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
-	digit4 <= (not Cy)&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
+    process (btnu, btnd, PC, IR, Cy, T, stackTop)
+    begin
+        if btnu = '1' then
+            digit1 <= (not Cy)&conv_seg(IR(15 downto 12));
+            digit2 <= (not Cy)&conv_seg(IR(11 downto 8));
+            digit3 <= (not Cy)&conv_seg(IR(7 downto 4));
+            digit4 <= (not Cy)&conv_seg(IR(3 downto 0));
+        elsif btnd = '1' then
+            digit1 <= (not T(0))&conv_seg(stackTop(15 downto 12));
+            digit2 <= (not T(1))&conv_seg(stackTop(11 downto 8));
+            digit3 <= (not T(2))&conv_seg(stackTop(7 downto 4));
+            digit4 <= (not T(3))&conv_seg(stackTop(3 downto 0));
+        else
+            digit1 <= (not T(0))&conv_seg(PC(15 downto 12));
+            digit2 <= (not T(1))&conv_seg(PC(11 downto 8));
+            digit3 <= (not T(2))&conv_seg(PC(7 downto 4));
+            digit4 <= (not T(3))&conv_seg(PC(3 downto 0));
+        end if;
+    end process;
+    --digit1 <= (not Cy)&conv_seg(IR(15 downto 12)) when btnu = '1' else (not T(0))&conv_seg(PC(15 downto 12));
+	--digit2 <= (not Cy)&conv_seg(IR(11 downto 8)) when btnu = '1' else (not T(1))&conv_seg(PC(11 downto 8));
+	--digit3 <= (not Cy)&conv_seg(IR(7 downto 4)) when btnu = '1' else (not T(2))&conv_seg(PC(7 downto 4));
+	--digit4 <= (not Cy)&conv_seg(IR(3 downto 0)) when btnu = '1' else (not T(3))&conv_seg(PC(3 downto 0));
 
 end Behavioral;
 

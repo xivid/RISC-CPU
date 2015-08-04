@@ -73,7 +73,8 @@ begin
 	R5 <= Reg(5);
 	R6 <= Reg(6);
 	R7 <= Reg(7);
-	
+	RDINT <= '1' when (T1 = '1' and CLK = '1') else '0';
+    
 	-- Prepare A, B, Addr
 	process (T1, IR, CLK)
 	begin
@@ -84,7 +85,7 @@ begin
 			if IR(15 downto 11) = "00010" then  -- JZ
 				Addr(15 downto 8) <= (others => IR(7)); -- 符号位扩展
             elsif IR(15 downto 11) = "11000" then -- INT
-                RDINT <= '1'; -- 向访存模块送中断向量，获取中断服务程序入口地址
+                -- 向访存模块送中断向量，获取中断服务程序入口地址
                 intAddr <= X"000"&IR(2 downto 0)&'0';
                 Addr <= serviceAddr;
 			else

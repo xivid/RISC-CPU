@@ -63,7 +63,7 @@ begin
     pushPC <= '1' when (T2 = '1' and IR(15 downto 11) = "11000" and nextService = '1') else '0';
     popPC <= '1' when (T2 = '1' and (IR(15 downto 11) = "11010")) else '0';
 	
-    -- 更新Rtemp
-	Rtemp <= DATA when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "10000")) else unaffected;
+    -- 更新Rtemp (lda, in, pop)
+	Rtemp <= DATA when (T2 = '1' and (IR(15 downto 11) = "11110" or IR(15 downto 11) = "01110" or IR(15 downto 11) = "10000")) else unaffected;
 end Behavioral;
 

@@ -90,6 +90,10 @@
     <transform xil_pn:end_ts="1438677148" xil_pn:in_ck="4210705040511550491" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1438677148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ACctrl.vhd"/>
       <outfile xil_pn:name="CLKctrl.vhd"/>
       <outfile xil_pn:name="CPU.vhd"/>
@@ -120,6 +124,11 @@
     <transform xil_pn:end_ts="1438677148" xil_pn:in_ck="4210705040511550491" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1438677148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ACctrl.vhd"/>
       <outfile xil_pn:name="CLKctrl.vhd"/>
       <outfile xil_pn:name="CPU.vhd"/>
@@ -138,8 +147,11 @@
     <transform xil_pn:end_ts="1438677151" xil_pn:in_ck="4210705040511550491" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4141937716774362808" xil_pn:start_ts="1438677148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -187,7 +199,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438677222" xil_pn:in_ck="4627412717844117173" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5791102634011909525" xil_pn:start_ts="1438677200">
+    <transform xil_pn:end_ts="1438698244" xil_pn:in_ck="4627412717844117173" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5791102634011909525" xil_pn:start_ts="1438698228">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -205,11 +217,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1438657497" xil_pn:in_ck="-6966985353893343" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3296058846128722950" xil_pn:start_ts="1438657497">
+    <transform xil_pn:end_ts="1438696746" xil_pn:in_ck="-6966985353893343" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3296058846128722950" xil_pn:start_ts="1438696746">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438677229" xil_pn:in_ck="-5744757781851512727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5247385673019886083" xil_pn:start_ts="1438677224">
+    <transform xil_pn:end_ts="1438698249" xil_pn:in_ck="-5744757781851512727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5247385673019886083" xil_pn:start_ts="1438698244">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.bld"/>
@@ -218,7 +230,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438677239" xil_pn:in_ck="-2853409407920078198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1438677229">
+    <transform xil_pn:end_ts="1438698259" xil_pn:in_ck="-2853409407920078198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1438698249">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.pcf"/>
@@ -231,9 +243,8 @@
       <outfile xil_pn:name="N3Adapter_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438677256" xil_pn:in_ck="-472592165189938365" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1438677239">
+    <transform xil_pn:end_ts="1438698274" xil_pn:in_ck="-472592165189938365" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1438698259">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.ncd"/>
       <outfile xil_pn:name="N3Adapter.pad"/>
@@ -246,7 +257,7 @@
       <outfile xil_pn:name="N3Adapter_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438677273" xil_pn:in_ck="3650156213849930949" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1438677256">
+    <transform xil_pn:end_ts="1438698288" xil_pn:in_ck="3650156213849930949" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1438698274">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -259,7 +270,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1438677256" xil_pn:in_ck="2870230781031147910" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1438677252">
+    <transform xil_pn:end_ts="1438698274" xil_pn:in_ck="2870230781031147910" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1438698269">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="N3Adapter.twr"/>

@@ -42,7 +42,7 @@ entity PmodCLP is
             R5:     in std_logic_vector(7 downto 0);
             R6:     in std_logic_vector(7 downto 0);
             R7:     in std_logic_vector(7 downto 0);
-            intServicePort : integer;
+            intServicePort : in integer;
 			--lcd input signals
 			--signal on connector JC 
 			JC:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)

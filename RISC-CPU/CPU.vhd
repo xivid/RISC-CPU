@@ -63,7 +63,8 @@ entity CPU is
            intr : out std_logic_vector(7 downto 0);
            intrUpdate : out std_logic;
            isrUpdate : out std_logic;
-           entered : out std_logic
+           entered : out std_logic;
+           stackTop : out std_logic_vector(15 downto 0)
            );
 end CPU;
 
@@ -150,7 +151,9 @@ architecture Behavioral of CPU is
             Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
             Rupdate : out  STD_LOGIC;
             PCnew : out  STD_LOGIC_VECTOR (15 downto 0);
-            entered : out std_logic);
+            entered : out std_logic;
+            inctop : out std_logic;
+            dectop : out std_logic);
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT ACctrl
@@ -160,6 +163,7 @@ architecture Behavioral of CPU is
            WR : in  STD_LOGIC;
            RDIR : in  STD_LOGIC;
            PC : in  STD_LOGIC_VECTOR (15 downto 0);
+           OP : in STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
            Addr : in  STD_LOGIC_VECTOR (15 downto 0);
            ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
            pushPC : in std_logic;
@@ -168,6 +172,8 @@ architecture Behavioral of CPU is
            intAddr : in std_logic_vector(15 downto 0);
            pushr : in std_logic;
            popr : in std_logic;
+           inctop : in std_logic;
+           dectop : in std_logic;
            nBLE : out  STD_LOGIC;
            nBHE : out  STD_LOGIC;
            ABUS : out  STD_LOGIC_VECTOR (15 downto 0);
@@ -183,7 +189,8 @@ architecture Behavioral of CPU is
            IR : out  STD_LOGIC_VECTOR (15 downto 0);
            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
            returnAddr : out STD_LOGIC_VECTOR (15 downto 0);
-           serviceAddr : out std_logic_vector (15 downto 0) -- 中断服务程序入口地址
+           serviceAddr : out std_logic_vector (15 downto 0); -- 中断服务程序入口地址
+           stackTop : out std_logic_vector (15 downto 0)
            );
 		END COMPONENT;
 	--///////////////////////////////////////////////
@@ -194,6 +201,8 @@ architecture Behavioral of CPU is
     signal popPC : std_logic := '0';
     signal pushr : std_logic := '0';
     signal popr : std_logic := '0';
+    signal inctop : std_logic := '0';
+    signal dectop : std_logic := '0';
     signal Addrin : std_logic_vector(15 downto 0) := (others => '0');
     signal ALUOUT : std_logic_vector(7 downto 0) := (others => '0');
     signal Addr : std_logic_vector(15 downto 0) := (others => '0');
@@ -285,7 +294,9 @@ begin
           Rdata => Rdata,
           Rupdate => Rupdate,
           PCnew => PCnew,
-          entered => entered
+          entered => entered,
+          inctop => inctop,
+          dectop => dectop
         );
 	comAC: ACctrl PORT MAP (
           nIO => nIO,
@@ -294,6 +305,7 @@ begin
           WR => WR,
           RDIR => RDIR,
           PC => PCout,
+          OP => IRout(15 downto 11),
           Addr => Addr,
           ALUOUT => ALUOUT,
           pushPC => pushPC,
@@ -302,6 +314,8 @@ begin
           intAddr => intAddr,
           pushr => pushr,
           popr => popr,
+          inctop => inctop,
+          dectop => dectop,
           nBLE => nBLE,
           nBHE => nBHE,
           ABUS => ABUS,
@@ -317,7 +331,8 @@ begin
           IR => IRdata,
           Rtemp => Rtempdata,
           returnAddr => returnAddr,
-          serviceAddr => serviceAddr
+          serviceAddr => serviceAddr,
+          stackTop => stackTop
         );
     PC <= PCout;
     IR <= IRout;

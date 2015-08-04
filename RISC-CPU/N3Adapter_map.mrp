@@ -10,40 +10,40 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Aug 04 16:33:50 2015
+Mapped Date    : Tue Aug 04 22:24:10 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   13
+Number of warnings:   18
 Slice Logic Utilization:
-  Number of Slice Registers:                   332 out of  18,224    1%
-    Number used as Flip Flops:                 220
-    Number used as Latches:                    112
+  Number of Slice Registers:                   387 out of  18,224    2%
+    Number used as Flip Flops:                 231
+    Number used as Latches:                    156
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        798 out of   9,112    8%
-    Number used as logic:                      795 out of   9,112    8%
-      Number using O6 output only:             574
-      Number using O5 output only:              64
-      Number using O5 and O6:                  157
+  Number of Slice LUTs:                        931 out of   9,112   10%
+    Number used as logic:                      927 out of   9,112   10%
+      Number using O6 output only:             646
+      Number using O5 output only:              76
+      Number using O5 and O6:                  205
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      3
+    Number used exclusively as route-thrus:      4
       Number with same-slice register load:      0
-      Number with same-slice carry load:         3
+      Number with same-slice carry load:         4
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   307 out of   2,278   13%
-  Number of MUXCYs used:                       140 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:          893
-    Number with an unused Flip Flop:           580 out of     893   64%
-    Number with an unused LUT:                  95 out of     893   10%
-    Number of fully used LUT-FF pairs:         218 out of     893   24%
-    Number of unique control sets:              45
+  Number of occupied Slices:                   355 out of   2,278   15%
+  Number of MUXCYs used:                       180 out of   4,556    3%
+  Number of LUT Flip Flop pairs used:        1,031
+    Number with an unused Flip Flop:           663 out of   1,031   64%
+    Number with an unused LUT:                 100 out of   1,031    9%
+    Number of fully used LUT-FF pairs:         268 out of   1,031   25%
+    Number of unique control sets:              49
     Number of slice register sites lost
-      to control set restrictions:             164 out of  18,224    1%
+      to control set restrictions:             165 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -52,21 +52,24 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        95 out of     232   40%
-    Number of LOCed IOBs:                       95 out of      95  100%
+  Number of bonded IOBs:                        96 out of     232   41%
+    Number of LOCed IOBs:                       96 out of      96  100%
+    IOB Latches:                                12
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       5 out of      16   31%
-    Number used as BUFGs:                        5
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                  12 out of     248    4%
+    Number used as OLOGIC2s:                    12
+    Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -80,11 +83,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.75
+Average Fanout of Non-Clock Nets:                3.61
 
 Peak Memory Usage:  371 MB
-Total REAL time to MAP completion:  7 secs 
-Total CPU time to MAP completion:   7 secs 
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
 
 Table of Contents
 -----------------
@@ -107,67 +110,76 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_34_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net isrUpdate is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net comIOConv/comINTctrl/n0011
-   is sourced by a combinatorial pin. This is not good design practice. Use the
-   CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_452_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net intrUpdate is sourced by a
+   comIOConv/nPRD_nPRD_AND_84_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net nPREQ is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_836_o is sourced by a combinatorial
+   comIOConv/comINTctrl/intrUpdate_entered_OR_17_o is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comEX/T1_IR[15]_AND_13_o is sourced by a combinatorial pin. This is
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_39_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_RDINT_AND_375_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/comAC/nRD_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_37_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_35_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_RDINT_AND_490_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_644_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comCPU/comAC/RDIR_RDINT_AND_441_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_516_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comIOConv/nPREQ_nPRD_OR_27_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_964_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comIOConv/nPRD_IOAD[1]_MUX_81_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_580_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comCPU/comAC/nMEM_RDIR_OR_144_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_708_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_900_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/GND_193_o_irr[0]_AND_772_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   comCPU/comEX/T1_IR[15]_AND_121_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network sw<7>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 7 more times for the following
-   (max. 5 shown):
-   sw<6>_IBUF,
-   sw<5>_IBUF,
-   sw<4>_IBUF,
-   sw<3>_IBUF,
-   sw<2>_IBUF
-   To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -182,238 +194,15 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  81 block(s) removed
-   4 block(s) optimized away
-  65 signal(s) removed
+   2 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
-
-The trimmed logic reported below is either:
-   1. part of a cycle
-   2. part of disabled logic
-   3. a side-effect of other trimmed logic
-
-The signal "IOAD<0>" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_address[15]_Addr[0]_MUX_384_o11" (ROM) removed.
-The signal "comCPU/pushPC" is unused and has been removed.
- Unused block "comCPU/comMEM/pushPC" (ROM) removed.
-  The signal "N54" is unused and has been removed.
-   Unused block "comCPU/comMEM/pushPC_SW0" (ROM) removed.
-The signal "comCPU/nMEM" is unused and has been removed.
- Unused block "comCPU/comMEM/nMEM1" (ROM) removed.
-The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<14>" is unused and
-has been removed.
- Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<14>" (MUX) removed.
-  The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<13>" is unused and
-has been removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<13>" (MUX) removed.
-    The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<12>" is unused and
-has been removed.
-     Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<12>" (MUX) removed.
-      The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<11>" is unused and
-has been removed.
-       Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<11>" (MUX) removed.
-        The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<10>" is unused and
-has been removed.
-         Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<10>" (MUX) removed.
-          The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<9>" is unused and has
-been removed.
-           Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<9>" (MUX) removed.
-            The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<8>" is unused and has
-been removed.
-             Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<8>" (MUX) removed.
-              The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<7>" is unused and has
-been removed.
-               Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<7>" (MUX) removed.
-                The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<6>" is unused and has
-been removed.
-                 Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<6>" (MUX) removed.
-                  The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<5>" is unused and has
-been removed.
-                   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<5>" (MUX) removed.
-                    The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<4>" is unused and has
-been removed.
-                     Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<4>" (MUX) removed.
-                      The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<3>" is unused and has
-been removed.
-                       Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<3>" (MUX) removed.
-                        The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<2>" is unused and has
-been removed.
-                         Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<2>" (MUX) removed.
-                          The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<1>" is unused and has
-been removed.
-                           Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<1>" (MUX) removed.
-                            The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_lut<1>" is unused and
-has been removed.
-                             Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_lut<1>_INV_0" (BUF)
-removed.
-                          The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<2>_rt" is unused and
-has been removed.
-                           Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<2>_rt" (ROM)
-removed.
-                        The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<3>_rt" is unused and
-has been removed.
-                         Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<3>_rt" (ROM)
-removed.
-                      The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<4>_rt" is unused and
-has been removed.
-                       Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<4>_rt" (ROM)
-removed.
-                    The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<5>_rt" is unused and
-has been removed.
-                     Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<5>_rt" (ROM)
-removed.
-                  The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<6>_rt" is unused and
-has been removed.
-                   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<6>_rt" (ROM)
-removed.
-                The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<7>_rt" is unused and
-has been removed.
-                 Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<7>_rt" (ROM)
-removed.
-              The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<8>_rt" is unused and
-has been removed.
-               Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<8>_rt" (ROM)
-removed.
-            The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<9>_rt" is unused and
-has been removed.
-             Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<9>_rt" (ROM)
-removed.
-          The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<10>_rt" is unused and
-has been removed.
-           Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<10>_rt" (ROM)
-removed.
-        The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<11>_rt" is unused and
-has been removed.
-         Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<11>_rt" (ROM)
-removed.
-      The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<12>_rt" is unused and
-has been removed.
-       Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<12>_rt" (ROM)
-removed.
-    The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<13>_rt" is unused and
-has been removed.
-     Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<13>_rt" (ROM)
-removed.
-  The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<14>_rt" is unused and
-has been removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_cy<14>_rt" (ROM)
-removed.
-The signal "comCPU/comAC/address[0]_INV_72_o" is unused and has been removed.
- Unused block "comCPU/comAC/address[0]_INV_72_o1" (ROM) removed.
-The signal "MemDB_0_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_599_o11" (ROM) removed.
-The signal "MemDB_1_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_589_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<1>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<1>" (XOR) removed.
-The signal "MemDB_2_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_579_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<2>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<2>" (XOR) removed.
-The signal "MemDB_3_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_569_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<3>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<3>" (XOR) removed.
-The signal "MemDB_4_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_559_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<4>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<4>" (XOR) removed.
-The signal "MemDB_5_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_549_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<5>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<5>" (XOR) removed.
-The signal "MemDB_6_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_539_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<6>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<6>" (XOR) removed.
-The signal "MemDB_7_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_529_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<7>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<7>" (XOR) removed.
-The signal "MemDB_8_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_519_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<8>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<8>" (XOR) removed.
-The signal "MemDB_9_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_509_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<9>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<9>" (XOR) removed.
-The signal "MemDB_10_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_499_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<10>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<10>" (XOR)
-removed.
-The signal "MemDB_11_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_489_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<11>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<11>" (XOR)
-removed.
-The signal "MemDB_12_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_479_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<12>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<12>" (XOR)
-removed.
-The signal "MemDB_13_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_469_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<13>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<13>" (XOR)
-removed.
-The signal "MemDB_14_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_459_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<14>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<14>" (XOR)
-removed.
-The signal "MemDB_15_IOBUF" is unused and has been removed.
- Unused block "comCPU/comAC/Mmux_Z_14_o_PC[15]_MUX_449_o11" (ROM) removed.
-  The signal "comCPU/comAC/PC[15]_GND_89_o_add_3_OUT<15>" is unused and has been
-removed.
-   Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<15>" (XOR)
-removed.
-    The signal "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<15>_rt" is unused
-and has been removed.
-     Unused block "comCPU/comAC/Madd_PC[15]_GND_89_o_add_3_OUT_xor<15>_rt" (ROM)
-removed.
-Unused block "MemDB_0_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_10_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_11_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_12_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_13_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_14_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_15_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_1_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_2_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_3_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_4_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_5_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_6_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_7_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_8_IOBUF/OBUFT" (TRI) removed.
-Unused block "MemDB_9_IOBUF/OBUFT" (TRI) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 VCC 		XST_VCC
-LDC_1 		comCPU/comAC/nBHE
-   optimized to 0
-LDC_1 		comCPU/comAC/nBLE
-   optimized to 0
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -465,45 +254,46 @@ Section 6 - IOB Properties
 | MemAdr<26>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | MemAdv                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | MemClk                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| MemDB<0>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<1>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<2>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<3>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<4>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<5>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<6>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<7>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<8>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<9>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<10>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<11>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<12>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<13>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<14>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemDB<15>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| MemOE                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| MemWR                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<0>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<1>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<2>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<3>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<4>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<5>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<6>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<7>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<8>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<9>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<10>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<11>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<12>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<13>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<14>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemDB<15>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| MemOE                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| MemWR                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
 | MemWait                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | RamCRE                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | RamCS                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| RamLB                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| RamUB                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| RamLB                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| RamUB                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
 | an<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | an<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | an<2>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | an<3>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | btnd                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| btnl                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | btnr                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | btns                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | btnu                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| led<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| led<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| led<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| led<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| led<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| led<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| led<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| led<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
 | seg<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | seg<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | seg<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |

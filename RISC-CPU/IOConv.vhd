@@ -39,6 +39,7 @@ entity IOConv is
            nPWR : in  STD_LOGIC;
            sw : in  STD_LOGIC_VECTOR (7 downto 0);
            btnd : in std_logic;
+           btnl : in std_logic;
            led : out  STD_LOGIC_VECTOR (7 downto 0);
            nextService : out std_logic;
            intServicePort : out integer;
@@ -86,11 +87,8 @@ begin
     -- 01 -> INTctrl imr
     -- 10 -> led(7 downto 0)
     -- 11 -> INTctrl imr
-    process (IOAD, IODB, nPREQ, nPRD, nPWR, sw, nowImr, btnd, intr, thenextService, intrUpdate, isrUpdate, theintServicePort)
+    process (IOAD, IODB, nPREQ, nPRD, nPWR, sw, nowImr, btnd, intr, thenextService, intrUpdate, isrUpdate, theintServicePort, entered)
     begin
-        IODB <= (others => 'Z');
-        led <= (others => '0');
-        imrUpdate <= '0';
         if nPREQ = '0' then
             if nPRD = '0' and nPWR = '1' then -- IN
                 case IOAD is
@@ -100,16 +98,25 @@ begin
                 end case;
             elsif nPRD = '1' and nPWR = '0' then -- OUT
                 case IOAD is
-                    when "10" => led <= IODB;
+                    when "10" => 
+                        IODB <= (others => 'Z');
+                        led <= IODB;
                     when "11" => 
+                        IODB <= (others => 'Z');
                         newImr <= IODB;
+                        led <= IODB;
                         imrUpdate <= '1';
                     when others => null;
                 end case;
             end if;
         else
+            IODB <= (others => 'Z');
+            led <= (others => '0');
+            imrUpdate <= '0';
             if btnd = '1' then
                 led <= intr;
+            elsif btnl = '1' then
+                led <= nowImr;
             else
                 led(0) <= thenextService;
                 led(1) <= intrUpdate;
