@@ -103,14 +103,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1438596915" xil_pn:in_ck="-4180731515358244155" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5791102634011909525" xil_pn:start_ts="1438596902">
+    <transform xil_pn:end_ts="1438658781" xil_pn:in_ck="4627412717844117173" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5791102634011909525" xil_pn:start_ts="1438658756">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="N3Adapter.lso"/>
       <outfile xil_pn:name="N3Adapter.ngc"/>
@@ -124,30 +121,22 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1438596916" xil_pn:in_ck="-6966985353893343" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3296058846128722950" xil_pn:start_ts="1438596915">
+    <transform xil_pn:end_ts="1438657497" xil_pn:in_ck="-6966985353893343" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3296058846128722950" xil_pn:start_ts="1438657497">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1438596921" xil_pn:in_ck="-5744757781851512727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5247385673019886083" xil_pn:start_ts="1438596916">
+    <transform xil_pn:end_ts="1438658786" xil_pn:in_ck="-5744757781851512727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5247385673019886083" xil_pn:start_ts="1438658781">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="N3Adapter.bld"/>
       <outfile xil_pn:name="N3Adapter.ngd"/>
       <outfile xil_pn:name="N3Adapter_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438596933" xil_pn:in_ck="-2853409407920078198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1438596921">
+    <transform xil_pn:end_ts="1438658796" xil_pn:in_ck="-2853409407920078198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1438658786">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="N3Adapter.pcf"/>
       <outfile xil_pn:name="N3Adapter_map.map"/>
       <outfile xil_pn:name="N3Adapter_map.mrp"/>
@@ -158,12 +147,10 @@
       <outfile xil_pn:name="N3Adapter_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438596948" xil_pn:in_ck="-472592165189938365" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1438596933">
+    <transform xil_pn:end_ts="1438658811" xil_pn:in_ck="-472592165189938365" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1438658796">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="N3Adapter.ncd"/>
       <outfile xil_pn:name="N3Adapter.pad"/>
       <outfile xil_pn:name="N3Adapter.par"/>
@@ -175,11 +162,10 @@
       <outfile xil_pn:name="N3Adapter_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1438596963" xil_pn:in_ck="3650156213849930949" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1438596948">
+    <transform xil_pn:end_ts="1438658833" xil_pn:in_ck="3650156213849930949" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1438658819">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="N3Adapter.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="n3adapter.bgn"/>
@@ -189,12 +175,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1438596948" xil_pn:in_ck="2870230781031147910" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1438596943">
+    <transform xil_pn:end_ts="1438658811" xil_pn:in_ck="2870230781031147910" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1438658806">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="N3Adapter.twr"/>
       <outfile xil_pn:name="N3Adapter.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

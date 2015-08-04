@@ -44,9 +44,8 @@ entity IFctrl is
 end IFctrl;
 
 architecture Behavioral of IFctrl is
-	signal PC, IR : STD_LOGIC_VECTOR(15 downto 0) := X"0000";
-	signal nextPC : STD_LOGIC_VECTOR(15 downto 0) := X"0000";
-	
+	signal PC : STD_LOGIC_VECTOR(15 downto 0) := X"0010";
+    signal IR : STD_LOGIC_VECTOR(15 downto 0) := X"0000";
 begin
 
 	RDIR <= T0; -- ¿ØÖÆ¶ÁÖ¸Áî

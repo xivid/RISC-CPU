@@ -46,28 +46,27 @@ entity WBctrl is
             Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
             Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
             Rupdate : out  STD_LOGIC;
-            pushPC : out std_logic;
             PCnew : out  STD_LOGIC_VECTOR (15 downto 0));
 end WBctrl;
 
 architecture Behavioral of WBctrl is
 begin
 	-- 提供回写内容
-	Rdata <= Rtemp when (OP = "10000" or OP = "01110") else -- IN / LDA
-				ALUOUT;
+	Rdata <= Rtemp when (OP = "10000" or OP = "01110" or OP = "11110") else -- IN / LDA / popr
+			 ALUOUT;
 	Raddr <= AD1;
     process (RST, OP, ALUOUT, T3)
     begin
         if RST = '1' then
-            PCnew <= X"0000";
+            PCnew <= X"0010";
         elsif T3 = '1' and T3'event then
             if OP = "00000" then
                 PCnew <= Addr;
             elsif (OP = "00010" and ALUOUT = X"00") then
                 PCnew <= PC + Addr + 2;
-            elsif (OP = "11000" and nextService = '1') then
-                PCnew <= conv_std_logic_vector(intServicePort*2, 16);
-            elsif OP = "11010" then
+            elsif (OP = "11000" and nextService = '1') then -- int
+                PCnew <= Addr;
+            elsif OP = "11010" then -- iret
                 PCnew <= returnAddr;
             else
                 PCnew <= PC + 2;
@@ -76,7 +75,6 @@ begin
     end process;
 	
 	-- 回写控制信号
-    pushPC <= '1' when (T3 = '1' and OP = "11000" and nextService = '1') else '0';
-	Rupdate <= '1' when (T3 = '1' and (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000")) else '0'; -- IN, LDA, ADC, SBB, MVI, MOV
+	Rupdate <= '1' when (T3 = '1' and (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000" or OP = "11110")) else '0'; -- IN, LDA, ADC, SBB, MVI, MOV, popr
 end Behavioral;
 

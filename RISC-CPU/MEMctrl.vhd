@@ -35,15 +35,16 @@ entity MEMctrl is
            IR : in  STD_LOGIC_VECTOR (15 downto 0);
            DATA : in  STD_LOGIC_VECTOR (7 downto 0);
            T2 : in  STD_LOGIC;
-           intr : out std_logic_vector (7 downto 0);
-           intrUpdate : out std_logic;
-           isrUpdate : out std_logic;
+           nextService : in std_logic;
            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
            nMEM : out  STD_LOGIC;
            nIO : out  STD_LOGIC;
            RD : out  STD_LOGIC;
            WR : out  STD_LOGIC;
-           popPC : out STD_LOGIC);
+           pushPC : out std_logic;
+           popPC : out STD_LOGIC;
+           pushr : out std_logic;
+           popr : out std_logic);
 end MEMctrl;
 
 architecture Behavioral of MEMctrl is
@@ -51,17 +52,18 @@ architecture Behavioral of MEMctrl is
 begin
 	-- 送出地址
 	Addr <= Addrin;
-	
+    
 	-- 读写控制
-	nMEM <= '0' when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "01100")) else '1';
+	nMEM <= '0' when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "01100")) else '1'; -- sta, lda
 	nIO <= '0' when (T2 = '1' and (IR(15 downto 11) = "10000" or IR(15 downto 11) = "10010")) else '1';
-	WR <= '1' when (T2 = '1' and (IR(15 downto 11) = "01100" or IR(15 downto 11) = "10010")) else '0';
-	RD <= '1' when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "10000")) else '0';
-    intr(conv_integer(IR(2 downto 0))) <= '1' when (T2 = '1' and (IR(15 downto 11) = "11000")) else '0';
-    intrUpdate <= '1' when (T2 = '1' and (IR(15 downto 11) = "11000")) else '0'; -- int
-    isrUpdate <= '1' when (T2 = '1' and (IR(15 downto 11) = "11010")) else '0'; -- iret
+	WR <= '1' when (T2 = '1' and (IR(15 downto 11) = "01100" or IR(15 downto 11) = "10010")) else '0'; -- sta, out
+	RD <= '1' when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "10000")) else '0'; -- lda, in
+    pushr <= '1' when (T2 = '1' and (IR(15 downto 11) = "11100")) else '0';
+    popr <= '1' when (T2 = '1' and (IR(15 downto 11) = "11110")) else '0';
+    pushPC <= '1' when (T2 = '1' and IR(15 downto 11) = "11000" and nextService = '1') else '0';
     popPC <= '1' when (T2 = '1' and (IR(15 downto 11) = "11010")) else '0';
-	-- 更新Rtemp
+	
+    -- 更新Rtemp
 	Rtemp <= DATA when (T2 = '1' and (IR(15 downto 11) = "01110" or IR(15 downto 11) = "10000")) else unaffected;
 end Behavioral;
 

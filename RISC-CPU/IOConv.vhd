@@ -19,6 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -36,6 +38,7 @@ entity IOConv is
            nPRD : in  STD_LOGIC;
            nPWR : in  STD_LOGIC;
            sw : in  STD_LOGIC_VECTOR (7 downto 0);
+           btnd : in std_logic;
            led : out  STD_LOGIC_VECTOR (7 downto 0);
            nextService : out std_logic;
            intServicePort : out integer;
@@ -60,24 +63,27 @@ architecture Behavioral of IOConv is
     end component;
     
     signal newImr, nowImr : std_logic_vector(7 downto 0);
-    signal imrUpdate : std_logic;
+    signal imrUpdate, thenextService : std_logic;
+    signal theintServicePort : integer;
 begin
+    nextService <= thenextService;
+    intServicePort <= theintServicePort;
     comINTctrl: INTctrl port map(
                 intr => intr,
                 newImr => newImr,
                 intrUpdate => intrUpdate,
                 imrUpdate => imrUpdate,
                 isrUpdate => isrUpdate,
-                nextService => nextService,
-                intServicePort => intServicePort,
+                nextService => thenextService,
+                intServicePort => theintServicePort,
                 nowImr => nowImr);
     -- This is a IO device simulator adapted on Nexys3.
     -- Address -> device:
     -- 00 -> sw(7 downto 0)
-    -- 01 -> sw(0 to 7)
+    -- 01 -> INTctrl imr
     -- 10 -> led(7 downto 0)
-    -- 11 -> led(0 to 7)
-    process (IOAD, IODB, nPREQ, nPRD, nPWR, sw)
+    -- 11 -> INTctrl imr
+    process (IOAD, IODB, nPREQ, nPRD, nPWR, sw, nowImr, btnd, intr, thenextService, intrUpdate, isrUpdate, theintServicePort)
     begin
         IODB <= (others => 'Z');
         led <= (others => '0');
@@ -97,6 +103,16 @@ begin
                         imrUpdate <= '1';
                     when others => null;
                 end case;
+            end if;
+        else
+            led <= (others => '1');
+            if btnd = '1' then
+                led <= intr;
+            else
+                led(0) <= thenextService;
+                led(1) <= intrUpdate;
+                led(2) <= isrUpdate;
+                led(7 downto 4) <= conv_std_logic_vector(theintServicePort, 4);
             end if;
         end if;
     end process;

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-08-03T19:52:16</DateModified>
+  <DateModified>2015-08-04T00:26:01</DateModified>
   <ModuleName>N3Adapter</ModuleName>
   <SummaryTimeStamp>2015-08-03T10:26:39</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Administrator/Desktop/RISC-CPU/iseconfig/N3Adapter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Administrator/Desktop/RISC-CPU\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/iseconfig/N3Adapter.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU\</ImplementationReportsDirectory>
   <DateInitialized>2015-08-01T16:58:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

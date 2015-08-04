@@ -41,6 +41,10 @@ entity ACctrl is
            ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
            pushPC : in std_logic;
            popPC : in std_logic;
+           RDINT : in std_logic;
+           intAddr : in std_logic_vector(15 downto 0);
+           pushr : in std_logic;
+           popr : in std_logic;
            nBLE : out  STD_LOGIC;
            nBHE : out  STD_LOGIC;
            ABUS : out  STD_LOGIC_VECTOR (15 downto 0);
@@ -55,7 +59,9 @@ entity ACctrl is
            nPREQ : out  STD_LOGIC;
            IR : out  STD_LOGIC_VECTOR (15 downto 0);
            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
-           returnAddr : out STD_LOGIC_VECTOR (15 downto 0));
+           returnAddr : out STD_LOGIC_VECTOR (15 downto 0);
+           serviceAddr : out std_logic_vector (15 downto 0) -- 中断服务程序入口地址
+           );
 end ACctrl;
 
 architecture Behavioral of ACctrl is
@@ -65,15 +71,10 @@ begin
 	-- 形成访存/访IO的地址
 	address <= Addr when (nMEM = '0' or nIO = '0') else
 			   PC when RDIR = '1' else
+               intAddr when RDINT = '1' else
                address;
-	process (RDIR, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address, pushPC, popPC)
+	process (RDIR, RDINT, WR, RD, nIO, nMEM, DBUS, ALUOUT, IODB, address, pushPC, popPC, pushr, popr)
 	begin
-        if pushPC'event and pushPC = '0' then
-            stackTop <= stackTop + 2;
-        end if;
-        if popPC'event and popPC = '0' then
-            stackTop <= stackTop - 2;
-        end if;
 		if RDIR = '1' then
 			nMREQ <= '0';
 			nBLE <= '0';
@@ -83,6 +84,15 @@ begin
             ABUS <= address;
             DBUS <= (others => 'Z');
 			IR <= DBUS;
+        elsif RDINT = '1' then
+            nMREQ <= '0';
+			nBLE <= '0';
+			nBHE <= '0';
+			nRD <= '0';
+			nWR <= '1';
+            ABUS <= address;
+            DBUS <= (others => 'Z');
+			serviceAddr <= DBUS;
         elsif pushPC = '1' then -- 要进入下一层中断，先将PC压栈
             nMREQ <= '0';
             nBLE <= '0';
@@ -90,7 +100,15 @@ begin
             nRD <= '1';
             nWR <= '0';
             ABUS <= stackTop;
-            DBUS <= PC;
+            DBUS <= PC + 2;
+        elsif pushr = '1' then
+            nMREQ <= '0';
+            nBLE <= '0';
+            nBHE <= '0';
+            nRD <= '1';
+            nWR <= '0';
+            ABUS <= stackTop;
+            DBUS <= ALUOUT&ALUOUT;
         elsif popPC = '1' then
             nMREQ <= '0';
             nBLE <= '0';
@@ -100,6 +118,15 @@ begin
             ABUS <= stackTop - 2;
             DBUS <= (others => 'Z');
             returnAddr <= DBUS;
+        elsif popr = '1' then
+            nMREQ <= '0';
+            nBLE <= '0';
+            nBHE <= '0';
+            nRD <= '0';
+            nWR <= '1';
+            ABUS <= stackTop - 2;
+            DBUS <= (others => 'Z');
+            Rtemp <= DBUS(7 downto 0);
 		elsif nMEM = '0' then
             nMREQ <= '0';
             ABUS <= address;
@@ -135,6 +162,18 @@ begin
             IOAD <= address(1 downto 0);
             IODB <= (others => 'Z');
 		end if;
+        if pushPC'event and pushPC = '0' then --下降沿
+            stackTop <= stackTop + 2;
+        end if;
+        if pushr'event and pushr = '0' then
+            stackTop <= stackTop + 2;
+        end if;
+        if popr'event and popr = '0' then
+            stackTop <= stackTop - 2;
+        end if;
+        if popPC'event and popPC = '0' then
+            stackTop <= stackTop - 2;
+        end if;
 	end process;
 	
 	

@@ -42,6 +42,7 @@ entity PmodCLP is
             R5:     in std_logic_vector(7 downto 0);
             R6:     in std_logic_vector(7 downto 0);
             R7:     in std_logic_vector(7 downto 0);
+            intServicePort : integer;
 			--lcd input signals
 			--signal on connector JC 
 			JC:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
@@ -308,7 +309,7 @@ begin
 		end process;					
 	
 	--Generate display content according to IR and R0~R7
-	process (IR, R0, R1, R2, R3, R4, R5, R6, R7)
+	process (IR, R0, R1, R2, R3, R4, R5, R6, R7, intServicePort)
 	begin
 		LCD_CMDS(4) <= "10"&X"20"; -- blank
 		LCD_CMDS(5) <= "10"&X"20";
@@ -325,7 +326,11 @@ begin
 		LCD_CMDS(16) <= "10"&X"20";
 		LCD_CMDS(17) <= "10"&X"20";
 		LCD_CMDS(18) <= "10"&X"20";
-		LCD_CMDS(19) <= "10"&X"20";
+        if intServicePort = 8 then
+            LCD_CMDS(19) <= "10"&X"4d"; -- M
+        else
+            LCD_CMDS(19) <= "10"&conv_ascii(conv_std_logic_vector(intServicePort, 4));
+        end if;
         LCD_CMDS(21) <= "10"&conv_ascii(R0(7 downto 4)); -- R0
         LCD_CMDS(22) <= "10"&conv_ascii(R0(3 downto 0));
         LCD_CMDS(23) <= "10"&conv_ascii(R1(7 downto 4)); -- R1
@@ -497,7 +502,7 @@ begin
             when "11100" => -- PUSH Rx
                 LCD_CMDS(4)(7 downto 0) <= X"50";
 				LCD_CMDS(5)(7 downto 0) <= X"55";
-				LCD_CMDS(6)(7 downto 0) <= X"43";
+				LCD_CMDS(6)(7 downto 0) <= X"53";
                 LCD_CMDS(7)(7 downto 0) <= X"48";
                 
                 LCD_CMDS(9)(7 downto 0) <= X"52";

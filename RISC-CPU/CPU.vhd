@@ -88,100 +88,109 @@ architecture Behavioral of CPU is
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT EXctrl
-	PORT(
-		T1 : IN  std_logic;
-		CLK : IN  std_logic;
-		Rupdate : IN  std_logic;
-		Raddr : IN  std_logic_vector(2 downto 0);
-		Rdata : IN  std_logic_vector(7 downto 0);
-		IR : IN  std_logic_vector(15 downto 0);
-        Cout : out std_logic;
-		R0 : out STD_LOGIC_VECTOR (7 downto 0);
-		R1 : out STD_LOGIC_VECTOR (7 downto 0);
-		R2 : out STD_LOGIC_VECTOR (7 downto 0);
-		R3 : out STD_LOGIC_VECTOR (7 downto 0);
-		R4 : out STD_LOGIC_VECTOR (7 downto 0);
-		R5 : out STD_LOGIC_VECTOR (7 downto 0);
-		R6 : out STD_LOGIC_VECTOR (7 downto 0);
-		R7 : out STD_LOGIC_VECTOR (7 downto 0);
-		Addr : OUT  std_logic_vector(15 downto 0);
-		ALUOUT : OUT  std_logic_vector(7 downto 0)
-	  );
+    Port (  CLK : in STD_LOGIC;
+            T1 : in  STD_LOGIC;
+            Rupdate : in  STD_LOGIC;
+            Raddr : in  STD_LOGIC_VECTOR (2 downto 0);
+            Rdata : in  STD_LOGIC_VECTOR (7 downto 0);
+            IR : in  STD_LOGIC_VECTOR (15 downto 0);
+            serviceAddr : in std_logic_vector (15 downto 0); -- 中断服务程序入口地址
+            Cout : out std_logic;
+            R0 : out STD_LOGIC_VECTOR (7 downto 0);
+            R1 : out STD_LOGIC_VECTOR (7 downto 0);
+            R2 : out STD_LOGIC_VECTOR (7 downto 0);
+            R3 : out STD_LOGIC_VECTOR (7 downto 0);
+            R4 : out STD_LOGIC_VECTOR (7 downto 0);
+            R5 : out STD_LOGIC_VECTOR (7 downto 0);
+            R6 : out STD_LOGIC_VECTOR (7 downto 0);
+            R7 : out STD_LOGIC_VECTOR (7 downto 0);
+            Addr : out  STD_LOGIC_VECTOR (15 downto 0) := X"0000";
+            ALUOUT : out  STD_LOGIC_VECTOR (7 downto 0) := X"00";
+            intr : out std_logic_vector (7 downto 0);
+            intrUpdate : out std_logic;
+            isrUpdate : out std_logic;
+            RDINT : out std_logic;
+            intAddr : out std_logic_vector(15 downto 0) -- 中断向量
+         );
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT MEMctrl
-	PORT(
-		CLK : IN  std_logic;
-		Addrin : IN  std_logic_vector(15 downto 0);
-		Addr : OUT  std_logic_vector(15 downto 0);
-		IR : IN  std_logic_vector(15 downto 0);
-		DATA : IN  std_logic_vector(7 downto 0);
-		T2 : IN  std_logic;
-        intr : out std_logic_vector (7 downto 0);
-        intrUpdate : out std_logic;
-        isrUpdate : out std_logic;
-		Rtemp : OUT  std_logic_vector(7 downto 0);
-		nMEM : OUT  std_logic;
-		nIO : OUT  std_logic;
-		RD : OUT  std_logic;
-		WR : OUT  std_logic;
-        popPC : out std_logic
-	  );
+    Port ( Addrin : in  STD_LOGIC_VECTOR (15 downto 0);
+           Addr : out  STD_LOGIC_VECTOR (15 downto 0);
+           IR : in  STD_LOGIC_VECTOR (15 downto 0);
+           DATA : in  STD_LOGIC_VECTOR (7 downto 0);
+           T2 : in  STD_LOGIC;
+           nextService : in STD_LOGIC;
+           Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
+           nMEM : out  STD_LOGIC;
+           nIO : out  STD_LOGIC;
+           RD : out  STD_LOGIC;
+           WR : out  STD_LOGIC;
+           pushPC : out std_logic;
+           popPC : out STD_LOGIC;
+           pushr : out std_logic;
+           popr : out std_logic);
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT WBctrl
-	PORT(
-        RST : IN  std_logic;
-		Rtemp : IN  std_logic_vector(7 downto 0);
-		PC : IN  std_logic_vector(15 downto 0);
-		Addr : IN  std_logic_vector(15 downto 0);
-		ALUOUT : IN  std_logic_vector(7 downto 0);
-		T3 : IN  std_logic;
-		OP : IN  std_logic_vector(15 downto 11);
-		AD1 : IN  std_logic_vector(10 downto 8);
-        nextService : IN std_logic;
-        intServicePort : in integer;
-        returnAddr : in std_logic_vector(15 downto 0);
-		Raddr : OUT  std_logic_vector(2 downto 0);
-		Rdata : OUT  std_logic_vector(7 downto 0);
-		Rupdate : OUT  std_logic;
-        pushPC : out std_logic;
-		PCnew : OUT  std_logic_vector(15 downto 0)
-	  );
+    Port (  RST : in  STD_LOGIC;
+            Rtemp : in  STD_LOGIC_VECTOR (7 downto 0);
+            PC : in  STD_LOGIC_VECTOR (15 downto 0);
+            Addr : in  STD_LOGIC_VECTOR (15 downto 0);
+            ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
+            T3 : in  STD_LOGIC;
+            OP : in STD_LOGIC_VECTOR (15 downto 11); -- IR(15 downto 11)
+            AD1 : in STD_LOGIC_VECTOR (10 downto 8); -- IR(10 downto 8)
+            nextService : in std_logic;
+            intServicePort : in integer;
+            returnAddr : in std_logic_vector (15 downto 0);
+            Raddr : out  STD_LOGIC_VECTOR (2 downto 0);
+            Rdata : out  STD_LOGIC_VECTOR (7 downto 0);
+            Rupdate : out  STD_LOGIC;
+            PCnew : out  STD_LOGIC_VECTOR (15 downto 0));
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT ACctrl
-		PORT(
-            nIO : IN  std_logic;
-            nMEM : IN  std_logic;
-            RD : IN  std_logic;
-            WR : IN  std_logic;
-            RDIR : IN  std_logic;
-            PC : IN  std_logic_vector(15 downto 0);
-            Addr : IN  std_logic_vector(15 downto 0);
-            ALUOUT : IN  std_logic_vector(7 downto 0);
-            pushPC : in std_logic;
-            popPC : in std_logic;
-            nBLE : out  STD_LOGIC;
-            nBHE : out  STD_LOGIC;
-            ABUS : out  STD_LOGIC_VECTOR (15 downto 0);
-            nRD : out  STD_LOGIC;
-            nWR : out  STD_LOGIC;
-            nMREQ : out  STD_LOGIC;
-            DBUS : inout  STD_LOGIC_VECTOR (15 downto 0);
-            IOAD : out  STD_LOGIC_VECTOR (1 downto 0);
-            IODB : inout  STD_LOGIC_VECTOR (7 downto 0);
-            nPRD : out  STD_LOGIC;
-            nPWR : out  STD_LOGIC;
-            nPREQ : out  STD_LOGIC;
-            IR : out  STD_LOGIC_VECTOR (15 downto 0);
-            Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
-            returnAddr : out STD_LOGIC_VECTOR (15 downto 0)
-		  );
+    Port ( nIO : in  STD_LOGIC;
+           nMEM : in  STD_LOGIC;
+           RD : in  STD_LOGIC;
+           WR : in  STD_LOGIC;
+           RDIR : in  STD_LOGIC;
+           PC : in  STD_LOGIC_VECTOR (15 downto 0);
+           Addr : in  STD_LOGIC_VECTOR (15 downto 0);
+           ALUOUT : in  STD_LOGIC_VECTOR (7 downto 0);
+           pushPC : in std_logic;
+           popPC : in std_logic;
+           RDINT : in std_logic;
+           intAddr : in std_logic_vector(15 downto 0);
+           pushr : in std_logic;
+           popr : in std_logic;
+           nBLE : out  STD_LOGIC;
+           nBHE : out  STD_LOGIC;
+           ABUS : out  STD_LOGIC_VECTOR (15 downto 0);
+           nRD : out  STD_LOGIC;
+           nWR : out  STD_LOGIC;
+           nMREQ : out  STD_LOGIC;
+           DBUS : inout  STD_LOGIC_VECTOR (15 downto 0);
+           IOAD : out  STD_LOGIC_VECTOR (1 downto 0);
+           IODB : inout  STD_LOGIC_VECTOR (7 downto 0);
+           nPRD : out  STD_LOGIC;
+           nPWR : out  STD_LOGIC;
+           nPREQ : out  STD_LOGIC;
+           IR : out  STD_LOGIC_VECTOR (15 downto 0);
+           Rtemp : out  STD_LOGIC_VECTOR (7 downto 0);
+           returnAddr : out STD_LOGIC_VECTOR (15 downto 0);
+           serviceAddr : out std_logic_vector (15 downto 0) -- 中断服务程序入口地址
+           );
 		END COMPONENT;
 	--///////////////////////////////////////////////
     signal Tout : std_logic_vector(3 downto 0) := "1000";
-    signal RDIR : std_logic;
+    signal RDIR : std_logic := '0';
+    signal RDINT : std_logic := '0';
+    signal pushPC : std_logic := '0';
+    signal popPC : std_logic := '0';
+    signal pushr : std_logic := '0';
+    signal popr : std_logic := '0';
     signal Addrin : std_logic_vector(15 downto 0) := (others => '0');
     signal ALUOUT : std_logic_vector(7 downto 0) := (others => '0');
     signal Addr : std_logic_vector(15 downto 0) := (others => '0');
@@ -193,12 +202,12 @@ architecture Behavioral of CPU is
     signal Raddr : std_logic_vector(2 downto 0) := (others => '0');
     signal Rdata : std_logic_vector(7 downto 0) := (others => '0');
     signal Rupdate : std_logic := '0';
-    signal pushPC : std_logic := '0';
-    signal popPC : std_logic := '0';
     signal PCnew : std_logic_vector(15 downto 0) := (others => '0');
     signal IRdata, IRout, PCout : std_logic_vector(15 downto 0) := (others => '0');
     signal Rtempdata : std_logic_vector(7 downto 0) := (others => '0');
+    signal intAddr : std_logic_vector(15 downto 0) := (others => '0');
     signal returnAddr : std_logic_vector(15 downto 0) := (others => '0');
+    signal serviceAddr : std_logic_vector(15 downto 0) := (others => '0');
 begin
    comCLK: CLKctrl PORT MAP (
           CLK => CLK,
@@ -215,12 +224,13 @@ begin
           IRout => IRout
         );
 	comEX: EXctrl PORT MAP (
+          CLK => CLK,
           T1 => Tout(1),
-		  CLK => CLK,
           Rupdate => Rupdate,
           Raddr => Raddr,
           Rdata => Rdata,
           IR => IRout,
+          serviceAddr => serviceAddr,
           Cout => Cout,
 		  R0 => R0,
 		  R1 => R1, 
@@ -231,24 +241,29 @@ begin
 		  R6 => R6,
 		  R7 => R7,
           Addr => Addrin,
-          ALUOUT => ALUOUT
+          ALUOUT => ALUOUT,
+          intr => intr,
+          intrUpdate => intrUpdate,
+          isrUpdate => isrUpdate,
+          RDINT => RDINT,
+          intAddr => intAddr
         );
    comMEM: MEMctrl PORT MAP (
-          CLK => CLK,
           Addrin => Addrin,
           Addr => Addr,
           IR => IRout,
           DATA => Rtempdata,
           T2 => Tout(2),
-          intr => intr,
-          intrUpdate => intrUpdate,
-          isrUpdate => isrUpdate,
+          nextService => nextService,
           Rtemp => Rtemp,
           nMEM => nMEM,
           nIO => nIO,
           RD => RD,
           WR => WR,
-          popPC => popPC
+          pushPC => pushPC,
+          popPC => popPC,
+          pushr => pushr,
+          popr => popr
         );
    comWB: WBctrl PORT MAP (
           RST => RST,
@@ -261,12 +276,11 @@ begin
           AD1 => IRout(10 downto 8),
           nextService => nextService,
           intServicePort => intServicePort,
+          returnAddr => returnAddr,
           Raddr => Raddr,
           Rdata => Rdata,
           Rupdate => Rupdate,
-          pushPC => pushPC,
-          PCnew => PCnew,
-          returnAddr => returnAddr
+          PCnew => PCnew
         );
 	comAC: ACctrl PORT MAP (
           nIO => nIO,
@@ -279,6 +293,10 @@ begin
           ALUOUT => ALUOUT,
           pushPC => pushPC,
           popPC => popPC,
+          RDINT => RDINT,
+          intAddr => intAddr,
+          pushr => pushr,
+          popr => popr,
           nBLE => nBLE,
           nBHE => nBHE,
           ABUS => ABUS,
@@ -293,7 +311,8 @@ begin
           nPREQ => nPREQ,
           IR => IRdata,
           Rtemp => Rtempdata,
-          returnAddr => returnAddr
+          returnAddr => returnAddr,
+          serviceAddr => serviceAddr
         );
     PC <= PCout;
     IR <= IRout;

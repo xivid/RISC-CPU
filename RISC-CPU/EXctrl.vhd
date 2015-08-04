@@ -32,13 +32,13 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity EXctrl is
-    Port ( -- RST : in  STD_LOGIC;
-            CLK : in STD_LOGIC;
+    Port (  CLK : in STD_LOGIC;
             T1 : in  STD_LOGIC;
             Rupdate : in  STD_LOGIC;
             Raddr : in  STD_LOGIC_VECTOR (2 downto 0);
             Rdata : in  STD_LOGIC_VECTOR (7 downto 0);
             IR : in  STD_LOGIC_VECTOR (15 downto 0);
+            serviceAddr : in std_logic_vector (15 downto 0); -- 中断服务程序入口地址
             Cout : out std_logic;
             R0 : out STD_LOGIC_VECTOR (7 downto 0);
             R1 : out STD_LOGIC_VECTOR (7 downto 0);
@@ -49,7 +49,13 @@ entity EXctrl is
             R6 : out STD_LOGIC_VECTOR (7 downto 0);
             R7 : out STD_LOGIC_VECTOR (7 downto 0);
             Addr : out  STD_LOGIC_VECTOR (15 downto 0) := X"0000";
-            ALUOUT : out  STD_LOGIC_VECTOR (7 downto 0) := X"00");
+            ALUOUT : out  STD_LOGIC_VECTOR (7 downto 0) := X"00";
+            intr : out std_logic_vector (7 downto 0);
+            intrUpdate : out std_logic;
+            isrUpdate : out std_logic;
+            RDINT : out std_logic;
+            intAddr : out std_logic_vector(15 downto 0) -- 中断向量
+         );
 end EXctrl;
 
 architecture Behavioral of EXctrl is
@@ -69,18 +75,18 @@ begin
 	R7 <= Reg(7);
 	
 	-- Prepare A, B, Addr
-	process (T1, IR)
+	process (T1, IR, CLK)
 	begin
-		if T1'event and T1 = '1' then
+		if T1 = '1' and CLK = '1' then
 			A <= Reg(conv_integer(IR(10 downto 8)));
 			B <= Reg(conv_integer(IR(2 downto 0)));
 			Addr(7 downto 0) <= IR(7 downto 0);
 			if IR(15 downto 11) = "00010" then  -- JZ
 				Addr(15 downto 8) <= (others => IR(7)); -- 符号位扩展
             elsif IR(15 downto 11) = "11000" then -- INT
-                Addr(15 downto 4) <= (others => '0');
-                Addr(3 downto 1) <= IR(2 downto 0); -- 中断向量
-                Addr(0) <= '0';
+                RDINT <= '1'; -- 向访存模块送中断向量，获取中断服务程序入口地址
+                intAddr <= X"000"&IR(2 downto 0)&'0';
+                Addr <= serviceAddr;
 			else
 				Addr(15 downto 8) <= Reg(7); -- R7扩展寻址
 			end if;
@@ -106,6 +112,7 @@ begin
                 when "01100" => ALUOUT <= A; -- STA(6)
                 when "00010" => ALUOUT <= A; -- JZ(1)
                 when "10010" => ALUOUT <= A; -- OUT(9)
+                when "11100" => ALUOUT <= A; -- pushr(E)
                 when others  => null;
             end case;
 		end if;
@@ -118,5 +125,22 @@ begin
 			Reg(conv_integer(Raddr)) <= Rdata;
 		end if;
 	end process;
+    
+    -- int
+    process (T1, IR)
+    begin
+        intr <= (others => '0');
+        intrUpdate <= '0';
+        isrUpdate <= '0';
+        if T1 = '1' then
+            if IR(15 downto 11) = "11000" then
+                intr(conv_integer(IR(2 downto 0))) <= '1';
+                intrUpdate <= '1';
+            elsif IR(15 downto 11) = "11010" then
+                isrUpdate <= '1';
+            end if;
+        end if;
+    end process;
+    
 end Behavioral;
 

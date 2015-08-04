@@ -1,5 +1,6 @@
 vhdl work "WBctrl.vhd"
 vhdl work "MEMctrl.vhd"
+vhdl work "INTctrl.vhd"
 vhdl work "IFctrl.vhd"
 vhdl work "EXctrl.vhd"
 vhdl work "CLKctrl.vhd"

@@ -37,6 +37,7 @@ entity N3Adapter is
            btnr : in  STD_LOGIC;
            btns : in  STD_LOGIC;
            btnu : in  STD_LOGIC;
+           btnd : in std_logic;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0);
            --signal on connector JC 
@@ -106,6 +107,7 @@ architecture Behavioral of N3Adapter is
        nPRD : in  STD_LOGIC;
        nPWR : in  STD_LOGIC;
        sw : in  STD_LOGIC_VECTOR (7 downto 0);
+       btnd : in std_logic;
        led : out  STD_LOGIC_VECTOR (7 downto 0);
        nextService : out std_logic;
        intServicePort : out integer;
@@ -133,6 +135,7 @@ architecture Behavioral of N3Adapter is
             R5:     in std_logic_vector(7 downto 0);
             R6:     in std_logic_vector(7 downto 0);
             R7:     in std_logic_vector(7 downto 0);
+            intServicePort : in integer;
 			--lcd input signals
 			--signal on connector JC 
 			JC:	out std_logic_vector(7 downto 0);		--output bus, used for data transfer (DB)
@@ -204,6 +207,7 @@ begin
                 R5 => R5,
                 R6 => R6,
                 R7 => R7,
+                intServicePort => intServicePort,
                 JC => JC,
                 JD => JD);
     comCPU: CPU port map(
@@ -245,6 +249,7 @@ begin
                nPRD => nPRD,
                nPWR => nPWR,
                sw => sw,
+               btnd => btnd,
                led => led,
                nextService => nextService,
                intServicePort => intServicePort,
