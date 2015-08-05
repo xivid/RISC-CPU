@@ -90,13 +90,9 @@ begin
     process (IOAD, IODB, nPREQ, nPRD, nPWR, sw, nowImr, btnd, intr, thenextService, intrUpdate, isrUpdate, theintServicePort, entered)
     begin
         if nPREQ = '0' then
-            if nPRD = '0' and nPWR = '1' then -- IN
-                case IOAD is
-                    when "00" => IODB <= sw;
-                    when "01" => IODB <= nowImr;-- imr
-                    when others => null;
-                end case;
-            elsif nPRD = '1' and nPWR = '0' then -- OUT
+            IODB <= (others => 'Z');
+            led <= (others => '0');
+            if nPWR = '0' then -- OUT
                 case IOAD is
                     when "10" => 
                         IODB <= (others => 'Z');
@@ -104,19 +100,25 @@ begin
                     when "11" => 
                         IODB <= (others => 'Z');
                         newImr <= IODB;
-                        led <= IODB;
                         imrUpdate <= '1';
+                    when others => null;
+                end case;
+            elsif nPRD = '0' then -- IN
+                case IOAD is
+                    when "00" => IODB <= sw;
+                    when "01" => IODB <= nowImr;-- imr
                     when others => null;
                 end case;
             end if;
         else
             IODB <= (others => 'Z');
-            led <= (others => '0');
             imrUpdate <= '0';
-            if btnd = '1' then
-                led <= intr;
-            elsif btnl = '1' then
+            
+            led <= (others => '0');
+            if btnl = '1' then -- …æµÙ ‘ ‘
                 led <= nowImr;
+            elsif btnd = '1' then
+                led <= intr;
             else
                 led(0) <= thenextService;
                 led(1) <= intrUpdate;
