@@ -10,40 +10,46 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Aug 05 17:04:06 2015
+Mapped Date    : Wed Aug 05 18:48:49 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   19
+Number of warnings:   18
 Slice Logic Utilization:
-  Number of Slice Registers:                   381 out of  18,224    2%
-    Number used as Flip Flops:                 231
-    Number used as Latches:                    150
+  Number of Slice Registers:                   393 out of  18,224    2%
+    Number used as Flip Flops:                 244
+    Number used as Latches:                    149
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        948 out of   9,112   10%
-    Number used as logic:                      944 out of   9,112   10%
-      Number using O6 output only:             658
-      Number using O5 output only:              76
-      Number using O5 and O6:                  210
+  Number of Slice LUTs:                        964 out of   9,112   10%
+    Number used as logic:                      949 out of   9,112   10%
+      Number using O6 output only:             662
+      Number using O5 output only:              78
+      Number using O5 and O6:                  209
       Number used as ROM:                        0
-    Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      4
+    Number used as Memory:                      10 out of   2,176    1%
+      Number used as Dual Port RAM:             10
+        Number using O6 output only:             2
+        Number using O5 output only:             0
+        Number using O5 and O6:                  8
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:      5
       Number with same-slice register load:      0
-      Number with same-slice carry load:         4
+      Number with same-slice carry load:         5
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   379 out of   2,278   16%
-  Number of MUXCYs used:                       180 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:        1,055
-    Number with an unused Flip Flop:           692 out of   1,055   65%
-    Number with an unused LUT:                 107 out of   1,055   10%
-    Number of fully used LUT-FF pairs:         256 out of   1,055   24%
-    Number of unique control sets:              58
+  Number of occupied Slices:                   384 out of   2,278   16%
+  Number of MUXCYs used:                       184 out of   4,556    4%
+  Number of LUT Flip Flop pairs used:        1,075
+    Number with an unused Flip Flop:           704 out of   1,075   65%
+    Number with an unused LUT:                 111 out of   1,075   10%
+    Number of fully used LUT-FF pairs:         260 out of   1,075   24%
+    Number of unique control sets:              49
     Number of slice register sites lost
-      to control set restrictions:             235 out of  18,224    1%
+      to control set restrictions:             165 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -61,8 +67,8 @@ Specific Feature Utilization:
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
-    Number used as BUFGs:                        4
+  Number of BUFG/BUFGMUXs:                       5 out of      16   31%
+    Number used as BUFGs:                        5
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
@@ -83,9 +89,9 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.67
+Average Fanout of Non-Clock Nets:                3.68
 
-Peak Memory Usage:  370 MB
+Peak Memory Usage:  372 MB
 Total REAL time to MAP completion:  9 secs 
 Total CPU time to MAP completion:   9 secs 
 
@@ -110,80 +116,75 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comAC/nMEM_RDIR_OR_137_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comAC/RDIR_RDINT_AND_495_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net isrUpdate is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comEX/T1_IR[15]_AND_174_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_70_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextServicePort[0]_AND_134_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/intrUpdate_entered_OR_17_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comAC/RDIR_RDINT_AND_429_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_68_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_66_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_65_o is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net entered is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net comIOConv/imrUpdate is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/entered_intrUpdate_AND_24_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net intrUpdate is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/entered_nextServicePort[0]_AND_158_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/entered_intr[0]_MUX_86_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/nMEM_RDIR_OR_367_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_RDINT_AND_519_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comAC/RDIR_RDINT_AND_453_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/comAC/nRD_G is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextServicePort[1]_AND_132_o is sourced by a
+   comIOConv/comINTctrl/entered_nextServicePort[1]_AND_156_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextServicePort[2]_AND_130_o is sourced by a
+   comIOConv/comINTctrl/entered_nextServicePort[2]_AND_154_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comAC/RDIR_RDINT_AND_544_o is sourced by a combinatorial pin. This is
+   comCPU/comAC/RDIR_RDINT_AND_568_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comEX/T1_IR[15]_AND_198_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <comIOConv/comINTctrl/Mram_PortStack1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <comIOConv/comINTctrl/Mram_PortStack5_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
+INFO:LIT:243 - Logical network comIOConv/comINTctrl/Mram_PortStack61/SPO has no
+   load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs

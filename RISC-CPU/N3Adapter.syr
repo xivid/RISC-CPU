@@ -156,9 +156,9 @@ Elaborating entity <btnDebounce> (architecture <Behavioral>) from library <work>
 Elaborating entity <IOConv> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <INTctrl> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\INTctrl.vhd" Line 94: nextserviceport should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\INTctrl.vhd" Line 95: nextserviceport should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\INTctrl.vhd" Line 61: Assignment to isr ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\INTctrl.vhd" Line 90: nextserviceport should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\INTctrl.vhd" Line 91: nextserviceport should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\INTctrl.vhd" Line 60: Assignment to isr ignored, since the identifier is never used
 
 Elaborating entity <PmodCLP> (architecture <Behavioral>) from library <work>.
 INFO:HDLCompiler:679 - "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\PmodCLP.vhd" Line 168. Case statement is complete. others clause is never selected
@@ -289,38 +289,9 @@ Unit <IOConv> synthesized.
 
 Synthesizing Unit <INTctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\INTctrl.vhd".
-    Found 1-bit register for signal <nextServicePort<31>>.
-    Found 1-bit register for signal <nextServicePort<30>>.
-    Found 1-bit register for signal <nextServicePort<29>>.
-    Found 1-bit register for signal <nextServicePort<28>>.
-    Found 1-bit register for signal <nextServicePort<27>>.
-    Found 1-bit register for signal <nextServicePort<26>>.
-    Found 1-bit register for signal <nextServicePort<25>>.
-    Found 1-bit register for signal <nextServicePort<24>>.
-    Found 1-bit register for signal <nextServicePort<23>>.
-    Found 1-bit register for signal <nextServicePort<22>>.
-    Found 1-bit register for signal <nextServicePort<21>>.
-    Found 1-bit register for signal <nextServicePort<20>>.
-    Found 1-bit register for signal <nextServicePort<19>>.
-    Found 1-bit register for signal <nextServicePort<18>>.
-    Found 1-bit register for signal <nextServicePort<17>>.
-    Found 1-bit register for signal <nextServicePort<16>>.
-    Found 1-bit register for signal <nextServicePort<15>>.
-    Found 1-bit register for signal <nextServicePort<14>>.
-    Found 1-bit register for signal <nextServicePort<13>>.
-    Found 1-bit register for signal <nextServicePort<12>>.
-    Found 1-bit register for signal <nextServicePort<11>>.
-    Found 1-bit register for signal <nextServicePort<10>>.
-    Found 1-bit register for signal <nextServicePort<9>>.
-    Found 1-bit register for signal <nextServicePort<8>>.
-    Found 1-bit register for signal <nextServicePort<7>>.
-    Found 1-bit register for signal <nextServicePort<6>>.
-    Found 1-bit register for signal <nextServicePort<5>>.
-    Found 1-bit register for signal <nextServicePort<4>>.
-    Found 1-bit register for signal <nextServicePort<3>>.
-    Found 1-bit register for signal <nextServicePort<2>>.
-    Found 1-bit register for signal <nextServicePort<1>>.
-    Found 1-bit register for signal <nextServicePort<0>>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <PortStack>, simulation mismatch.
+    Found 9x32-bit dual-port RAM <Mram_PortStack> for signal <PortStack>.
+    Found 32-bit register for signal <stackTop>.
     Found 1-bit register for signal <runningPort<31>>.
     Found 1-bit register for signal <runningPort<30>>.
     Found 1-bit register for signal <runningPort<29>>.
@@ -353,6 +324,8 @@ Synthesizing Unit <INTctrl>.
     Found 1-bit register for signal <runningPort<2>>.
     Found 1-bit register for signal <runningPort<1>>.
     Found 1-bit register for signal <runningPort<0>>.
+    Found 32-bit adder for signal <stackTop[31]_GND_8_o_add_25_OUT> created at line 99.
+    Found 4-bit subtractor for signal <stackTop[31]_GND_8_o_sub_15_OUT<3:0>> created at line 95.
 WARNING:Xst:737 - Found 1-bit latch for signal <imr<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <imr<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <imr<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -361,11 +334,17 @@ WARNING:Xst:737 - Found 1-bit latch for signal <imr<2>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <imr<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <imr<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <nextService>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextServicePort<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextServicePort<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextServicePort<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextServicePort<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <imr<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
 	inferred  64 D-type flip-flop(s).
-	inferred   9 Latch(s).
-	inferred  17 Multiplexer(s).
+	inferred  13 Latch(s).
+	inferred  16 Multiplexer(s).
 Unit <INTctrl> synthesized.
 
 Synthesizing Unit <PmodCLP>.
@@ -395,9 +374,9 @@ WARNING:Xst:2935 - Signal 'LCD_CMDS<37>', unconnected in block 'PmodCLP', is tie
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 7-bit adder for signal <clkCount[6]_GND_26_o_add_1_OUT> created at line 182.
-    Found 21-bit adder for signal <count[20]_GND_26_o_add_4_OUT> created at line 194.
-    Found 6-bit adder for signal <lcd_cmd_ptr[5]_GND_26_o_add_21_OUT> created at line 216.
+    Found 7-bit adder for signal <clkCount[6]_GND_58_o_add_1_OUT> created at line 182.
+    Found 21-bit adder for signal <count[20]_GND_58_o_add_4_OUT> created at line 194.
+    Found 6-bit adder for signal <lcd_cmd_ptr[5]_GND_58_o_add_21_OUT> created at line 216.
     Found 32x70-bit Read Only RAM for signal <_n0305>
     Found 10-bit 38-to-1 multiplexer for signal <n0144> created at line 539.
     Summary:
@@ -458,9 +437,9 @@ Synthesizing Unit <EXctrl>.
     Found 8-bit register for signal <Reg<1>>.
     Found 8-bit register for signal <Reg<0>>.
     Found 9-bit adder for signal <n0164> created at line 105.
-    Found 9-bit adder for signal <A[7]_GND_47_o_add_21_OUT> created at line 105.
-    Found 9-bit subtractor for signal <GND_47_o_GND_47_o_sub_23_OUT<8:0>> created at line 108.
-    Found 9-bit subtractor for signal <GND_47_o_GND_47_o_sub_24_OUT<8:0>> created at line 108.
+    Found 9-bit adder for signal <A[7]_GND_79_o_add_21_OUT> created at line 105.
+    Found 9-bit subtractor for signal <GND_79_o_GND_79_o_sub_23_OUT<8:0>> created at line 108.
+    Found 9-bit subtractor for signal <GND_79_o_GND_79_o_sub_24_OUT<8:0>> created at line 108.
     Found 1-bit 8-to-1 multiplexer for signal <IR[10]_Reg[7][7]_wide_mux_8_OUT<7>> created at line 79.
     Found 1-bit 8-to-1 multiplexer for signal <IR[10]_Reg[7][7]_wide_mux_8_OUT<6>> created at line 79.
     Found 1-bit 8-to-1 multiplexer for signal <IR[10]_Reg[7][7]_wide_mux_8_OUT<5>> created at line 79.
@@ -540,8 +519,8 @@ Synthesizing Unit <WBctrl>.
 WARNING:Xst:647 - Input <intServicePort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit register for signal <PCnew>.
     Found 16-bit adder for signal <n0065> created at line 70.
-    Found 16-bit adder for signal <PC[15]_GND_105_o_add_9_OUT> created at line 70.
-    Found 16-bit adder for signal <PC[15]_GND_105_o_add_12_OUT> created at line 76.
+    Found 16-bit adder for signal <PC[15]_GND_137_o_add_9_OUT> created at line 70.
+    Found 16-bit adder for signal <PC[15]_GND_137_o_add_12_OUT> created at line 76.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  16 D-type flip-flop(s).
@@ -552,9 +531,9 @@ Synthesizing Unit <ACctrl>.
     Related source file is "C:\Users\Administrator\CPU\RISC-CPU\RISC-CPU\ACctrl.vhd".
 WARNING:Xst:647 - Input <dectop> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit register for signal <top>.
-    Found 16-bit adder for signal <PC[15]_GND_107_o_add_4_OUT> created at line 114.
-    Found 16-bit adder for signal <top[15]_GND_107_o_add_55_OUT> created at line 175.
-    Found 16-bit subtractor for signal <GND_107_o_GND_107_o_sub_7_OUT<15:0>> created at line 138.
+    Found 16-bit adder for signal <PC[15]_GND_139_o_add_4_OUT> created at line 114.
+    Found 16-bit adder for signal <top[15]_GND_139_o_add_55_OUT> created at line 175.
+    Found 16-bit subtractor for signal <GND_139_o_GND_139_o_sub_7_OUT<15:0>> created at line 138.
 WARNING:Xst:737 - Found 1-bit latch for signal <address<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <address<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <address<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -671,7 +650,7 @@ Synthesizing Unit <segDisplay>.
     Found 4-bit register for signal <an>.
     Found 8-bit register for signal <seg>.
     Found 16-bit register for signal <js>.
-    Found 16-bit adder for signal <js[15]_GND_210_o_add_0_OUT> created at line 82.
+    Found 16-bit adder for signal <js[15]_GND_242_o_add_0_OUT> created at line 82.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -682,37 +661,38 @@ Unit <segDisplay> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 2
  32x70-bit single-port Read Only RAM                   : 1
-# Adders/Subtractors                                   : 14
+ 9x32-bit dual-port RAM                                : 1
+# Adders/Subtractors                                   : 16
  16-bit adder                                          : 4
  16-bit addsub                                         : 1
  16-bit subtractor                                     : 1
  21-bit adder                                          : 1
- 32-bit adder                                          : 1
+ 32-bit adder                                          : 2
+ 4-bit subtractor                                      : 1
  6-bit adder                                           : 1
  7-bit adder                                           : 1
  9-bit adder                                           : 2
  9-bit subtractor                                      : 2
-# Registers                                            : 88
- 1-bit register                                        : 67
+# Registers                                            : 57
+ 1-bit register                                        : 35
  16-bit register                                       : 4
  21-bit register                                       : 1
- 32-bit register                                       : 1
+ 32-bit register                                       : 2
  4-bit register                                        : 3
  6-bit register                                        : 1
  7-bit register                                        : 1
  8-bit register                                        : 10
-# Latches                                              : 147
- 1-bit latch                                           : 147
-# Multiplexers                                         : 279
- 1-bit 2-to-1 multiplexer                              : 153
+# Latches                                              : 151
+ 1-bit latch                                           : 151
+# Multiplexers                                         : 278
+ 1-bit 2-to-1 multiplexer                              : 160
  1-bit 8-to-1 multiplexer                              : 16
  10-bit 2-to-1 multiplexer                             : 57
  10-bit 38-to-1 multiplexer                            : 1
  16-bit 2-to-1 multiplexer                             : 13
- 32-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 7
+ 32-bit 2-to-1 multiplexer                             : 2
  8-bit 2-to-1 multiplexer                              : 29
 # Tristates                                            : 32
  1-bit tristate buffer                                 : 32
@@ -729,11 +709,32 @@ INFO:Xst:2261 - The FF/Latch <shift_2> in Unit <comsegDisplay> is equivalent to 
 INFO:Xst:2261 - The FF/Latch <shift_3> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_2> 
 INFO:Xst:2261 - The FF/Latch <shift_0> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_3> 
 INFO:Xst:2261 - The FF/Latch <shift_1> in Unit <comsegDisplay> is equivalent to the following FF/Latch, which will be removed : <an_0> 
+WARNING:Xst:1293 - FF/Latch <nextServicePort_31> has a constant value of 0 in block <comINTctrl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <intAddr_15> (without init value) has a constant value of 0 in block <comEX>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <ACctrl>.
 The following registers are absorbed into accumulator <top>: 1 register on signal <top>.
 Unit <ACctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <INTctrl>.
+The following registers are absorbed into counter <stackTop>: 1 register on signal <stackTop>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_PortStack> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 9-word x 32-bit                     |          |
+    |     clkA           | connected to signal <entered>       | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <stackTop>      |          |
+    |     diA            | connected to signal <(nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort,nextServicePort)> |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 9-word x 32-bit                     |          |
+    |     addrB          | connected to signal <stackTop[31]_GND_8_o_sub_15_OUT> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <INTctrl> synthesized (advanced).
 
 Synthesizing (advanced) Unit <PmodCLP>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
@@ -764,32 +765,33 @@ Unit <segDisplay> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 2
  32x70-bit single-port distributed Read Only RAM       : 1
-# Adders/Subtractors                                   : 7
+ 9x32-bit dual-port distributed RAM                    : 1
+# Adders/Subtractors                                   : 8
  16-bit adder                                          : 3
  16-bit subtractor                                     : 1
  32-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
  9-bit adder carry in                                  : 1
  9-bit subtractor borrow in                            : 1
-# Counters                                             : 5
+# Counters                                             : 6
  16-bit up counter                                     : 1
  21-bit up counter                                     : 1
- 32-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
  6-bit up counter                                      : 1
  7-bit up counter                                      : 1
 # Accumulators                                         : 1
  16-bit updown accumulator                             : 1
-# Registers                                            : 191
- Flip-Flops                                            : 191
-# Multiplexers                                         : 279
- 1-bit 2-to-1 multiplexer                              : 153
+# Registers                                            : 159
+ Flip-Flops                                            : 159
+# Multiplexers                                         : 309
+ 1-bit 2-to-1 multiplexer                              : 192
  1-bit 8-to-1 multiplexer                              : 16
  10-bit 2-to-1 multiplexer                             : 57
  10-bit 38-to-1 multiplexer                            : 1
  16-bit 2-to-1 multiplexer                             : 13
- 32-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 7
+ 32-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 29
 # FSMs                                                 : 1
 
@@ -798,6 +800,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1293 - FF/Latch <nextServicePort_31> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <intAddr_15> (without init value) has a constant value of 0 in block <EXctrl>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <shift_2> in Unit <segDisplay> is equivalent to the following FF/Latch, which will be removed : <an_1> 
 INFO:Xst:2261 - The FF/Latch <shift_3> in Unit <segDisplay> is equivalent to the following FF/Latch, which will be removed : <an_2> 
@@ -819,62 +822,34 @@ Optimizing FSM <comPmodCLP/FSM_0> on signal <stCur[1:10]> with one-hot encoding.
  stactwr                | 0100000000
  stchardelay            | 1000000000
 --------------------------------------
-WARNING:Xst:1293 - FF/Latch <runningPort_30> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_29> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_26> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_28> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_27> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_23> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_25> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_24> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_20> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_22> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_21> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_17> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_19> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_18> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_14> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_16> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_15> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_11> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_13> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_12> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_8> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_10> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_9> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_7> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_6> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_5> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_4> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_31> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_29> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_30> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_26> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_28> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_27> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_23> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_25> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_24> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_20> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_22> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_21> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_17> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_19> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_18> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_14> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_16> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_15> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_11> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_13> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_12> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_10> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_9> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_6> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_8> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_7> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_5> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <nextServicePort_4> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <runningPort_31> has a constant value of 0 in block <INTctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <stackTop_4> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_5> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_6> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_7> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_8> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_9> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_10> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_11> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_12> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_13> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_14> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_15> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_16> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_17> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_18> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_19> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_20> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_21> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_22> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_23> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_24> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_25> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_26> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_27> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_28> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_29> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_30> of sequential type is unconnected in block <INTctrl>.
+WARNING:Xst:2677 - Node <stackTop_31> of sequential type is unconnected in block <INTctrl>.
 WARNING:Xst:2677 - Node <btn_debounce.count_17> of sequential type is unconnected in block <btnDebounce>.
 WARNING:Xst:2677 - Node <btn_debounce.count_18> of sequential type is unconnected in block <btnDebounce>.
 WARNING:Xst:2677 - Node <btn_debounce.count_19> of sequential type is unconnected in block <btnDebounce>.
@@ -915,14 +890,13 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
   List of register instances with asynchronous set and reset:
     comCPU/comAC/nWR in unit <N3Adapter>
     comCPU/comAC/nRD in unit <N3Adapter>
+    runningPort_0 in unit <INTctrl>
     runningPort_1 in unit <INTctrl>
     runningPort_2 in unit <INTctrl>
-    runningPort_0 in unit <INTctrl>
+
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
     runningPort_3 in unit <INTctrl>
-    nextServicePort_0 in unit <INTctrl>
-    nextServicePort_1 in unit <INTctrl>
-    nextServicePort_3 in unit <INTctrl>
-    nextServicePort_2 in unit <INTctrl>
 
 WARNING:Xst:2040 - Unit N3Adapter: 8 multi-source signals are replaced by logic (pull-up yes): IODB<0>, IODB<1>, IODB<2>, IODB<3>, IODB<4>, IODB<5>, IODB<6>, IODB<7>.
 WARNING:Xst:2042 - Unit IOConv: 8 internal tristates are replaced by logic (pull-up yes): IODB<0>, IODB<1>, IODB<2>, IODB<3>, IODB<4>, IODB<5>, IODB<6>, IODB<7>.
@@ -944,6 +918,10 @@ Optimizing unit <WBctrl> ...
 Optimizing unit <EXctrl> ...
 
 Optimizing unit <MEMctrl> ...
+INFO:Xst:2399 - RAMs <comIOConv/comINTctrl/Mram_PortStack61>, <comIOConv/comINTctrl/Mram_PortStack62> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <comIOConv/comINTctrl/Mram_PortStack5>, <comIOConv/comINTctrl/Mram_PortStack4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <comIOConv/comINTctrl/Mram_PortStack5>, <comIOConv/comINTctrl/Mram_PortStack3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <comIOConv/comINTctrl/Mram_PortStack5>, <comIOConv/comINTctrl/Mram_PortStack2> are equivalent, second RAM is removed
 WARNING:Xst:1293 - FF/Latch <comCPU/comAC/top_0> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <comBtnrDeb/btn_debounce.count_16> has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_6> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
@@ -952,12 +930,21 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_3> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_2> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <comPmodCLP/clkCount_1> (without init value) has a constant value of 0 in block <N3Adapter>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <comIOConv/comINTctrl/runningPort_10> in Unit <N3Adapter> is equivalent to the following 3 FFs/Latches, which will be removed : <comIOConv/comINTctrl/runningPort_16> <comIOConv/comINTctrl/runningPort_22> <comIOConv/comINTctrl/runningPort_28> 
+INFO:Xst:2261 - The FF/Latch <comIOConv/comINTctrl/runningPort_11> in Unit <N3Adapter> is equivalent to the following 3 FFs/Latches, which will be removed : <comIOConv/comINTctrl/runningPort_17> <comIOConv/comINTctrl/runningPort_23> <comIOConv/comINTctrl/runningPort_29> 
+INFO:Xst:2261 - The FF/Latch <comIOConv/comINTctrl/runningPort_24> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comIOConv/comINTctrl/runningPort_6> 
+INFO:Xst:2261 - The FF/Latch <comIOConv/comINTctrl/runningPort_25> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comIOConv/comINTctrl/runningPort_7> 
+INFO:Xst:2261 - The FF/Latch <comIOConv/comINTctrl/runningPort_30> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comIOConv/comINTctrl/runningPort_31> 
+INFO:Xst:2261 - The FF/Latch <comIOConv/comINTctrl/runningPort_26> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comIOConv/comINTctrl/runningPort_8> 
+INFO:Xst:2261 - The FF/Latch <comIOConv/comINTctrl/runningPort_27> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comIOConv/comINTctrl/runningPort_9> 
 INFO:Xst:2261 - The FF/Latch <comPmodCLP/OneUSClk> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comsegDisplay/js_1> 
 INFO:Xst:2261 - The FF/Latch <comPmodCLP/clkCount_0> in Unit <N3Adapter> is equivalent to the following FF/Latch, which will be removed : <comsegDisplay/js_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block N3Adapter, actual ratio is 16.
+WARNING:Xst:1426 - The value init of the FF/Latch comIOConv/comINTctrl/runningPort_3_LD hinder the constant cleaning in the block N3Adapter.
+   You should achieve better results by setting this init to 0.
 FlipFlop comCPU/comCLK/tmp[2]_dff_1_1 has been replicated 2 time(s)
 FlipFlop comsegDisplay/shift_1 has been replicated 1 time(s)
 FlipFlop comsegDisplay/shift_2 has been replicated 4 time(s)
@@ -969,8 +956,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 231
- Flip-Flops                                            : 231
+# Registers                                            : 244
+ Flip-Flops                                            : 244
 
 =========================================================================
 
@@ -993,36 +980,38 @@ Top Level Output File Name         : N3Adapter.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1495
+# BELS                             : 1505
 #      GND                         : 1
-#      INV                         : 23
-#      LUT1                        : 80
-#      LUT2                        : 81
-#      LUT3                        : 192
-#      LUT4                        : 115
-#      LUT5                        : 204
-#      LUT6                        : 443
-#      MUXCY                       : 154
+#      INV                         : 25
+#      LUT1                        : 83
+#      LUT2                        : 79
+#      LUT3                        : 183
+#      LUT4                        : 129
+#      LUT5                        : 192
+#      LUT6                        : 450
+#      MUXCY                       : 157
 #      MUXF7                       : 39
 #      VCC                         : 1
-#      XORCY                       : 162
-# FlipFlops/Latches                : 385
-#      FD                          : 79
+#      XORCY                       : 166
+# FlipFlops/Latches                : 397
+#      FD                          : 84
 #      FD_1                        : 1
-#      FDC                         : 28
+#      FDC                         : 41
 #      FDE                         : 81
 #      FDE_1                       : 8
-#      FDP                         : 10
+#      FDP                         : 5
 #      FDR                         : 23
 #      FDS                         : 1
-#      LD                          : 72
-#      LDC                         : 6
+#      LD                          : 73
+#      LDC                         : 3
 #      LDC_1                       : 2
-#      LDE                         : 56
+#      LDE                         : 59
 #      LDE_1                       : 16
-#      LDP                         : 2
-# Clock Buffers                    : 4
-#      BUFG                        : 3
+# RAMS                             : 3
+#      RAM16X1D                    : 1
+#      RAM32M                      : 2
+# Clock Buffers                    : 5
+#      BUFG                        : 4
 #      BUFGP                       : 1
 # IO Buffers                       : 94
 #      IBUF                        : 12
@@ -1036,16 +1025,18 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             381  out of  18224     2%  
- Number of Slice LUTs:                 1138  out of   9112    12%  
-    Number used as Logic:              1138  out of   9112    12%  
+ Number of Slice Registers:             393  out of  18224     2%  
+ Number of Slice LUTs:                 1151  out of   9112    12%  
+    Number used as Logic:              1141  out of   9112    12%  
+    Number used as Memory:               10  out of   2176     0%  
+       Number used as RAM:               10
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1275
-   Number with an unused Flip Flop:     894  out of   1275    70%  
-   Number with an unused LUT:           137  out of   1275    10%  
-   Number of fully used LUT-FF pairs:   244  out of   1275    19%  
-   Number of unique control sets:        60
+ Number of LUT Flip Flop pairs used:   1284
+   Number with an unused Flip Flop:     891  out of   1284    69%  
+   Number with an unused LUT:           133  out of   1284    10%  
+   Number of fully used LUT-FF pairs:   260  out of   1284    20%  
+   Number of unique control sets:        50
 
 IO Utilization: 
  Number of IOs:                          95
@@ -1053,7 +1044,7 @@ IO Utilization:
     IOB Flip Flops/Latches:               4
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1073,39 +1064,37 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
-Clock Signal                                                                                                           | Clock buffer(FF name)                               | Load  |
------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
-comBtnrDeb/btn_deb                                                                                                     | NONE(comCPU/comCLK/tmp[2]_dff_1_3)                  | 15    |
-comCPU/inctop(comCPU/comWB/inctop1:O)                                                                                  | NONE(*)(comCPU/comAC/top_15)                        | 15    |
-comCPU/comAC/RDIR_RDINT_AND_429_o(comCPU/comAC/RDIR_RDINT_AND_429_o1:O)                                                | NONE(*)(comCPU/comAC/returnAddr_0)                  | 16    |
-comCPU/comCLK/tmp[2]_dff_1_0                                                                                           | BUFG                                                | 64    |
-comCPU/nMEM(comCPU/comMEM/nMEM1:O)                                                                                     | NONE(*)(comCPU/comAC/nBLE)                          | 2     |
-comCPU/comAC/nMEM_RDIR_OR_137_o(comCPU/comAC/nMEM_RDIR_OR_137_o1:O)                                                    | NONE(*)(comCPU/comAC/address_0)                     | 16    |
-comCPU/comAC/RDIR_RDINT_AND_495_o(comCPU/comAC/RDIR_RDINT_AND_495_o2:O)                                                | NONE(*)(comCPU/comAC/Rtemp_0)                       | 8     |
-comCPU/comAC/RDIR_RDINT_AND_544_o(comCPU/comAC/RDIR_RDINT_AND_544_o2:O)                                                | NONE(*)(comCPU/comAC/nPWR)                          | 2     |
-comIOConv/comINTctrl/intrUpdate_entered_OR_17_o(comIOConv/comINTctrl/intrUpdate_entered_OR_17_o1:O)                    | NONE(*)(comIOConv/comINTctrl/nextService)           | 1     |
-comIOConv/imrUpdate(comIOConv/imrUpdate1:O)                                                                            | NONE(*)(comIOConv/comINTctrl/imr_7)                 | 8     |
-CLK                                                                                                                    | BUFGP                                               | 54    |
-comPmodCLP/OneUSClk                                                                                                    | NONE(comPmodCLP/stCur_FSM_FFd2)                     | 16    |
-comsegDisplay/js_15                                                                                                    | NONE(comsegDisplay/seg_7)                           | 19    |
-comCPU/comCLK/tmp[2]_dff_1_3                                                                                           | NONE(comCPU/comWB/PCnew_15)                         | 16    |
-comCPU/comCLK/tmp[2]_dff_1_1                                                                                           | BUFG                                                | 32    |
-comCPU/comEX/T1_IR[15]_AND_174_o(comCPU/comEX/T1_IR[15]_AND_174_o1:O)                                                  | NONE(*)(comCPU/comEX/intAddr_1)                     | 3     |
-comCPU/Rupdate(comCPU/comWB/Rupdate1:O)                                                                                | BUFG(*)(comCPU/comEX/Reg_0_7)                       | 64    |
-comCPU/comCLK/tmp[2]_dff_1_2                                                                                           | NONE(comCPU/comMEM/Rtemp_7)                         | 8     |
-comCPU/comAC/nRD_G(comCPU/comAC/nRD_G:O)                                                                               | NONE(*)(comCPU/comAC/nRD)                           | 2     |
-comIOConv/comINTctrl/entered_nextServicePort[1]_AND_132_o(comIOConv/comINTctrl/entered_nextServicePort[1]_AND_132_o1:O)| NONE(*)(comIOConv/comINTctrl/runningPort_1_LDC)     | 1     |
-isrUpdate(comCPU/comEX/Mmux_isrUpdate11:O)                                                                             | NONE(*)(comIOConv/comINTctrl/runningPort_1_C_1)     | 16    |
-comIOConv/comINTctrl/entered_nextServicePort[2]_AND_130_o(comIOConv/comINTctrl/entered_nextServicePort[2]_AND_130_o1:O)| NONE(*)(comIOConv/comINTctrl/runningPort_2_LDC)     | 1     |
-comIOConv/comINTctrl/entered_nextServicePort[0]_AND_134_o(comIOConv/comINTctrl/entered_nextServicePort[0]_AND_134_o1:O)| NONE(*)(comIOConv/comINTctrl/runningPort_0_LDC)     | 1     |
-comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o(comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o1:O)| NONE(*)(comIOConv/comINTctrl/runningPort_3_LDC1)    | 1     |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_70_o(comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_70_o1:O)                  | NONE(*)(comIOConv/comINTctrl/nextServicePort_0_LDC) | 1     |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_68_o(comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_68_o1:O)                  | NONE(*)(comIOConv/comINTctrl/nextServicePort_1_LDC) | 1     |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_65_o(comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_65_o:O)                   | NONE(*)(comIOConv/comINTctrl/nextServicePort_3_LDC1)| 1     |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_66_o(comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_66_o3:O)                  | NONE(*)(comIOConv/comINTctrl/nextServicePort_2_LDC) | 1     |
------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
-(*) These 20 clock signal(s) are generated by combinatorial logic,
+-----------------------------------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+Clock Signal                                                                                                           | Clock buffer(FF name)                          | Load  |
+-----------------------------------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+comBtnrDeb/btn_deb                                                                                                     | NONE(comCPU/comCLK/tmp[2]_dff_1_3)             | 15    |
+comCPU/inctop(comCPU/comWB/inctop1:O)                                                                                  | NONE(*)(comCPU/comAC/top_15)                   | 15    |
+comCPU/comAC/RDIR_RDINT_AND_453_o(comCPU/comAC/RDIR_RDINT_AND_453_o1:O)                                                | NONE(*)(comCPU/comAC/returnAddr_0)             | 16    |
+comCPU/comCLK/tmp[2]_dff_1_0                                                                                           | BUFG                                           | 64    |
+comCPU/nMEM(comCPU/comMEM/nMEM1:O)                                                                                     | NONE(*)(comCPU/comAC/nBLE)                     | 2     |
+comCPU/comAC/nMEM_RDIR_OR_367_o(comCPU/comAC/nMEM_RDIR_OR_367_o1:O)                                                    | NONE(*)(comCPU/comAC/address_0)                | 16    |
+comCPU/comAC/RDIR_RDINT_AND_519_o(comCPU/comAC/RDIR_RDINT_AND_519_o2:O)                                                | NONE(*)(comCPU/comAC/Rtemp_0)                  | 8     |
+comCPU/comAC/RDIR_RDINT_AND_568_o(comCPU/comAC/RDIR_RDINT_AND_568_o2:O)                                                | NONE(*)(comCPU/comAC/nPWR)                     | 2     |
+entered(comCPU/comWB/entered1:O)                                                                                       | NONE(*)(comIOConv/comINTctrl/stackTop_3)       | 7     |
+intrUpdate(comCPU/comEX/Mmux_intrUpdate11:O)                                                                           | NONE(*)(comIOConv/comINTctrl/nextServicePort_0)| 3     |
+comIOConv/comINTctrl/entered_intr[0]_MUX_86_o(comIOConv/comINTctrl/Mmux_entered_intr[0]_MUX_86_o11:O)                  | NONE(*)(comIOConv/comINTctrl/nextService)      | 1     |
+comIOConv/imrUpdate(comIOConv/imrUpdate1:O)                                                                            | NONE(*)(comIOConv/comINTctrl/imr_7)            | 8     |
+CLK                                                                                                                    | BUFGP                                          | 54    |
+comPmodCLP/OneUSClk                                                                                                    | NONE(comPmodCLP/stCur_FSM_FFd2)                | 16    |
+comsegDisplay/js_15                                                                                                    | NONE(comsegDisplay/seg_7)                      | 19    |
+comCPU/comCLK/tmp[2]_dff_1_3                                                                                           | NONE(comCPU/comWB/PCnew_15)                    | 16    |
+comCPU/comCLK/tmp[2]_dff_1_1                                                                                           | BUFG                                           | 32    |
+comCPU/comEX/T1_IR[15]_AND_198_o(comCPU/comEX/T1_IR[15]_AND_198_o1:O)                                                  | NONE(*)(comCPU/comEX/intAddr_1)                | 3     |
+comCPU/Rupdate(comCPU/comWB/Rupdate1:O)                                                                                | BUFG(*)(comCPU/comEX/Reg_0_7)                  | 64    |
+comCPU/comCLK/tmp[2]_dff_1_2                                                                                           | NONE(comCPU/comMEM/Rtemp_7)                    | 8     |
+comCPU/comAC/nRD_G(comCPU/comAC/nRD_G:O)                                                                               | NONE(*)(comCPU/comAC/nRD)                      | 2     |
+comIOConv/comINTctrl/entered_nextServicePort[0]_AND_158_o(comIOConv/comINTctrl/entered_nextServicePort[0]_AND_158_o1:O)| NONE(*)(comIOConv/comINTctrl/runningPort_0_LDC)| 1     |
+isrUpdate(comCPU/comEX/Mmux_isrUpdate11:O)                                                                             | BUFG(*)(comIOConv/comINTctrl/runningPort_0_C_0)| 25    |
+comIOConv/comINTctrl/entered_nextServicePort[1]_AND_156_o(comIOConv/comINTctrl/entered_nextServicePort[1]_AND_156_o1:O)| NONE(*)(comIOConv/comINTctrl/runningPort_1_LDC)| 1     |
+comIOConv/comINTctrl/entered_nextServicePort[2]_AND_154_o(comIOConv/comINTctrl/entered_nextServicePort[2]_AND_154_o1:O)| NONE(*)(comIOConv/comINTctrl/runningPort_2_LDC)| 1     |
+comIOConv/comINTctrl/entered_intrUpdate_AND_24_o(comIOConv/comINTctrl/entered_intrUpdate_AND_24_o1:O)                  | NONE(*)(comIOConv/comINTctrl/runningPort_3_LD) | 1     |
+-----------------------------------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+(*) These 18 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1120,7 +1109,7 @@ Speed Grade: -3
 
    Minimum period: 5.099ns (Maximum Frequency: 196.115MHz)
    Minimum input arrival time before clock: 7.130ns
-   Maximum output required time after clock: 11.930ns
+   Maximum output required time after clock: 12.430ns
    Maximum combinational path delay: 7.002ns
 
 Timing Details:
@@ -1186,51 +1175,73 @@ Delay:               2.559ns (Levels of Logic = 15)
                                        (52.0% logic, 48.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'comCPU/comAC/RDIR_RDINT_AND_495_o'
+Timing constraint: Default period analysis for Clock 'comCPU/comAC/RDIR_RDINT_AND_519_o'
   Clock period: 2.244ns (frequency: 445.613MHz)
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
 Delay:               2.244ns (Levels of Logic = 2)
   Source:            comCPU/comAC/Rtemp_0 (LATCH)
   Destination:       comCPU/comAC/Rtemp_0 (LATCH)
-  Source Clock:      comCPU/comAC/RDIR_RDINT_AND_495_o falling
-  Destination Clock: comCPU/comAC/RDIR_RDINT_AND_495_o falling
+  Source Clock:      comCPU/comAC/RDIR_RDINT_AND_519_o falling
+  Destination Clock: comCPU/comAC/RDIR_RDINT_AND_519_o falling
 
   Data Path: comCPU/comAC/Rtemp_0 to comCPU/comAC/Rtemp_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               2   0.498   0.721  comCPU/comAC/Rtemp_0 (comCPU/comAC/Rtemp_0)
-     LUT6:I4->O            1   0.203   0.580  comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_969_o21 (comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_969_o2)
-     LUT5:I4->O            1   0.205   0.000  comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_969_o22 (comCPU/comAC/Rtemp[7]_DBUS[8]_MUX_969_o)
+     LUT6:I4->O            1   0.203   0.580  comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_1267_o21 (comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_1267_o2)
+     LUT5:I4->O            1   0.205   0.000  comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_1267_o22 (comCPU/comAC/Rtemp[7]_DBUS[8]_MUX_1267_o)
      LD:D                      0.037          comCPU/comAC/Rtemp_0
     ----------------------------------------
     Total                      2.244ns (0.943ns logic, 1.301ns route)
                                        (42.0% logic, 58.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'comIOConv/imrUpdate'
-  Clock period: 3.286ns (frequency: 304.354MHz)
-  Total number of paths / destination ports: 16 / 8
+Timing constraint: Default period analysis for Clock 'entered'
+  Clock period: 2.510ns (frequency: 398.470MHz)
+  Total number of paths / destination ports: 32 / 20
 -------------------------------------------------------------------------
-Delay:               3.286ns (Levels of Logic = 3)
-  Source:            comIOConv/comINTctrl/imr_1 (LATCH)
-  Destination:       comIOConv/comINTctrl/imr_1 (LATCH)
-  Source Clock:      comIOConv/imrUpdate falling
-  Destination Clock: comIOConv/imrUpdate falling
+Delay:               2.510ns (Levels of Logic = 1)
+  Source:            comIOConv/comINTctrl/stackTop_0 (FF)
+  Destination:       comIOConv/comINTctrl/Mram_PortStack61 (RAM)
+  Source Clock:      entered rising
+  Destination Clock: entered rising
 
-  Data Path: comIOConv/comINTctrl/imr_1 to comIOConv/comINTctrl/imr_1
+  Data Path: comIOConv/comINTctrl/stackTop_0 to comIOConv/comINTctrl/Mram_PortStack61
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               8   0.498   0.803  comIOConv/comINTctrl/imr_1 (comIOConv/comINTctrl/imr_1)
-     LUT3:I2->O            1   0.205   0.684  IODB<1>LogicTrst1 (IODB<1>LogicTrst)
-     LUT6:I4->O            3   0.203   0.651  IODB<1>LogicTrst3 (IODB<1>)
-     LUT6:I5->O            1   0.205   0.000  comIOConv/Mmux_newImr21 (comIOConv/newImr<1>)
-     LD:D                      0.037          comIOConv/comINTctrl/imr_1
+     FD:C->Q              10   0.447   1.085  comIOConv/comINTctrl/stackTop_0 (comIOConv/comINTctrl/stackTop_0)
+     LUT4:I1->O            7   0.205   0.773  comIOConv/comINTctrl/Msub_stackTop[31]_GND_8_o_sub_15_OUT<3:0>_xor<3>11 (comIOConv/comINTctrl/stackTop[31]_GND_8_o_sub_15_OUT<3>)
+     RAM16X1D:DPRA3            0.000          comIOConv/comINTctrl/Mram_PortStack61
     ----------------------------------------
-    Total                      3.286ns (1.148ns logic, 2.138ns route)
-                                       (34.9% logic, 65.1% route)
+    Total                      2.510ns (0.652ns logic, 1.858ns route)
+                                       (26.0% logic, 74.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comIOConv/imrUpdate'
+  Clock period: 3.228ns (frequency: 309.804MHz)
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Delay:               3.228ns (Levels of Logic = 3)
+  Source:            comIOConv/comINTctrl/imr_0 (LATCH)
+  Destination:       comIOConv/comINTctrl/imr_0 (LATCH)
+  Source Clock:      comIOConv/imrUpdate falling
+  Destination Clock: comIOConv/imrUpdate falling
+
+  Data Path: comIOConv/comINTctrl/imr_0 to comIOConv/comINTctrl/imr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               6   0.498   0.745  comIOConv/comINTctrl/imr_0 (comIOConv/comINTctrl/imr_0)
+     LUT3:I2->O            1   0.205   0.684  IODB<0>LogicTrst1 (IODB<0>LogicTrst)
+     LUT6:I4->O            3   0.203   0.651  IODB<0>LogicTrst3 (IODB<0>)
+     LUT6:I5->O            1   0.205   0.000  comIOConv/Mmux_newImr11 (comIOConv/newImr<0>)
+     LD:D                      0.037          comIOConv/comINTctrl/imr_0
+    ----------------------------------------
+    Total                      3.228ns (1.148ns logic, 2.080ns route)
+                                       (35.6% logic, 64.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
@@ -1249,7 +1260,7 @@ Delay:               4.890ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      FD:C->Q               5   0.447   1.059  comPmodCLP/count_7 (comPmodCLP/count_7)
      LUT6:I1->O            1   0.203   0.580  comPmodCLP/delayOK11 (comPmodCLP/delayOK11)
-     LUT3:I2->O            3   0.205   0.879  comPmodCLP/delayOK13_SW0 (N80)
+     LUT3:I2->O            3   0.205   0.879  comPmodCLP/delayOK13_SW0 (N72)
      LUT6:I3->O           16   0.205   1.005  comPmodCLP/delayOK14 (comPmodCLP/delayOK)
      LUT2:I1->O            1   0.205   0.000  comPmodCLP/count_20_rstpot (comPmodCLP/count_20_rstpot)
      FD:D                      0.102          comPmodCLP/count_20
@@ -1259,28 +1270,27 @@ Delay:               4.890ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'comPmodCLP/OneUSClk'
-  Clock period: 4.670ns (frequency: 214.151MHz)
+  Clock period: 4.696ns (frequency: 212.957MHz)
   Total number of paths / destination ports: 249 / 16
 -------------------------------------------------------------------------
-Delay:               4.670ns (Levels of Logic = 4)
-  Source:            comPmodCLP/stCur_FSM_FFd7 (FF)
+Delay:               4.696ns (Levels of Logic = 3)
+  Source:            comPmodCLP/lcd_cmd_ptr_2 (FF)
   Destination:       comPmodCLP/lcd_cmd_ptr_1 (FF)
   Source Clock:      comPmodCLP/OneUSClk rising
   Destination Clock: comPmodCLP/OneUSClk rising
 
-  Data Path: comPmodCLP/stCur_FSM_FFd7 to comPmodCLP/lcd_cmd_ptr_1
+  Data Path: comPmodCLP/lcd_cmd_ptr_2 to comPmodCLP/lcd_cmd_ptr_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              8   0.447   1.147  comPmodCLP/stCur_FSM_FFd7 (comPmodCLP/stCur_FSM_FFd7)
-     LUT5:I0->O            3   0.203   0.755  comPmodCLP/delayOK10 (comPmodCLP/delayOK10)
-     LUT6:I4->O            2   0.203   0.617  comPmodCLP/delayOK14_1 (comPmodCLP/delayOK14)
-     LUT6:I5->O            4   0.205   0.788  comPmodCLP/GND_26_o_writeDone_AND_167_o1 (comPmodCLP/GND_26_o_writeDone_AND_167_o)
+     FD:C->Q              78   0.447   1.961  comPmodCLP/lcd_cmd_ptr_2 (comPmodCLP/lcd_cmd_ptr_2)
+     LUT6:I3->O            4   0.205   0.788  comPmodCLP/writeDone<5>2 (comPmodCLP/writeDone)
+     LUT6:I4->O            4   0.203   0.788  comPmodCLP/GND_58_o_writeDone_AND_191_o1 (comPmodCLP/GND_58_o_writeDone_AND_191_o)
      LUT4:I2->O            1   0.203   0.000  comPmodCLP/lcd_cmd_ptr_5_rstpot (comPmodCLP/lcd_cmd_ptr_5_rstpot)
      FD:D                      0.102          comPmodCLP/lcd_cmd_ptr_5
     ----------------------------------------
-    Total                      4.670ns (1.363ns logic, 3.307ns route)
-                                       (29.2% logic, 70.8% route)
+    Total                      4.696ns (1.160ns logic, 3.536ns route)
+                                       (24.7% logic, 75.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'comsegDisplay/js_15'
@@ -1299,7 +1309,7 @@ Delay:               5.099ns (Levels of Logic = 5)
     ----------------------------------------  ------------
      FD:C->Q              19   0.447   1.072  comsegDisplay/shift_0 (comsegDisplay/shift_0)
      LUT3:I2->O           10   0.205   1.221  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT1101 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT110)
-     LUT6:I0->O            1   0.203   0.000  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT823_G (N358)
+     LUT6:I0->O            1   0.203   0.000  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT823_G (N352)
      MUXF7:I1->O           2   0.140   0.721  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT823 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT823)
      LUT3:I1->O            1   0.203   0.580  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT8211 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT82)
      LUT6:I5->O            1   0.205   0.000  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT815 (comsegDisplay/shift[3]_digit4[7]_wide_mux_2_OUT<1>)
@@ -1331,25 +1341,25 @@ Delay:               1.114ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'isrUpdate'
-  Clock period: 2.628ns (frequency: 380.445MHz)
-  Total number of paths / destination ports: 48 / 24
+  Clock period: 1.540ns (frequency: 649.540MHz)
+  Total number of paths / destination ports: 33 / 25
 -------------------------------------------------------------------------
-Delay:               2.628ns (Levels of Logic = 1)
-  Source:            comIOConv/comINTctrl/nextServicePort_3_P_3 (FF)
-  Destination:       comIOConv/comINTctrl/runningPort_3_C_3 (FF)
+Delay:               1.540ns (Levels of Logic = 1)
+  Source:            comIOConv/comINTctrl/runningPort_0_C_0 (FF)
+  Destination:       comIOConv/comINTctrl/runningPort_0_C_0 (FF)
   Source Clock:      isrUpdate rising
   Destination Clock: isrUpdate rising
 
-  Data Path: comIOConv/comINTctrl/nextServicePort_3_P_3 to comIOConv/comINTctrl/runningPort_3_C_3
+  Data Path: comIOConv/comINTctrl/runningPort_0_C_0 to comIOConv/comINTctrl/runningPort_0_C_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              3   0.447   0.898  comIOConv/comINTctrl/nextServicePort_3_P_3 (comIOConv/comINTctrl/nextServicePort_3_P_3)
-     LUT6:I2->O            3   0.203   0.650  comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o1 (comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o)
-     FDC:CLR                   0.430          comIOConv/comINTctrl/runningPort_3_C_3
+     FDC:C->Q              4   0.447   0.788  comIOConv/comINTctrl/runningPort_0_C_0 (comIOConv/comINTctrl/runningPort_0_C_0)
+     LUT6:I4->O            2   0.203   0.000  comIOConv/comINTctrl/mux1101 (comIOConv/comINTctrl/BUS_0001_runningPort[31]_mux_18_OUT<0>)
+     FDC:D                     0.102          comIOConv/comINTctrl/runningPort_0_C_0
     ----------------------------------------
-    Total                      2.628ns (1.080ns logic, 1.548ns route)
-                                       (41.1% logic, 58.9% route)
+    Total                      1.540ns (0.752ns logic, 0.788ns route)
+                                       (48.8% logic, 51.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'comBtnrDeb/btn_deb'
@@ -1371,19 +1381,19 @@ Offset:              2.943ns (Levels of Logic = 1)
                                        (56.1% logic, 43.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comAC/RDIR_RDINT_AND_429_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comAC/RDIR_RDINT_AND_453_o'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
 Offset:              1.973ns (Levels of Logic = 1)
   Source:            MemDB<8> (PAD)
   Destination:       comCPU/comAC/returnAddr_8 (LATCH)
-  Destination Clock: comCPU/comAC/RDIR_RDINT_AND_429_o falling
+  Destination Clock: comCPU/comAC/RDIR_RDINT_AND_453_o falling
 
   Data Path: MemDB<8> to comCPU/comAC/returnAddr_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           5   1.222   0.714  MemDB_8_IOBUF (N55)
+     IOBUF:IO->O           5   1.222   0.714  MemDB_8_IOBUF (N47)
      LD:D                      0.037          comCPU/comAC/returnAddr_8
     ----------------------------------------
     Total                      1.973ns (1.259ns logic, 0.714ns route)
@@ -1402,20 +1412,20 @@ Offset:              1.973ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           5   1.222   0.714  MemDB_8_IOBUF (N55)
+     IOBUF:IO->O           5   1.222   0.714  MemDB_8_IOBUF (N47)
      LDE_1:D                   0.037          comCPU/comAC/serviceAddr_8
     ----------------------------------------
     Total                      1.973ns (1.259ns logic, 0.714ns route)
                                        (63.8% logic, 36.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comAC/RDIR_RDINT_AND_495_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comCPU/comAC/RDIR_RDINT_AND_519_o'
   Total number of paths / destination ports: 32 / 8
 -------------------------------------------------------------------------
 Offset:              3.991ns (Levels of Logic = 4)
   Source:            sw<0> (PAD)
   Destination:       comCPU/comAC/Rtemp_0 (LATCH)
-  Destination Clock: comCPU/comAC/RDIR_RDINT_AND_495_o falling
+  Destination Clock: comCPU/comAC/RDIR_RDINT_AND_519_o falling
 
   Data Path: sw<0> to comCPU/comAC/Rtemp_0
                                 Gate     Net
@@ -1424,7 +1434,7 @@ Offset:              3.991ns (Levels of Logic = 4)
      IBUF:I->O             1   1.222   0.684  sw_0_IBUF (sw_0_IBUF)
      LUT3:I1->O            1   0.203   0.684  IODB<0>LogicTrst1 (IODB<0>LogicTrst)
      LUT6:I4->O            3   0.203   0.755  IODB<0>LogicTrst3 (IODB<0>)
-     LUT5:I3->O            1   0.203   0.000  comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_969_o22 (comCPU/comAC/Rtemp[7]_DBUS[8]_MUX_969_o)
+     LUT5:I3->O            1   0.203   0.000  comCPU/comAC/Mmux_Rtemp[7]_DBUS[8]_MUX_1267_o22 (comCPU/comAC/Rtemp[7]_DBUS[8]_MUX_1267_o)
      LD:D                      0.037          comCPU/comAC/Rtemp_0
     ----------------------------------------
     Total                      3.991ns (1.868ns logic, 2.123ns route)
@@ -1507,7 +1517,7 @@ Offset:              7.130ns (Levels of Logic = 6)
     ----------------------------------------  ------------
      IBUF:I->O            21   1.222   1.458  btnd_IBUF (btnd_IBUF)
      LUT5:I0->O            2   0.203   0.981  comsegDisplay/btnu1111 (comsegDisplay/btnu111)
-     LUT6:I0->O            1   0.203   0.580  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT410_SW0 (N329)
+     LUT6:I0->O            1   0.203   0.580  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT410_SW0 (N323)
      LUT6:I5->O            1   0.205   0.944  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT410 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT49)
      LUT6:I0->O            1   0.203   0.827  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT414 (comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT413)
      LUT4:I0->O            1   0.203   0.000  comsegDisplay/Mmux_shift[3]_digit4[7]_wide_mux_2_OUT415 (comsegDisplay/shift[3]_digit4[7]_wide_mux_2_OUT<0>)
@@ -1536,22 +1546,22 @@ Offset:              2.943ns (Levels of Logic = 1)
                                        (56.1% logic, 43.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/nMEM_RDIR_OR_137_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/nMEM_RDIR_OR_367_o'
   Total number of paths / destination ports: 79 / 39
 -------------------------------------------------------------------------
 Offset:              8.066ns (Levels of Logic = 4)
   Source:            comCPU/comAC/address_0 (LATCH)
   Destination:       MemDB<15> (PAD)
-  Source Clock:      comCPU/comAC/nMEM_RDIR_OR_137_o falling
+  Source Clock:      comCPU/comAC/nMEM_RDIR_OR_367_o falling
 
   Data Path: comCPU/comAC/address_0 to MemDB<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q              22   0.498   1.498  comCPU/comAC/address_0 (comCPU/comAC/address_0)
-     LUT6:I0->O            9   0.203   1.077  comCPU/comAC/RD_address[0]_AND_224_o1 (comCPU/comAC/RD_address[0]_AND_224_o)
-     LUT5:I1->O            1   0.203   0.808  comCPU/comAC/RDIR_RDINT_AND_232_o_inv_SW0 (N4)
-     LUT6:I3->O           16   0.205   1.004  comCPU/comAC/RDIR_RDINT_AND_232_o_inv (comCPU/comAC/RDIR_RDINT_AND_232_o_inv)
+     LUT6:I0->O            9   0.203   1.077  comCPU/comAC/RD_address[0]_AND_248_o1 (comCPU/comAC/RD_address[0]_AND_248_o)
+     LUT5:I1->O            1   0.203   0.808  comCPU/comAC/RDIR_RDINT_AND_256_o_inv_SW0 (N4)
+     LUT6:I3->O           16   0.205   1.004  comCPU/comAC/RDIR_RDINT_AND_256_o_inv (comCPU/comAC/RDIR_RDINT_AND_256_o_inv)
      IOBUF:T->IO               2.571          MemDB_15_IOBUF (MemDB<15>)
     ----------------------------------------
     Total                      8.066ns (3.680ns logic, 4.386ns route)
@@ -1573,7 +1583,7 @@ Offset:              11.040ns (Levels of Logic = 7)
      FDC:C->Q             18   0.447   1.278  comCPU/comCLK/tmp[2]_dff_1_2 (comCPU/comCLK/tmp[2]_dff_1_2)
      LUT3:I0->O            8   0.205   0.803  comCPU/comMEM/RD11 (comCPU/comMEM/RD1)
      LUT5:I4->O           41   0.205   1.764  comCPU/comMEM/pushPC1 (comCPU/pushPC)
-     LUT6:I1->O            5   0.203   0.715  comCPU/comAC/RDIR_RDINT_OR_202_o1 (comCPU/comAC/RDIR_RDINT_OR_202_o)
+     LUT6:I1->O            5   0.203   0.715  comCPU/comAC/RDIR_RDINT_OR_432_o1 (comCPU/comAC/RDIR_RDINT_OR_432_o)
      LUT3:I2->O           16   0.205   1.005  comCPU/comAC/Mmux_nPREQ11 (nPREQ)
      LUT6:I5->O            3   0.205   0.651  IODB<0>LogicTrst3 (IODB<0>)
      LUT5:I4->O            1   0.205   0.579  comIOConv/Mmux_led11 (led_0_OBUF)
@@ -1584,37 +1594,38 @@ Offset:              11.040ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comCLK/tmp[2]_dff_1_0'
-  Total number of paths / destination ports: 3490 / 47
+  Total number of paths / destination ports: 3488 / 47
 -------------------------------------------------------------------------
-Offset:              11.930ns (Levels of Logic = 7)
-  Source:            comCPU/comIF/IRout_15 (LATCH)
-  Destination:       led<7> (PAD)
+Offset:              12.430ns (Levels of Logic = 8)
+  Source:            comCPU/comIF/IRout_11 (LATCH)
+  Destination:       JC<6> (PAD)
   Source Clock:      comCPU/comCLK/tmp[2]_dff_1_0 falling
 
-  Data Path: comCPU/comIF/IRout_15 to led<7>
+  Data Path: comCPU/comIF/IRout_11 to JC<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q            156   0.498   2.118  comCPU/comIF/IRout_15 (comCPU/comIF/IRout_15)
-     LUT3:I1->O            8   0.203   0.803  comCPU/comMEM/RD11 (comCPU/comMEM/RD1)
-     LUT5:I4->O           41   0.205   1.764  comCPU/comMEM/pushPC1 (comCPU/pushPC)
-     LUT6:I1->O            5   0.203   0.715  comCPU/comAC/RDIR_RDINT_OR_202_o1 (comCPU/comAC/RDIR_RDINT_OR_202_o)
-     LUT3:I2->O           16   0.205   1.005  comCPU/comAC/Mmux_nPREQ11 (nPREQ)
-     LUT6:I5->O            3   0.205   0.651  IODB<0>LogicTrst3 (IODB<0>)
-     LUT5:I4->O            1   0.205   0.579  comIOConv/Mmux_led11 (led_0_OBUF)
-     OBUF:I->O                 2.571          led_0_OBUF (led<0>)
+     LDE:G->Q            119   0.498   2.272  comCPU/comIF/IRout_11 (comCPU/comIF/IRout_11)
+     LUT5:I0->O           16   0.203   1.233  comPmodCLP/_n0422<15>1 (comPmodCLP/_n0422)
+     LUT3:I0->O            2   0.205   0.961  comPmodCLP/_n037411 (comPmodCLP/_n0374_mmx_out1)
+     LUT6:I1->O            1   0.203   0.684  comPmodCLP/Mmux_n0144456 (comPmodCLP/Mmux_n0144455)
+     LUT6:I4->O            1   0.203   0.944  comPmodCLP/Mmux_n0144459 (comPmodCLP/Mmux_n0144458)
+     LUT6:I0->O            1   0.203   0.684  comPmodCLP/Mmux_n01444512 (comPmodCLP/Mmux_n01444511)
+     LUT6:I4->O            1   0.203   0.580  comPmodCLP/Mmux_n01444516 (comPmodCLP/Mmux_n01444515)
+     LUT6:I5->O            1   0.205   0.579  comPmodCLP/Mmux_n01444535 (JC_6_OBUF)
+     OBUF:I->O                 2.571          JC_6_OBUF (JC<6>)
     ----------------------------------------
-    Total                     11.930ns (4.295ns logic, 7.635ns route)
-                                       (36.0% logic, 64.0% route)
+    Total                     12.430ns (4.494ns logic, 7.936ns route)
+                                       (36.2% logic, 63.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/intrUpdate_entered_OR_17_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_intr[0]_MUX_86_o'
   Total number of paths / destination ports: 80 / 40
 -------------------------------------------------------------------------
 Offset:              10.022ns (Levels of Logic = 6)
   Source:            comIOConv/comINTctrl/nextService (LATCH)
   Destination:       led<7> (PAD)
-  Source Clock:      comIOConv/comINTctrl/intrUpdate_entered_OR_17_o falling
+  Source Clock:      comIOConv/comINTctrl/entered_intr[0]_MUX_86_o falling
 
   Data Path: comIOConv/comINTctrl/nextService to led<7>
                                 Gate     Net
@@ -1622,7 +1633,7 @@ Offset:              10.022ns (Levels of Logic = 6)
     ----------------------------------------  ------------
      LD:G->Q              21   0.498   1.218  comIOConv/comINTctrl/nextService (comIOConv/comINTctrl/nextService)
      LUT5:I3->O           41   0.203   1.764  comCPU/comMEM/pushPC1 (comCPU/pushPC)
-     LUT6:I1->O            5   0.203   0.715  comCPU/comAC/RDIR_RDINT_OR_202_o1 (comCPU/comAC/RDIR_RDINT_OR_202_o)
+     LUT6:I1->O            5   0.203   0.715  comCPU/comAC/RDIR_RDINT_OR_432_o1 (comCPU/comAC/RDIR_RDINT_OR_432_o)
      LUT3:I2->O           16   0.205   1.005  comCPU/comAC/Mmux_nPREQ11 (nPREQ)
      LUT6:I5->O            3   0.205   0.651  IODB<0>LogicTrst3 (IODB<0>)
      LUT5:I4->O            1   0.205   0.579  comIOConv/Mmux_led11 (led_0_OBUF)
@@ -1635,7 +1646,7 @@ Offset:              10.022ns (Levels of Logic = 6)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 64 / 40
 -------------------------------------------------------------------------
-Offset:              10.173ns (Levels of Logic = 6)
+Offset:              10.213ns (Levels of Logic = 6)
   Source:            comBtnrDeb/btn_deb (FF)
   Destination:       led<7> (PAD)
   Source Clock:      CLK rising
@@ -1644,32 +1655,32 @@ Offset:              10.173ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             85   0.447   1.779  comBtnrDeb/btn_deb (comBtnrDeb/btn_deb)
+     FDE:C->Q             91   0.447   1.818  comBtnrDeb/btn_deb (comBtnrDeb/btn_deb)
      LUT2:I1->O           24   0.205   1.401  comCPU/comEX/RDINT1 (comCPU/RDINT)
-     LUT6:I3->O            5   0.205   0.715  comCPU/comAC/RDIR_RDINT_OR_202_o1 (comCPU/comAC/RDIR_RDINT_OR_202_o)
+     LUT6:I3->O            5   0.205   0.715  comCPU/comAC/RDIR_RDINT_OR_432_o1 (comCPU/comAC/RDIR_RDINT_OR_432_o)
      LUT3:I2->O           16   0.205   1.005  comCPU/comAC/Mmux_nPREQ11 (nPREQ)
      LUT6:I5->O            3   0.205   0.651  IODB<0>LogicTrst3 (IODB<0>)
      LUT5:I4->O            1   0.205   0.579  comIOConv/Mmux_led11 (led_0_OBUF)
      OBUF:I->O                 2.571          led_0_OBUF (led<0>)
     ----------------------------------------
-    Total                     10.173ns (4.043ns logic, 6.130ns route)
-                                       (39.7% logic, 60.3% route)
+    Total                     10.213ns (4.043ns logic, 6.170ns route)
+                                       (39.6% logic, 60.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/RDIR_RDINT_AND_544_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/comAC/RDIR_RDINT_AND_568_o'
   Total number of paths / destination ports: 16 / 8
 -------------------------------------------------------------------------
 Offset:              6.079ns (Levels of Logic = 3)
   Source:            comCPU/comAC/nPWR (LATCH)
   Destination:       led<1> (PAD)
-  Source Clock:      comCPU/comAC/RDIR_RDINT_AND_544_o falling
+  Source Clock:      comCPU/comAC/RDIR_RDINT_AND_568_o falling
 
   Data Path: comCPU/comAC/nPWR to led<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q              10   0.498   0.857  comCPU/comAC/nPWR (comCPU/comAC/nPWR)
-     LUT6:I5->O            8   0.205   1.167  comIOConv/nPREQ_IOAD[1]_AND_157_o1 (comIOConv/nPREQ_IOAD[1]_AND_157_o)
+     LUT6:I5->O            8   0.205   1.167  comIOConv/nPREQ_IOAD[1]_AND_181_o1 (comIOConv/nPREQ_IOAD[1]_AND_181_o)
      LUT6:I0->O            1   0.203   0.579  comIOConv/Mmux_led21 (led_1_OBUF)
      OBUF:I->O                 2.571          led_1_OBUF (led<1>)
     ----------------------------------------
@@ -1677,153 +1688,155 @@ Offset:              6.079ns (Levels of Logic = 3)
                                        (57.2% logic, 42.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o'
-  Total number of paths / destination ports: 14 / 8
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_intrUpdate_AND_24_o'
+  Total number of paths / destination ports: 15 / 8
 -------------------------------------------------------------------------
-Offset:              10.468ns (Levels of Logic = 8)
-  Source:            comIOConv/comINTctrl/runningPort_3_LDC1 (LATCH)
-  Destination:       JC<2> (PAD)
-  Source Clock:      comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o falling
+Offset:              10.764ns (Levels of Logic = 8)
+  Source:            comIOConv/comINTctrl/runningPort_3_LD (LATCH)
+  Destination:       JC<0> (PAD)
+  Source Clock:      comIOConv/comINTctrl/entered_intrUpdate_AND_24_o falling
 
-  Data Path: comIOConv/comINTctrl/runningPort_3_LDC1 to JC<2>
+  Data Path: comIOConv/comINTctrl/runningPort_3_LD to JC<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDP:G->Q              2   0.498   0.845  comIOConv/comINTctrl/runningPort_3_LDC1 (comIOConv/comINTctrl/runningPort_3_LDC1)
-     LUT3:I0->O            7   0.205   1.118  comIOConv/comINTctrl/runningPort_31 (comIOConv/comINTctrl/runningPort_3)
-     LUT5:I0->O            5   0.203   0.962  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>1)
-     LUT4:I0->O            3   0.203   0.879  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>2 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o)
-     LUT5:I2->O            1   0.205   0.000  comPmodCLP/Mmux_n01441922_G (N334)
-     MUXF7:I1->O           1   0.140   0.827  comPmodCLP/Mmux_n01441922 (comPmodCLP/Mmux_n01441921)
-     LUT6:I2->O            1   0.203   0.827  comPmodCLP/Mmux_n01441933 (comPmodCLP/Mmux_n01441932)
-     LUT4:I0->O            1   0.203   0.579  comPmodCLP/Mmux_n01441954 (JC_2_OBUF)
-     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
+     LD:G->Q               2   0.498   0.845  comIOConv/comINTctrl/runningPort_3_LD (comIOConv/comINTctrl/runningPort_3_LD)
+     LUT3:I0->O            7   0.205   0.774  comIOConv/comINTctrl/runningPort_31 (comIOConv/comINTctrl/runningPort_3)
+     LUT5:I4->O            2   0.205   0.981  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>1)
+     LUT6:I0->O            7   0.203   0.774  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>6 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o)
+     LUT2:I1->O            1   0.205   0.924  comPmodCLP/SF26121 (comPmodCLP/SF2612)
+     LUT6:I1->O            1   0.203   0.808  comPmodCLP/Mmux_n014462 (comPmodCLP/Mmux_n014461)
+     LUT6:I3->O            1   0.205   0.580  comPmodCLP/Mmux_n0144630 (comPmodCLP/Mmux_n0144629)
+     LUT4:I3->O            1   0.205   0.579  comPmodCLP/Mmux_n0144646 (JC_0_OBUF)
+     OBUF:I->O                 2.571          JC_0_OBUF (JC<0>)
     ----------------------------------------
-    Total                     10.468ns (4.431ns logic, 6.037ns route)
-                                       (42.3% logic, 57.7% route)
+    Total                     10.764ns (4.500ns logic, 6.264ns route)
+                                       (41.8% logic, 58.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'isrUpdate'
-  Total number of paths / destination ports: 104 / 11
+  Total number of paths / destination ports: 301 / 11
 -------------------------------------------------------------------------
-Offset:              10.291ns (Levels of Logic = 8)
-  Source:            comIOConv/comINTctrl/runningPort_3_C_3 (FF)
-  Destination:       JC<2> (PAD)
+Offset:              10.934ns (Levels of Logic = 8)
+  Source:            comIOConv/comINTctrl/runningPort_1_C_1 (FF)
+  Destination:       JC<0> (PAD)
   Source Clock:      isrUpdate rising
 
-  Data Path: comIOConv/comINTctrl/runningPort_3_C_3 to JC<2>
+  Data Path: comIOConv/comINTctrl/runningPort_1_C_1 to JC<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.721  comIOConv/comINTctrl/runningPort_3_C_3 (comIOConv/comINTctrl/runningPort_3_C_3)
-     LUT3:I1->O            7   0.203   1.118  comIOConv/comINTctrl/runningPort_31 (comIOConv/comINTctrl/runningPort_3)
-     LUT5:I0->O            5   0.203   0.962  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>1)
-     LUT4:I0->O            3   0.203   0.879  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>2 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o)
-     LUT5:I2->O            1   0.205   0.000  comPmodCLP/Mmux_n01441922_G (N334)
-     MUXF7:I1->O           1   0.140   0.827  comPmodCLP/Mmux_n01441922 (comPmodCLP/Mmux_n01441921)
-     LUT6:I2->O            1   0.203   0.827  comPmodCLP/Mmux_n01441933 (comPmodCLP/Mmux_n01441932)
-     LUT4:I0->O            1   0.203   0.579  comPmodCLP/Mmux_n01441954 (JC_2_OBUF)
-     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
+     FDC:C->Q              3   0.447   0.755  comIOConv/comINTctrl/runningPort_1_C_1 (comIOConv/comINTctrl/runningPort_1_C_1)
+     LUT3:I1->O            6   0.203   1.089  comIOConv/comINTctrl/runningPort_16 (comIOConv/comINTctrl/runningPort_1)
+     LUT5:I0->O            2   0.203   0.981  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>1)
+     LUT6:I0->O            7   0.203   0.774  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>6 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o)
+     LUT2:I1->O            1   0.205   0.924  comPmodCLP/SF26121 (comPmodCLP/SF2612)
+     LUT6:I1->O            1   0.203   0.808  comPmodCLP/Mmux_n014462 (comPmodCLP/Mmux_n014461)
+     LUT6:I3->O            1   0.205   0.580  comPmodCLP/Mmux_n0144630 (comPmodCLP/Mmux_n0144629)
+     LUT4:I3->O            1   0.205   0.579  comPmodCLP/Mmux_n0144646 (JC_0_OBUF)
+     OBUF:I->O                 2.571          JC_0_OBUF (JC<0>)
     ----------------------------------------
-    Total                     10.291ns (4.378ns logic, 5.913ns route)
-                                       (42.5% logic, 57.5% route)
+    Total                     10.934ns (4.445ns logic, 6.489ns route)
+                                       (40.7% logic, 59.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/imrUpdate'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              6.399ns (Levels of Logic = 4)
-  Source:            comIOConv/comINTctrl/imr_1 (LATCH)
-  Destination:       led<1> (PAD)
+Offset:              6.341ns (Levels of Logic = 4)
+  Source:            comIOConv/comINTctrl/imr_0 (LATCH)
+  Destination:       led<0> (PAD)
   Source Clock:      comIOConv/imrUpdate falling
 
-  Data Path: comIOConv/comINTctrl/imr_1 to led<1>
+  Data Path: comIOConv/comINTctrl/imr_0 to led<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               8   0.498   0.803  comIOConv/comINTctrl/imr_1 (comIOConv/comINTctrl/imr_1)
-     LUT3:I2->O            1   0.205   0.684  IODB<1>LogicTrst1 (IODB<1>LogicTrst)
-     LUT6:I4->O            3   0.203   0.651  IODB<1>LogicTrst3 (IODB<1>)
-     LUT6:I5->O            1   0.205   0.579  comIOConv/Mmux_led21 (led_1_OBUF)
-     OBUF:I->O                 2.571          led_1_OBUF (led<1>)
+     LD:G->Q               6   0.498   0.745  comIOConv/comINTctrl/imr_0 (comIOConv/comINTctrl/imr_0)
+     LUT3:I2->O            1   0.205   0.684  IODB<0>LogicTrst1 (IODB<0>LogicTrst)
+     LUT6:I4->O            3   0.203   0.651  IODB<0>LogicTrst3 (IODB<0>)
+     LUT5:I4->O            1   0.205   0.579  comIOConv/Mmux_led11 (led_0_OBUF)
+     OBUF:I->O                 2.571          led_0_OBUF (led<0>)
     ----------------------------------------
-    Total                      6.399ns (3.682ns logic, 2.716ns route)
-                                       (57.5% logic, 42.5% route)
+    Total                      6.341ns (3.682ns logic, 2.659ns route)
+                                       (58.1% logic, 41.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_nextServicePort[2]_AND_130_o'
-  Total number of paths / destination ports: 13 / 8
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_nextServicePort[2]_AND_154_o'
+  Total number of paths / destination ports: 15 / 8
 -------------------------------------------------------------------------
-Offset:              9.224ns (Levels of Logic = 6)
+Offset:              10.639ns (Levels of Logic = 8)
   Source:            comIOConv/comINTctrl/runningPort_2_LDC (LATCH)
-  Destination:       JC<5> (PAD)
-  Source Clock:      comIOConv/comINTctrl/entered_nextServicePort[2]_AND_130_o falling
+  Destination:       JC<0> (PAD)
+  Source Clock:      comIOConv/comINTctrl/entered_nextServicePort[2]_AND_154_o falling
 
-  Data Path: comIOConv/comINTctrl/runningPort_2_LDC to JC<5>
+  Data Path: comIOConv/comINTctrl/runningPort_2_LDC to JC<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              4   0.498   0.912  comIOConv/comINTctrl/runningPort_2_LDC (comIOConv/comINTctrl/runningPort_2_LDC)
-     LUT3:I0->O            8   0.205   1.147  comIOConv/comINTctrl/runningPort_21 (comIOConv/comINTctrl/runningPort_2)
-     LUT5:I0->O            2   0.203   0.864  comPmodCLP/intServicePort[3]_GND_26_o_wide_mux_40_OUT<3>1 (comPmodCLP/intServicePort[3]_GND_26_o_wide_mux_40_OUT<5>)
-     LUT6:I2->O            1   0.203   0.808  comPmodCLP/Mmux_n0144397 (comPmodCLP/Mmux_n0144396)
-     LUT6:I3->O            1   0.205   0.827  comPmodCLP/Mmux_n0144398 (comPmodCLP/Mmux_n0144397)
-     LUT5:I1->O            1   0.203   0.579  comPmodCLP/Mmux_n01443919 (JC_5_OBUF)
-     OBUF:I->O                 2.571          JC_5_OBUF (JC<5>)
+     LDC:G->Q              2   0.498   0.845  comIOConv/comINTctrl/runningPort_2_LDC (comIOConv/comINTctrl/runningPort_2_LDC)
+     LUT3:I0->O            8   0.205   1.050  comIOConv/comINTctrl/runningPort_22 (comIOConv/comINTctrl/runningPort_2)
+     LUT5:I1->O            1   0.203   0.580  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>1 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>)
+     LUT6:I5->O            7   0.205   0.774  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>6 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o)
+     LUT2:I1->O            1   0.205   0.924  comPmodCLP/SF26121 (comPmodCLP/SF2612)
+     LUT6:I1->O            1   0.203   0.808  comPmodCLP/Mmux_n014462 (comPmodCLP/Mmux_n014461)
+     LUT6:I3->O            1   0.205   0.580  comPmodCLP/Mmux_n0144630 (comPmodCLP/Mmux_n0144629)
+     LUT4:I3->O            1   0.205   0.579  comPmodCLP/Mmux_n0144646 (JC_0_OBUF)
+     OBUF:I->O                 2.571          JC_0_OBUF (JC<0>)
     ----------------------------------------
-    Total                      9.224ns (4.088ns logic, 5.136ns route)
-                                       (44.3% logic, 55.7% route)
+    Total                     10.639ns (4.500ns logic, 6.139ns route)
+                                       (42.3% logic, 57.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_nextServicePort[1]_AND_132_o'
-  Total number of paths / destination ports: 14 / 8
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_nextServicePort[1]_AND_156_o'
+  Total number of paths / destination ports: 15 / 8
 -------------------------------------------------------------------------
-Offset:              10.131ns (Levels of Logic = 8)
+Offset:              11.111ns (Levels of Logic = 8)
   Source:            comIOConv/comINTctrl/runningPort_1_LDC (LATCH)
-  Destination:       JC<2> (PAD)
-  Source Clock:      comIOConv/comINTctrl/entered_nextServicePort[1]_AND_132_o falling
+  Destination:       JC<0> (PAD)
+  Source Clock:      comIOConv/comINTctrl/entered_nextServicePort[1]_AND_156_o falling
 
-  Data Path: comIOConv/comINTctrl/runningPort_1_LDC to JC<2>
+  Data Path: comIOConv/comINTctrl/runningPort_1_LDC to JC<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LDC:G->Q              3   0.498   0.879  comIOConv/comINTctrl/runningPort_1_LDC (comIOConv/comINTctrl/runningPort_1_LDC)
-     LUT3:I0->O            6   0.205   0.745  comIOConv/comINTctrl/runningPort_11 (comIOConv/comINTctrl/runningPort_1)
-     LUT5:I4->O            5   0.205   0.962  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>1)
-     LUT4:I0->O            3   0.203   0.879  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>2 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o)
-     LUT5:I2->O            1   0.205   0.000  comPmodCLP/Mmux_n01441922_G (N334)
-     MUXF7:I1->O           1   0.140   0.827  comPmodCLP/Mmux_n01441922 (comPmodCLP/Mmux_n01441921)
-     LUT6:I2->O            1   0.203   0.827  comPmodCLP/Mmux_n01441933 (comPmodCLP/Mmux_n01441932)
-     LUT4:I0->O            1   0.203   0.579  comPmodCLP/Mmux_n01441954 (JC_2_OBUF)
-     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
+     LUT3:I0->O            6   0.205   1.089  comIOConv/comINTctrl/runningPort_16 (comIOConv/comINTctrl/runningPort_1)
+     LUT5:I0->O            2   0.203   0.981  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>1)
+     LUT6:I0->O            7   0.203   0.774  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>6 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o)
+     LUT2:I1->O            1   0.205   0.924  comPmodCLP/SF26121 (comPmodCLP/SF2612)
+     LUT6:I1->O            1   0.203   0.808  comPmodCLP/Mmux_n014462 (comPmodCLP/Mmux_n014461)
+     LUT6:I3->O            1   0.205   0.580  comPmodCLP/Mmux_n0144630 (comPmodCLP/Mmux_n0144629)
+     LUT4:I3->O            1   0.205   0.579  comPmodCLP/Mmux_n0144646 (JC_0_OBUF)
+     OBUF:I->O                 2.571          JC_0_OBUF (JC<0>)
     ----------------------------------------
-    Total                     10.131ns (4.433ns logic, 5.698ns route)
-                                       (43.8% logic, 56.2% route)
+    Total                     11.111ns (4.498ns logic, 6.613ns route)
+                                       (40.5% logic, 59.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_nextServicePort[0]_AND_134_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'comIOConv/comINTctrl/entered_nextServicePort[0]_AND_158_o'
   Total number of paths / destination ports: 11 / 8
 -------------------------------------------------------------------------
-Offset:              9.181ns (Levels of Logic = 7)
+Offset:              9.869ns (Levels of Logic = 7)
   Source:            comIOConv/comINTctrl/runningPort_0_LDC (LATCH)
-  Destination:       JC<2> (PAD)
-  Source Clock:      comIOConv/comINTctrl/entered_nextServicePort[0]_AND_134_o falling
+  Destination:       JC<0> (PAD)
+  Source Clock:      comIOConv/comINTctrl/entered_nextServicePort[0]_AND_158_o falling
 
-  Data Path: comIOConv/comINTctrl/runningPort_0_LDC to JC<2>
+  Data Path: comIOConv/comINTctrl/runningPort_0_LDC to JC<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              3   0.498   0.879  comIOConv/comINTctrl/runningPort_0_LDC (comIOConv/comINTctrl/runningPort_0_LDC)
-     LUT5:I2->O            5   0.205   0.962  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>1)
-     LUT4:I0->O            3   0.203   0.879  comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o<31>2 (comPmodCLP/GND_26_o_intServicePort[31]_equal_40_o)
-     LUT5:I2->O            1   0.205   0.000  comPmodCLP/Mmux_n01441922_G (N334)
-     MUXF7:I1->O           1   0.140   0.827  comPmodCLP/Mmux_n01441922 (comPmodCLP/Mmux_n01441921)
-     LUT6:I2->O            1   0.203   0.827  comPmodCLP/Mmux_n01441933 (comPmodCLP/Mmux_n01441932)
-     LUT4:I0->O            1   0.203   0.579  comPmodCLP/Mmux_n01441954 (JC_2_OBUF)
-     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
+     LDC:G->Q              4   0.498   0.931  comIOConv/comINTctrl/runningPort_0_LDC (comIOConv/comINTctrl/runningPort_0_LDC)
+     LUT5:I1->O            2   0.203   0.981  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>11 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>1)
+     LUT6:I0->O            7   0.203   0.774  comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o<31>6 (comPmodCLP/GND_58_o_intServicePort[31]_equal_40_o)
+     LUT2:I1->O            1   0.205   0.924  comPmodCLP/SF26121 (comPmodCLP/SF2612)
+     LUT6:I1->O            1   0.203   0.808  comPmodCLP/Mmux_n014462 (comPmodCLP/Mmux_n014461)
+     LUT6:I3->O            1   0.205   0.580  comPmodCLP/Mmux_n0144630 (comPmodCLP/Mmux_n0144629)
+     LUT4:I3->O            1   0.205   0.579  comPmodCLP/Mmux_n0144646 (JC_0_OBUF)
+     OBUF:I->O                 2.571          JC_0_OBUF (JC<0>)
     ----------------------------------------
-    Total                      9.181ns (4.228ns logic, 4.953ns route)
-                                       (46.1% logic, 53.9% route)
+    Total                      9.869ns (4.293ns logic, 5.576ns route)
+                                       (43.5% logic, 56.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comsegDisplay/js_15'
@@ -1846,53 +1859,53 @@ Offset:              4.690ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comPmodCLP/OneUSClk'
-  Total number of paths / destination ports: 658 / 10
+  Total number of paths / destination ports: 651 / 10
 -------------------------------------------------------------------------
-Offset:              11.433ns (Levels of Logic = 7)
-  Source:            comPmodCLP/lcd_cmd_ptr_0 (FF)
-  Destination:       JC<2> (PAD)
+Offset:              11.143ns (Levels of Logic = 7)
+  Source:            comPmodCLP/lcd_cmd_ptr_1 (FF)
+  Destination:       JC<0> (PAD)
   Source Clock:      comPmodCLP/OneUSClk rising
 
-  Data Path: comPmodCLP/lcd_cmd_ptr_0 to JC<2>
+  Data Path: comPmodCLP/lcd_cmd_ptr_1 to JC<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              93   0.447   2.060  comPmodCLP/lcd_cmd_ptr_0 (comPmodCLP/lcd_cmd_ptr_0)
-     LUT3:I0->O           18   0.205   1.050  comPmodCLP/Mmux_n01443511 (comPmodCLP/Mmux_n0144351)
-     LUT5:I4->O            1   0.205   0.924  comPmodCLP/Mmux_n01441912 (comPmodCLP/Mmux_n01441911)
-     LUT5:I0->O            1   0.203   0.944  comPmodCLP/Mmux_n01441915_SW0 (N305)
-     LUT6:I0->O            1   0.203   0.808  comPmodCLP/Mmux_n01441915 (comPmodCLP/Mmux_n01441914)
-     LUT6:I3->O            1   0.205   0.827  comPmodCLP/Mmux_n01441933 (comPmodCLP/Mmux_n01441932)
-     LUT4:I0->O            1   0.203   0.579  comPmodCLP/Mmux_n01441954 (JC_2_OBUF)
-     OBUF:I->O                 2.571          JC_2_OBUF (JC<2>)
+     FD:C->Q              90   0.447   2.040  comPmodCLP/lcd_cmd_ptr_1 (comPmodCLP/lcd_cmd_ptr_1)
+     LUT3:I0->O           17   0.205   1.028  comPmodCLP/Mmux_n0144911 (comPmodCLP/Mmux_n0144352)
+     LUT5:I4->O            1   0.205   0.827  comPmodCLP/Mmux_n0144625 (comPmodCLP/Mmux_n0144624)
+     LUT5:I1->O            1   0.203   0.924  comPmodCLP/Mmux_n0144626 (comPmodCLP/Mmux_n0144625)
+     LUT6:I1->O            1   0.203   0.924  comPmodCLP/Mmux_n0144629 (comPmodCLP/Mmux_n0144628)
+     LUT6:I1->O            1   0.203   0.580  comPmodCLP/Mmux_n0144630 (comPmodCLP/Mmux_n0144629)
+     LUT4:I3->O            1   0.205   0.579  comPmodCLP/Mmux_n0144646 (JC_0_OBUF)
+     OBUF:I->O                 2.571          JC_0_OBUF (JC<0>)
     ----------------------------------------
-    Total                     11.433ns (4.242ns logic, 7.191ns route)
-                                       (37.1% logic, 62.9% route)
+    Total                     11.143ns (4.242ns logic, 6.901ns route)
+                                       (38.1% logic, 61.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/Rupdate'
-  Total number of paths / destination ports: 454 / 7
+  Total number of paths / destination ports: 448 / 7
 -------------------------------------------------------------------------
-Offset:              9.627ns (Levels of Logic = 7)
+Offset:              9.762ns (Levels of Logic = 7)
   Source:            comCPU/comEX/Reg_7_7 (FF)
-  Destination:       JC<6> (PAD)
+  Destination:       JC<0> (PAD)
   Source Clock:      comCPU/Rupdate rising
 
-  Data Path: comCPU/comEX/Reg_7_7 to JC<6>
+  Data Path: comCPU/comEX/Reg_7_7 to JC<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              9   0.447   1.058  comCPU/comEX/Reg_7_7 (comCPU/comEX/Reg_7_7)
-     LUT3:I0->O            2   0.205   0.961  comPmodCLP/LCD_CMDS<35><7:0><2>1 (comPmodCLP/LCD_CMDS<35><6>)
-     LUT6:I1->O            1   0.203   0.580  comPmodCLP/Mmux_n0144457 (comPmodCLP/Mmux_n0144456)
-     LUT6:I5->O            1   0.205   0.944  comPmodCLP/Mmux_n0144459 (comPmodCLP/Mmux_n0144458)
-     LUT6:I0->O            1   0.203   0.684  comPmodCLP/Mmux_n01444512 (comPmodCLP/Mmux_n01444511)
-     LUT6:I4->O            1   0.203   0.580  comPmodCLP/Mmux_n01444516 (comPmodCLP/Mmux_n01444515)
-     LUT6:I5->O            1   0.205   0.579  comPmodCLP/Mmux_n01444535 (JC_6_OBUF)
-     OBUF:I->O                 2.571          JC_6_OBUF (JC<6>)
+     LUT4:I1->O            5   0.205   1.059  comPmodCLP/LCD_CMDS<35><7:0><8>1 (comPmodCLP/LCD_CMDS<35><0>)
+     LUT6:I1->O            1   0.203   0.580  comPmodCLP/Mmux_n01446511 (comPmodCLP/Mmux_n01446511)
+     LUT6:I5->O            2   0.205   0.617  comPmodCLP/Mmux_n01446512 (comPmodCLP/Mmux_n0144651)
+     LUT6:I5->O            1   0.205   0.944  comPmodCLP/Mmux_n0144643 (comPmodCLP/Mmux_n0144642)
+     LUT6:I0->O            1   0.203   0.684  comPmodCLP/Mmux_n0144645 (comPmodCLP/Mmux_n0144644)
+     LUT4:I2->O            1   0.203   0.579  comPmodCLP/Mmux_n0144646 (JC_0_OBUF)
+     OBUF:I->O                 2.571          JC_0_OBUF (JC<0>)
     ----------------------------------------
-    Total                      9.627ns (4.242ns logic, 5.385ns route)
-                                       (44.1% logic, 55.9% route)
+    Total                      9.762ns (4.242ns logic, 5.520ns route)
+                                       (43.5% logic, 56.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'comCPU/inctop'
@@ -1908,21 +1921,21 @@ Offset:              7.425ns (Levels of Logic = 18)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q             11   0.447   0.882  comCPU/comAC/top_2 (comCPU/comAC/top_2)
-     INV:I->O              1   0.206   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_lut<2>_INV_0 (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_lut<2>)
-     MUXCY:S->O            1   0.172   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<2> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<3> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<4> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<5> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<6> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<7> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<8> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<9> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<10> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<11> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<12> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<13> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<13>)
-     MUXCY:CI->O           0   0.019   0.000  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<14> (comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_cy<14>)
-     XORCY:CI->O           1   0.180   0.808  comCPU/comAC/Msub_GND_107_o_GND_107_o_sub_7_OUT<15:0>_xor<15> (comCPU/comAC/GND_107_o_GND_107_o_sub_7_OUT<15>)
+     INV:I->O              1   0.206   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_lut<2>_INV_0 (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<2> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<3> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<4> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<5> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<6> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<7> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<8> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<9> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<10> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<11> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<12> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<13> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<13>)
+     MUXCY:CI->O           0   0.019   0.000  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<14> (comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_cy<14>)
+     XORCY:CI->O           1   0.180   0.808  comCPU/comAC/Msub_GND_139_o_GND_139_o_sub_7_OUT<15:0>_xor<15> (comCPU/comAC/GND_139_o_GND_139_o_sub_7_OUT<15>)
      LUT6:I3->O            1   0.205   0.944  comCPU/comAC/Mmux_ABUS141 (comCPU/comAC/Mmux_ABUS14)
      LUT6:I0->O            1   0.203   0.579  comCPU/comAC/Mmux_ABUS142 (MemAdr_15_OBUF)
      OBUF:I->O                 2.571          MemAdr_15_OBUF (MemAdr<15>)
@@ -2008,7 +2021,7 @@ Clock to Setup on destination clock comBtnrDeb/btn_deb
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |    2.116|         |    4.020|         |
+comBtnrDeb/btn_deb          |    2.169|         |    4.020|         |
 comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.200|         |
 comCPU/comCLK/tmp[2]_dff_1_1|         |         |    3.975|         |
 ----------------------------+---------+---------+---------+---------+
@@ -2023,59 +2036,59 @@ comCPU/comCLK/tmp[2]_dff_1_0|         |    4.297|         |         |
 comCPU/comCLK/tmp[2]_dff_1_2|         |    1.630|         |         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comAC/RDIR_RDINT_AND_495_o
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-CLK                                            |         |         |    7.162|         |
-comBtnrDeb/btn_deb                             |         |         |    8.030|         |
-comCPU/comAC/RDIR_RDINT_AND_495_o              |         |         |    2.244|         |
-comCPU/comAC/RDIR_RDINT_AND_544_o              |         |         |    2.843|         |
-comCPU/comAC/nMEM_RDIR_OR_137_o                |         |         |    4.418|         |
-comCPU/comCLK/tmp[2]_dff_1_0                   |         |         |    8.919|         |
-comIOConv/comINTctrl/intrUpdate_entered_OR_17_o|         |         |    7.011|         |
-comIOConv/imrUpdate                            |         |         |    3.388|         |
------------------------------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock comCPU/comAC/RDIR_RDINT_AND_519_o
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+CLK                                          |         |         |    7.202|         |
+comBtnrDeb/btn_deb                           |         |         |    8.030|         |
+comCPU/comAC/RDIR_RDINT_AND_519_o            |         |         |    2.244|         |
+comCPU/comAC/RDIR_RDINT_AND_568_o            |         |         |    2.843|         |
+comCPU/comAC/nMEM_RDIR_OR_367_o              |         |         |    4.418|         |
+comCPU/comCLK/tmp[2]_dff_1_0                 |         |         |    8.911|         |
+comIOConv/comINTctrl/entered_intr[0]_MUX_86_o|         |         |    7.011|         |
+comIOConv/imrUpdate                          |         |         |    3.330|         |
+---------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comAC/RDIR_RDINT_AND_544_o
+Clock to Setup on destination clock comCPU/comAC/RDIR_RDINT_AND_568_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb          |         |         |    3.219|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.474|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    4.466|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_137_o
+Clock to Setup on destination clock comCPU/comAC/nMEM_RDIR_OR_367_o
 --------------------------------+---------+---------+---------+---------+
                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------+---------+---------+---------+---------+
 comBtnrDeb/btn_deb              |         |         |    3.656|         |
-comCPU/comCLK/tmp[2]_dff_1_0    |         |         |    4.557|         |
+comCPU/comCLK/tmp[2]_dff_1_0    |         |         |    4.549|         |
 comCPU/comCLK/tmp[2]_dff_1_1    |         |         |    1.424|         |
-comCPU/comEX/T1_IR[15]_AND_174_o|         |         |    1.565|         |
+comCPU/comEX/T1_IR[15]_AND_198_o|         |         |    1.565|         |
 --------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comAC/nRD_G
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-CLK                                            |         |         |    5.064|         |
-comBtnrDeb/btn_deb                             |         |         |    6.180|         |
-comCPU/comCLK/tmp[2]_dff_1_0                   |         |         |    7.069|         |
-comIOConv/comINTctrl/intrUpdate_entered_OR_17_o|         |         |    5.161|         |
------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+CLK                                          |         |         |    5.104|         |
+comBtnrDeb/btn_deb                           |         |         |    6.180|         |
+comCPU/comCLK/tmp[2]_dff_1_0                 |         |         |    7.061|         |
+comIOConv/comINTctrl/entered_intr[0]_MUX_86_o|         |         |    5.161|         |
+---------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_0
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |    3.925|         |    2.547|         |
-comBtnrDeb/btn_deb          |    3.816|         |         |         |
+CLK                         |    3.965|         |    2.586|         |
+comBtnrDeb/btn_deb          |    3.869|         |         |         |
 comCPU/comCLK/tmp[2]_dff_1_0|         |         |    1.114|         |
 comCPU/comCLK/tmp[2]_dff_1_3|    1.128|         |         |         |
 ----------------------------+---------+---------+---------+---------+
@@ -2085,9 +2098,9 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_1
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-CLK                         |         |         |    2.547|         |
-comCPU/Rupdate              |         |         |    1.940|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    5.007|         |
+CLK                         |         |         |    2.586|         |
+comCPU/Rupdate              |         |         |    1.966|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    5.090|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
@@ -2095,28 +2108,28 @@ Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_2
                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------+---------+---------+---------+---------+
-comCPU/comAC/RDIR_RDINT_AND_495_o|         |         |    1.151|         |
-comCPU/comCLK/tmp[2]_dff_1_0     |         |         |    4.101|         |
+comCPU/comAC/RDIR_RDINT_AND_519_o|         |         |    1.151|         |
+comCPU/comCLK/tmp[2]_dff_1_0     |         |         |    4.096|         |
 ---------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/comCLK/tmp[2]_dff_1_3
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb                             |         |    7.634|         |         |
-comCPU/comAC/RDIR_RDINT_AND_429_o              |         |    3.998|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0                   |    6.222|    8.009|         |         |
-comCPU/comCLK/tmp[2]_dff_1_1                   |         |    5.921|         |         |
-comIOConv/comINTctrl/intrUpdate_entered_OR_17_o|         |    6.994|         |         |
------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+comBtnrDeb/btn_deb                           |         |    7.617|         |         |
+comCPU/comAC/RDIR_RDINT_AND_453_o            |         |    3.998|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0                 |    6.222|    8.000|         |         |
+comCPU/comCLK/tmp[2]_dff_1_1                 |         |    5.921|         |         |
+comIOConv/comINTctrl/entered_intr[0]_MUX_86_o|         |    6.994|         |         |
+---------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comCPU/comEX/T1_IR[15]_AND_174_o
+Clock to Setup on destination clock comCPU/comEX/T1_IR[15]_AND_198_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.102|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    2.108|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/inctop
@@ -2124,133 +2137,77 @@ Clock to Setup on destination clock comCPU/inctop
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comCPU/comCLK/tmp[2]_dff_1_0|         |    4.248|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |    4.240|         |         |
 comCPU/inctop               |    2.559|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comCPU/nMEM
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-CLK                                            |    5.181|         |         |         |
-comBtnrDeb/btn_deb                             |    6.049|         |         |         |
-comCPU/comAC/nMEM_RDIR_OR_137_o                |         |    2.453|         |         |
-comCPU/comCLK/tmp[2]_dff_1_0                   |         |    6.938|         |         |
-comIOConv/comINTctrl/intrUpdate_entered_OR_17_o|         |    5.030|         |         |
------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+CLK                                          |    5.221|         |         |         |
+comBtnrDeb/btn_deb                           |    6.049|         |         |         |
+comCPU/comAC/nMEM_RDIR_OR_367_o              |         |    2.453|         |         |
+comCPU/comCLK/tmp[2]_dff_1_0                 |         |    6.930|         |         |
+comIOConv/comINTctrl/entered_intr[0]_MUX_86_o|         |    5.030|         |         |
+---------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comIOConv/comINTctrl/entered_nextServicePort[0]_AND_134_o
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-CLK                                             |         |         |    5.223|         |
-comBtnrDeb/btn_deb                              |         |         |    5.621|         |
-comCPU/comCLK/tmp[2]_dff_1_0                    |         |         |    6.495|         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_70_o|         |         |    2.743|         |
-isrUpdate                                       |         |         |    2.595|         |
-------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock comIOConv/comINTctrl/entered_nextServicePort[1]_AND_132_o
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-CLK                                             |         |         |    5.223|         |
-comBtnrDeb/btn_deb                              |         |         |    5.621|         |
-comCPU/comCLK/tmp[2]_dff_1_0                    |         |         |    6.495|         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_68_o|         |         |    2.743|         |
-isrUpdate                                       |         |         |    2.595|         |
-------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock comIOConv/comINTctrl/entered_nextServicePort[2]_AND_130_o
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-CLK                                             |         |         |    5.223|         |
-comBtnrDeb/btn_deb                              |         |         |    5.621|         |
-comCPU/comCLK/tmp[2]_dff_1_0                    |         |         |    6.495|         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_66_o|         |         |    2.743|         |
-isrUpdate                                       |         |         |    2.595|         |
-------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-CLK                                             |         |         |    6.109|         |
-comBtnrDeb/btn_deb                              |         |         |    6.508|         |
-comCPU/comCLK/tmp[2]_dff_1_0                    |         |         |    7.382|         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_65_o|         |         |    3.629|         |
-isrUpdate                                       |         |         |    3.481|         |
-------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_65_o
+Clock to Setup on destination clock comIOConv/comINTctrl/entered_intr[0]_MUX_86_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |         |    7.681|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |   10.329|         |
-comIOConv/imrUpdate         |         |         |    5.907|         |
+comBtnrDeb/btn_deb          |         |         |    2.538|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    3.108|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_66_o
+Clock to Setup on destination clock comIOConv/comINTctrl/entered_nextServicePort[0]_AND_158_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |         |    6.692|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    9.340|         |
-comIOConv/imrUpdate         |         |         |    4.880|         |
+CLK                         |         |         |    3.745|         |
+comBtnrDeb/btn_deb          |         |         |    4.997|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    5.568|         |
+intrUpdate                  |         |         |    2.646|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_68_o
+Clock to Setup on destination clock comIOConv/comINTctrl/entered_nextServicePort[1]_AND_156_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |         |    5.744|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.392|         |
-comIOConv/imrUpdate         |         |         |    4.164|         |
+CLK                         |         |         |    3.745|         |
+comBtnrDeb/btn_deb          |         |         |    4.997|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    5.568|         |
+intrUpdate                  |         |         |    2.646|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_70_o
+Clock to Setup on destination clock comIOConv/comINTctrl/entered_nextServicePort[2]_AND_154_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |         |    6.471|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.976|         |
-comIOConv/imrUpdate         |         |         |    5.275|         |
-----------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock comIOConv/comINTctrl/intrUpdate_entered_OR_17_o
-----------------------------+---------+---------+---------+---------+
-                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |         |         |    5.406|         |
-comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.054|         |
-comIOConv/imrUpdate         |         |         |    3.663|         |
+CLK                         |         |         |    3.745|         |
+comBtnrDeb/btn_deb          |         |         |    4.997|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    5.568|         |
+intrUpdate                  |         |         |    2.646|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comIOConv/imrUpdate
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-CLK                                            |         |         |    7.060|         |
-comBtnrDeb/btn_deb                             |         |         |    7.928|         |
-comCPU/comAC/RDIR_RDINT_AND_544_o              |         |         |    2.741|         |
-comCPU/comAC/nMEM_RDIR_OR_137_o                |         |         |    3.845|         |
-comCPU/comCLK/tmp[2]_dff_1_0                   |         |         |    8.817|         |
-comIOConv/comINTctrl/intrUpdate_entered_OR_17_o|         |         |    6.909|         |
-comIOConv/imrUpdate                            |         |         |    3.286|         |
------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+CLK                                          |         |         |    7.100|         |
+comBtnrDeb/btn_deb                           |         |         |    7.928|         |
+comCPU/comAC/RDIR_RDINT_AND_568_o            |         |         |    2.741|         |
+comCPU/comAC/nMEM_RDIR_OR_367_o              |         |         |    3.845|         |
+comCPU/comCLK/tmp[2]_dff_1_0                 |         |         |    8.809|         |
+comIOConv/comINTctrl/entered_intr[0]_MUX_86_o|         |         |    6.909|         |
+comIOConv/imrUpdate                          |         |         |    3.228|         |
+---------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comPmodCLP/OneUSClk
 -------------------+---------+---------+---------+---------+
@@ -2258,7 +2215,7 @@ Clock to Setup on destination clock comPmodCLP/OneUSClk
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
 CLK                |    5.563|         |         |         |
-comPmodCLP/OneUSClk|    4.670|         |         |         |
+comPmodCLP/OneUSClk|    4.696|         |         |         |
 -------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock comsegDisplay/js_15
@@ -2266,10 +2223,29 @@ Clock to Setup on destination clock comsegDisplay/js_15
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-comBtnrDeb/btn_deb          |    3.311|    1.438|         |         |
+comBtnrDeb/btn_deb          |    3.363|    1.438|         |         |
 comCPU/comCLK/tmp[2]_dff_1_0|    6.566|    6.883|         |         |
 comCPU/inctop               |    5.722|         |         |         |
 comsegDisplay/js_15         |    5.099|         |         |         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock entered
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+entered        |    2.510|         |         |         |
+intrUpdate     |         |    1.451|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock intrUpdate
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+comBtnrDeb/btn_deb          |         |         |    5.883|         |
+comCPU/comCLK/tmp[2]_dff_1_0|         |         |    8.204|         |
+comIOConv/imrUpdate         |         |         |    4.505|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock isrUpdate
@@ -2277,32 +2253,29 @@ Clock to Setup on destination clock isrUpdate
                                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------+---------+---------+---------+---------+
-CLK                                                      |    5.257|         |         |         |
-comBtnrDeb/btn_deb                                       |    6.845|         |         |         |
-comCPU/comCLK/tmp[2]_dff_1_0                             |         |    9.493|         |         |
-comIOConv/comINTctrl/entered_nextServicePort[0]_AND_134_o|         |    1.684|         |         |
-comIOConv/comINTctrl/entered_nextServicePort[1]_AND_132_o|         |    1.684|         |         |
-comIOConv/comINTctrl/entered_nextServicePort[2]_AND_130_o|         |    1.717|         |         |
-comIOConv/comINTctrl/entered_nextServicePort[3]_AND_129_o|         |    1.650|         |         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_65_o         |         |    2.776|         |         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_66_o         |         |    2.743|         |         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_68_o         |         |    2.743|         |         |
-comIOConv/comINTctrl/intrUpdate_PWR_8_o_AND_70_o         |         |    2.743|         |         |
-comIOConv/imrUpdate                                      |         |    5.520|         |         |
-isrUpdate                                                |    2.628|         |         |         |
+CLK                                                      |    4.216|         |         |         |
+comBtnrDeb/btn_deb                                       |    5.090|         |         |         |
+comCPU/comCLK/tmp[2]_dff_1_0                             |         |    5.736|         |         |
+comIOConv/comINTctrl/entered_intrUpdate_AND_24_o         |         |    1.650|         |         |
+comIOConv/comINTctrl/entered_nextServicePort[0]_AND_158_o|         |    1.717|         |         |
+comIOConv/comINTctrl/entered_nextServicePort[1]_AND_156_o|         |    1.684|         |         |
+comIOConv/comINTctrl/entered_nextServicePort[2]_AND_154_o|         |    1.650|         |         |
+entered                                                  |    3.846|         |         |         |
+intrUpdate                                               |         |    2.646|         |         |
+isrUpdate                                                |    1.540|         |         |         |
 ---------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.90 secs
+Total CPU time to Xst completion: 14.62 secs
  
 --> 
 
-Total memory usage is 276484 kilobytes
+Total memory usage is 275524 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  249 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :  229 (   0 filtered)
+Number of infos    :   25 (   0 filtered)
 

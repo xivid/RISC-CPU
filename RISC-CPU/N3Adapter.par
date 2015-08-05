@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-RL-20150714JIFE::  Wed Aug 05 17:04:17 2015
+RL-20150714JIFE::  Wed Aug 05 18:49:01 2015
 
 par -w -intstyle ise -ol high -mt off N3Adapter_map.ncd N3Adapter.ncd
 N3Adapter.pcf 
@@ -27,30 +27,36 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   381 out of  18,224    2%
-    Number used as Flip Flops:                 231
-    Number used as Latches:                    150
+  Number of Slice Registers:                   393 out of  18,224    2%
+    Number used as Flip Flops:                 244
+    Number used as Latches:                    149
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        948 out of   9,112   10%
-    Number used as logic:                      944 out of   9,112   10%
-      Number using O6 output only:             658
-      Number using O5 output only:              76
-      Number using O5 and O6:                  210
+  Number of Slice LUTs:                        964 out of   9,112   10%
+    Number used as logic:                      949 out of   9,112   10%
+      Number using O6 output only:             662
+      Number using O5 output only:              78
+      Number using O5 and O6:                  209
       Number used as ROM:                        0
-    Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      4
+    Number used as Memory:                      10 out of   2,176    1%
+      Number used as Dual Port RAM:             10
+        Number using O6 output only:             2
+        Number using O5 output only:             0
+        Number using O5 and O6:                  8
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:      5
       Number with same-slice register load:      0
-      Number with same-slice carry load:         4
+      Number with same-slice carry load:         5
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   379 out of   2,278   16%
-  Number of MUXCYs used:                       180 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:        1,055
-    Number with an unused Flip Flop:           692 out of   1,055   65%
-    Number with an unused LUT:                 107 out of   1,055   10%
-    Number of fully used LUT-FF pairs:         256 out of   1,055   24%
+  Number of occupied Slices:                   384 out of   2,278   16%
+  Number of MUXCYs used:                       184 out of   4,556    4%
+  Number of LUT Flip Flop pairs used:        1,075
+    Number with an unused Flip Flop:           704 out of   1,075   65%
+    Number with an unused LUT:                 111 out of   1,075   10%
+    Number of fully used LUT-FF pairs:         260 out of   1,075   24%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -70,8 +76,8 @@ Specific Feature Utilization:
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
-    Number used as BUFGs:                        4
+  Number of BUFG/BUFGMUXs:                       5 out of      16   31%
+    Number used as BUFGs:                        5
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
@@ -99,16 +105,18 @@ Router effort level (-rl):    High
 Starting initial Timing Analysis.  REAL time: 3 secs 
 Finished initial Timing Analysis.  REAL time: 3 secs 
 
+WARNING:Par:288 - The signal comIOConv/comINTctrl/Mram_PortStack1_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal comIOConv/comINTctrl/Mram_PortStack5_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 5398 unrouted;      REAL time: 3 secs 
+Phase  1  : 5479 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 4990 unrouted;      REAL time: 3 secs 
+Phase  2  : 5033 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 2403 unrouted;      REAL time: 5 secs 
+Phase  3  : 2380 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 2405 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 2380 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: N3Adapter.ncd with current fully routed design.
 
@@ -144,32 +152,35 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     1.772ns|     N/A|           0
-  CPU/comAC/RDIR_RDINT_AND_495_o            | HOLD        |     0.839ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     5.957ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.465ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     4.050ns|     N/A|           0
-  segDisplay/js<15>                         | HOLD        |     0.332ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     1.167ns|     N/A|           0
+  CPU/comCLK/tmp[2]_dff_1_0_BUFG            | HOLD        |     0.479ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     3.599ns|     N/A|           0
-  BtnrDeb/btn_deb                           | HOLD        |     0.277ns|            |       0|           0
+  Autotimespec constraint for clock net isr | SETUP       |         N/A|     1.954ns|     N/A|           0
+  Update_BUFG                               | HOLD        |     0.412ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net isr | SETUP       |         N/A|     2.760ns|     N/A|           0
-  Update                                    | HOLD        |     0.338ns|            |       0|           0
+  Autotimespec constraint for clock net ent | SETUP       |         N/A|     1.431ns|     N/A|           0
+  ered                                      | HOLD        |     0.173ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     1.519ns|     N/A|           0
-  CPU/comCLK/tmp[2]_dff_1_0_BUFG            | HOLD        |     0.502ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     3.224ns|     N/A|           0
+  BtnrDeb/btn_deb                           | HOLD        |     0.450ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     4.914ns|     N/A|           0
-  PmodCLP/OneUSClk                          | HOLD        |     0.279ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     3.485ns|     N/A|           0
+  IOConv/imrUpdate                          | HOLD        |     0.483ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     3.447ns|     N/A|           0
-  IOConv/imrUpdate                          | HOLD        |     0.475ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     6.565ns|     N/A|           0
+  PmodCLP/OneUSClk                          | HOLD        |     0.444ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     5.933ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.467ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     6.615ns|     N/A|           0
+  segDisplay/js<15>                         | HOLD        |     0.440ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net com | SETUP       |         N/A|     1.271ns|     N/A|           0
-  CPU/inctop                                | HOLD        |     0.281ns|            |       0|           0
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     2.156ns|     N/A|           0
+  CPU/comAC/RDIR_RDINT_AND_519_o            | HOLD        |     0.908ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net com | SETUP       |         N/A|     1.462ns|     N/A|           0
+  CPU/inctop                                | HOLD        |     0.318ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -185,6 +196,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
 Total REAL time to PAR completion: 8 secs 
 Total CPU time to PAR completion: 8 secs 
 
@@ -194,7 +207,7 @@ Placer: Placement generated during map.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 0
+Number of warning messages: 4
 Number of info messages: 2
 
 Writing design to file N3Adapter.ncd
