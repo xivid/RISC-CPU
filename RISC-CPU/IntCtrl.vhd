@@ -52,48 +52,50 @@ architecture Behavioral of INTctrl is
     signal PortStack : stackType := (8, 0, 0, 0, 0, 0, 0, 0, 0);
     signal stackTop : integer := 0;
     signal pushStack, popStack : std_logic := '0';
-    signal runningPort : integer := 8;
+    signal nextServicePort, runningPort : integer := 8;
 begin
 	intServicePort <= runningPort;
     nowimr <= imr;
-    imr <= newImr when rising_edge(imrUpdate);
+    imr <= newImr when imrUpdate = '1' else imr;
 	
     process(intrUpdate, entered, isrUpdate, intr, isr, imr)
     begin
         if intrUpdate = '1' then
             if intr(0) = '1' and imr(0) = '0' then
                 nextService <= '1';
-                runningPort <= 0;
+                nextServicePort <= 0;
             elsif intr(1) = '1' and imr(1) = '0' then
                 nextService <= '1';
-                runningPort <= 1;
+                nextServicePort <= 1;
             elsif intr(2) = '1' and imr(2) = '0' then
                 nextService <= '1';
-                runningPort <= 2;
+                nextServicePort <= 2;
             elsif intr(3) = '1' and imr(3) = '0' then
                 nextService <= '1';
-                runningPort <= 3;
+                nextServicePort <= 3;
             elsif intr(4) = '1' and imr(4) = '0' then
                 nextService <= '1';
-                runningPort <= 4;
+                nextServicePort <= 4;
             elsif intr(5) = '1' and imr(5) = '0' then
                 nextService <= '1';
-                runningPort <= 5;
+                nextServicePort <= 5;
             elsif intr(6) = '1' and imr(6) = '0' then
                 nextService <= '1';
-                runningPort <= 6;
+                nextServicePort <= 6;
             elsif intr(7) = '1' and imr(7) = '0' then
                 nextService <= '1';
-                runningPort <= 7;
+                nextServicePort <= 7;
             else
                 nextService <= '0';
-                runningPort <= 8;
+                nextServicePort <= 8;
             end if;
         elsif entered = '1' then
             nextService <= '0';
-            isr(runningPort) <= '1';
+            runningPort <= nextServicePort;
+            isr(nextServicePort) <= '1';
         elsif isrUpdate = '1' and isrUpdate'event then
-            isr(runningPort) <= '0';
+            isr(nextServicePort) <= '0';
+            nextServicePort <= 8;
             runningPort <= 8;
         end if;
     end process;

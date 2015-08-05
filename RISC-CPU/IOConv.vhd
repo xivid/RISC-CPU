@@ -39,7 +39,6 @@ entity IOConv is
            nPWR : in  STD_LOGIC;
            sw : in  STD_LOGIC_VECTOR (7 downto 0);
            btnd : in std_logic;
-           btnl : in std_logic;
            led : out  STD_LOGIC_VECTOR (7 downto 0);
            nextService : out std_logic;
            intServicePort : out integer;
@@ -87,47 +86,51 @@ begin
     -- 01 -> INTctrl imr
     -- 10 -> led(7 downto 0)
     -- 11 -> INTctrl imr
-    process (IOAD, IODB, nPREQ, nPRD, nPWR, sw, nowImr, btnd, intr, thenextService, intrUpdate, isrUpdate, theintServicePort, entered)
-    begin
-        if nPREQ = '0' then
-            IODB <= (others => 'Z');
-            led <= (others => '0');
-            if nPWR = '0' then -- OUT
-                case IOAD is
-                    when "10" => 
-                        IODB <= (others => 'Z');
-                        led <= IODB;
-                    when "11" => 
-                        IODB <= (others => 'Z');
-                        newImr <= IODB;
-                        imrUpdate <= '1';
-                    when others => null;
-                end case;
-            elsif nPRD = '0' then -- IN
-                case IOAD is
-                    when "00" => IODB <= sw;
-                    when "01" => IODB <= nowImr;-- imr
-                    when others => null;
-                end case;
-            end if;
-        else
-            IODB <= (others => 'Z');
-            imrUpdate <= '0';
-            
-            led <= (others => '0');
-            if btnl = '1' then -- 删掉试试
-                led <= nowImr;
-            elsif btnd = '1' then
-                led <= intr;
-            else
-                led(0) <= thenextService;
-                led(1) <= intrUpdate;
-                led(2) <= isrUpdate;
-                led(3) <= entered;
-                led(7 downto 4) <= conv_std_logic_vector(theintServicePort, 4);
-            end if;
-        end if;
-    end process;
+    IODB <= sw when (nPREQ = '0' and nPRD = '0' and IOAD = "00") else
+            nowImr when (nPREQ = '0' and nPRD = '0' and IOAD = "01") else
+            (others => 'Z');
+    led <= IODB when (nPREQ = '0' and nPWR = '0' and IOAD = "10") else
+           intr when btnd = '1' else
+           conv_std_logic_vector(theintServicePort, 4)&entered&isrUpdate&intrUpdate&thenextService;
+    newImr <= IODB when (nPREQ = '0' and nPWR = '0' and IOAD = "11") else
+              nowImr;
+    imrUpdate <= '1' when (nPREQ = '0' and nPWR = '0' and IOAD = "11") else
+                 '0';
+--    process (IOAD, IODB, nPREQ, nPRD, nPWR, sw, nowImr, btnd, intr, thenextService, intrUpdate, isrUpdate, theintServicePort, entered)
+--    begin
+--        if nPREQ = '0' then
+--            if nPRD = '0' and nPWR = '1' then -- IN
+--                case IOAD is
+--                    when "00" => IODB <= sw;
+--                    when "01" => IODB <= nowImr;-- imr-- led的行为没有被定义
+--                    when others => null;
+--                end case;
+--            elsif nPRD = '1' and nPWR = '0' then -- OUT
+--                case IOAD is
+--                    when "10" => 
+--                        IODB <= (others => 'Z');
+--                        led <= IODB;
+--                    when "11" => 
+--                        IODB <= (others => 'Z');
+--                        newImr <= IODB;
+--                        imrUpdate <= '1';
+--                    when others => null;
+--                end case;
+--            end if;
+--        else
+--            IODB <= (others => 'Z');
+--            imrUpdate <= '0';
+--            if btnd = '1' then
+--                led <= intr;
+--            else
+--                led(0) <= thenextService;
+--                led(1) <= intrUpdate;
+--                led(2) <= isrUpdate;
+--                led(3) <= entered;
+--                led(7 downto 4) <= conv_std_logic_vector(theintServicePort, 4);
+--            end if;
+--        end if;
+--    end process;
 
 end Behavioral;
 

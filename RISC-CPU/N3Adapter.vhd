@@ -38,7 +38,6 @@ entity N3Adapter is
            btns : in  STD_LOGIC;
            btnu : in  STD_LOGIC;
            btnd : in std_logic;
-           btnl : in std_logic;
            an : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (7 downto 0);
            --signal on connector JC 
@@ -111,7 +110,6 @@ architecture Behavioral of N3Adapter is
        nPWR : in  STD_LOGIC;
        sw : in  STD_LOGIC_VECTOR (7 downto 0);
        btnd : in std_logic;
-       btnl : in std_logic;
        led : out  STD_LOGIC_VECTOR (7 downto 0);
        nextService : out std_logic;
        intServicePort : out integer;
@@ -212,7 +210,6 @@ begin
                nPWR => nPWR,
                sw => sw,
                btnd => btnd,
-               btnl => btnl,
                led => led,
                nextService => nextService,
                intServicePort => intServicePort,
