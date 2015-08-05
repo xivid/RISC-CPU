@@ -37,7 +37,7 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-btnr        |    2.753(R)|      SLOW  |   -0.550(R)|      FAST  |CLK_BUFGP         |   0.000|
+btnr        |    2.478(R)|      SLOW  |   -0.342(R)|      SLOW  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -45,46 +45,46 @@ Clock CLK to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-MemAdr<1>   |        14.066(R)|      SLOW  |         6.359(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<2>   |        13.840(R)|      SLOW  |         6.356(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<3>   |        14.749(R)|      SLOW  |         6.571(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<4>   |        14.449(R)|      SLOW  |         6.655(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<5>   |        14.279(R)|      SLOW  |         6.709(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<6>   |        14.185(R)|      SLOW  |         6.613(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<7>   |        14.725(R)|      SLOW  |         6.622(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<8>   |        14.920(R)|      SLOW  |         6.580(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<9>   |        14.318(R)|      SLOW  |         6.536(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<10>  |        14.225(R)|      SLOW  |         6.399(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<11>  |        14.898(R)|      SLOW  |         6.366(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<12>  |        15.067(R)|      SLOW  |         6.744(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<13>  |        14.611(R)|      SLOW  |         7.011(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<14>  |        15.034(R)|      SLOW  |         6.359(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemAdr<15>  |        15.295(R)|      SLOW  |         6.840(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<0>    |        13.743(R)|      SLOW  |         7.996(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<1>    |        13.221(R)|      SLOW  |         7.656(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<2>    |        13.221(R)|      SLOW  |         7.656(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<3>    |        13.428(R)|      SLOW  |         7.889(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<4>    |        13.561(R)|      SLOW  |         7.977(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<5>    |        13.890(R)|      SLOW  |         8.229(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<6>    |        13.890(R)|      SLOW  |         8.229(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<7>    |        13.477(R)|      SLOW  |         7.916(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<8>    |        14.075(R)|      SLOW  |         8.335(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<9>    |        14.075(R)|      SLOW  |         8.335(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<10>   |        12.922(R)|      SLOW  |         7.459(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<11>   |        13.183(R)|      SLOW  |         7.623(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<12>   |        13.183(R)|      SLOW  |         7.623(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<13>   |        12.216(R)|      SLOW  |         7.062(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<14>   |        12.623(R)|      SLOW  |         7.393(R)|      FAST  |CLK_BUFGP         |   0.000|
-MemDB<15>   |        12.623(R)|      SLOW  |         7.393(R)|      FAST  |CLK_BUFGP         |   0.000|
-RamCS       |        12.171(R)|      SLOW  |         7.023(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<0>      |        17.144(R)|      SLOW  |         9.329(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<1>      |        17.182(R)|      SLOW  |         9.311(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<2>      |        17.422(R)|      SLOW  |         9.758(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<3>      |        17.386(R)|      SLOW  |         8.113(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<4>      |        16.378(R)|      SLOW  |         8.809(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<5>      |        17.155(R)|      SLOW  |         9.276(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<6>      |        17.076(R)|      SLOW  |         9.387(R)|      FAST  |CLK_BUFGP         |   0.000|
-led<7>      |        16.470(R)|      SLOW  |         9.384(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<1>   |        16.710(R)|      SLOW  |         6.731(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<2>   |        16.814(R)|      SLOW  |         6.715(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<3>   |        16.680(R)|      SLOW  |         6.820(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<4>   |        16.923(R)|      SLOW  |         6.801(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<5>   |        17.179(R)|      SLOW  |         7.172(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<6>   |        17.209(R)|      SLOW  |         6.919(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<7>   |        16.965(R)|      SLOW  |         7.008(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<8>   |        16.958(R)|      SLOW  |         6.888(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<9>   |        16.783(R)|      SLOW  |         7.090(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<10>  |        16.809(R)|      SLOW  |         6.969(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<11>  |        17.591(R)|      SLOW  |         7.219(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<12>  |        17.932(R)|      SLOW  |         7.554(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<13>  |        17.275(R)|      SLOW  |         7.377(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<14>  |        17.665(R)|      SLOW  |         6.823(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemAdr<15>  |        17.756(R)|      SLOW  |         7.113(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<0>    |        17.528(R)|      SLOW  |        10.869(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<1>    |        17.005(R)|      SLOW  |        10.528(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<2>    |        17.005(R)|      SLOW  |        10.528(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<3>    |        16.603(R)|      SLOW  |        10.254(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<4>    |        16.737(R)|      SLOW  |        10.343(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<5>    |        17.066(R)|      SLOW  |        10.595(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<6>    |        17.066(R)|      SLOW  |        10.595(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<7>    |        16.653(R)|      SLOW  |        10.282(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<8>    |        17.251(R)|      SLOW  |        10.701(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<9>    |        17.251(R)|      SLOW  |        10.701(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<10>   |        16.706(R)|      SLOW  |        10.331(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<11>   |        16.967(R)|      SLOW  |        10.495(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<12>   |        16.967(R)|      SLOW  |        10.495(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<13>   |        15.381(R)|      SLOW  |         9.417(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<14>   |        15.799(R)|      SLOW  |         9.759(R)|      FAST  |CLK_BUFGP         |   0.000|
+MemDB<15>   |        15.799(R)|      SLOW  |         9.759(R)|      FAST  |CLK_BUFGP         |   0.000|
+RamCS       |        13.814(R)|      SLOW  |         8.268(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<0>      |        17.049(R)|      SLOW  |         9.864(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<1>      |        17.870(R)|      SLOW  |         9.965(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<2>      |        16.886(R)|      SLOW  |         9.877(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<3>      |        17.621(R)|      SLOW  |         9.468(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<4>      |        16.961(R)|      SLOW  |        10.166(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<5>      |        16.795(R)|      SLOW  |         9.996(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<6>      |        17.140(R)|      SLOW  |        10.083(R)|      FAST  |CLK_BUFGP         |   0.000|
+led<7>      |        16.889(R)|      SLOW  |         9.921(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -92,33 +92,33 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.618|         |         |         |
+CLK            |    7.329|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-btnd           |led<0>         |   12.029|
-btnd           |led<1>         |   11.958|
-btnd           |led<2>         |   12.868|
-btnd           |led<3>         |   12.502|
-btnd           |led<4>         |   11.937|
-btnd           |led<5>         |   12.299|
-btnd           |led<6>         |   11.951|
-btnd           |led<7>         |   11.545|
-sw<0>          |led<0>         |    9.888|
-sw<1>          |led<1>         |   10.908|
-sw<2>          |led<2>         |    9.993|
-sw<3>          |led<3>         |   10.999|
-sw<4>          |led<4>         |    9.564|
-sw<5>          |led<5>         |   10.571|
-sw<6>          |led<6>         |    9.564|
-sw<7>          |led<7>         |   11.232|
+btnd           |led<0>         |   12.157|
+btnd           |led<1>         |   12.174|
+btnd           |led<2>         |   12.139|
+btnd           |led<3>         |   13.348|
+btnd           |led<4>         |   12.501|
+btnd           |led<5>         |   12.744|
+btnd           |led<6>         |   12.821|
+btnd           |led<7>         |   12.440|
+sw<0>          |led<0>         |   10.825|
+sw<1>          |led<1>         |   11.498|
+sw<2>          |led<2>         |   10.469|
+sw<3>          |led<3>         |   10.611|
+sw<4>          |led<4>         |    9.862|
+sw<5>          |led<5>         |   10.043|
+sw<6>          |led<6>         |    9.086|
+sw<7>          |led<7>         |   10.612|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Aug 05 19:18:38 2015 
+Analysis completed Wed Aug 05 19:31:14 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

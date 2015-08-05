@@ -5,7 +5,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\.
    "N3Adapter" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
 Opened constraints file N3Adapter.pcf.
 
-Wed Aug 05 19:18:42 2015
+Wed Aug 05 19:31:19 2015
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 N3Adapter.ncd 
 
@@ -160,17 +160,9 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[31]_AND_498_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextTop[0]_AND_484_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextTop[3]_AND_478_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comPmodCLP/OneUSClk is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[4]_AND_396_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
@@ -192,6 +184,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comCPU/comEX/T1_IR[15]_AND_572_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[17]_AND_370_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -207,6 +203,9 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comCPU/comAC/RDIR_RDINT_AND_942_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comCPU/comAC/nMEM_RDIR_OR_136_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
@@ -216,7 +215,7 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextTop[1]_AND_482_o is sourced by a
+   comIOConv/comINTctrl/entered_stackTop[31]_AND_480_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -229,6 +228,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[8]_AND_388_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/entered_stackTop[31]_AND_482_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -251,11 +254,12 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[14]_AND_376_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[26]_AND_352_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/entered_stackTop[31]_AND_484_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -275,6 +279,13 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comIOConv/comINTctrl/entered_stackTop[31]_AND_478_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[31]_AND_530_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -292,10 +303,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/entered_nextServicePort[1]_AND_402_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comIOConv/comINTctrl/entered_nextTop[2]_AND_480_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -428,11 +435,7 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comCPU/comAC/RDIR_RDINT_AND_827_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comEX/T1_IR[15]_AND_572_o is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-DRC detected 0 errors and 77 warnings.  Please see the previously displayed
+DRC detected 0 errors and 78 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "n3adapter.bit".

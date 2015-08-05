@@ -50,7 +50,7 @@ architecture Behavioral of INTctrl is
 	signal imr: std_logic_vector(7 downto 0):= "10000000"; -- ÆÁ±Î×Ö
     type stackType is array(0 to 8) of integer;
     signal PortStack : stackType := (8, 0, 0, 0, 0, 0, 0, 0, 0);
-    signal stackTop, nextTop : integer := 0;
+    signal stackTop : integer := 0;
     signal nextServicePort, runningPort : integer := 8;
 begin
 	intServicePort <= runningPort;
@@ -63,51 +63,49 @@ begin
             if intr(0) = '1' and imr(0) = '0' then
                 nextService <= '1';
                 nextServicePort <= 0;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             elsif intr(1) = '1' and imr(1) = '0' then
                 nextService <= '1';
                 nextServicePort <= 1;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             elsif intr(2) = '1' and imr(2) = '0' then
                 nextService <= '1';
                 nextServicePort <= 2;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             elsif intr(3) = '1' and imr(3) = '0' then
                 nextService <= '1';
                 nextServicePort <= 3;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             elsif intr(4) = '1' and imr(4) = '0' then
                 nextService <= '1';
                 nextServicePort <= 4;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             elsif intr(5) = '1' and imr(5) = '0' then
                 nextService <= '1';
                 nextServicePort <= 5;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             elsif intr(6) = '1' and imr(6) = '0' then
                 nextService <= '1';
                 nextServicePort <= 6;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             elsif intr(7) = '1' and imr(7) = '0' then
                 nextService <= '1';
                 nextServicePort <= 7;
-                nextTop <= stackTop + 1;
+                stackTop <= stackTop + 1;
             else
                 nextService <= '0';
-                nextTop <= stackTop;
             end if;
         end if;
         if entered = '1' then
             nextService <= '0';
             runningPort <= nextServicePort;
             isr(nextServicePort) <= '1';
-            PortStack(nextTop) <= nextServicePort;
-            stackTop <= nextTop;
+            PortStack(stackTop) <= nextServicePort;
         elsif isrUpdate = '1' and isrUpdate'event then
             isr(runningPort) <= '0';
             stackTop <= stackTop - 1;
-            runningPort <= PortStack(stackTop);
-            nextServicePort <= PortStack(stackTop);
+            runningPort <= PortStack(stackTop - 1);
+            nextServicePort <= PortStack(stackTop - 1);
         end if;
     end process;
 
