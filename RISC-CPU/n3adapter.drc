@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Aug 05 11:04:24 2015
+Wed Aug 05 17:04:35 2015
 
 drc -z N3Adapter.ncd N3Adapter.pcf
 
@@ -10,7 +10,7 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comAC/RDIR_RDINT_AND_494_o is sourced by a combinatorial pin. This is
+   comCPU/comAC/RDIR_RDINT_AND_495_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/nMEM is sourced by a
@@ -39,11 +39,8 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    comIOConv/comINTctrl/intrUpdate_entered_OR_17_o is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comAC/RDIR_RDINT_AND_428_o is sourced by a combinatorial pin. This is
+   comCPU/comAC/RDIR_RDINT_AND_429_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -73,8 +70,11 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   comCPU/comAC/RDIR_RDINT_AND_543_o is sourced by a combinatorial pin. This is
+   comCPU/comAC/RDIR_RDINT_AND_544_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net comCPU/inctop is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 DRC detected 0 errors and 19 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

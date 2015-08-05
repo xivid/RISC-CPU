@@ -80,7 +80,7 @@ begin
 	
 	-- »ØĞ´¿ØÖÆĞÅºÅ
     entered <= '1' when (T3 = '1' and clk = '0' and OP = "11000") else '0'; -- int
-    inctop <= '1' when (T3 = '1' and (OP = "11000" or OP = "11100" or OP = "11010" or OP = "11110")) else '0'; -- int, push, iret, pop
+    inctop <= '1' when (T3 = '1' and ((OP = "11000" and nextService = '1') or OP = "11100" or OP = "11010" or OP = "11110")) else '0'; -- int, push, iret, pop
     dectop <= '1' when (T3 = '1' and (OP = "11010" or OP = "11110")) else '0'; -- 
 	Rupdate <= '1' when (T3 = '1' and (OP = "10000" or OP = "01110" or OP = "00110" or OP = "00100" or OP = "01010" or OP = "01000" or OP = "11110")) else '0'; -- IN, LDA, ADC, SBB, MVI, MOV, popr
 end Behavioral;
