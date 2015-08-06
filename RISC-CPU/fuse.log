@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU_isim_beh.exe -prj C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU_beh.prj work.tbCPU 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/WBctrl.vhd" into library work
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/MEMctrl.vhd" into library work
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/IFctrl.vhd" into library work
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/EXctrl.vhd" into library work
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/CLKctrl.vhd" into library work
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/ACctrl.vhd" into library work
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/CPU.vhd" into library work
+Parsing VHDL file "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1156 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU.vhd" Line 46: Formal port <CLOCK> does not exist in entity <CPU>.  Please compare the definition of block <CPU> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:410 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU.vhd" Line 47: Expression has 23 elements ; expected 16
+ERROR:HDLCompiler:1156 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU.vhd" Line 59: Formal port <btnU> does not exist in entity <CPU>.  Please compare the definition of block <CPU> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU.vhd" Line 60: Formal port <an> does not exist in entity <CPU>.  Please compare the definition of block <CPU> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/Users/Administrator/CPU/RISC-CPU/RISC-CPU/tbCPU.vhd" Line 61: Formal port <seg> does not exist in entity <CPU>.  Please compare the definition of block <CPU> to its component declaration and its instantion to detect the mismatch.
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit tbcpu in library work failed

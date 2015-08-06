@@ -75,6 +75,61 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1438852096" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1438852096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438852096" xil_pn:in_ck="-339260644677178413" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1438852096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ACctrl.vhd"/>
+      <outfile xil_pn:name="CLKctrl.vhd"/>
+      <outfile xil_pn:name="CPU.vhd"/>
+      <outfile xil_pn:name="EXctrl.vhd"/>
+      <outfile xil_pn:name="IFctrl.vhd"/>
+      <outfile xil_pn:name="IOConv.vhd"/>
+      <outfile xil_pn:name="MEMctrl.vhd"/>
+      <outfile xil_pn:name="N3Adapter.vhd"/>
+      <outfile xil_pn:name="PmodCLP.vhd"/>
+      <outfile xil_pn:name="WBctrl.vhd"/>
+      <outfile xil_pn:name="btnDebounce.vhd"/>
+      <outfile xil_pn:name="segDisplay.vhd"/>
+      <outfile xil_pn:name="tbCPU.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1438852096" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="761275156243896372" xil_pn:start_ts="1438852096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438852096" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6950030923923362994" xil_pn:start_ts="1438852096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438852096" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5129580127968289326" xil_pn:start_ts="1438852096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1438852096" xil_pn:in_ck="-339260644677178413" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1438852096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ACctrl.vhd"/>
+      <outfile xil_pn:name="CLKctrl.vhd"/>
+      <outfile xil_pn:name="CPU.vhd"/>
+      <outfile xil_pn:name="EXctrl.vhd"/>
+      <outfile xil_pn:name="IFctrl.vhd"/>
+      <outfile xil_pn:name="IOConv.vhd"/>
+      <outfile xil_pn:name="MEMctrl.vhd"/>
+      <outfile xil_pn:name="N3Adapter.vhd"/>
+      <outfile xil_pn:name="PmodCLP.vhd"/>
+      <outfile xil_pn:name="WBctrl.vhd"/>
+      <outfile xil_pn:name="btnDebounce.vhd"/>
+      <outfile xil_pn:name="segDisplay.vhd"/>
+      <outfile xil_pn:name="tbCPU.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1438852098" xil_pn:in_ck="-339260644677178413" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7761237992876479480" xil_pn:start_ts="1438852096">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
     <transform xil_pn:end_ts="1438596902" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1438596902">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -107,7 +162,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="N3Adapter.lso"/>
       <outfile xil_pn:name="N3Adapter.ngc"/>
@@ -128,6 +186,7 @@
     <transform xil_pn:end_ts="1438596921" xil_pn:in_ck="-5744757781851512727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5247385673019886083" xil_pn:start_ts="1438596916">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="N3Adapter.bld"/>
       <outfile xil_pn:name="N3Adapter.ngd"/>
       <outfile xil_pn:name="N3Adapter_ngdbuild.xrpt"/>
@@ -137,6 +196,7 @@
     <transform xil_pn:end_ts="1438596933" xil_pn:in_ck="-2853409407920078198" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1438596921">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="N3Adapter.pcf"/>
       <outfile xil_pn:name="N3Adapter_map.map"/>
       <outfile xil_pn:name="N3Adapter_map.mrp"/>
@@ -150,6 +210,7 @@
     <transform xil_pn:end_ts="1438596948" xil_pn:in_ck="-472592165189938365" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1438596933">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="N3Adapter.ncd"/>
       <outfile xil_pn:name="N3Adapter.pad"/>
       <outfile xil_pn:name="N3Adapter.par"/>
@@ -165,6 +226,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="N3Adapter.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="n3adapter.bgn"/>
@@ -177,6 +239,7 @@
     <transform xil_pn:end_ts="1438596948" xil_pn:in_ck="2870230781031147910" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1438596943">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="N3Adapter.twr"/>
       <outfile xil_pn:name="N3Adapter.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
