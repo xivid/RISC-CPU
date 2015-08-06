@@ -152,8 +152,7 @@ architecture Behavioral of CPU is
             Rupdate : out  STD_LOGIC;
             PCnew : out  STD_LOGIC_VECTOR (15 downto 0);
             entered : out std_logic;
-            inctop : out std_logic;
-            dectop : out std_logic);
+            inctop : out std_logic);
 	END COMPONENT;
 	--///////////////////////////////////////////////
 	COMPONENT ACctrl
@@ -173,7 +172,6 @@ architecture Behavioral of CPU is
            pushr : in std_logic;
            popr : in std_logic;
            inctop : in std_logic;
-           dectop : in std_logic;
            nBLE : out  STD_LOGIC;
            nBHE : out  STD_LOGIC;
            ABUS : out  STD_LOGIC_VECTOR (15 downto 0);

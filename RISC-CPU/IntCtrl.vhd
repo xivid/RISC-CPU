@@ -52,10 +52,8 @@ architecture Behavioral of INTctrl is
     signal PortStack : stackType := (8, 0, 0, 0, 0, 0, 0, 0, 0);
     signal stackTop : integer := 0;
     signal nextServicePort, runningPort : integer := 8;
-    signal thenextService : std_logic;
 begin
 	intServicePort <= runningPort;
-    nextService <= thenextService;
     nowimr <= imr;
     imr <= newImr when imrUpdate = '1' else imr;
 	
@@ -63,43 +61,43 @@ begin
     begin
         if intrUpdate = '1' and intrUpdate'event then
             if intr(0) = '1' and imr(0) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 0;
                 stackTop <= stackTop + 1;
             elsif intr(1) = '1' and imr(1) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 1;
                 stackTop <= stackTop + 1;
             elsif intr(2) = '1' and imr(2) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 2;
                 stackTop <= stackTop + 1;
             elsif intr(3) = '1' and imr(3) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 3;
                 stackTop <= stackTop + 1;
             elsif intr(4) = '1' and imr(4) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 4;
                 stackTop <= stackTop + 1;
             elsif intr(5) = '1' and imr(5) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 5;
                 stackTop <= stackTop + 1;
             elsif intr(6) = '1' and imr(6) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 6;
                 stackTop <= stackTop + 1;
             elsif intr(7) = '1' and imr(7) = '0' then
-                thenextService <= '1';
+                nextService <= '1';
                 nextServicePort <= 7;
                 stackTop <= stackTop + 1;
             else
-                thenextService <= '0';
+                nextService <= '0';
             end if;
         end if;
-        if (entered = '1' and thenextService = '1') then
-            thenextService <= '0';
+        if entered = '1' then
+            nextService <= '0';
             runningPort <= nextServicePort;
             isr(nextServicePort) <= '1';
             PortStack(stackTop) <= nextServicePort;
