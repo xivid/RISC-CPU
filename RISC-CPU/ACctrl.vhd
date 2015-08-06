@@ -47,6 +47,7 @@ entity ACctrl is
            pushr : in std_logic;
            popr : in std_logic;
            inctop : in std_logic;
+           dectop : in std_logic;
            nBLE : out  STD_LOGIC;
            nBHE : out  STD_LOGIC;
            ABUS : out  STD_LOGIC_VECTOR (15 downto 0);

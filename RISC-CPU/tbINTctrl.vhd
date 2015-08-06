@@ -102,16 +102,6 @@ BEGIN
       wait for 100 ns;
       imrUpdate <= '0';
       wait for 100 ns;
-      intr <= "00000010";
-      intrUpdate <= '1';
-      wait for 100 ns;
-      intr <= "00000000";
-      intrUpdate <= '0';
-      wait for 100 ns;
-      entered <= '1'; -- 其实没有enter
-      wait for 100 ns;
-      entered <= '0';
-      wait for 100 ns;
       intr <= "00010000";
       intrUpdate <= '1';
       wait for 100 ns;
@@ -125,8 +115,6 @@ BEGIN
       isrUpdate <= '1';
       wait for 100 ns;
       isrUpdate <= '0';
-      wait for 200 ns;
-      isrUpdate <= '1';
       wait;
    end process;
 

@@ -91,7 +91,7 @@ begin
             (others => 'Z');
     led <= IODB when (nPREQ = '0' and nPWR = '0' and IOAD = "10") else
            intr when btnd = '1' else
-           conv_std_logic_vector(theintServicePort, 4)&entered&isrUpdate&intrUpdate&thenextService;
+           "0000"&entered&isrUpdate&intrUpdate&thenextService;
     newImr <= IODB when (nPREQ = '0' and nPWR = '0' and IOAD = "11") else
               nowImr;
     imrUpdate <= '1' when (nPREQ = '0' and nPWR = '0' and IOAD = "11") else
